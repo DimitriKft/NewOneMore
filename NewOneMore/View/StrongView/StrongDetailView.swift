@@ -78,39 +78,65 @@ struct StrongDetailView: View {
                 }
                 Text(strong.subtitle)
                     .font(.system(size: 13, weight: .medium))
-                    .padding(30)
+                    .padding([.leading, .trailing, .top], 30)
+                    .padding(.bottom, 10)
                     .foregroundStyle(.white)
                 Text("PR: \(Int(strong.scores.max() ?? 0.0)) Kg")
                     .font(.largeTitle)
                     .fontWeight(.black)
                     .foregroundStyle(strong.couleurCategorie)
 
-                VStack(spacing: 20) {
-                    TextField("Entre ton 1RM ici..", text: $nouveauScore)
-                        .keyboardType(.decimalPad)
-                        .padding()
-                        .background(Color.gray.opacity(0.2))
-                        .cornerRadius(8)
-                        .padding(.horizontal)
+                HStack(spacing: 20) {
+                    // TextField stylisé
+                    ZStack(alignment: .leading) {
+                        // Placeholder
+                 
+                          
+                            RoundedRectangle(cornerRadius: 8)
+                                .frame(width: 200, height: 60)
+                                .foregroundStyle(strong.couleurCategorie)
+                                .opacity(0.5)
+                                .overlay(
+                                    RoundedRectangle(cornerRadius: 8)
+                                        .stroke(strong.couleurCategorie, lineWidth: 2)
+                                )
+                            TextField("", text: $nouveauScore)
+                                .keyboardType(.decimalPad)
+                                .padding(.leading, 10)
+                                .foregroundColor(.white)
+                        if nouveauScore.isEmpty {
+                            Text("Entre ton 1RM ici..")
+                                .foregroundColor(.white)
+                                .fontWeight(.bold)
+                                .padding(.leading, 20)
+                        }
+                    }
+                    .padding(.leading, 25)
                     
-                    // Bouton pour ajouter le nouveau score
+                    // Bouton stylisé
                     Button(action: {
                         ajouterNouveauScore()
                     }) {
-                        HStack {
-                            Image(systemName: "plus")
-                            Text("Ajouter")
+                        ZStack {
+                            
+                              RoundedRectangle(cornerRadius: 8)
+                                  .frame(width: 150, height: 60)
+                                  .foregroundStyle(strong.couleurCategorie)
+                            HStack {
+                                Image(systemName: "plus")
+                                Text("Ajouter")
+                            }
+                            .font(.headline)
+                            .fontWeight(.bold)
+                            .foregroundColor(.black) // Texte noir
+                            
+                           
                         }
-                        .font(.headline)
-                        .foregroundColor(.white)
-                        .padding()
-                        .background(strong.couleurCategorie)
-                        .cornerRadius(8)
+                        .padding(.trailing,25)
                     }
-                    .disabled(nouveauScore.isEmpty) // Désactiver si le champ est vide
-                    
-                    Spacer() // ⚠️⚠️ Spacer à ajuster en fin de conception de vue
                 }
+                Spacer()
+
             }
         }
         .navigationBarBackButtonHidden(true)
@@ -151,23 +177,7 @@ struct StrongDetailView: View {
 }
 
 
-//                    // Sous-titre
-//                    Text(strong.subtitle)
-//                        .font(.title2)
-//                        .foregroundColor(.gray)
-//                        .padding(.horizontal)
-//
-//                    // Description
-//                    Text(strong.descriptionName)
-//                        .font(.body)
-//                        .padding(.horizontal)
-//
-//                    // Score
-//                    Text("Score: \(strong.scores.first ?? 0.0)")
-//                        .font(.title2)
-//                        .fontWeight(.medium)
-//                        .padding(.horizontal)
-//
+
 //                    // Catégorie
 //                    if let categorie = strong.categories.first {
 //                        Text("Catégorie: \(categorie)")
