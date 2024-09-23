@@ -11,7 +11,7 @@ struct StrongDetailView: View {
     let strong: Strong
     @Environment(\.dismiss) var dismiss
     @State private var newScore: String = ""
-    @State private var showAlert: Bool = false 
+    @State private var showAlert: Bool = false
     @Environment(\.modelContext) private var modelContext
     
     var body: some View {
@@ -86,6 +86,18 @@ struct StrongDetailView: View {
                 // Vue de champ et bouton
                 FieldAndBtnAddScoreView(newScore: $newScore, strongColor: strong.couleurCategorie, addNewScore: addNewScore)
                 
+                HStack(spacing: 35) {
+                            // Plus petit PR
+                    PRBoxView(title: "Plus petit 1RM", value: String(format: "%.1f", strong.scores.min() ?? 0.0), color: strong.couleurCategorie)
+                            
+                            // Dernier PR (dernier entré dans la liste)
+                    PRBoxView(title: "Dernier 1RM", value: String(format: "%.1f", strong.scores.last ?? 0.0), color: strong.couleurCategorie)
+                            
+                            // Meilleur PR (le plus grand score)
+                    PRBoxView(title: "Meilleur 1RM", value: String(format: "%.1f", strong.scores.max() ?? 0.0), color: strong.couleurCategorie)
+                        }
+                .padding(.top,20)
+                
                 Spacer()
 
             }
@@ -134,6 +146,7 @@ struct StrongDetailView: View {
 
 
 #Preview{
-    StrongDetailView(strong: Strong(nom: "Clean", subtitle: "L’épaulé consiste à soulever une barre du sol jusqu’aux épaules en un mouvement explosif, sollicitant principalement les jambes et les bras.", image: "Clean", descriptionName: "L'un des mouvements de base du powerlifting, qui consiste à soulever une barre posée au sol.", scores: [90, 80, 70, 99], dates: [Date(), Date(), Date()], categories: [.halterophilie]))
+    StrongDetailView(strong: Strong(nom: "Clean", subtitle: "L’épaulé consiste à soulever une barre du sol jusqu’aux épaules en un mouvement explosif, sollicitant principalement les jambes et les bras.", image: "Clean", descriptionName: "L'un des mouvements de base du powerlifting, qui consiste à soulever une barre posée au sol.", scores: [90, 80, 70, 99, 45], dates: [Date(), Date(), Date()], categories: [.halterophilie]))
 }
+
 
