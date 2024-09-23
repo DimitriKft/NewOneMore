@@ -15,7 +15,7 @@ struct StrongDetailView: View {
     
     var body: some View {
         ZStack(alignment: .topLeading) {
-            VStack(alignment: .leading, spacing: 16) {
+            VStack {
                 // Image principale
                 ZStack {
                     Image(strong.image)
@@ -53,10 +53,6 @@ struct StrongDetailView: View {
                             .font(.headline)
                             .fontWeight(.black)
                             .foregroundColor(.white)
-                        Text(strong.subtitle)
-                            .font(.caption2)
-                            .fontWeight(.black)
-                            .foregroundColor(.secondary)
                     }
                     .frame(width: 300, height: 100)
                     .background(
@@ -75,17 +71,22 @@ struct StrongDetailView: View {
                             .stroke(strong.couleurCategorie, lineWidth: 1)
                     )
                     .offset(y: 150)
-                
+                    
                 }
                 Text(strong.subtitle)
                     .font(.system(size: 13, weight: .medium))
-                    .padding(20)
+                    .padding(30)
                     .foregroundStyle(.white)
+                Text("PR: \(Int(strong.scores.first ?? 0.0)) Kg")
+                    .font(.largeTitle)
+                    .fontWeight(.black)
+                    .foregroundStyle(strong.couleurCategorie)
+              
                 Spacer() // ⚠️⚠️ spacer a virer en fin de conception de vue
             }
         }
         .navigationBarBackButtonHidden(true)
-        .ignoresSafeArea(edges: .top) // Ignorer les marges en haut pour que l'image occupe tout l'espace
+        .ignoresSafeArea(edges: .top)
     }
     
     // Fonction pour formater la date
@@ -96,7 +97,7 @@ struct StrongDetailView: View {
         return formatter.string(from: date)
     }
     
-    // Bouton de retour personnalisé
+    
     var BackButton: some View {
         Button(action: {
             dismiss() // Action de retour
@@ -124,7 +125,7 @@ struct StrongDetailView: View {
 
 
 #Preview{
-    StrongDetailView(strong: Strong(nom: "Clean", subtitle: "Epaul", image: "Clean", descriptionName: "L'un des mouvements de base du powerlifting, qui consiste à soulever une barre posée au sol.", scores: [90, 80, 70], dates: [Date(), Date(), Date()], categories: [.halterophilie]))
+    StrongDetailView(strong: Strong(nom: "Clean", subtitle: "L’épaulé consiste à soulever une barre du sol jusqu’aux épaules en un mouvement explosif, sollicitant principalement les jambes et les bras.", image: "Clean", descriptionName: "L'un des mouvements de base du powerlifting, qui consiste à soulever une barre posée au sol.", scores: [90, 80, 70], dates: [Date(), Date(), Date()], categories: [.halterophilie]))
 }
 
 

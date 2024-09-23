@@ -48,13 +48,13 @@ class Strong: ObservableObject {
         return self.categories.compactMap { Categories(rawValue: $0) }
     }
     
-    // Propriété calculée pour obtenir la couleur correspondant à la première catégorie
+    
     var couleurCategorie: Color {
-        guard let premiereCategorie = getCategories().first else {
-            return .gray // Couleur par défaut si aucune catégorie n'est présente
+        guard let firstCat = getCategories().first else {
+            return .gray
         }
         
-        switch premiereCategorie {
+        switch firstCat {
         case .halterophilie:
             return .yellow
         case .musculation:
