@@ -12,6 +12,7 @@ import SwiftData
 struct StrongDetailView: View {
     let strong: Strong
     @Environment(\.dismiss) var dismiss // Pour permettre le retour à la vue précédente
+    @State private var nouveauScore: String = ""
     
     var body: some View {
         ZStack(alignment: .topLeading) {
@@ -25,7 +26,9 @@ struct StrongDetailView: View {
                         .clipped()
                     // Bouton de retour au-dessus de l'image
                     HStack {
-                        BackButton
+                        BtnActionView(iconSF: "arrow.left", color: strong.couleurCategorie) {
+                            dismiss()
+                        }
                             .padding()
                             .padding(.bottom,150)
                         Spacer()
@@ -81,6 +84,7 @@ struct StrongDetailView: View {
                     .font(.largeTitle)
                     .fontWeight(.black)
                     .foregroundStyle(strong.couleurCategorie)
+                
               
                 Spacer() // ⚠️⚠️ spacer a virer en fin de conception de vue
             }
@@ -95,27 +99,6 @@ struct StrongDetailView: View {
         formatter.dateStyle = .medium
         formatter.timeStyle = .none
         return formatter.string(from: date)
-    }
-    
-    
-    var BackButton: some View {
-        Button(action: {
-            dismiss() // Action de retour
-        }) {
-            ZStack {
-                Rectangle()
-                    .fill(Color.black)
-                    .frame(width: 50, height: 50)
-                    .cornerRadius(8)
-                Image(systemName: "arrow.left")
-                    .font(.title2)
-                    .foregroundColor(strong.couleurCategorie)
-            }
-            .overlay(
-                RoundedRectangle(cornerRadius: 5)
-                    .stroke(strong.couleurCategorie, lineWidth: 1)
-            )
-        }
     }
 }
 
