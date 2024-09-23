@@ -5,7 +5,6 @@
 //  Created by dimitri on 18/09/2024.
 //
 
-
 import SwiftUI
 import SwiftData
 
@@ -13,6 +12,7 @@ struct StrongDetailView: View {
     let strong: Strong
     @Environment(\.dismiss) var dismiss // Pour permettre le retour à la vue précédente
     @State private var nouveauScore: String = ""
+    @Environment(\.modelContext) private var modelContext
     
     var body: some View {
         ZStack(alignment: .topLeading) {
@@ -24,13 +24,14 @@ struct StrongDetailView: View {
                         .aspectRatio(contentMode: .fill)
                         .frame(width: UIScreen.main.bounds.width, height: 300)
                         .clipped()
+                    
                     // Bouton de retour au-dessus de l'image
                     HStack {
                         BtnActionView(iconSF: "arrow.left", color: strong.couleurCategorie) {
                             dismiss()
                         }
-                            .padding()
-                            .padding(.bottom,150)
+                        .padding()
+                        .padding(.bottom, 150)
                         Spacer()
                         VStack {
                             BtnActionView(iconSF: "trash", color: strong.couleurCategorie) {
@@ -45,13 +46,13 @@ struct StrongDetailView: View {
                             
                             BtnActionView(iconSF: "speedometer", color: strong.couleurCategorie) {
                                 print("Speedometer action") // Action pour le bouton speedometer
-                            }                            }
-                        .padding(.trailing,20)
-                        .padding(.bottom,10)
+                            }
+                        }
+                        .padding(.trailing, 20)
+                        .padding(.bottom, 10)
                     }
                     .foregroundStyle(strong.couleurCategorie)
                     VStack {
-                        
                         Text(strong.nom)
                             .font(.headline)
                             .fontWeight(.black)
@@ -74,23 +75,65 @@ struct StrongDetailView: View {
                             .stroke(strong.couleurCategorie, lineWidth: 1)
                     )
                     .offset(y: 150)
-                    
                 }
                 Text(strong.subtitle)
                     .font(.system(size: 13, weight: .medium))
                     .padding(30)
                     .foregroundStyle(.white)
-                Text("PR: \(Int(strong.scores.first ?? 0.0)) Kg")
+                Text("PR: \(Int(strong.scores.max() ?? 0.0)) Kg")
                     .font(.largeTitle)
                     .fontWeight(.black)
                     .foregroundStyle(strong.couleurCategorie)
-                
-              
-                Spacer() // ⚠️⚠️ spacer a virer en fin de conception de vue
+
+                VStack(spacing: 20) {
+                    TextField("Entre ton 1RM ici..", text: $nouveauScore)
+                        .keyboardType(.decimalPad)
+                        .padding()
+                        .background(Color.gray.opacity(0.2))
+                        .cornerRadius(8)
+                        .padding(.horizontal)
+                    
+                    // Bouton pour ajouter le nouveau score
+                    Button(action: {
+                        ajouterNouveauScore()
+                    }) {
+                        HStack {
+                            Image(systemName: "plus")
+                            Text("Ajouter")
+                        }
+                        .font(.headline)
+                        .foregroundColor(.white)
+                        .padding()
+                        .background(strong.couleurCategorie)
+                        .cornerRadius(8)
+                    }
+                    .disabled(nouveauScore.isEmpty) // Désactiver si le champ est vide
+                    
+                    Spacer() // ⚠️⚠️ Spacer à ajuster en fin de conception de vue
+                }
             }
         }
         .navigationBarBackButtonHidden(true)
         .ignoresSafeArea(edges: .top)
+    }
+    
+    // Méthode pour ajouter un nouveau score
+    func ajouterNouveauScore() {
+        guard let score = Double(nouveauScore), score > 0 else { return } // Assurez-vous que le score est un nombre valide supérieur à 0
+        
+        // Ajoutez le score au modèle Strong
+        strong.addScore(score, date: Date(), categorie: .halterophilie) // Vous pouvez adapter la catégorie ici si nécessaire
+        
+        // Sauvegarder les changements dans SwiftData
+        do {
+            modelContext.insert(strong) // Insérer dans le contexte SwiftData
+            try modelContext.save() // Sauvegarder les modifications
+        } catch {
+            print("Erreur lors de la sauvegarde des données : \(error.localizedDescription)")
+        }
+        
+        // Réinitialiser le champ de texte
+        nouveauScore = ""
     }
     
     // Fonction pour formater la date
@@ -103,12 +146,8 @@ struct StrongDetailView: View {
 }
 
 
-
-
-
-
 #Preview{
-    StrongDetailView(strong: Strong(nom: "Clean", subtitle: "L’épaulé consiste à soulever une barre du sol jusqu’aux épaules en un mouvement explosif, sollicitant principalement les jambes et les bras.", image: "Clean", descriptionName: "L'un des mouvements de base du powerlifting, qui consiste à soulever une barre posée au sol.", scores: [90, 80, 70], dates: [Date(), Date(), Date()], categories: [.halterophilie]))
+    StrongDetailView(strong: Strong(nom: "Clean", subtitle: "L’épaulé consiste à soulever une barre du sol jusqu’aux épaules en un mouvement explosif, sollicitant principalement les jambes et les bras.", image: "Clean", descriptionName: "L'un des mouvements de base du powerlifting, qui consiste à soulever une barre posée au sol.", scores: [90, 80, 70, 99], dates: [Date(), Date(), Date()], categories: [.halterophilie]))
 }
 
 
