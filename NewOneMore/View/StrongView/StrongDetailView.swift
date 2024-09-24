@@ -4,8 +4,9 @@
 //
 //  Created by dimitri on 18/09/2024.
 //
+
 import SwiftUI
-import SwiftData
+import Charts
 
 struct StrongDetailView: View {
     let strong: Strong
@@ -13,10 +14,11 @@ struct StrongDetailView: View {
     @State private var newScore: String = ""
     @State private var showAlert: Bool = false
     @Environment(\.modelContext) private var modelContext
-    
+
     var body: some View {
         ZStack(alignment: .topLeading) {
             VStack {
+                // Image et informations de base
                 ZStack {
                     Image(strong.image)
                         .resizable()
@@ -73,31 +75,70 @@ struct StrongDetailView: View {
                     )
                     .offset(y: 150)
                 }
-                Text(strong.subtitle)
-                    .font(.system(size: 13, weight: .medium))
-                    .padding([.leading, .trailing, .top], 30)
-                    .padding(.bottom, 10)
-                    .foregroundStyle(.white)
+
+                // Sous-titre et PR
+//                Text(strong.subtitle)
+//                    .font(.system(size: 13, weight: .medium))
+//                    .padding([.leading, .trailing, .top], 30)
+//                    .padding(.bottom, 10)
+//                    .foregroundStyle(.white)
                 Text("PR: \(String(format: "%.1f", strong.scores.max() ?? 0.0)) Kg")
                     .font(.largeTitle)
                     .fontWeight(.black)
                     .foregroundStyle(strong.couleurCategorie)
+                    .padding(.top, 40)
 
-                // Vue de champ et bouton
+                // Champ pour ajouter un nouveau score
                 FieldAndBtnAddScoreView(newScore: $newScore, strongColor: strong.couleurCategorie, addNewScore: addNewScore)
+//
+//                HStack(spacing: 35) {
+//                                            // Plus petit PR
+//                                    PRBoxView(title: "Plus petit 1RM", value: String(format: "%.1f", strong.scores.min() ?? 0.0), color: strong.couleurCategorie)
+//                                            
+//                                            // Dernier PR (dernier entré dans la liste)
+//                                    PRBoxView(title: "Dernier 1RM", value: String(format: "%.1f", strong.scores.last ?? 0.0), color: strong.couleurCategorie)
+//                                            
+//                                            // Meilleur PR (le plus grand score)
+//                                    PRBoxView(title: "Meilleur 1RM", value: String(format: "%.1f", strong.scores.max() ?? 0.0), color: strong.couleurCategorie)
+//                                        }
+//                                .padding(.top,20)
+    
                 
-                HStack(spacing: 35) {
-                            // Plus petit PR
-                    PRBoxView(title: "Plus petit 1RM", value: String(format: "%.1f", strong.scores.min() ?? 0.0), color: strong.couleurCategorie)
-                            
-                            // Dernier PR (dernier entré dans la liste)
-                    PRBoxView(title: "Dernier 1RM", value: String(format: "%.1f", strong.scores.last ?? 0.0), color: strong.couleurCategorie)
-                            
-                            // Meilleur PR (le plus grand score)
-                    PRBoxView(title: "Meilleur 1RM", value: String(format: "%.1f", strong.scores.max() ?? 0.0), color: strong.couleurCategorie)
+                Chart {
+                    // Sélectionner les 5 dernières entrées
+                    let lastFiveScores = Array(strong.scores.suffix(5))
+                    let lastFiveDates = Array(strong.dates.suffix(5))
+
+                    ForEach(Array(zip(lastFiveScores.indices, lastFiveScores)), id: \.0) { index, score in
+                        BarMark(
+                            x: .value("Index", index),  // L'index ici va de 0 à 4 pour les 5 dernières entrées
+                            y: .value("Score", score)
+                        )
+                        .foregroundStyle(strong.couleurCategorie)
+                        
+                        // Annotation pour afficher le score au-dessus de la barre
+                        .annotation(position: .top) {
+                            Text(String(format: "%.1f", score))  // Afficher le score
+                                .font(.caption)
+                                .fontWeight(.bold)
+                                .foregroundColor(.primary)
                         }
-                .padding(.top,20)
-                
+
+                        // Annotation pour afficher la date en bas de la barre
+                        .annotation(position: .bottom) {
+                            Text(formatDate(lastFiveDates[index]))  // Afficher la date associée
+                                .font(.caption2)
+                                .foregroundColor(.secondary)
+                        }
+                    }
+                }
+                .chartXScale(domain: 0...4)  // Limite l'axe X à 5 entrées (indices de 0 à 4)
+                .frame(height: 250)  // Ajuster la hauteur du graphique
+                .padding(30)
+
+
+
+
                 Spacer()
 
             }
@@ -112,17 +153,17 @@ struct StrongDetailView: View {
             )
         }
     }
-    
 
+    // Fonction pour ajouter un nouveau score
     func addNewScore() {
         guard let score = Double(newScore), score > 0 else { return }
 
-      
         if score > 501 {
             showAlert = true
         } else {
-            strong.addScore(score, date: Date(), categorie: .halterophilie)
-
+            let currentDate = Date()
+            strong.addScore(score, date: currentDate, categorie: .halterophilie)
+            
             do {
                 modelContext.insert(strong)
                 try modelContext.save()
@@ -134,19 +175,17 @@ struct StrongDetailView: View {
         }
     }
 
+
+    // Formater la date pour le graphique
     func formatDate(_ date: Date) -> String {
         let formatter = DateFormatter()
-        formatter.dateStyle = .medium
-        formatter.timeStyle = .none
+        formatter.dateStyle = .short
         return formatter.string(from: date)
     }
 }
-
-
-
+let now = Date()
+let oneDay: TimeInterval = 60 * 60 * 24
 
 #Preview{
-    StrongDetailView(strong: Strong(nom: "Clean", subtitle: "L’épaulé consiste à soulever une barre du sol jusqu’aux épaules en un mouvement explosif, sollicitant principalement les jambes et les bras.", image: "Clean", descriptionName: "L'un des mouvements de base du powerlifting, qui consiste à soulever une barre posée au sol.", scores: [90, 80, 70, 99, 45], dates: [Date(), Date(), Date()], categories: [.halterophilie]))
+    StrongDetailView(strong: Strong(nom: "Clean", subtitle: "L’épaulé consiste à soulever une barre du sol jusqu’aux épaules en un mouvement explosif, sollicitant principalement les jambes et les bras.", image: "Clean", descriptionName: "L'un des mouvements de base du powerlifting, qui consiste à soulever une barre posée au sol.", scores: [90, 80, 70, 99, 105, 112], dates: [now, now - oneDay, now - 2 * oneDay, now - 3 * oneDay, now - 4 * oneDay, now - 5 * oneDay], categories: [.halterophilie]))
 }
-
-

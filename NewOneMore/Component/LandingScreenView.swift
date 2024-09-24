@@ -14,6 +14,10 @@ struct LandingScreenView: View {
                       .tabItem {
                           Label("Force", systemImage: "figure.strengthtraining.traditional")
                       }
+            Text("Yolo")
+                      .tabItem {
+                          Label("Pdc", systemImage: "ant")
+                      }
 
                   
               }

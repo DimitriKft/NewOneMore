@@ -45,6 +45,7 @@ struct FieldAndBtnAddScoreView: View {
 
             Button(action: {
                 addNewScore()
+                UIApplication.shared.endEditing() // Fermer le clavier après l'ajout
             }) {
                 ZStack {
                     RoundedRectangle(cornerRadius: 8)
@@ -64,7 +65,6 @@ struct FieldAndBtnAddScoreView: View {
     }
 }
 
-
 #Preview {
     FieldAndBtnAddScoreView(
         newScore: .constant(""),
@@ -73,4 +73,12 @@ struct FieldAndBtnAddScoreView: View {
             print("Score ajouté")
         }
     )
+}
+
+
+
+extension UIApplication {
+    func endEditing() {
+        sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
+    }
 }
