@@ -75,20 +75,12 @@ struct StrongDetailView: View {
                     )
                     .offset(y: 150)
                 }
-
-                // Sous-titre et PR
-//                Text(strong.subtitle)
-//                    .font(.system(size: 13, weight: .medium))
-//                    .padding([.leading, .trailing, .top], 30)
-//                    .padding(.bottom, 10)
-//                    .foregroundStyle(.white)
                 Text("PR: \(String(format: "%.1f", strong.scores.max() ?? 0.0)) Kg")
                     .font(.largeTitle)
                     .fontWeight(.black)
                     .foregroundStyle(strong.couleurCategorie)
                     .padding(.top, 40)
 
-                // Champ pour ajouter un nouveau score
                 FieldAndBtnAddScoreView(newScore: $newScore, strongColor: strong.couleurCategorie, addNewScore: addNewScore)
 //
 //                HStack(spacing: 35) {
@@ -105,17 +97,16 @@ struct StrongDetailView: View {
     
                 
                 Chart {
-                    // Sélectionner les 5 dernières entrées
                     let lastFiveScores = Array(strong.scores.suffix(5))
                     let lastFiveDates = Array(strong.dates.suffix(5))
 
                     ForEach(Array(zip(lastFiveScores.indices, lastFiveScores)), id: \.0) { index, score in
                         BarMark(
-                            x: .value("Index", index),  // L'index ici va de 0 à 4 pour les 5 dernières entrées
+                            x: .value("Index", index),
                             y: .value("Score", score)
                         )
                         .foregroundStyle(strong.couleurCategorie)
-                        
+
                         // Annotation pour afficher le score au-dessus de la barre
                         .annotation(position: .top) {
                             Text(String(format: "%.1f", score))  // Afficher le score
@@ -133,13 +124,23 @@ struct StrongDetailView: View {
                     }
                 }
                 .chartXScale(domain: 0...4)  // Limite l'axe X à 5 entrées (indices de 0 à 4)
-                .frame(height: 250)  // Ajuster la hauteur du graphique
-                .padding(30)
+                .chartYScale(domain: 0...((strong.scores.max() ?? 0) + 10))  // Limite l'axe Y à 0 - max score
+                .chartYAxis {
+                    AxisMarks(position: .leading) {
+                        AxisGridLine()  // Affiche uniquement la grille verticale
+                        AxisTick()      // Ticks sur l'axe Y
+                        // Pas d'AxisValueLabel ici pour éviter les numérotations
+                    }
+                }
+                .chartXAxis {
+                    AxisMarks(position: .bottom) {
+                        AxisGridLine()  // Grille horizontale
+                        AxisTick()      // Ticks sur l'axe X
+                    }
+                }
+                .frame(height: 210)
+                .padding(50)
 
-
-
-
-                Spacer()
 
             }
         }
