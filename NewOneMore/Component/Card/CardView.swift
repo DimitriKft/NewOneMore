@@ -7,13 +7,13 @@
 
 import SwiftUI
 
-
 struct CardView: View {
     var colorCategory: Color
     var image: String
     var nom: String
     var scores: [Double]
     var dates: [Date]
+    
     var body: some View {
         VStack {
             ZStack {
@@ -32,7 +32,6 @@ struct CardView: View {
                 .frame(width: 165, height: 170)
                 
                 VStack {
-                    
                     Text(nom)
                         .font(.caption)
                         .fontWeight(.black)
@@ -55,8 +54,9 @@ struct CardView: View {
                         .stroke(colorCategory, lineWidth: 1)
                 )
                 .padding(.top, 45)
-                HStack{
-                    ZStack{
+                
+                HStack {
+                    ZStack {
                         Rectangle()
                             .frame(width: 65, height: 28)
                             .cornerRadius(5)
@@ -70,11 +70,11 @@ struct CardView: View {
                         HStack {
                             Image(systemName: "flame.fill")
                                 .font(.system(size: 10))
-                            Text("\(Int(scores.first ?? 0.0)) Kg")
+                            Text("\(String(format: "%.1f", scores.max() ?? 0.0)) Kg")
                         }
-                        
                     }
-                    ZStack{
+                    
+                    ZStack {
                         Rectangle()
                             .frame(width: 65, height: 28)
                             .cornerRadius(5)
@@ -88,9 +88,8 @@ struct CardView: View {
                         HStack {
                             Image(systemName: "calendar")
                                 .font(.system(size: 10))
-                            Text("\(dates.count) J")
+                            Text(daysSinceLastEntry())
                         }
-                        
                     }
                 }
                 .font(.system(size: 8))
@@ -100,12 +99,24 @@ struct CardView: View {
             }
         }
     }
-}
 
+   
+    private func daysSinceLastEntry() -> String {
+        if let lastDate = dates.last {
+            let calendar = Calendar.current
+            let components = calendar.dateComponents([.day], from: lastDate, to: Date())
+            if let days = components.day {
+                return "\(days) J"
+            }
+        }
+        return "N/A"
+    }
+}
 
 #Preview {
-    CardView(colorCategory: .blue, image: "Clean", nom: "Squat", scores: [2.3], dates: [])
+    CardView(colorCategory: .blue, image: "Clean", nom: "Squat", scores: [2.3, 80.5, 90.1], dates: [Date(), Date().addingTimeInterval(-86400), Date().addingTimeInterval(-172800)])
 }
+
 
 
 struct RoundedCornerShape: Shape {

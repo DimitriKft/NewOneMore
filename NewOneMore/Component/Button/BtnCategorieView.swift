@@ -15,7 +15,6 @@ struct BtnCategorieView: View {
     var colorCategory: Color {
         switch category {
         case .halterophilie: return .yellow
-        case .powerLifting: return .teal
         case .musculation: return .red
         default: return .black
         }
@@ -24,7 +23,6 @@ struct BtnCategorieView: View {
     var iconCategory: String {
         switch category {
         case .halterophilie: return "figure.strengthtraining.traditional"
-        case .powerLifting: return "dumbbell"
         case .musculation: return "figure.strengthtraining.functional"
         default: return "square.grid.2x2"
         }

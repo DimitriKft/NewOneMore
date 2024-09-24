@@ -84,25 +84,28 @@ struct AddItemView: View {
     }
     
     
+    
+    
     func colorForCategory(_ category: Categories) -> Color {
         switch category {
         case .halterophilie:
             return Color.yellow
         case .musculation:
             return Color.red
-        case .powerLifting:
-            return Color.blue
         }
     }
-    
 
     func filteredItems() -> [StrongMove] {
-        availableItems.filter { item in
+        return availableItems.filter { item in
+            // Vérification de la catégorie (le filtre doit être précis)
             (selectedCategory == nil || item.category == selectedCategory) &&
+            // Vérification que l'élément n'est pas déjà sélectionné
             !selectedStrongs.contains(item.nom) &&
+            // Vérification du texte de recherche
             (searchText.isEmpty || item.nom.localizedCaseInsensitiveContains(searchText))
         }
     }
+
     
     func ajouterItem() {
         guard let selectedItem = selectedItem else { return }

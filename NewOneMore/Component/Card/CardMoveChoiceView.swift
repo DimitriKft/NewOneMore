@@ -16,8 +16,6 @@ struct CardMoveChoiceView: View {
         switch item.category {
         case .halterophilie:
             return .yellow
-        case .powerLifting:
-            return .teal
         case .musculation:
             return .red
         }
@@ -25,7 +23,6 @@ struct CardMoveChoiceView: View {
     var iconCategory: String {
         switch item.category {
         case .halterophilie: return "figure.strengthtraining.traditional"
-        case .powerLifting: return "dumbbell"
         case .musculation: return "figure.strengthtraining.functional"
         }
     }

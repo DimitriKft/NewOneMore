@@ -7,10 +7,10 @@
 import SwiftData
 import SwiftUI
 
-enum Categories: String, Codable {
+enum Categories: String, Codable, CaseIterable {
     case halterophilie = "Haltérophilie"
     case musculation = "Musculation"
-    case powerLifting = "Power Lifting"
+  
 }
 
 @Model
@@ -49,6 +49,7 @@ class Strong: ObservableObject {
     }
     
     
+    
     var couleurCategorie: Color {
         guard let firstCat = getCategories().first else {
             return .gray
@@ -59,8 +60,7 @@ class Strong: ObservableObject {
             return .yellow
         case .musculation:
             return .red
-        case .powerLifting:
-            return .teal
+    
         }
     }
 }
