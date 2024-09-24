@@ -13,6 +13,7 @@ struct StrongDetailView: View {
     @Environment(\.dismiss) var dismiss
     @State private var newScore: String = ""
     @State private var showAlert: Bool = false
+    @State private var showDeleteConfirmation: Bool = false
     @Environment(\.modelContext) private var modelContext
 
     var body: some View {
@@ -34,7 +35,7 @@ struct StrongDetailView: View {
                         Spacer()
                         VStack {
                             BtnActionView(iconSF: "trash", color: strong.couleurCategorie) {
-                                print("Trash action")
+                                showDeleteConfirmation = true
                             }
                             .padding(.bottom, 20)
                             
@@ -85,7 +86,6 @@ struct StrongDetailView: View {
 
                 ScoreChartView(scores: strong.scores, dates: strong.dates, couleurCategorie: strong.couleurCategorie)
 
-
             }
         }
         .navigationBarBackButtonHidden(true)
@@ -97,9 +97,31 @@ struct StrongDetailView: View {
                 dismissButton: .default(Text("D'accord"))
             )
         }
+       
+        .alert(isPresented: $showDeleteConfirmation) {
+            Alert(
+                title: Text("Supprimer \(strong.nom) ?"),
+                message: Text("Cette action est irréversible 😱"),
+                primaryButton: .destructive(Text("Supprimer")) {
+                    deleteMovement()
+                },
+                secondaryButton: .cancel(Text("Annuler"))
+            )
+        }
     }
+    
+    func deleteMovement() {
+          modelContext.delete(strong)
+          do {
+              try modelContext.save()
+          } catch {
+              print("Erreur lors de la suppression : \(error.localizedDescription)")
+          }
+          dismiss()
+      }
 
-    // Fonction pour ajouter un nouveau score
+
+    
     func addNewScore() {
         guard let score = Double(newScore), score > 0 else { return }
 
@@ -121,7 +143,6 @@ struct StrongDetailView: View {
     }
 
 
-    // Formater la date pour le graphique
     func formatDate(_ date: Date) -> String {
         let formatter = DateFormatter()
         formatter.dateStyle = .short
