@@ -13,6 +13,7 @@ struct StrongDetailView: View {
     @State private var newScore: String = ""
     @State private var showAlert: Bool = false
     @State private var showDeleteConfirmation: Bool = false
+    @State private var showCalculatorModal: Bool = false
     @State private var showHistoryModal: Bool = false // State for showing modal
     @Environment(\.modelContext) private var modelContext
 
@@ -44,8 +45,8 @@ struct StrongDetailView: View {
                             }
                             .padding(.bottom, 20)
                             
-                            BtnActionView(iconSF: "speedometer", color: strong.couleurCategorie, colorPrimary: .black) {
-                                print("Speedometer action")
+                            BtnActionView(iconSF: "chart.bar.fill", color: strong.couleurCategorie, colorPrimary: .black) {
+                                showCalculatorModal = true
                             }
                         }
                         .padding(.trailing, 20)
@@ -89,6 +90,9 @@ struct StrongDetailView: View {
         }
         .navigationBarBackButtonHidden(true)
         .ignoresSafeArea(edges: .top)
+        .sheet(isPresented: $showCalculatorModal) {
+            ModalCalculatorView(pr: strong.scores.max() ?? 0.0, color: strong.couleurCategorie, couleurCategorie: strong.couleurCategorie)
+        }
         .alert(isPresented: $showAlert) {
             Alert(
                 title: Text("Pas si vite !"),
