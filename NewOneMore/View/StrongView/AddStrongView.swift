@@ -43,9 +43,9 @@ struct AddItemView: View {
 //                        .padding(.top, 25)
                 }
                 HStack(alignment: .top, spacing: 65){
-                    ButtonCategorieView(selectedCategory: $selectedCategory, category: nil)
-                    ButtonCategorieView(selectedCategory: $selectedCategory, category: .halterophilie)
-                    ButtonCategorieView(selectedCategory: $selectedCategory, category: .musculation)
+                    BtnCategorieView(selectedCategory: $selectedCategory, category: nil)
+                    BtnCategorieView(selectedCategory: $selectedCategory, category: .halterophilie)
+                    BtnCategorieView(selectedCategory: $selectedCategory, category: .musculation)
                 }
                 .padding(.horizontal)
                 
@@ -79,31 +79,14 @@ struct AddItemView: View {
                 Spacer()
             }
             
-            // Bouton flottant en bas de l'écran
+            
             if let selectedItem = selectedItem {
                 VStack {
-                    Spacer() // Pousse le bouton en bas
-                    Button {
-                        ajouterItem()
-                    } label: {
-                        ZStack{
-                            Rectangle()
-                                .frame(width: 300, height: 50)
-                                .cornerRadius(12)
-                                .foregroundColor(.white)
-                            HStack(alignment: .firstTextBaseline, spacing: 20){
-                                Text("Ajouter \(selectedItem.nom)")
-                                    .font(.headline)
-                                    .foregroundColor(.black)
-                                Image(systemName: "plus.circle.fill")
-                                    .foregroundColor(.black)
-                            }
-                        }
-                    }
-                    .transition(.move(edge: .bottom).combined(with: .opacity)) // Transition fluide
+                    Spacer()
+                    BtnPrimaryView(label: " Ajouter \(selectedItem.nom)", action: ajouterItem, color: .white, colorSecondary: .black, icon: "plus.circle.fill")
                     
                 }
-                .padding(.bottom, 20) // Espace sous le bouton
+                .padding(.bottom, 20)
             }
         }
         .navigationBarItems(leading: Button("Annuler") {
@@ -111,7 +94,7 @@ struct AddItemView: View {
         })
     }
     
-    // Fonction qui retourne la couleur associée à la catégorie
+    
     func colorForCategory(_ category: Categories) -> Color {
         switch category {
         case .halterophilie:

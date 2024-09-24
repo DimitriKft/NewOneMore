@@ -4,7 +4,6 @@
 //
 //  Created by dimitri on 18/09/2024.
 //
-
 import SwiftUI
 import Charts
 
@@ -14,6 +13,7 @@ struct StrongDetailView: View {
     @State private var newScore: String = ""
     @State private var showAlert: Bool = false
     @State private var showDeleteConfirmation: Bool = false
+    @State private var showHistoryModal: Bool = false // State for showing modal
     @Environment(\.modelContext) private var modelContext
 
     var body: some View {
@@ -40,7 +40,7 @@ struct StrongDetailView: View {
                             .padding(.bottom, 20)
                             
                             BtnActionView(iconSF: "clock", color: strong.couleurCategorie) {
-                                print("Clock action")
+                                showHistoryModal = true // Show modal on clock button press
                             }
                             .padding(.bottom, 20)
                             
@@ -85,7 +85,6 @@ struct StrongDetailView: View {
                 FieldAndBtnAddScoreView(newScore: $newScore, strongColor: strong.couleurCategorie, addNewScore: addNewScore)
 
                 ScoreChartView(scores: strong.scores, dates: strong.dates, couleurCategorie: strong.couleurCategorie)
-
             }
         }
         .navigationBarBackButtonHidden(true)
@@ -97,7 +96,6 @@ struct StrongDetailView: View {
                 dismissButton: .default(Text("D'accord"))
             )
         }
-       
         .alert(isPresented: $showDeleteConfirmation) {
             Alert(
                 title: Text("Supprimer \(strong.nom) ?"),
@@ -108,20 +106,21 @@ struct StrongDetailView: View {
                 secondaryButton: .cancel(Text("Annuler"))
             )
         }
+        .sheet(isPresented: $showHistoryModal) {
+            HistoryModalView(scores: strong.scores, dates: strong.dates, couleurCategorie: strong.couleurCategorie)
+        }
     }
-    
+
     func deleteMovement() {
-          modelContext.delete(strong)
-          do {
-              try modelContext.save()
-          } catch {
-              print("Erreur lors de la suppression : \(error.localizedDescription)")
-          }
-          dismiss()
-      }
+        modelContext.delete(strong)
+        do {
+            try modelContext.save()
+        } catch {
+            print("Erreur lors de la suppression : \(error.localizedDescription)")
+        }
+        dismiss()
+    }
 
-
-    
     func addNewScore() {
         guard let score = Double(newScore), score > 0 else { return }
 
@@ -130,7 +129,7 @@ struct StrongDetailView: View {
         } else {
             let currentDate = Date()
             strong.addScore(score, date: currentDate, categorie: .halterophilie)
-            
+
             do {
                 modelContext.insert(strong)
                 try modelContext.save()
@@ -142,17 +141,16 @@ struct StrongDetailView: View {
         }
     }
 
-
     func formatDate(_ date: Date) -> String {
         let formatter = DateFormatter()
         formatter.dateStyle = .short
         return formatter.string(from: date)
     }
 }
+
 let now = Date()
 let oneDay: TimeInterval = 60 * 60 * 24
 
 #Preview{
     StrongDetailView(strong: Strong(nom: "Clean", subtitle: "L’épaulé consiste à soulever une barre du sol jusqu’aux épaules en un mouvement explosif, sollicitant principalement les jambes et les bras.", image: "Clean", descriptionName: "L'un des mouvements de base du powerlifting, qui consiste à soulever une barre posée au sol.", scores: [90, 80, 70, 99, 105, 112], dates: [now, now - oneDay, now - 2 * oneDay, now - 3 * oneDay, now - 4 * oneDay, now - 5 * oneDay], categories: [.halterophilie]))
 }
-

@@ -8,7 +8,7 @@
 import SwiftUI
 
 
-struct ButtonCategorieView: View {
+struct BtnCategorieView: View {
     @Binding var selectedCategory: Categories? // Permet de passer une catégorie optionnelle
     var category: Categories? // Catégorie optionnelle, `nil` signifie "Toutes"
     
@@ -57,5 +57,5 @@ struct ButtonCategorieView: View {
 
 
 #Preview {
-    ButtonCategorieView(selectedCategory: .constant(.halterophilie), category: .halterophilie)
+    BtnCategorieView(selectedCategory: .constant(.halterophilie), category: .halterophilie)
 }
