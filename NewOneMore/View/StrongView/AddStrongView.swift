@@ -15,9 +15,9 @@ struct AddItemView: View {
     var selectedStrongs: [String]
     
     @State private var selectedItem: StrongMove? = nil
-    @State private var availableItems = stringMoovs // Liste dynamique d'items disponibles
-    @State private var selectedCategory: Categories? = nil // Catégorie sélectionnée
-    @State private var searchText: String = "" // Texte de la barre de recherche
+    @State private var availableItems = stringMoovs
+    @State private var selectedCategory: Categories? = nil
+    @State private var searchText: String = ""
     
     let columns = [
         GridItem(.flexible(), spacing: 16),
@@ -26,8 +26,6 @@ struct AddItemView: View {
     
     var body: some View {
         ZStack {
-            
-            // Le contenu principal
             VStack(spacing: 20) {
                 HStack{
                     BtnActionView(iconSF: "arrow.backward", color: .white) {
@@ -36,11 +34,6 @@ struct AddItemView: View {
                     .padding(.top, 25)
                     .padding(.leading, 30)
                     Spacer()
-//                    Text("Sélectionnez un mouvement")
-//                        .font(.title2)
-//                        .fontWeight(.semibold)
-//                        .padding(.leading, 0)
-//                        .padding(.top, 25)
                 }
                 HStack(alignment: .top, spacing: 65){
                     BtnCategorieView(selectedCategory: $selectedCategory, category: nil)
@@ -48,29 +41,25 @@ struct AddItemView: View {
                     BtnCategorieView(selectedCategory: $selectedCategory, category: .musculation)
                 }
                 .padding(.horizontal)
-                
-                // Barre de recherche
                 TextField("Rechercher un mouvement", text: $searchText)
                     .padding(10)
                     .frame(width: 340)
                     .background(Color(.black))
                     .cornerRadius(8)
                     .padding(.horizontal)
-                
-                // Liste des mouvements en grille
                 ScrollView {
                     LazyVGrid(columns: columns, spacing: 16) {
                         ForEach(filteredItems(), id: \.self) { item in
-                            MoovChoiceView(
+                            CardMoveChoiceView(
                                 item: item,
                                 isSelected: selectedItem == item,
                                 onSelect: { selectedItem = item }
                             )
                             .overlay(
                                 RoundedRectangle(cornerRadius: 12)
-                                    .stroke(selectedItem == item ? colorForCategory(item.category) : Color.clear, lineWidth: 2) // Halo autour de l'élément sélectionné
+                                    .stroke(selectedItem == item ? colorForCategory(item.category) : Color.clear, lineWidth: 2)
                             )
-                            .shadow(color: selectedItem == item ? colorForCategory(item.category).opacity(0.2) : Color.clear, radius: 2, x: 0, y: 0) // Ombre douce avec la couleur de la catégorie
+                            .shadow(color: selectedItem == item ? colorForCategory(item.category).opacity(0.2) : Color.clear, radius: 2, x: 0, y: 0)
                         }
                     }
                     .padding()
@@ -106,7 +95,7 @@ struct AddItemView: View {
         }
     }
     
-    // Filtrage des items en fonction de la catégorie et du texte de recherche
+
     func filteredItems() -> [StrongMove] {
         availableItems.filter { item in
             (selectedCategory == nil || item.category == selectedCategory) &&

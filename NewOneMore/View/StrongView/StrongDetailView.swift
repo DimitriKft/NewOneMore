@@ -84,7 +84,7 @@ struct StrongDetailView: View {
 
                 FieldAndBtnAddScoreView(newScore: $newScore, strongColor: strong.couleurCategorie, addNewScore: addNewScore)
 
-                ScoreChartView(scores: strong.scores, dates: strong.dates, couleurCategorie: strong.couleurCategorie)
+                ChartScoreView(scores: strong.scores, dates: strong.dates, couleurCategorie: strong.couleurCategorie)
             }
         }
         .navigationBarBackButtonHidden(true)
@@ -107,7 +107,7 @@ struct StrongDetailView: View {
             )
         }
         .sheet(isPresented: $showHistoryModal) {
-            HistoryModalView(scores: strong.scores, dates: strong.dates, couleurCategorie: strong.couleurCategorie)
+            ModalHistoryView(scores: strong.scores, dates: strong.dates, couleurCategorie: strong.couleurCategorie)
         }
     }
 

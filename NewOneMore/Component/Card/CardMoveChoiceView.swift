@@ -6,7 +6,7 @@
 //
 import SwiftUI
 
-struct MoovChoiceView: View {
+struct CardMoveChoiceView: View {
     let item: StrongMove
     let isSelected: Bool
     let onSelect: () -> Void
@@ -35,7 +35,6 @@ struct MoovChoiceView: View {
     var body: some View {
         VStack {
             ZStack(alignment: .bottomLeading) {
-                // Image avec effet de dégradé et coin arrondi
                 Image(item.imageName)
                     .resizable()
                     .scaledToFill()
@@ -50,8 +49,6 @@ struct MoovChoiceView: View {
                         )
                         .cornerRadius(12)
                     )
-                
-                // Informations sur le mouvement dans un fond semi-transparent
                 VStack(alignment: .leading, spacing: 5) {
                     Text(item.nom)
                         .font(.system(size: 15, weight: .bold))
@@ -71,7 +68,7 @@ struct MoovChoiceView: View {
                 .padding([.leading, .bottom], 8)
             }
             .frame(width: 150, height: 150)
-            .shadow(radius: 4) // Ajouter une ombre générale à la carte pour plus de profondeur
+            .shadow(radius: 4)
         }
         .onTapGesture {
             onSelect()
@@ -81,7 +78,7 @@ struct MoovChoiceView: View {
 }
 
 #Preview {
-    MoovChoiceView(
+    CardMoveChoiceView(
         item: StrongMove(nom: "Hang Power Snatch", subtitle: "Arraché", imageName: "Snatch",  category: .halterophilie),
         isSelected: false,
         onSelect: {

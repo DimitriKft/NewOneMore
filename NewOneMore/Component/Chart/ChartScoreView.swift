@@ -7,7 +7,7 @@
 import SwiftUI
 import Charts
 
-struct ScoreChartView: View {
+struct ChartScoreView: View {
     let scores: [Double]
     let dates: [Date]
     let couleurCategorie: Color
@@ -64,5 +64,5 @@ struct ScoreChartView: View {
 
 
 #Preview {
-    ScoreChartView(scores: [23, 45, 56, 78, 90], dates: [Date(), Date(), Date(), Date(), Date()], couleurCategorie: .blue)
+    ChartScoreView(scores: [23, 45, 56, 78, 90], dates: [Date(), Date(), Date(), Date(), Date()], couleurCategorie: .blue)
 }

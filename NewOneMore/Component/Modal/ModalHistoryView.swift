@@ -8,7 +8,7 @@
 import SwiftUI
 
 
-struct HistoryModalView: View {
+struct ModalHistoryView: View {
     let scores: [Double]
     let dates: [Date]
     let couleurCategorie: Color
@@ -63,5 +63,5 @@ struct HistoryModalView: View {
 
 
 #Preview {
-    HistoryModalView(scores: [23, 45, 56, 78, 90], dates: [Date(), Date(), Date(), Date(), Date()], couleurCategorie: .blue)
+    ModalHistoryView(scores: [23, 45, 56, 78, 90], dates: [Date(), Date(), Date(), Date(), Date()], couleurCategorie: .blue)
 }
