@@ -10,6 +10,7 @@ import SwiftUI
 struct BtnActionView: View {
     var iconSF: String
     var color: Color
+    var colorPrimary: Color
     var action: () -> Void // Closure pour l'action du bouton
 
     var body: some View {
@@ -18,7 +19,7 @@ struct BtnActionView: View {
         }) {
             ZStack {
                 Rectangle()
-                    .fill(Color.black)
+                    .fill(colorPrimary)
                     .frame(width: 50, height: 50)
                     .cornerRadius(8)
                 Image(systemName: iconSF)
@@ -34,7 +35,7 @@ struct BtnActionView: View {
 }
 
 #Preview {
-    BtnActionView(iconSF: "trash", color: .pink) {
+    BtnActionView(iconSF: "trash", color: .pink, colorPrimary: .white) {
         print("Trash button tapped")
     }
 }

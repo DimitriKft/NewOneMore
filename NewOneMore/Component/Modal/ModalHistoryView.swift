@@ -4,52 +4,83 @@
 //
 //  Created by dimitri on 24/09/2024.
 //
-
 import SwiftUI
 
-
 struct ModalHistoryView: View {
+    var name: String
     let scores: [Double]
     let dates: [Date]
     let couleurCategorie: Color
 
-    var body: some View {
-            VStack {
-                Text("Historique de tes RM en \(scores.count > 0 ? "Power-Clean" : "Mouvement")")
-                    .font(.headline)
-                    .foregroundColor(couleurCategorie)
-                    .padding()
+    @Environment(\.dismiss) var dismiss
 
-                List {
-                    ForEach(Array(zip(scores, dates)), id: \.1) { score, date in
+    var body: some View {
+        VStack {
+            HStack {
+                Spacer()
+                BtnActionView(iconSF: "chevron.down.circle.fill", color: couleurCategorie, colorPrimary: .black, action: { dismiss() })
+            }
+            Text("Historique de tes RM en")
+                .font(.title3)
+                .fontWeight(.semibold)
+                .foregroundColor(.secondary)
+            Text("\(name)")
+                .font(.title)
+                .foregroundColor(couleurCategorie)
+                .fontWeight(.black)
+                .fontWidth(.expanded)
+                .padding(.top)
+            
+            ScrollView {
+                VStack {
+                    // Combine scores and dates, then sort by date descending
+                    let sortedData = zip(scores, dates).sorted { $0.1 > $1.1 }
+
+                    ForEach(sortedData, id: \.1) { score, date in
                         HStack {
-                            Text("\(String(format: "%.2f", score)) Kg")
-                                .foregroundColor(score == scores.max() ? .green : .primary)
-                                .fontWeight(score == scores.max() ? .bold : .regular)
+                            if score == scores.max() {
+                                // Display max score in green with a star icon
+                                Text("\(String(format: "%.2f", score)) Kg")
+                                    .foregroundColor(.green)
+                                    .fontWeight(.bold)
+
+                                Image(systemName: "star.fill")
+                                    .foregroundColor(.yellow)
+                                    .padding(.leading, 5)
+                            } else {
+                                // Normal score display
+                                Text("\(String(format: "%.2f", score)) Kg")
+                                    .foregroundColor(.primary)
+                                    .fontWeight(.regular)
+                            }
 
                             Spacer()
 
                             Text(formatDate(date))
                                 .foregroundColor(.secondary)
                         }
+                        .padding(.leading, 20)
+                        .padding(.trailing, 20)
+
+                        Rectangle()
+                            .frame(height: 3)
+                            .foregroundStyle(couleurCategorie)
+                            .opacity(0.4)
+                            .padding()
                     }
                 }
-
-                Button(action: {
-                    dismiss()
-                }) {
-                    Text("Retour")
-                        .fontWeight(.bold)
-                        .foregroundColor(.white)
-                        .frame(maxWidth: .infinity)
-                        .padding()
-                        .background(Color.gray)
-                        .cornerRadius(10)
-                        .padding(.bottom, 20)
-                }
             }
-            .padding()
-    
+            .padding(.top, 30)
+
+            BtnPrimaryView(
+                label: "Retour",
+                action: { dismiss() },
+                color: .secondary,
+                colorSecondary: .white,
+                icon: "arrow.uturn.left"
+            )
+        }
+        .padding(20)
     }
 
     private func formatDate(_ date: Date) -> String {
@@ -57,11 +88,8 @@ struct ModalHistoryView: View {
         formatter.dateStyle = .short
         return formatter.string(from: date)
     }
-
-    @Environment(\.dismiss) var dismiss
 }
 
-
 #Preview {
-    ModalHistoryView(scores: [23, 45, 56, 78, 90], dates: [Date(), Date(), Date(), Date(), Date()], couleurCategorie: .blue)
+    ModalHistoryView(name: "Clean", scores: [23, 45, 56, 78, 90], dates: [Date(), Date(), Date(), Date(), Date()], couleurCategorie: .blue)
 }

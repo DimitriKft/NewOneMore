@@ -73,7 +73,6 @@ struct CardMoveChoiceView: View {
         .onTapGesture {
             onSelect()
         }
-
     }
 }
 

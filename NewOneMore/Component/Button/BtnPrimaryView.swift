@@ -22,13 +22,13 @@ struct BtnPrimaryView: View {
                 Rectangle()
                     .frame(width: 300, height: 50)
                     .cornerRadius(12)
-                    .foregroundColor(.white)
+                    .foregroundColor(color)
                 HStack(alignment: .firstTextBaseline, spacing: 20){
-                    Text("\(label)")
-                        .font(.headline)
-                        .foregroundColor(colorSecondary)
                     Image(systemName: icon)
                         .foregroundColor(colorSecondary)
+                    Text("\(label)")
+                        .font(.headline)
+                        .foregroundColor(colorSecondary)   
                 }
             }
         }

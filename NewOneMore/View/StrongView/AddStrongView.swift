@@ -28,7 +28,7 @@ struct AddItemView: View {
         ZStack {
             VStack(spacing: 20) {
                 HStack{
-                    BtnActionView(iconSF: "arrow.backward", color: .white) {
+                    BtnActionView(iconSF: "arrow.backward", color: .white, colorPrimary: .black) {
                         dismiss()
                     }
                     .padding(.top, 25)
