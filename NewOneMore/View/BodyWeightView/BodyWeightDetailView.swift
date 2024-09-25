@@ -12,7 +12,7 @@ struct BodyWeightDetailView: View {
     let bodyWeight: BodyWeight
     @Environment(\.dismiss) var dismiss
     @State private var newScore: String = ""
-    @State private var showAlert: Bool = false
+    @State private var showwAlert: Bool = false
     @State private var showDeleteConfirmation: Bool = false
     @State private var showCalculatorModal: Bool = false
     @State private var showHistoryModal: Bool = false // State for showing modal
@@ -23,6 +23,7 @@ struct BodyWeightDetailView: View {
             VStack {
                 // Image et informations de base
                 ZStack {
+                    
                     Image(bodyWeight.image)
                         .resizable()
                         .aspectRatio(contentMode: .fill)
@@ -89,33 +90,46 @@ struct BodyWeightDetailView: View {
                 BodyWeightChartScoreView(scores: bodyWeight.scores, dates: bodyWeight.dates, couleurCategorie: bodyWeight.couleurCategorie)
             }
         }
+       
+
         .navigationBarBackButtonHidden(true)
         .ignoresSafeArea(edges: .top)
         .sheet(isPresented: $showCalculatorModal) {
             ModalCalculatorView(pr: Double(bodyWeight.scores.max() ?? 0), color: bodyWeight.couleurCategorie, couleurCategorie: bodyWeight.couleurCategorie)
         }
-        .alert(isPresented: $showAlert) {
-            Alert(
-                title: Text("Pas si vite !"),
-                message: Text("Là, c'est ton maximum pour ce mouvement 💪"),
-                dismissButton: .default(Text("D'accord"))
-            )
+        .alert(isPresented: Binding(
+            get: {
+                showwAlert || showDeleteConfirmation
+            },
+            set: { newValue in
+                showwAlert = newValue
+                showDeleteConfirmation = newValue
+            }
+        )) {
+            if showwAlert {
+                return Alert(
+                    title: Text("Pas si vite !"),
+                    message: Text("Le record du monde en pompes d'affiée de Carlton Williams  est de 2682 répétitions ! On modifiera la limite quand tu lui arriveras à la cheville 😅"),
+                    dismissButton: .default(Text("D'accord")) {
+                        showwAlert = false
+                    }
+                )
+            } else if showDeleteConfirmation {
+                return Alert(
+                    title: Text("Supprimer \(bodyWeight.nom) ?"),
+                    message: Text("Cette action est irréversible 😱"),
+                    primaryButton: .destructive(Text("Supprimer")) {
+                        deleteMovement()
+                    },
+                    secondaryButton: .cancel(Text("Annuler")) {
+                        showDeleteConfirmation = false
+                    }
+                )
+            } else {
+                return Alert(title: Text("Erreur"))
+            }
         }
 
-
-        .alert(isPresented: $showDeleteConfirmation) {
-            Alert(
-                title: Text("Supprimer \(bodyWeight.nom) ?"),
-                message: Text("Cette action est irréversible 😱"),
-                primaryButton: .destructive(Text("Supprimer")) {
-                    deleteMovement()
-                },
-                secondaryButton: .cancel(Text("Annuler"))
-            )
-        }
-        .sheet(isPresented: $showHistoryModal) {
-            BodyWeightModalHistoryView(name: bodyWeight.nom, scores: bodyWeight.scores, dates: bodyWeight.dates, couleurCategorie: bodyWeight.couleurCategorie)
-        }
     }
 
     func deleteMovement() {
@@ -128,48 +142,21 @@ struct BodyWeightDetailView: View {
         dismiss()
     }
 
-//    func adddNewScore() {
-//        guard let score = Int(newScore), score > 0 else {
-//            print("Le score entré n'est pas un nombre valide ou est négatif.")
-//            return
-//        }
-//
-//        print("Score entré : \(score)")
-//
-//        if score > 2682 {
-//            print("Le score est supérieur à 2682, l'alerte doit s'afficher.")
-//            DispatchQueue.main.async {
-//                self.showAlert = true
-//            }
-//        } else {
-//            let currentDate = Date()
-//            print("Ajout du score \(score) à la date \(currentDate)")
-//            bodyWeight.addScore(score, date: currentDate, categorie: .streetWorkout)
-//
-//            do {
-//                print("Tentative de sauvegarde du score")
-//                modelContext.insert(bodyWeight)
-//                try modelContext.save()
-//                print("Score sauvegardé avec succès.")
-//            } catch {
-//                print("Erreur lors de la sauvegarde des données : \(error.localizedDescription)")
-//            }
-//
-//            newScore = ""
-//        }
-//    }
+
     
     func addNewScore() {
-        guard let score = Int(newScore), score > 0 else { // Utilisation d'Int au lieu de Double
-            print("Le score entré n'est pas valide.") // Si la conversion échoue
+        guard let score = Int(newScore), score > 0 else {
+            print("Le score entré n'est pas valide.")
             return
         }
 
         print("Score entré : \(score)") // Affiche le score pour vérifier
 
         if score > 2682 {
-            print("Le score est supérieur à 2682, afficher l'alerte.")
-            showAlert = true
+            // Utilisation de DispatchQueue pour forcer la mise à jour sur le thread principal
+            DispatchQueue.main.async {
+                showwAlert = true
+            }
         } else {
             let currentDate = Date()
             bodyWeight.addScore(score, date: currentDate, categorie: .streetWorkout) // Pas besoin de convertir
@@ -182,9 +169,11 @@ struct BodyWeightDetailView: View {
                 print("Erreur lors de la sauvegarde des données : \(error.localizedDescription)")
             }
 
-            newScore = "" // Réinitialiser le champ de score
+            newScore = "" // Réinitialiser après l'ajout
         }
     }
+
+
 
 
 
@@ -200,4 +189,32 @@ struct BodyWeightDetailView: View {
 
 #Preview{
     BodyWeightDetailView(bodyWeight: BodyWeight(nom: "Pull-Up", subtitle: "Les tractions sont un exercice fondamental du street workout.", image: "Pull-Up", descriptionName: "Exercice de base", scores: [10, 12, 15, 18], dates: [now, now - oneDay, now - 2 * oneDay, now - 3 * oneDay], categories: [.streetWorkout]))
+}
+
+
+import SwiftUI
+
+struct TestAlertView: View {
+    @State private var showAlert: Bool = false
+
+    var body: some View {
+        VStack {
+            Button("Test Alert") {
+                showAlert = true
+            }
+            .alert(isPresented: $showAlert) {
+                Alert(
+                    title: Text("Test"),
+                    message: Text("Ceci est un test d'alerte."),
+                    dismissButton: .default(Text("OK"))
+                )
+            }
+        }
+    }
+}
+
+struct TestAlertView_Previews: PreviewProvider {
+    static var previews: some View {
+        TestAlertView()
+    }
 }

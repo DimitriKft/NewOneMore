@@ -68,7 +68,7 @@ struct BodyWeightFieldAddScoreView: View {
 #Preview {
     BodyWeightFieldAddScoreView(
         newScore: .constant(""),
-        strongColor: .yellow,
+        strongColor: .blue,
         addNewScore: {
             print("Score ajouté")
         }
