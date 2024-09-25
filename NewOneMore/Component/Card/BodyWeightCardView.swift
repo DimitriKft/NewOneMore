@@ -70,7 +70,7 @@ struct BodyWeightCardView: View {
                         HStack {
                             Image(systemName: "flame.fill")
                                 .font(.system(size: 10))
-                            Text("\(String(format: "%.1f", scores.max() ?? 0.0)) Kg")
+                            Text("\(scores.max() ?? 0) Rep")
                         }
                     }
                     

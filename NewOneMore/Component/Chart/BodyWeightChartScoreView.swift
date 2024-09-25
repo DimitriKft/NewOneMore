@@ -27,7 +27,7 @@ struct BodyWeightChartScoreView: View {
                 )
                 .foregroundStyle(couleurCategorie)
                 .annotation(position: .top) {
-                    Text("\(String(format: "%.0f", score))Kg")
+                    Text("\(score) Rep")
                         .font(.caption)
                         .fontWeight(.bold)
                         .foregroundColor(.primary)

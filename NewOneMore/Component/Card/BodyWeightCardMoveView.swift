@@ -24,7 +24,7 @@ struct BodyWeightCardMoveView: View {
 
     var iconCategory: String {
         switch item.category {
-        case .streetWorkout: return "figure.pullups"
+        case .streetWorkout: return "figure.play"
         case .gymnastique: return "figure.gymnastics"
         }
     }

@@ -84,7 +84,7 @@ struct BodyWeightDetailView: View {
                     .foregroundStyle(bodyWeight.couleurCategorie)
                     .padding(.top, 40)
 
-                FieldAndBtnAddScoreView(newScore: $newScore, strongColor: bodyWeight.couleurCategorie, addNewScore: addNewScore)
+                BodyWeightFieldAddScoreView(newScore: $newScore, strongColor: bodyWeight.couleurCategorie, addNewScore: addNewScore)
 
                 BodyWeightChartScoreView(scores: bodyWeight.scores, dates: bodyWeight.dates, couleurCategorie: bodyWeight.couleurCategorie)
             }
@@ -101,6 +101,8 @@ struct BodyWeightDetailView: View {
                 dismissButton: .default(Text("D'accord"))
             )
         }
+
+
         .alert(isPresented: $showDeleteConfirmation) {
             Alert(
                 title: Text("Supprimer \(bodyWeight.nom) ?"),
@@ -126,21 +128,65 @@ struct BodyWeightDetailView: View {
         dismiss()
     }
 
+//    func adddNewScore() {
+//        guard let score = Int(newScore), score > 0 else {
+//            print("Le score entré n'est pas un nombre valide ou est négatif.")
+//            return
+//        }
+//
+//        print("Score entré : \(score)")
+//
+//        if score > 2682 {
+//            print("Le score est supérieur à 2682, l'alerte doit s'afficher.")
+//            DispatchQueue.main.async {
+//                self.showAlert = true
+//            }
+//        } else {
+//            let currentDate = Date()
+//            print("Ajout du score \(score) à la date \(currentDate)")
+//            bodyWeight.addScore(score, date: currentDate, categorie: .streetWorkout)
+//
+//            do {
+//                print("Tentative de sauvegarde du score")
+//                modelContext.insert(bodyWeight)
+//                try modelContext.save()
+//                print("Score sauvegardé avec succès.")
+//            } catch {
+//                print("Erreur lors de la sauvegarde des données : \(error.localizedDescription)")
+//            }
+//
+//            newScore = ""
+//        }
+//    }
+    
     func addNewScore() {
-        guard let score = Int(newScore), score > 0 else { return }
-
-        let currentDate = Date()
-        bodyWeight.addScore(score, date: currentDate, categorie: .streetWorkout) // You can change the category as needed
-
-        do {
-            modelContext.insert(bodyWeight)
-            try modelContext.save()
-        } catch {
-            print("Erreur lors de la sauvegarde des données : \(error.localizedDescription)")
+        guard let score = Int(newScore), score > 0 else { // Utilisation d'Int au lieu de Double
+            print("Le score entré n'est pas valide.") // Si la conversion échoue
+            return
         }
 
-        newScore = ""
+        print("Score entré : \(score)") // Affiche le score pour vérifier
+
+        if score > 2682 {
+            print("Le score est supérieur à 2682, afficher l'alerte.")
+            showAlert = true
+        } else {
+            let currentDate = Date()
+            bodyWeight.addScore(score, date: currentDate, categorie: .streetWorkout) // Pas besoin de convertir
+
+            do {
+                modelContext.insert(bodyWeight) // Insérer l'objet dans le contexte
+                try modelContext.save() // Sauvegarder dans le modèle
+                print("Score sauvegardé avec succès.")
+            } catch {
+                print("Erreur lors de la sauvegarde des données : \(error.localizedDescription)")
+            }
+
+            newScore = "" // Réinitialiser le champ de score
+        }
     }
+
+
 
     func formatDate(_ date: Date) -> String {
         let formatter = DateFormatter()

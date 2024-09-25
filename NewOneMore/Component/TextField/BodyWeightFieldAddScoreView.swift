@@ -1,13 +1,13 @@
 //
-//  FieldAndBtnAddScoreView.swift
+//  BodyWeightFieldAddScoreView.swift
 //  NewOneMore
 //
-//  Created by dimitri on 23/09/2024.
+//  Created by dimitri on 25/09/2024.
 //
 
 import SwiftUI
 
-struct FieldAndBtnAddScoreView: View {
+struct BodyWeightFieldAddScoreView: View {
     @Binding var newScore: String
     var strongColor: Color
     var addNewScore: () -> Void
@@ -31,7 +31,7 @@ struct FieldAndBtnAddScoreView: View {
                                         self.newScore = newValue.replacingOccurrences(of: ",", with: ".")
                                     }
                                 ))
-                                .keyboardType(.decimalPad)
+                .keyboardType(.numberPad)
                                 .padding(.leading, 10)
                                 .foregroundColor(.white)
                 if newScore.isEmpty {
@@ -66,7 +66,7 @@ struct FieldAndBtnAddScoreView: View {
 }
 
 #Preview {
-    FieldAndBtnAddScoreView(
+    BodyWeightFieldAddScoreView(
         newScore: .constant(""),
         strongColor: .yellow,
         addNewScore: {
@@ -77,8 +77,3 @@ struct FieldAndBtnAddScoreView: View {
 
 
 
-extension UIApplication {
-    func endEditing() {
-        sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
-    }
-}

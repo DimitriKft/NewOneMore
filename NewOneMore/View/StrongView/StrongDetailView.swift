@@ -83,7 +83,7 @@ struct StrongDetailView: View {
                     .foregroundStyle(strong.couleurCategorie)
                     .padding(.top, 40)
 
-                FieldAndBtnAddScoreView(newScore: $newScore, strongColor: strong.couleurCategorie, addNewScore: addNewScore)
+                StrongFieldAddScoreView(newScore: $newScore, strongColor: strong.couleurCategorie, addNewScore: addNewScore)
 
                 StrongChartScoreView(scores: strong.scores, dates: strong.dates, couleurCategorie: strong.couleurCategorie)
             }
@@ -93,13 +93,7 @@ struct StrongDetailView: View {
         .sheet(isPresented: $showCalculatorModal) {
             ModalCalculatorView(pr: strong.scores.max() ?? 0.0, color: strong.couleurCategorie, couleurCategorie: strong.couleurCategorie)
         }
-        .alert(isPresented: $showAlert) {
-            Alert(
-                title: Text("Pas si vite !"),
-                message: Text("Le record du monde en deadlift de Hafþór Júlíus Björnsson est de 501 Kg ! On modifira la limite quand tu lui arriveras à la cheville 😅"),
-                dismissButton: .default(Text("D'accord"))
-            )
-        }
+ 
         .alert(isPresented: $showDeleteConfirmation) {
             Alert(
                 title: Text("Supprimer \(strong.nom) ?"),
@@ -110,6 +104,15 @@ struct StrongDetailView: View {
                 secondaryButton: .cancel(Text("Annuler"))
             )
         }
+        .alert(isPresented: $showAlert) {
+            Alert(
+                title: Text("Pas si vite !"),
+                message: Text("Le record du monde en deadlift de Hafþór Júlíus Björnsson est de 501 Kg ! On modifiera la limite quand tu lui arriveras à la cheville 😅"),
+                dismissButton: .default(Text("D'accord"))
+            )
+        }
+
+
         .sheet(isPresented: $showHistoryModal) {
             StrongModalHistoryView(name: strong.nom, scores: strong.scores, dates: strong.dates, couleurCategorie: strong.couleurCategorie)
         }
@@ -126,9 +129,15 @@ struct StrongDetailView: View {
     }
 
     func addNewScore() {
-        guard let score = Double(newScore), score > 0 else { return }
+        guard let score = Double(newScore), score > 0 else {
+            print("Le score entré n'est pas valide.")
+            return
+        }
+
+        print("Score entré : \(score)") // Vérifiez si le score est correct
 
         if score > 501 {
+            print("Le score est supérieur à 501, afficher l'alerte.")
             showAlert = true
         } else {
             let currentDate = Date()
@@ -144,6 +153,7 @@ struct StrongDetailView: View {
             newScore = ""
         }
     }
+
 
     func formatDate(_ date: Date) -> String {
         let formatter = DateFormatter()
