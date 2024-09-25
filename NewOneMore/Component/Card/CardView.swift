@@ -104,14 +104,19 @@ struct CardView: View {
     private func daysSinceLastEntry() -> String {
         if let lastDate = dates.last {
             let calendar = Calendar.current
-            let components = calendar.dateComponents([.day], from: lastDate, to: Date())
+            let today = calendar.startOfDay(for: Date())
+            let lastPRDate = calendar.startOfDay(for: lastDate) // Normaliser la date à minuit
+            let components = calendar.dateComponents([.day], from: lastPRDate, to: today)
+            
             if let days = components.day {
                 return "\(days) J"
             }
         }
         return "N/A"
     }
+
 }
+
 
 #Preview {
     CardView(colorCategory: .blue, image: "Clean", nom: "Squat", scores: [2.3, 80.5, 90.1], dates: [Date(), Date().addingTimeInterval(-86400), Date().addingTimeInterval(-172800)])
