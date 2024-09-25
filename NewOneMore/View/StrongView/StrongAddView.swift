@@ -8,7 +8,7 @@
 import SwiftUI
 import SwiftData
 
-struct AddItemView: View {
+struct StrongAddView: View {
     @Environment(\.modelContext) private var modelContext
     @Environment(\.dismiss) private var dismiss
     
@@ -50,7 +50,7 @@ struct AddItemView: View {
                 ScrollView {
                     LazyVGrid(columns: columns, spacing: 16) {
                         ForEach(filteredItems(), id: \.self) { item in
-                            CardMoveChoiceView(
+                            CardMoveStrongView(
                                 item: item,
                                 isSelected: selectedItem == item,
                                 onSelect: { selectedItem = item }
@@ -126,6 +126,6 @@ struct AddItemView: View {
 }
 
 #Preview {
-    AddItemView(selectedStrongs: ["empty!"])
+    StrongAddView(selectedStrongs: ["empty!"])
         .modelContainer(for: Strong.self)
 }

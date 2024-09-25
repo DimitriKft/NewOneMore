@@ -6,7 +6,7 @@
 //
 import SwiftUI
 
-struct CardMoveChoiceView: View {
+struct CardMoveStrongView: View {
     let item: StrongMove
     let isSelected: Bool
     let onSelect: () -> Void
@@ -74,7 +74,7 @@ struct CardMoveChoiceView: View {
 }
 
 #Preview {
-    CardMoveChoiceView(
+    CardMoveStrongView(
         item: StrongMove(nom: "Hang Power Snatch", subtitle: "Arraché", imageName: "Snatch",  category: .halterophilie),
         isSelected: false,
         onSelect: {

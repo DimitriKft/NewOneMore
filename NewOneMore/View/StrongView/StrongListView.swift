@@ -101,7 +101,7 @@ struct StrongListView: View {
                 }
             })
             .sheet(isPresented: $showingAddItemView) {
-                AddItemView(selectedStrongs: strongs.map { $0.nom })
+                StrongAddView(selectedStrongs: strongs.map { $0.nom })
             }
             .actionSheet(isPresented: $showingFilterSheet) {
                 ActionSheet(
