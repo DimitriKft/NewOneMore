@@ -6,7 +6,7 @@
 //
 import SwiftUI
 
-struct ModalHistoryView: View {
+struct StrongModalHistoryView: View {
     var name: String
     let scores: [Double]
     let dates: [Date]
@@ -18,7 +18,7 @@ struct ModalHistoryView: View {
         VStack {
             HStack {
                 Spacer()
-                BtnActionView(iconSF: "chevron.down.circle.fill", color: couleurCategorie, colorPrimary: .black, action: { dismiss() })
+                ActionBtnView(iconSF: "chevron.down.circle.fill", color: couleurCategorie, colorPrimary: .black, action: { dismiss() })
             }
             Text("Historique de tes RM en")
                 .font(.title3)
@@ -72,7 +72,7 @@ struct ModalHistoryView: View {
             }
             .padding(.top, 30)
 
-            BtnPrimaryView(
+            PrimaryBtnView(
                 label: "Retour",
                 action: { dismiss() },
                 color: .secondary,
@@ -91,5 +91,5 @@ struct ModalHistoryView: View {
 }
 
 #Preview {
-    ModalHistoryView(name: "Clean", scores: [23, 45, 56, 78, 90], dates: [Date(), Date(), Date(), Date(), Date()], couleurCategorie: .blue)
+    StrongModalHistoryView(name: "Clean", scores: [23, 45, 56, 78, 90], dates: [Date(), Date(), Date(), Date(), Date()], couleurCategorie: .blue)
 }

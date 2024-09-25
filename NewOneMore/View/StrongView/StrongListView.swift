@@ -49,7 +49,7 @@ struct StrongListView: View {
                         LazyVGrid(columns: columns, spacing: 16) {
                             ForEach(filteredStrongs, id: \.nom) { strong in
                                 NavigationLink(destination: StrongDetailView(strong: strong)) {
-                                    CardView(colorCategory: strong.couleurCategorie, image: strong.image, nom: strong.nom, scores: strong.scores, dates: strong.dates)
+                                    StrongCardView(colorCategory: strong.couleurCategorie, image: strong.image, nom: strong.nom, scores: strong.scores, dates: strong.dates)
                                 }
                             }
                         }

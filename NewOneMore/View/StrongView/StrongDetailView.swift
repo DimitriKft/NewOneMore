@@ -28,24 +28,24 @@ struct StrongDetailView: View {
                         .frame(width: UIScreen.main.bounds.width, height: 300)
                         .clipped()
                     HStack {
-                        BtnActionView(iconSF: "arrow.left", color: strong.couleurCategorie, colorPrimary: .black) {
+                        ActionBtnView(iconSF: "arrow.left", color: strong.couleurCategorie, colorPrimary: .black) {
                             dismiss()
                         }
                         .padding()
                         .padding(.bottom, 150)
                         Spacer()
                         VStack {
-                            BtnActionView(iconSF: "trash", color: strong.couleurCategorie, colorPrimary: .black) {
+                            ActionBtnView(iconSF: "trash", color: strong.couleurCategorie, colorPrimary: .black) {
                                 showDeleteConfirmation = true
                             }
                             .padding(.bottom, 20)
                             
-                            BtnActionView(iconSF: "clock", color: strong.couleurCategorie, colorPrimary: .black) {
+                            ActionBtnView(iconSF: "clock", color: strong.couleurCategorie, colorPrimary: .black) {
                                 showHistoryModal = true // Show modal on clock button press
                             }
                             .padding(.bottom, 20)
                             
-                            BtnActionView(iconSF: "chart.bar.fill", color: strong.couleurCategorie, colorPrimary: .black) {
+                            ActionBtnView(iconSF: "chart.bar.fill", color: strong.couleurCategorie, colorPrimary: .black) {
                                 showCalculatorModal = true
                             }
                         }
@@ -85,7 +85,7 @@ struct StrongDetailView: View {
 
                 FieldAndBtnAddScoreView(newScore: $newScore, strongColor: strong.couleurCategorie, addNewScore: addNewScore)
 
-                ChartScoreView(scores: strong.scores, dates: strong.dates, couleurCategorie: strong.couleurCategorie)
+                StrongChartScoreView(scores: strong.scores, dates: strong.dates, couleurCategorie: strong.couleurCategorie)
             }
         }
         .navigationBarBackButtonHidden(true)
@@ -111,7 +111,7 @@ struct StrongDetailView: View {
             )
         }
         .sheet(isPresented: $showHistoryModal) {
-            ModalHistoryView(name: strong.nom, scores: strong.scores, dates: strong.dates, couleurCategorie: strong.couleurCategorie)
+            StrongModalHistoryView(name: strong.nom, scores: strong.scores, dates: strong.dates, couleurCategorie: strong.couleurCategorie)
         }
     }
 

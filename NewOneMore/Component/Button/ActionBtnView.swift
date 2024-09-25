@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct BtnActionView: View {
+struct ActionBtnView: View {
     var iconSF: String
     var color: Color
     var colorPrimary: Color
@@ -35,7 +35,7 @@ struct BtnActionView: View {
 }
 
 #Preview {
-    BtnActionView(iconSF: "trash", color: .pink, colorPrimary: .white) {
+    ActionBtnView(iconSF: "trash", color: .pink, colorPrimary: .white) {
         print("Trash button tapped")
     }
 }

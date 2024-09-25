@@ -8,7 +8,7 @@
 import SwiftUI
 
 
-struct BtnPrimaryView: View {
+struct PrimaryBtnView: View {
     var label: String
     var action: () -> Void
     var color: Color
@@ -37,7 +37,7 @@ struct BtnPrimaryView: View {
 }
 
 #Preview {
-    BtnPrimaryView(label: "Label", action: {
+    PrimaryBtnView(label: "Label", action: {
         print("Test btn primary")
     }, color: .yellow, colorSecondary: .black, icon: "ant.fill")
 }

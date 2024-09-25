@@ -1,14 +1,17 @@
 //
-//  ScoreChartView.swift
+//  BodyWeightChartScoreView.swift
 //  NewOneMore
 //
-//  Created by dimitri on 24/09/2024.
+//  Created by dimitri on 25/09/2024.
 //
+
+
+
 import SwiftUI
 import Charts
 
-struct ChartScoreView: View {
-    let scores: [Double]
+struct BodyWeightChartScoreView: View {
+    let scores: [Int]
     let dates: [Date]
     let couleurCategorie: Color
 
@@ -24,7 +27,7 @@ struct ChartScoreView: View {
                 )
                 .foregroundStyle(couleurCategorie)
                 .annotation(position: .top) {
-                    Text("\(String(format: "%.1f", score))Kg")
+                    Text("\(String(format: "%.0f", score))Kg")
                         .font(.caption)
                         .fontWeight(.bold)
                         .foregroundColor(.primary)
@@ -64,5 +67,6 @@ struct ChartScoreView: View {
 
 
 #Preview {
-    ChartScoreView(scores: [23, 45, 56, 78, 90], dates: [Date(), Date(), Date(), Date(), Date()], couleurCategorie: .blue)
+    BodyWeightChartScoreView(scores: [23, 45, 56, 78, 90], dates: [Date(), Date(), Date(), Date(), Date()], couleurCategorie: .blue)
 }
+

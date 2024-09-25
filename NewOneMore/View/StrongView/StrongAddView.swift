@@ -28,7 +28,7 @@ struct StrongAddView: View {
         ZStack {
             VStack(spacing: 20) {
                 HStack{
-                    BtnActionView(iconSF: "arrow.backward", color: .white, colorPrimary: .black) {
+                    ActionBtnView(iconSF: "arrow.backward", color: .white, colorPrimary: .black) {
                         dismiss()
                     }
                     .padding(.top, 25)
@@ -36,9 +36,9 @@ struct StrongAddView: View {
                     Spacer()
                 }
                 HStack(alignment: .top, spacing: 65){
-                    BtnCategorieView(selectedCategory: $selectedCategory, category: nil)
-                    BtnCategorieView(selectedCategory: $selectedCategory, category: .halterophilie)
-                    BtnCategorieView(selectedCategory: $selectedCategory, category: .musculation)
+                    StrongBtnCategorieView(selectedCategory: $selectedCategory, category: nil)
+                    StrongBtnCategorieView(selectedCategory: $selectedCategory, category: .halterophilie)
+                    StrongBtnCategorieView(selectedCategory: $selectedCategory, category: .musculation)
                 }
                 .padding(.horizontal)
                 TextField("Rechercher un mouvement", text: $searchText)
@@ -50,7 +50,7 @@ struct StrongAddView: View {
                 ScrollView {
                     LazyVGrid(columns: columns, spacing: 16) {
                         ForEach(filteredItems(), id: \.self) { item in
-                            CardMoveStrongView(
+                            StrongCardMoveView(
                                 item: item,
                                 isSelected: selectedItem == item,
                                 onSelect: { selectedItem = item }
@@ -72,7 +72,7 @@ struct StrongAddView: View {
             if let selectedItem = selectedItem {
                 VStack {
                     Spacer()
-                    BtnPrimaryView(label: " Ajouter \(selectedItem.nom)", action: ajouterItem, color: .white, colorSecondary: .black, icon: "plus.circle.fill")
+                    PrimaryBtnView(label: " Ajouter \(selectedItem.nom)", action: ajouterItem, color: .white, colorSecondary: .black, icon: "plus.circle.fill")
                     
                 }
                 .padding(.bottom, 20)

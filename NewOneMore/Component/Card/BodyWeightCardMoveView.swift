@@ -1,34 +1,34 @@
 //
-//  MoovChoiceView.swift
+//  CardMoveBodyWeightView.swift
 //  NewOneMore
 //
-//  Created by dimitri on 19/09/2024.
+//  Created by dimitri on 25/09/2024.
 //
+
 import SwiftUI
 
-struct CardMoveStrongView: View {
-    let item: StrongMove
+struct BodyWeightCardMoveView: View {
+    let item: BodyWeightMove
     let isSelected: Bool
     let onSelect: () -> Void
     
     // Fonction pour déterminer la couleur en fonction de la catégorie
     var categoryColor: Color {
         switch item.category {
-        case .halterophilie:
-            return .yellow
-        case .musculation:
-            return .red
+        case .streetWorkout:
+            return .teal
+        case .gymnastique:
+            return .purple
         }
     }
+
     var iconCategory: String {
         switch item.category {
-        case .halterophilie: return "figure.strengthtraining.traditional"
-        case .musculation: return "figure.strengthtraining.functional"
+        case .streetWorkout: return "figure.pullups"
+        case .gymnastique: return "figure.gymnastics"
         }
     }
-    
-  
-    
+
     var body: some View {
         VStack {
             ZStack(alignment: .bottomLeading) {
@@ -50,7 +50,7 @@ struct CardMoveStrongView: View {
                     Text(item.nom)
                         .font(.system(size: 15, weight: .bold))
                         .foregroundColor(.white)
-                        .shadow(radius: 2) 
+                        .shadow(radius: 2)
 
                     HStack(spacing: 4) {
                         Image(systemName: iconCategory)
@@ -74,11 +74,12 @@ struct CardMoveStrongView: View {
 }
 
 #Preview {
-    CardMoveStrongView(
-        item: StrongMove(nom: "Hang Power Snatch", subtitle: "Arraché", imageName: "Snatch",  category: .halterophilie),
+    BodyWeightCardMoveView(
+        item: BodyWeightMove(nom: "Pull-Up", subtitle: "Les tractions sont un exercice fondamental du street workout.", imageName: "Pull-Up", category: .streetWorkout),
         isSelected: false,
         onSelect: {
-            print("Snatch selected")
+            print("Pull-Up selected")
         }
     )
 }
+

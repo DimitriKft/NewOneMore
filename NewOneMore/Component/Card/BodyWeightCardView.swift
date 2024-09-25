@@ -1,17 +1,17 @@
 //
-//  CardView.swift
+//  BodyWeightCardView.swift
 //  NewOneMore
 //
-//  Created by dimitri on 19/09/2024.
+//  Created by dimitri on 25/09/2024.
 //
 
 import SwiftUI
 
-struct CardView: View {
+struct BodyWeightCardView: View {
     var colorCategory: Color
     var image: String
     var nom: String
-    var scores: [Double]
+    var scores: [Int]
     var dates: [Date]
     
     var body: some View {
@@ -119,40 +119,6 @@ struct CardView: View {
 
 
 #Preview {
-    CardView(colorCategory: .blue, image: "Clean", nom: "Squat", scores: [2.3, 80.5, 90.1], dates: [Date(), Date().addingTimeInterval(-86400), Date().addingTimeInterval(-172800)])
+    BodyWeightCardView(colorCategory: .blue, image: "Clean", nom: "Squat", scores: [2, 80, 90], dates: [Date(), Date().addingTimeInterval(-86400), Date().addingTimeInterval(-172800)])
 }
-
-
-
-struct RoundedCornerShape: Shape {
-    var corners: UIRectCorner
-    var radius: CGFloat
-
-    func path(in rect: CGRect) -> Path {
-        let path = UIBezierPath(roundedRect: rect,
-                                byRoundingCorners: corners,
-                                cornerRadii: CGSize(width: radius, height: radius))
-        return Path(path.cgPath)
-    }
-}
-
-
-struct BlurView: View {
-    var body: some View {
-        VisualEffectBlur(blurStyle: .systemUltraThinMaterial)
-    }
-}
-
-
-struct VisualEffectBlur: UIViewRepresentable {
-    var blurStyle: UIBlurEffect.Style
-
-    func makeUIView(context: Context) -> UIVisualEffectView {
-        return UIVisualEffectView(effect: UIBlurEffect(style: blurStyle))
-    }
-
-    func updateUIView(_ uiView: UIVisualEffectView, context: Context) {}
-}
-
-
 

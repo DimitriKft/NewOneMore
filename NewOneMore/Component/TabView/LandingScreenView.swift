@@ -14,7 +14,7 @@ struct LandingScreenView: View {
                       .tabItem {
                           Label("Force", systemImage: "figure.strengthtraining.traditional")
                       }
-            Text("Pdc")
+            BodyWeightListView()
                       .tabItem {
                           Label("Pdc", systemImage: "figure.play")
                       }

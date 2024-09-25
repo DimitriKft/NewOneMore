@@ -18,7 +18,7 @@ struct ModalCalculatorView: View {
         VStack {
             HStack {
                 Spacer()
-                BtnActionView(iconSF: "chevron.down.circle.fill", color: couleurCategorie, colorPrimary: .black, action: { dismiss() })
+                ActionBtnView(iconSF: "chevron.down.circle.fill", color: couleurCategorie, colorPrimary: .black, action: { dismiss() })
             }
           
             Text("PR: \(String(format: "%.1f", pr)) Kg")
