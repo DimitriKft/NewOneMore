@@ -44,7 +44,7 @@ struct SimpleBodyWeightDetailView: View {
             showAlert = true
         } else {
             let currentDate = Date()
-            bodyWeight.addScore(score, date: currentDate, categorie: .streetWorkout)
+            bodyWeight.addScore(score, date: currentDate, categorie: .calisthenics)
         }
     }
 }

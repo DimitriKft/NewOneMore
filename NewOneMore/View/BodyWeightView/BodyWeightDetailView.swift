@@ -159,7 +159,7 @@ struct BodyWeightDetailView: View {
             }
         } else {
             let currentDate = Date()
-            bodyWeight.addScore(score, date: currentDate, categorie: .streetWorkout) // Pas besoin de convertir
+            bodyWeight.addScore(score, date: currentDate, categorie: .calisthenics) // Pas besoin de convertir
 
             do {
                 modelContext.insert(bodyWeight) // Insérer l'objet dans le contexte
@@ -188,33 +188,9 @@ struct BodyWeightDetailView: View {
 //let oneDay: TimeInterval = 60 * 60 * 24
 
 #Preview{
-    BodyWeightDetailView(bodyWeight: BodyWeight(nom: "Pull-Up", subtitle: "Les tractions sont un exercice fondamental du street workout.", image: "Pull-Up", descriptionName: "Exercice de base", scores: [10, 12, 15, 18], dates: [now, now - oneDay, now - 2 * oneDay, now - 3 * oneDay], categories: [.streetWorkout]))
+    BodyWeightDetailView(bodyWeight: BodyWeight(nom: "Pull-Up", subtitle: "Les tractions sont un exercice fondamental du street workout.", image: "Pull-Up", descriptionName: "Exercice de base", scores: [10, 12, 15, 18], dates: [now, now - oneDay, now - 2 * oneDay, now - 3 * oneDay], categories: [.calisthenics]))
 }
 
 
 import SwiftUI
 
-struct TestAlertView: View {
-    @State private var showAlert: Bool = false
-
-    var body: some View {
-        VStack {
-            Button("Test Alert") {
-                showAlert = true
-            }
-            .alert(isPresented: $showAlert) {
-                Alert(
-                    title: Text("Test"),
-                    message: Text("Ceci est un test d'alerte."),
-                    dismissButton: .default(Text("OK"))
-                )
-            }
-        }
-    }
-}
-
-struct TestAlertView_Previews: PreviewProvider {
-    static var previews: some View {
-        TestAlertView()
-    }
-}

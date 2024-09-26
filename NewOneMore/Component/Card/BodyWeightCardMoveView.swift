@@ -15,8 +15,8 @@ struct BodyWeightCardMoveView: View {
     // Fonction pour déterminer la couleur en fonction de la catégorie
     var categoryColor: Color {
         switch item.category {
-        case .streetWorkout:
-            return .teal
+        case .calisthenics:
+            return .mint
         case .gymnastique:
             return .purple
         }
@@ -24,7 +24,7 @@ struct BodyWeightCardMoveView: View {
 
     var iconCategory: String {
         switch item.category {
-        case .streetWorkout: return "figure.play"
+        case .calisthenics: return "figure.play"
         case .gymnastique: return "figure.gymnastics"
         }
     }
@@ -75,7 +75,7 @@ struct BodyWeightCardMoveView: View {
 
 #Preview {
     BodyWeightCardMoveView(
-        item: BodyWeightMove(nom: "Pull-Up", subtitle: "Les tractions sont un exercice fondamental du street workout.", imageName: "Pull-Up", category: .streetWorkout),
+        item: BodyWeightMove(nom: "Pull-Up", subtitle: "Les tractions sont un exercice fondamental du street workout.", imageName: "Pull-Up", category: .calisthenics),
         isSelected: false,
         onSelect: {
             print("Pull-Up selected")

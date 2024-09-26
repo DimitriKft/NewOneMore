@@ -10,7 +10,7 @@ import SwiftData
 import SwiftUI
 
 enum BodyWeightCategories: String, Codable, CaseIterable {
-    case streetWorkout = "Street Workout"
+    case calisthenics = "Calisthénie"
     case gymnastique = "Gymnastique"
 }
 
@@ -24,7 +24,7 @@ class BodyWeight: ObservableObject {
     @Attribute var dates: [Date]
     @Attribute var categories: [String]
     
-    init(nom: String, subtitle: String, image: String, descriptionName: String, scores: [Int] = [], dates: [Date] = [], categories: [BodyWeightCategories] = [.streetWorkout]) {
+    init(nom: String, subtitle: String, image: String, descriptionName: String, scores: [Int] = [], dates: [Date] = [], categories: [BodyWeightCategories] = [.calisthenics]) {
         self.nom = nom
         self.subtitle = subtitle
         self.image = image
@@ -56,8 +56,8 @@ class BodyWeight: ObservableObject {
         }
         
         switch firstCat {
-        case .streetWorkout:
-            return .teal
+        case .calisthenics:
+            return .mint
         case .gymnastique:
             return .purple
         }

@@ -13,7 +13,7 @@ struct BodyWeightBtnCategorieView: View {
     
     var colorCategory: Color {
         switch category {
-        case .streetWorkout: return .teal
+        case .calisthenics: return .teal
         case .gymnastique: return .purple
         default: return .black
         }
@@ -21,7 +21,7 @@ struct BodyWeightBtnCategorieView: View {
     
     var iconCategory: String {
         switch category {
-        case .streetWorkout: return "figure.play"
+        case .calisthenics: return "figure.play"
         case .gymnastique: return "figure.gymnastics"
         default: return "square.grid.2x2"
         }
@@ -49,5 +49,5 @@ struct BodyWeightBtnCategorieView: View {
 }
 
 #Preview {
-    BodyWeightBtnCategorieView(selectedCategory: .constant(.streetWorkout), category: .streetWorkout)
+    BodyWeightBtnCategorieView(selectedCategory: .constant(.calisthenics), category: .calisthenics)
 }

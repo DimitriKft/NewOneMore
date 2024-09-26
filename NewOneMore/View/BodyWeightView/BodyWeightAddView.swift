@@ -38,7 +38,7 @@ struct BodyWeightAddView: View {
                 }
                 HStack(alignment: .top, spacing: 65) {
                     BodyWeightBtnCategorieView(selectedCategory: $selectedCategory, category: nil)
-                    BodyWeightBtnCategorieView(selectedCategory: $selectedCategory, category: .streetWorkout)
+                    BodyWeightBtnCategorieView(selectedCategory: $selectedCategory, category: .calisthenics)
                     BodyWeightBtnCategorieView(selectedCategory: $selectedCategory, category: .gymnastique)
                 }
                 .padding(.horizontal)
@@ -86,7 +86,7 @@ struct BodyWeightAddView: View {
 
     func colorForCategory(_ category: BodyWeightCategories) -> Color {
         switch category {
-        case .streetWorkout:
+        case .calisthenics:
             return Color.teal
         case .gymnastique:
             return Color.purple
