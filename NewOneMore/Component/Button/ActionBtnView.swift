@@ -28,7 +28,7 @@ struct ActionBtnView: View {
             }
         }
         .overlay(
-            RoundedRectangle(cornerRadius: 5)
+            RoundedRectangle(cornerRadius: 8)
                 .stroke(color, lineWidth: 1)
         )
     }

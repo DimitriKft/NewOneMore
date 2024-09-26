@@ -32,8 +32,8 @@ struct BodyWeightCardView: View {
                 .frame(width: 165, height: 170)
                 
                 VStack {
-                    Text(nom)
-                        .font(.caption)
+                    Text(nom.count > 16 ? "\(nom.prefix(16)).." : nom)
+                        .font(.system(size: 12))
                         .fontWeight(.black)
                         .foregroundColor(.white)
                 }
@@ -119,6 +119,6 @@ struct BodyWeightCardView: View {
 
 
 #Preview {
-    BodyWeightCardView(colorCategory: .blue, image: "Clean", nom: "Squat", scores: [2, 80, 90], dates: [Date(), Date().addingTimeInterval(-86400), Date().addingTimeInterval(-172800)])
+    BodyWeightCardView(colorCategory: .blue, image: "Kipping-Bar-Muscle-Up", nom: "Kipping-Bar-Muscle-Up", scores: [2, 80, 90], dates: [Date(), Date().addingTimeInterval(-86400), Date().addingTimeInterval(-172800)])
 }
 

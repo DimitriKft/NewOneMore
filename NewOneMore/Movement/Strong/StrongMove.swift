@@ -41,18 +41,18 @@ let stringMoovs = [
     StrongMove(nom: "Thruster", subtitle: "Le thruster combine un squat avant et une poussée au-dessus de la tête, sollicitant à la fois les jambes et les épaules.", imageName: "Thruster", category: .halterophilie),
     
     // Musculation
-    StrongMove(nom: "Barbell Curl", subtitle: "Le curl à la barre est un exercice ciblant les biceps en fléchissant les bras tout en tenant une barre.", imageName: "Barbell-Curl", category: .musculation),
-    StrongMove(nom: "Decline Bench Press", subtitle: "Le développé couché décliné cible principalement les parties inférieures des pectoraux avec un banc incliné vers le bas.", imageName: "Decline-Bench-Press", category: .musculation),
-    StrongMove(nom: "Dumbbell Curl", subtitle: "Le curl avec haltères est un exercice pour les biceps réalisé en soulevant des haltères, permettant un mouvement plus libre.", imageName: "Dumbell-Curl", category: .musculation),
-    StrongMove(nom: "Shoulder Press", subtitle: "Cet exercice consiste à lever des haltères ou une barre au-dessus de la tête pour travailler les muscles des épaules.", imageName: "Shoulder-Press", category: .musculation),
-    StrongMove(nom: "Front Raise", subtitle: "L’élévation frontale renforce les épaules en soulevant des haltères devant soi, bras tendus.", imageName: "Front-Raise", category: .musculation),
-    StrongMove(nom: "Hammer Curl", subtitle: "Le curl marteau cible les biceps et avant-bras en tenant les haltères en position neutre.", imageName: "Hammer-Curl", category: .musculation),
-    StrongMove(nom: "Incline Bench Press", subtitle: "Le développé incliné met l’accent sur la partie supérieure des pectoraux avec un banc incliné vers le haut.", imageName: "Incline-Bench-Press", category: .musculation),
-    StrongMove(nom: "Lateral Raise", subtitle: "L’élévation latérale consiste à lever des haltères sur les côtés, pour cibler les deltoïdes.", imageName: "Lateral-Raise", category: .musculation),
-    StrongMove(nom: "Leg Press", subtitle: "La presse à jambes est un exercice de musculation des cuisses où l’on pousse une charge avec les jambes.", imageName: "Leg-Press", category: .musculation),
-    StrongMove(nom: "Military Press", subtitle: "Le développé militaire est un exercice pour les épaules, réalisé en poussant une barre au-dessus de la tête.", imageName: "Military-Press", category: .musculation),
-    StrongMove(nom: "Pull-Up", subtitle: "Les tractions sont un exercice de musculation au poids du corps, ciblant principalement les dorsaux et les bras.", imageName: "Pull-Up", category: .musculation),
-    StrongMove(nom: "Rowing Bar", subtitle: "Le tirage à la barre est un exercice ciblant les muscles du dos, réalisé en tirant une barre vers soi.", imageName: "Rowing-Bar", category: .musculation),
-    StrongMove(nom: "Skull Crusher", subtitle: "Cet exercice, réalisé avec une barre, vise les triceps en fléchissant les bras vers le front.", imageName: "Skull-Crusher", category: .musculation),
-    StrongMove(nom: "Tricep Dips", subtitle: "Les dips ciblent principalement les triceps, réalisés en abaissant et remontant le corps à l’aide de barres parallèles.", imageName: "Tricep-Dips", category: .musculation)
+    StrongMove(nom: "Barbell Curl", subtitle: "...", imageName: "Barbell-Curl", category: .musculation),
+    StrongMove(nom: "Decline Bench Press", subtitle: "...", imageName: "Decline-Bench-Press", category: .musculation),
+    StrongMove(nom: "Dumbbell Curl", subtitle: "...", imageName: "Dumbell-Curl", category: .musculation),
+    StrongMove(nom: "Shoulder Press", subtitle: "...", imageName: "Shoulder-Press", category: .musculation),
+    StrongMove(nom: "Front Raise", subtitle: "...", imageName: "Front-Raise", category: .musculation),
+    StrongMove(nom: "Hammer Curl", subtitle: "...", imageName: "Hammer-Curl", category: .musculation),
+    StrongMove(nom: "Incline Bench Press", subtitle: "...", imageName: "Incline-Bench-Press", category: .musculation),
+    StrongMove(nom: "Lateral Raise", subtitle: "...", imageName: "Lateral-Raise", category: .musculation),
+    StrongMove(nom: "Leg Press", subtitle: "...", imageName: "Leg-Press", category: .musculation),
+    StrongMove(nom: "Military Press", subtitle: "...", imageName: "Military-Press", category: .musculation),
+    StrongMove(nom: "Rowing Bar", subtitle: "...", imageName: "Rowing-Bar", category: .musculation),
+    StrongMove(nom: "Skull Crusher", subtitle: "...", imageName: "Skull-Crusher", category: .musculation),
+    StrongMove(nom: "Weighted Pull-Up", subtitle: "...", imageName: "Weighted Pull-Up", category: .musculation),
+    StrongMove(nom: "Weighted-Dips", subtitle: "...", imageName: "Weighted-Dips", category: .musculation)
 ]

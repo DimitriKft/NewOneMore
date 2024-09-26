@@ -57,7 +57,7 @@ struct BodyWeightListView: View {
                     }
                 }
             }
-            .navigationTitle("Poids du Corps")
+            .navigationTitle("Gym")
             .navigationBarItems(trailing: HStack {
                 if !bodyWeights.isEmpty {
                     Button(action: {
