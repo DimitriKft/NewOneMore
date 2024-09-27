@@ -32,7 +32,7 @@ struct StrongCardView: View {
                 .frame(width: 165, height: 170)
                 
                 VStack {
-                    Text(nom)
+                    Text(nom.count > 16 ? "\(nom.prefix(18)).." : nom)
                         .font(.caption)
                         .fontWeight(.black)
                         .foregroundColor(.white)

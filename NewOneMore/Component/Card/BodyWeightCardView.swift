@@ -32,8 +32,8 @@ struct BodyWeightCardView: View {
                 .frame(width: 165, height: 170)
                 
                 VStack {
-                    Text(nom.count > 16 ? "\(nom.prefix(16)).." : nom)
-                        .font(.system(size: 12))
+                    Text(nom.count > 16 ? "\(nom.prefix(18)).." : nom)
+                        .font(.system(size: 11))
                         .fontWeight(.black)
                         .foregroundColor(.white)
                 }
