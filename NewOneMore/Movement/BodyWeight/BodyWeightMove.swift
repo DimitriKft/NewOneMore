@@ -50,4 +50,5 @@ let bodyWeightMoves = [
     BodyWeightMove(nom: "Handstand-Walk", subtitle: "...", imageName: "Handstand-Walk", category: .gymnastique),
     BodyWeightMove(nom: "Robe-Climb", subtitle: "...", imageName: "Robe-Climb", category: .gymnastique),
     BodyWeightMove(nom: "Iron-Cross", subtitle: "...", imageName: "Iron-Cross", category: .gymnastique),
+    BodyWeightMove(nom: "Wall-Walk", subtitle: "...", imageName: "Wall-Walk", category: .gymnastique),
 ]

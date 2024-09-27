@@ -61,7 +61,7 @@ struct ModalCalculatorView: View {
                         
                         Spacer()
                         
-                        Text("\(String(format: "%.1f", estimatedRM)) Kg (\(Int((estimatedRM / pr) * 100))% de ton 1RM)")
+                        Text("\(String(format: "%.1f", estimatedRM)) Kg (\(Double((estimatedRM / pr) * 100))% de ton 1RM)")
                             .font(.body)
                             .foregroundColor(.white)
                     }

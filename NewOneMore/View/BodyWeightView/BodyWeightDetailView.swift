@@ -8,14 +8,20 @@
 import SwiftUI
 import Charts
 
+//enum ActiveSheet: Identifiable {
+//    case calculator, history, deleteConfirmation
+//    
+//    var id: Int {
+//        hashValue
+//    }
+//}
+
 struct BodyWeightDetailView: View {
     let bodyWeight: BodyWeight
     @Environment(\.dismiss) var dismiss
     @State private var newScore: String = ""
     @State private var showwAlert: Bool = false
-    @State private var showDeleteConfirmation: Bool = false
-    @State private var showCalculatorModal: Bool = false
-    @State private var showHistoryModal: Bool = false // State for showing modal
+    @State private var activeSheet: ActiveSheet? = nil
     @Environment(\.modelContext) private var modelContext
 
     var body: some View {
@@ -23,7 +29,6 @@ struct BodyWeightDetailView: View {
             VStack {
                 // Image et informations de base
                 ZStack {
-                    
                     Image(bodyWeight.image)
                         .resizable()
                         .aspectRatio(contentMode: .fill)
@@ -38,17 +43,17 @@ struct BodyWeightDetailView: View {
                         Spacer()
                         VStack {
                             ActionBtnView(iconSF: "trash", color: bodyWeight.couleurCategorie, colorPrimary: .black) {
-                                showDeleteConfirmation = true
+                                activeSheet = .deleteConfirmation
                             }
                             .padding(.bottom, 20)
                             
                             ActionBtnView(iconSF: "clock", color: bodyWeight.couleurCategorie, colorPrimary: .black) {
-                                showHistoryModal = true // Show modal on clock button press
+                                activeSheet = .history
                             }
                             .padding(.bottom, 20)
                             
                             ActionBtnView(iconSF: "chart.bar.fill", color: bodyWeight.couleurCategorie, colorPrimary: .black) {
-                                showCalculatorModal = true
+                                activeSheet = .calculator
                             }
                         }
                         .padding(.trailing, 20)
@@ -90,46 +95,52 @@ struct BodyWeightDetailView: View {
                 BodyWeightChartScoreView(scores: bodyWeight.scores, dates: bodyWeight.dates, couleurCategorie: bodyWeight.couleurCategorie)
             }
         }
-       
-
         .navigationBarBackButtonHidden(true)
         .ignoresSafeArea(edges: .top)
-        .sheet(isPresented: $showCalculatorModal) {
-            ModalCalculatorView(pr: Double(bodyWeight.scores.max() ?? 0), color: bodyWeight.couleurCategorie, couleurCategorie: bodyWeight.couleurCategorie)
-        }
-        .alert(isPresented: Binding(
-            get: {
-                showwAlert || showDeleteConfirmation
-            },
-            set: { newValue in
-                showwAlert = newValue
-                showDeleteConfirmation = newValue
-            }
-        )) {
-            if showwAlert {
-                return Alert(
-                    title: Text("Pas si vite !"),
-                    message: Text("Le record du monde en pompes d'affiée de Carlton Williams  est de 2682 répétitions ! On modifiera la limite quand tu lui arriveras à la cheville 😅"),
-                    dismissButton: .default(Text("D'accord")) {
-                        showwAlert = false
-                    }
-                )
-            } else if showDeleteConfirmation {
-                return Alert(
-                    title: Text("Supprimer \(bodyWeight.nom) ?"),
-                    message: Text("Cette action est irréversible 😱"),
-                    primaryButton: .destructive(Text("Supprimer")) {
-                        deleteMovement()
-                    },
-                    secondaryButton: .cancel(Text("Annuler")) {
-                        showDeleteConfirmation = false
-                    }
-                )
-            } else {
-                return Alert(title: Text("Erreur"))
-            }
-        }
 
+        // Gestion centralisée des modales via l'énumération ActiveSheet
+        .sheet(item: $activeSheet) { item in
+            switch item {
+            case .calculator:
+                ModalCalculatorView(pr: Double(bodyWeight.scores.max() ?? 0), color: bodyWeight.couleurCategorie, couleurCategorie: bodyWeight.couleurCategorie)
+            case .history:
+                BodyWeightModalHistoryView(name: bodyWeight.nom, scores: bodyWeight.scores, dates: bodyWeight.dates, couleurCategorie: bodyWeight.couleurCategorie)
+            case .deleteConfirmation:
+                deleteMovementAlert
+            }
+        }
+        .alert(isPresented: $showwAlert) {
+            Alert(
+                title: Text("Pas si vite !"),
+                message: Text("Le record du monde en pompes d'affiée de Carlton Williams est de 2682 répétitions ! On modifiera la limite quand tu lui arriveras à la cheville 😅"),
+                dismissButton: .default(Text("D'accord"))
+            )
+        }
+    }
+
+    var deleteMovementAlert: some View {
+        VStack {
+            Text("Supprimer \(bodyWeight.nom) ?")
+                .font(.title)
+            Text("Cette action est irréversible 😱")
+                .padding(.bottom, 20)
+            HStack {
+                Button("Annuler") {
+                    activeSheet = nil
+                }
+                .padding()
+                .background(Color.gray.opacity(0.2))
+                .cornerRadius(8)
+
+                Button("Supprimer") {
+                    deleteMovement()
+                }
+                .padding()
+                .background(Color.red.opacity(0.8))
+                .cornerRadius(8)
+            }
+        }
+        .frame(width: UIScreen.main.bounds.width * 0.7, height: 200)
     }
 
     func deleteMovement() {
@@ -142,55 +153,37 @@ struct BodyWeightDetailView: View {
         dismiss()
     }
 
-
-    
     func addNewScore() {
         guard let score = Int(newScore), score > 0 else {
             print("Le score entré n'est pas valide.")
             return
         }
 
-        print("Score entré : \(score)") // Affiche le score pour vérifier
+        print("Score entré : \(score)")
 
         if score > 2682 {
-            // Utilisation de DispatchQueue pour forcer la mise à jour sur le thread principal
             DispatchQueue.main.async {
                 showwAlert = true
             }
         } else {
             let currentDate = Date()
-            bodyWeight.addScore(score, date: currentDate, categorie: .calisthenics) // Pas besoin de convertir
+            bodyWeight.addScore(score, date: currentDate, categorie: .calisthenics)
 
             do {
-                modelContext.insert(bodyWeight) // Insérer l'objet dans le contexte
-                try modelContext.save() // Sauvegarder dans le modèle
-                print("Score sauvegardé avec succès.")
+                modelContext.insert(bodyWeight)
+                try modelContext.save()
             } catch {
                 print("Erreur lors de la sauvegarde des données : \(error.localizedDescription)")
             }
 
-            newScore = "" // Réinitialiser après l'ajout
+            newScore = ""
         }
     }
-
-
-
-
-
-    func formatDate(_ date: Date) -> String {
-        let formatter = DateFormatter()
-        formatter.dateStyle = .short
-        return formatter.string(from: date)
-    }
 }
-//
-//let now = Date()
-//let oneDay: TimeInterval = 60 * 60 * 24
+
 
 #Preview{
     BodyWeightDetailView(bodyWeight: BodyWeight(nom: "Pull-Up", subtitle: "Les tractions sont un exercice fondamental du street workout.", image: "Pull-Up", descriptionName: "Exercice de base", scores: [10, 12, 15, 18], dates: [now, now - oneDay, now - 2 * oneDay, now - 3 * oneDay], categories: [.calisthenics]))
 }
 
-
-import SwiftUI
 

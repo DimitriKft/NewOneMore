@@ -7,14 +7,20 @@
 import SwiftUI
 import Charts
 
+enum ActiveSheet: Identifiable {
+    case calculator, history, deleteConfirmation
+    
+    var id: Int {
+        hashValue
+    }
+}
+
 struct StrongDetailView: View {
     let strong: Strong
     @Environment(\.dismiss) var dismiss
     @State private var newScore: String = ""
     @State private var showAlert: Bool = false
-    @State private var showDeleteConfirmation: Bool = false
-    @State private var showCalculatorModal: Bool = false
-    @State private var showHistoryModal: Bool = false // State for showing modal
+    @State private var activeSheet: ActiveSheet? = nil
     @Environment(\.modelContext) private var modelContext
 
     var body: some View {
@@ -36,17 +42,17 @@ struct StrongDetailView: View {
                         Spacer()
                         VStack {
                             ActionBtnView(iconSF: "trash", color: strong.couleurCategorie, colorPrimary: .black) {
-                                showDeleteConfirmation = true
+                                activeSheet = .deleteConfirmation
                             }
                             .padding(.bottom, 20)
                             
                             ActionBtnView(iconSF: "clock", color: strong.couleurCategorie, colorPrimary: .black) {
-                                showHistoryModal = true // Show modal on clock button press
+                                activeSheet = .history
                             }
                             .padding(.bottom, 20)
                             
                             ActionBtnView(iconSF: "chart.bar.fill", color: strong.couleurCategorie, colorPrimary: .black) {
-                                showCalculatorModal = true
+                                activeSheet = .calculator
                             }
                         }
                         .padding(.trailing, 20)
@@ -90,19 +96,17 @@ struct StrongDetailView: View {
         }
         .navigationBarBackButtonHidden(true)
         .ignoresSafeArea(edges: .top)
-        .sheet(isPresented: $showCalculatorModal) {
-            ModalCalculatorView(pr: strong.scores.max() ?? 0.0, color: strong.couleurCategorie, couleurCategorie: strong.couleurCategorie)
-        }
- 
-        .alert(isPresented: $showDeleteConfirmation) {
-            Alert(
-                title: Text("Supprimer \(strong.nom) ?"),
-                message: Text("Cette action est irréversible 😱"),
-                primaryButton: .destructive(Text("Supprimer")) {
-                    deleteMovement()
-                },
-                secondaryButton: .cancel(Text("Annuler"))
-            )
+
+        // Gestion centralisée des modales via l'énumération ActiveSheet
+        .sheet(item: $activeSheet) { item in
+            switch item {
+            case .calculator:
+                ModalCalculatorView(pr: strong.scores.max() ?? 0.0, color: strong.couleurCategorie, couleurCategorie: strong.couleurCategorie)
+            case .history:
+                StrongModalHistoryView(name: strong.nom, scores: strong.scores, dates: strong.dates, couleurCategorie: strong.couleurCategorie)
+            case .deleteConfirmation:
+                deleteMovementAlert
+            }
         }
         .alert(isPresented: $showAlert) {
             Alert(
@@ -111,17 +115,39 @@ struct StrongDetailView: View {
                 dismissButton: .default(Text("D'accord"))
             )
         }
+    }
 
+    var deleteMovementAlert: some View {
+        VStack {
+            Text("Supprimer \(strong.nom) ?")
+                .font(.title)
+            Text("Cette action est irréversible 😱")
+                .padding(.bottom, 20)
+            HStack {
+                Button("Annuler") {
+                    activeSheet = nil
+                }
+                .padding()
+                .background(Color.gray.opacity(0.2))
+                .cornerRadius(8)
 
-        .sheet(isPresented: $showHistoryModal) {
-            StrongModalHistoryView(name: strong.nom, scores: strong.scores, dates: strong.dates, couleurCategorie: strong.couleurCategorie)
+                Button("Supprimer") {
+                    deleteMovement()
+                }
+                .padding()
+                .background(Color.red.opacity(0.8))
+                .cornerRadius(8)
+            }
         }
+        .frame(width: UIScreen.main.bounds.width * 0.7, height: 200)
     }
 
     func deleteMovement() {
+        print("Tentative de suppression")
         modelContext.delete(strong)
         do {
             try modelContext.save()
+            print("Suppression réussie")
         } catch {
             print("Erreur lors de la suppression : \(error.localizedDescription)")
         }
@@ -153,14 +179,8 @@ struct StrongDetailView: View {
             newScore = ""
         }
     }
-
-
-    func formatDate(_ date: Date) -> String {
-        let formatter = DateFormatter()
-        formatter.dateStyle = .short
-        return formatter.string(from: date)
-    }
 }
+
 
 let now = Date()
 let oneDay: TimeInterval = 60 * 60 * 24
