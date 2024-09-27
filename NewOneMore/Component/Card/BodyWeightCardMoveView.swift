@@ -18,7 +18,7 @@ struct BodyWeightCardMoveView: View {
         case .calisthenics:
             return .mint
         case .gymnastique:
-            return .purple
+            return .indigo
         }
     }
 

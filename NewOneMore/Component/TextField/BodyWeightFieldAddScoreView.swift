@@ -45,7 +45,9 @@ struct BodyWeightFieldAddScoreView: View {
 
             Button(action: {
                 addNewScore()
-                UIApplication.shared.endEditing() // Fermer le clavier après l'ajout
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) { // Ajoute un délai de 0,5 seconde
+                    UIApplication.shared.endEditing()
+                }
             }) {
                 ZStack {
                     RoundedRectangle(cornerRadius: 8)

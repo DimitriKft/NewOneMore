@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ModalCalculatorView: View {
+struct StrongModalCalculatorView: View {
     let pr: Double // Personal Record
     let color: Color
     @Environment(\.dismiss) var dismiss
@@ -94,5 +94,5 @@ struct ModalCalculatorView: View {
 }
 
 #Preview {
-    ModalCalculatorView(pr: 112, color: .blue, couleurCategorie: .blue)
+    StrongModalCalculatorView(pr: 112, color: .blue, couleurCategorie: .blue)
 }

@@ -101,9 +101,9 @@ struct StrongDetailView: View {
         .sheet(item: $activeSheet) { item in
             switch item {
             case .calculator:
-                ModalCalculatorView(pr: strong.scores.max() ?? 0.0, color: strong.couleurCategorie, couleurCategorie: strong.couleurCategorie)
+                StrongModalCalculatorView(pr: strong.scores.max() ?? 0.0, color: strong.couleurCategorie, couleurCategorie: strong.couleurCategorie)
             case .history:
-                StrongModalHistoryView(name: strong.nom, scores: strong.scores, dates: strong.dates, couleurCategorie: strong.couleurCategorie)
+                StrongModalHistoryView(name: strong.nom, scores: strong.scores, dates: strong.dates, couleurCategorie: strong.couleurCategorie, strong: strong)
             case .deleteConfirmation:
                 deleteMovementAlert
             }

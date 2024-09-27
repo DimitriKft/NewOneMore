@@ -5,16 +5,21 @@
 //  Created by dimitri on 25/09/2024.
 //
 
-
 import SwiftUI
+import SwiftData
 
 struct BodyWeightModalHistoryView: View {
     var name: String
-    let scores: [Int]
-    let dates: [Date]
+    @State var scores: [Int]
+    @State var dates: [Date]
+    let bodyWeight: BodyWeight
     let couleurCategorie: Color
 
     @Environment(\.dismiss) var dismiss
+    @Environment(\.modelContext) private var modelContext
+
+    @State private var showDeleteAlert: Bool = false
+    @State private var scoreToDeleteIndex: Int? = nil
 
     var body: some View {
         VStack {
@@ -36,30 +41,39 @@ struct BodyWeightModalHistoryView: View {
             ScrollView {
                 VStack {
                     // Combine scores and dates, then sort by date descending
-                    let sortedData = zip(scores, dates).sorted { $0.1 > $1.1 }
+                    let sortedData = zip(scores.indices, zip(scores, dates)).sorted { $0.1.1 > $1.1.1 }
 
-                    ForEach(sortedData, id: \.1) { score, date in
+                    ForEach(sortedData, id: \.1.1) { index, data in
+                        let (score, date) = data
+                        
                         HStack {
                             if score == scores.max() {
-                                // Display max score in green with a star icon
-                                Text("\(String(format: "%.2f", score)) Kg")
+                                Text("\(score) Rep")
                                     .foregroundColor(.green)
                                     .fontWeight(.bold)
-
                                 Image(systemName: "star.fill")
                                     .foregroundColor(.yellow)
                                     .padding(.leading, 5)
                             } else {
-                                // Normal score display
-                                Text("\(String(format: "%.2f", score)) Kg")
+                                Text("\(score) Rep")
                                     .foregroundColor(.primary)
                                     .fontWeight(.regular)
                             }
-
+                            
                             Spacer()
 
                             Text(formatDate(date))
                                 .foregroundColor(.secondary)
+
+                            // Delete button
+                            Button(action: {
+                                scoreToDeleteIndex = index
+                                showDeleteAlert = true
+                            }) {
+                                Image(systemName: "trash")
+                                    .foregroundColor(.red)
+                                    .padding(.leading, 5)
+                            }
                         }
                         .padding(.leading, 20)
                         .padding(.trailing, 20)
@@ -83,6 +97,34 @@ struct BodyWeightModalHistoryView: View {
             )
         }
         .padding(20)
+        .alert(isPresented: $showDeleteAlert) {
+            Alert(
+                title: Text("Supprimer ce score ?"),
+                message: Text("Cette action est irréversible."),
+                primaryButton: .destructive(Text("Supprimer")) {
+                    if let index = scoreToDeleteIndex {
+                        deleteScore(at: index)
+                    }
+                },
+                secondaryButton: .cancel(Text("Annuler"))
+            )
+        }
+        
+    }
+    
+    private func deleteScore(at index: Int) {
+        // Suppression du score et de la date dans les données persistantes
+        bodyWeight.scores.remove(at: index)
+        bodyWeight.dates.remove(at: index)
+
+        do {
+            try modelContext.save()
+            // Mettre à jour la vue après la suppression
+            scores = bodyWeight.scores
+            dates = bodyWeight.dates
+        } catch {
+            print("Erreur lors de la suppression du score : \(error.localizedDescription)")
+        }
     }
 
     private func formatDate(_ date: Date) -> String {
@@ -93,5 +135,5 @@ struct BodyWeightModalHistoryView: View {
 }
 
 #Preview {
-    BodyWeightModalHistoryView(name: "Clean", scores: [23, 45, 56, 78, 90], dates: [Date(), Date(), Date(), Date(), Date()], couleurCategorie: .blue)
+    BodyWeightModalHistoryView(name: "Pull-Up", scores: [23, 45, 56, 78, 90], dates: [Date(), Date(), Date(), Date(), Date()], bodyWeight: BodyWeight(nom: "Pull-Up", subtitle: "Exercice de base", image: "pull-up", descriptionName: "Pull-ups", scores: [23, 45, 56], dates: [Date(), Date(), Date()], categories: [.calisthenics]), couleurCategorie: .blue)
 }

@@ -59,7 +59,7 @@ class BodyWeight: ObservableObject {
         case .calisthenics:
             return .mint
         case .gymnastique:
-            return .purple
+            return .indigo
         }
     }
 }

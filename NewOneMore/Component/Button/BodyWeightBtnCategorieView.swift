@@ -14,7 +14,7 @@ struct BodyWeightBtnCategorieView: View {
     var colorCategory: Color {
         switch category {
         case .calisthenics: return .teal
-        case .gymnastique: return .purple
+        case .gymnastique: return .indigo
         default: return .black
         }
     }

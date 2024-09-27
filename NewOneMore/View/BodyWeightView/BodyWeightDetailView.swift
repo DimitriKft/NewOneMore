@@ -8,13 +8,6 @@
 import SwiftUI
 import Charts
 
-//enum ActiveSheet: Identifiable {
-//    case calculator, history, deleteConfirmation
-//    
-//    var id: Int {
-//        hashValue
-//    }
-//}
 
 struct BodyWeightDetailView: View {
     let bodyWeight: BodyWeight
@@ -51,10 +44,11 @@ struct BodyWeightDetailView: View {
                                 activeSheet = .history
                             }
                             .padding(.bottom, 20)
-                            
+  
                             ActionBtnView(iconSF: "chart.bar.fill", color: bodyWeight.couleurCategorie, colorPrimary: .black) {
                                 activeSheet = .calculator
                             }
+                            .hidden()
                         }
                         .padding(.trailing, 20)
                         .padding(.bottom, 10)
@@ -102,9 +96,9 @@ struct BodyWeightDetailView: View {
         .sheet(item: $activeSheet) { item in
             switch item {
             case .calculator:
-                ModalCalculatorView(pr: Double(bodyWeight.scores.max() ?? 0), color: bodyWeight.couleurCategorie, couleurCategorie: bodyWeight.couleurCategorie)
+                StrongModalCalculatorView(pr: Double(bodyWeight.scores.max() ?? 0), color: bodyWeight.couleurCategorie, couleurCategorie: bodyWeight.couleurCategorie)
             case .history:
-                BodyWeightModalHistoryView(name: bodyWeight.nom, scores: bodyWeight.scores, dates: bodyWeight.dates, couleurCategorie: bodyWeight.couleurCategorie)
+                BodyWeightModalHistoryView(name: bodyWeight.nom, scores: bodyWeight.scores, dates: bodyWeight.dates, bodyWeight: bodyWeight, couleurCategorie: bodyWeight.couleurCategorie)
             case .deleteConfirmation:
                 deleteMovementAlert
             }
