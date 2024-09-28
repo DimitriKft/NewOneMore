@@ -24,6 +24,9 @@ struct WodDetailView: View {
     @State private var activeSheet: WodActiveSheet? = nil
     @Environment(\.modelContext) private var modelContext
 
+    // Variable pour garder une trace du meilleur temps
+    @State private var bestTime: Double?
+
     var body: some View {
         ZStack(alignment: .topLeading) {
             VStack {
@@ -80,32 +83,29 @@ struct WodDetailView: View {
                     )
                     .offset(y: 150)
                 }
-                Text("Meilleur temps: \(formatTime(wod.times.min() ?? 0.0))")
+                
+                // Affiche le meilleur temps
+                Text("Meilleur temps: \(formatTime(bestTime ?? wod.times.min() ?? 0.0))")
                     .font(.largeTitle)
                     .fontWeight(.black)
                     .foregroundStyle(wod.couleurCategorie)
                     .padding(.top, 40)
-                
-                // ADAPTE
-//                WodFieldAddTimeView(newTime: $newTime, wodColor: wod.couleurCategorie, addNewTime: addNewTime)
+            
+                // Afficher le picker pour ajouter un temps
+                WodFieldAddTimeView(newTime: $newTime, wodColor: wod.couleurCategorie) {
+                    addNewTime()
+                }
 
-                
-                // ADAPTE
-//                WodChartTimeView(times: wod.times, dates: wod.dates, couleurCategorie: wod.couleurCategorie)
+                // Vous pouvez également ajouter un graphique ici, si nécessaire.
             }
         }
         .navigationBarBackButtonHidden(true)
         .ignoresSafeArea(edges: .top)
+        .onAppear {
+            // Mettre à jour le meilleur temps au chargement de la vue
+            bestTime = wod.times.min()
+        }
 
-        // ADAPTE
-//        .sheet(item: $activeSheet) { item in
-//            switch item {
-//            case .history:
-//                WodModalHistoryView(name: wod.nom, times: wod.times, dates: wod.dates, couleurCategorie: wod.couleurCategorie)
-//            case .deleteConfirmation:
-//                deleteMovementAlert
-//            }
-//        }
         .alert(isPresented: $showAlert) {
             Alert(
                 title: Text("Pas si vite !"),
@@ -153,19 +153,20 @@ struct WodDetailView: View {
     }
 
     func addNewTime() {
-        guard let time = Double(newTime), time > 0 else {
+        // Conversion du temps en secondes (ici il est supposé en secondes, mais ajustez si nécessaire)
+        guard let timeInSeconds = convertTimeToSeconds(newTime), timeInSeconds > 0 else {
             print("Le temps entré n'est pas valide.")
             return
         }
 
-        print("Temps entré : \(time)") // Vérifiez si le temps est correct
-
-        if time < 200 { // Ex: limiter si temps trop court
+        // Condition pour valider le temps entré
+        if timeInSeconds < 200 { // Ex: limiter si temps trop court
             showAlert = true
         } else {
             let currentDate = Date()
-            wod.addTime(time, date: currentDate, categorie: .hero) // Ajustez la catégorie si nécessaire
+            wod.addTime(timeInSeconds, date: currentDate, categorie: .hero) // Ajustez la catégorie si nécessaire
 
+            // Sauvegarde dans le modèle WOD
             do {
                 modelContext.insert(wod)
                 try modelContext.save()
@@ -173,10 +174,27 @@ struct WodDetailView: View {
                 print("Erreur lors de la sauvegarde des données : \(error.localizedDescription)")
             }
 
+            // Mettre à jour le meilleur temps
+            bestTime = wod.times.min()
+
+            // Réinitialiser le champ de temps
             newTime = ""
         }
     }
 
+    // Fonction pour convertir un temps au format "HH:mm:ss" en secondes
+    func convertTimeToSeconds(_ time: String) -> Double? {
+        let timeComponents = time.split(separator: ":").map { Double($0) ?? 0 }
+        if timeComponents.count == 3 {
+            let hours = timeComponents[0]
+            let minutes = timeComponents[1]
+            let seconds = timeComponents[2]
+            return (hours * 3600) + (minutes * 60) + seconds
+        }
+        return nil
+    }
+
+    // Fonction pour formater un temps en "mm:ss"
     func formatTime(_ time: Double) -> String {
         let minutes = Int(time) / 60
         let seconds = Int(time) % 60
