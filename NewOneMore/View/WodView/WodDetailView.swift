@@ -10,7 +10,6 @@ import Charts
 
 enum WodActiveSheet: Identifiable {
     case history, deleteConfirmation
-    
     var id: Int {
         hashValue
     }
@@ -26,6 +25,9 @@ struct WodDetailView: View {
 
     // Variable pour garder une trace du meilleur temps
     @State private var bestTime: Double?
+
+    // État pour afficher ou cacher le picker sous forme modale
+    @State private var isPickerVisible: Bool = false
 
     var body: some View {
         ZStack(alignment: .topLeading) {
@@ -93,15 +95,64 @@ struct WodDetailView: View {
                     .font(.largeTitle)
                     .fontWeight(.black)
                     .foregroundStyle(wod.couleurCategorie)
-           
 
-                // Afficher le picker pour ajouter un temps
-                WodPickerAddTimeView(newTime: $newTime, wodColor: wod.couleurCategorie) {
-                    addNewTime()
+                // Bouton pour ouvrir le picker
+                Button(action: {
+                    withAnimation {
+                        isPickerVisible = true
+                    }
+                }) {
+                    Text(newTime.isEmpty ? "HH : MM : SS" : newTime)
+                        .font(.title)
+                        .fontWeight(.bold)
+                        .foregroundColor(.white)
+                        .padding()
+                        .background(wod.couleurCategorie)
+                        .cornerRadius(10)
+                        .shadow(radius: 4)
                 }
+                .padding(.top, 20)
+                
+                // Graphique des temps
+                WodChartTimeView(
+                    times: wod.times,
+                    dates: wod.dates,
+                    couleurCategorie: wod.couleurCategorie
+                )
+                .padding(.bottom, 95)
+            }
 
-                // Vous pouvez également ajouter un graphique ici, si nécessaire.
-                Spacer()
+            // Picker apparaissant par-dessus l'interface
+            if isPickerVisible {
+                ZStack {
+                    // Fond semi-transparent
+                    Color.black.opacity(0.4)
+                        .ignoresSafeArea()
+                        .onTapGesture {
+                            withAnimation {
+                                isPickerVisible = false
+                            }
+                        }
+
+                    VStack {
+                        Spacer()
+
+                        // Affichage du picker
+                        WodPickerAddTimeView(newTime: $newTime, wodColor: wod.couleurCategorie) {
+                            addNewTime()
+                            withAnimation {
+                                isPickerVisible = false
+                            }
+                        }
+                        .frame(maxWidth: .infinity)
+                        .background(Color.white.opacity(0.9))
+                        .cornerRadius(20)
+                        .padding()
+
+                        Spacer()
+                    }
+                    .transition(.move(edge: .bottom))
+                }
             }
         }
         .navigationBarBackButtonHidden(true)
@@ -111,12 +162,79 @@ struct WodDetailView: View {
             bestTime = wod.times.min()
         }
 
+        // Feuille modale pour afficher l'historique ou confirmer la suppression
+        .sheet(item: $activeSheet) { item in
+            switch item {
+            case .history:
+                WodHistoryView(
+                    name: wod.nom,
+                    times: wod.times,
+                    dates: wod.dates,
+                    couleurCategorie: wod.couleurCategorie,
+                    wod: wod
+                )
+            case .deleteConfirmation:
+                deleteMovementAlert
+            }
+        }
+
         .alert(isPresented: $showAlert) {
             Alert(
                 title: Text("Pas si vite !"),
                 message: Text("Le record du monde pour le WOD Murph est impressionnant ! Tu pourras ajuster ce record quand tu t'en approcheras 😅"),
                 dismissButton: .default(Text("D'accord"))
             )
+        }
+    }
+
+    func addNewTime() {
+        guard let timeInSeconds = convertTimeToSeconds(newTime), timeInSeconds > 0 else {
+            print("Le temps entré n'est pas valide.")
+            return
+        }
+
+        if timeInSeconds < 200 { // Ex: limiter si temps trop court
+            showAlert = true
+        } else {
+            let currentDate = Date()
+            wod.addTime(timeInSeconds, date: currentDate, categorie: .hero) // Ajustez la catégorie si nécessaire
+
+            // Sauvegarde dans le modèle WOD
+            do {
+                modelContext.insert(wod)
+                try modelContext.save()
+            } catch {
+                print("Erreur lors de la sauvegarde des données : \(error.localizedDescription)")
+            }
+
+            // Mettre à jour le meilleur temps
+            bestTime = wod.times.min()
+
+            // Réinitialiser le champ de temps
+            newTime = ""
+        }
+    }
+
+    func convertTimeToSeconds(_ time: String) -> Double? {
+        let timeComponents = time.split(separator: ":").map { Double($0) ?? 0 }
+        if timeComponents.count == 3 {
+            let hours = timeComponents[0]
+            let minutes = timeComponents[1]
+            let seconds = timeComponents[2]
+            return (hours * 3600) + (minutes * 60) + seconds
+        }
+        return nil
+    }
+
+    func formatTime(_ time: Double) -> String {
+        let hours = Int(time) / 3600
+        let minutes = (Int(time) % 3600) / 60
+        let seconds = Int(time) % 60
+        
+        if hours > 0 {
+            return String(format: "%dH %02dmin %02dsec", hours, minutes, seconds)
+        } else {
+            return String(format: "%02dmin %02dsec", minutes, seconds)
         }
     }
 
@@ -146,72 +264,14 @@ struct WodDetailView: View {
     }
 
     func deleteMovement() {
-        print("Tentative de suppression")
         modelContext.delete(wod)
         do {
             try modelContext.save()
-            print("Suppression réussie")
+            dismiss()
         } catch {
             print("Erreur lors de la suppression : \(error.localizedDescription)")
         }
-        dismiss()
     }
-
-    func addNewTime() {
-        // Conversion du temps en secondes (ici il est supposé en secondes, mais ajustez si nécessaire)
-        guard let timeInSeconds = convertTimeToSeconds(newTime), timeInSeconds > 0 else {
-            print("Le temps entré n'est pas valide.")
-            return
-        }
-
-        // Condition pour valider le temps entré
-        if timeInSeconds < 200 { // Ex: limiter si temps trop court
-            showAlert = true
-        } else {
-            let currentDate = Date()
-            wod.addTime(timeInSeconds, date: currentDate, categorie: .hero) // Ajustez la catégorie si nécessaire
-
-            // Sauvegarde dans le modèle WOD
-            do {
-                modelContext.insert(wod)
-                try modelContext.save()
-            } catch {
-                print("Erreur lors de la sauvegarde des données : \(error.localizedDescription)")
-            }
-
-            // Mettre à jour le meilleur temps
-            bestTime = wod.times.min()
-
-            // Réinitialiser le champ de temps
-            newTime = ""
-        }
-    }
-
-    // Fonction pour convertir un temps au format "HH:mm:ss" en secondes
-    func convertTimeToSeconds(_ time: String) -> Double? {
-        let timeComponents = time.split(separator: ":").map { Double($0) ?? 0 }
-        if timeComponents.count == 3 {
-            let hours = timeComponents[0]
-            let minutes = timeComponents[1]
-            let seconds = timeComponents[2]
-            return (hours * 3600) + (minutes * 60) + seconds
-        }
-        return nil
-    }
-
-    func formatTime(_ time: Double) -> String {
-        let hours = Int(time) / 3600
-        let minutes = (Int(time) % 3600) / 60
-        let seconds = Int(time) % 60
-        
-        // Si moins d'une heure, on affiche juste minutes:secondes
-        if hours > 0 {
-            return String(format: "%dH %02dmin %02dsec", hours, minutes, seconds)
-        } else {
-            return String(format: "%02dmin %02dsec", minutes, seconds)
-        }
-    }
-
 }
 
 #Preview{

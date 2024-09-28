@@ -5,6 +5,13 @@
 //  Created by dimitri on 28/09/2024.
 //
 
+//
+//  WodPickerAddTimeView.swift
+//  NewOneMore
+//
+//  Created by dimitri on 28/09/2024.
+//
+
 import SwiftUI
 
 struct WodPickerAddTimeView: View {
@@ -16,89 +23,70 @@ struct WodPickerAddTimeView: View {
     @State private var selectedHours: Int = 0
     @State private var selectedMinutes: Int = 12
     @State private var selectedSeconds: Int = 24
-    
-    // État pour afficher ou cacher le picker
-    @State private var isPickerVisible: Bool = false
 
     // Plages de valeurs pour le picker
-    let hoursRange = Array(0...3)
+    let hoursRange = Array(0...99)
     let minutesRange = Array(0...59)
     let secondsRange = Array(0...59)
 
     var body: some View {
         VStack {
-            // Zone cliquable pour afficher le picker
-            Text(formatDisplayTime())
-                .font(.title)
-                .fontWeight(.bold)
-                .foregroundColor(.white)
-                .padding()
-                .onTapGesture {
-                    withAnimation {
-                        isPickerVisible.toggle()
+            // Pickers pour heures, minutes et secondes
+            HStack {
+                Picker(selection: $selectedHours, label: Text("Heures")) {
+                    ForEach(hoursRange, id: \.self) { hour in
+                        Text("\(hour) h")
+                            .foregroundColor(.white)
                     }
                 }
+                .pickerStyle(WheelPickerStyle())
+                .frame(width: 80)
+                .background(wodColor)
+                .cornerRadius(10)
+                .clipped()
 
-            if isPickerVisible {
-                // Pickers pour heures, minutes et secondes
-                HStack {
-                    Picker(selection: $selectedHours, label: Text("Heures")) {
-                        ForEach(hoursRange, id: \.self) { hour in
-                            Text("\(hour) H")
-                                .foregroundColor(.white)
-                        }
+                Picker(selection: $selectedMinutes, label: Text("Minutes")) {
+                    ForEach(minutesRange, id: \.self) { minute in
+                        Text(String(format: "%02d min", minute))
+                            .foregroundColor(.white)
                     }
-                    .pickerStyle(WheelPickerStyle())
-                    .frame(width: 80)
-                    .background(wodColor)
-                    .cornerRadius(10)
-                    .clipped()
-
-                    Picker(selection: $selectedMinutes, label: Text("Minutes")) {
-                        ForEach(minutesRange, id: \.self) { minute in
-                            Text(String(format: "%02d min", minute))
-                                .foregroundColor(.white)
-                        }
-                    }
-                    .pickerStyle(WheelPickerStyle())
-                    .frame(width: 100)
-                    .background(wodColor)
-                    .cornerRadius(10)
-                    .clipped()
-
-                    Picker(selection: $selectedSeconds, label: Text("Secondes")) {
-                        ForEach(secondsRange, id: \.self) { second in
-                            Text(String(format: "%02d sec", second))
-                                .foregroundColor(.white)
-                        }
-                    }
-                    .pickerStyle(WheelPickerStyle())
-                    .frame(width: 100)
-                    .background(wodColor)
-                    .cornerRadius(10)
-                    .clipped()
                 }
-                .padding()
+                .pickerStyle(WheelPickerStyle())
+                .frame(width: 100)
+                .background(wodColor)
+                .cornerRadius(10)
+                .clipped()
 
-                // Bouton pour valider le temps sélectionné
-                Button(action: {
-                    // Formater le temps sélectionné en texte
-                    newTime = formatTime(hours: selectedHours, minutes: selectedMinutes, seconds: selectedSeconds)
-                    addNewTime() // Appel de la fonction d'ajout de temps
-                    withAnimation {
-                        isPickerVisible = false // Cacher le picker une fois validé
+                Picker(selection: $selectedSeconds, label: Text("Secondes")) {
+                    ForEach(secondsRange, id: \.self) { second in
+                        Text(String(format: "%02d sec", second))
+                            .foregroundColor(.white)
                     }
-                }) {
-                    Text("Valider le temps")
-                        .fontWeight(.bold)
-                        .foregroundColor(.white)
-                        .padding()
-                        .background(wodColor)
-                        .cornerRadius(10)
                 }
-                .padding(.top, 20)
-                .padding(.bottom, 10)
+                .pickerStyle(WheelPickerStyle())
+                .frame(width: 100)
+                .background(wodColor)
+                .cornerRadius(10)
+                .clipped()
             }
+            .padding()
+
+            // Bouton pour valider le temps sélectionné
+            Button(action: {
+                // Formater le temps sélectionné en texte
+                newTime = formatTime(hours: selectedHours, minutes: selectedMinutes, seconds: selectedSeconds)
+                addNewTime() // Appel de la fonction d'ajout de temps
+            }) {
+                Text("Valider le temps")
+                    .fontWeight(.bold)
+                    .foregroundColor(.white)
+                    .padding(.vertical, 12) // Padding vertical ajusté
+                    .padding(.horizontal, 30) // Padding horizontal pour un bouton plus large
+                    .background(wodColor)
+                    .cornerRadius(10)
+            }
+            .padding(.top, 20)
+            .padding(.bottom, 10) // Ajout de padding en bas pour améliorer l'espacement
         }
         .background(wodColor.opacity(0.9))
         .cornerRadius(20)
