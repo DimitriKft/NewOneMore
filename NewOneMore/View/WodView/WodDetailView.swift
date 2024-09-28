@@ -84,19 +84,24 @@ struct WodDetailView: View {
                     .offset(y: 150)
                 }
                 
-                // Affiche le meilleur temps
-                Text("Meilleur temps: \(formatTime(bestTime ?? wod.times.min() ?? 0.0))")
+                Text("Meilleur temps")
+                    .font(.title2)
+                    .fontWeight(.black)
+                    .foregroundStyle(wod.couleurCategorie.secondary)
+                    .padding(.top, 40)
+                Text("\(formatTime(bestTime ?? wod.times.min() ?? 0.0))")
                     .font(.largeTitle)
                     .fontWeight(.black)
                     .foregroundStyle(wod.couleurCategorie)
-                    .padding(.top, 40)
-            
+           
+
                 // Afficher le picker pour ajouter un temps
-                WodFieldAddTimeView(newTime: $newTime, wodColor: wod.couleurCategorie) {
+                WodPickerAddTimeView(newTime: $newTime, wodColor: wod.couleurCategorie) {
                     addNewTime()
                 }
 
                 // Vous pouvez également ajouter un graphique ici, si nécessaire.
+                Spacer()
             }
         }
         .navigationBarBackButtonHidden(true)
@@ -194,12 +199,19 @@ struct WodDetailView: View {
         return nil
     }
 
-    // Fonction pour formater un temps en "mm:ss"
     func formatTime(_ time: Double) -> String {
-        let minutes = Int(time) / 60
+        let hours = Int(time) / 3600
+        let minutes = (Int(time) % 3600) / 60
         let seconds = Int(time) % 60
-        return String(format: "%02d:%02d", minutes, seconds)
+        
+        // Si moins d'une heure, on affiche juste minutes:secondes
+        if hours > 0 {
+            return String(format: "%dH %02dmin %02dsec", hours, minutes, seconds)
+        } else {
+            return String(format: "%02dmin %02dsec", minutes, seconds)
+        }
     }
+
 }
 
 #Preview{
