@@ -15,7 +15,7 @@ struct WodBtnCategorieView: View {
 
     var colorCategory: Color {
         switch category {
-        case .girl: return .blue
+        case .girl: return .purple
         case .hero: return .green
         default: return .black
         }

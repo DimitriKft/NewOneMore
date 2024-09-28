@@ -17,6 +17,7 @@ struct WodMove: Hashable {
 
 let wodMoves = [
     // WOD Girls
+    WodMove(nom: "Annie", subtitle: "...", imageName: "Annie", category: .girl),
     WodMove(nom: "Fran", subtitle: "Thrusters et Pull-ups", imageName: "Fran", category: .girl),
     WodMove(nom: "Diane", subtitle: "Deadlifts et Handstand Push-ups", imageName: "Diane", category: .girl),
     WodMove(nom: "Helen", subtitle: "400m Run, Kettlebell Swings, Pull-ups", imageName: "Helen", category: .girl),
@@ -26,8 +27,8 @@ let wodMoves = [
     WodMove(nom: "Karen", subtitle: "150 Wall Balls", imageName: "Karen", category: .girl),
     
     // WOD Heroes
-    WodMove(nom: "Murph", subtitle: "1 Mile Run, 100 Pull-ups, 200 Push-ups, 300 Air Squats, 1 Mile Run", imageName: "Murph", category: .hero),
     WodMove(nom: "DT", subtitle: "12 Deadlifts, 9 Hang Power Cleans, 6 Push Jerks", imageName: "DT", category: .hero),
+    WodMove(nom: "Murph", subtitle: "...", imageName: "Murph", category: .hero),
     WodMove(nom: "Wilmot", subtitle: "6 Rounds: 50 Air Squats, 25 Ring Dips", imageName: "Wilmot", category: .hero),
     WodMove(nom: "Jerry", subtitle: "1 Mile Run, 2000m Row, 1 Mile Run", imageName: "Jerry", category: .hero),
     WodMove(nom: "Badger", subtitle: "30 Squat Cleans, 30 Pull-ups, 800m Run", imageName: "Badger", category: .hero),

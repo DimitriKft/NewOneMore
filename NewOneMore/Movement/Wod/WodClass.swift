@@ -56,7 +56,7 @@ class Wod: ObservableObject {
         
         switch firstCat {
         case .girl:
-            return .blue
+            return .purple
         case .hero:
             return .green
         }

@@ -18,6 +18,10 @@ struct LandingScreenView: View {
                       .tabItem {
                           Label("Gym", systemImage: "figure.play")
                       }
+            WodListView()
+                      .tabItem {
+                          Label("Wod", systemImage: "figure.cross.training")
+                      }
 
                   
               }

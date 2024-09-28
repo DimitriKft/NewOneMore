@@ -89,11 +89,9 @@ struct WodAddView: View {
     func colorForCategory(_ category: WodCategories) -> Color {
         switch category {
         case .girl:
-            return Color.blue
+            return Color.purple
         case .hero:
             return Color.green
-        default:
-            return Color.gray
         }
     }
 
@@ -127,6 +125,6 @@ struct WodAddView: View {
 }
 
 #Preview {
-    WodAddView(selectedWODs: ["Fran", "Murph"])
+    WodAddView(selectedWODs: ["Lili", "Momo"])
         .modelContainer(for: Wod.self)
 }

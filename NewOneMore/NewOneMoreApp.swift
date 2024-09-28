@@ -15,6 +15,6 @@ struct OneMoreApp: App {
             LandingScreenView()
                 .preferredColorScheme(.dark)
         }
-        .modelContainer(for: [Strong.self, BodyWeight.self]) 
+        .modelContainer(for: [Strong.self, BodyWeight.self, Wod.self])
     }
 }

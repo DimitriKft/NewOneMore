@@ -18,7 +18,7 @@ struct WodCardMoveView: View {
     var categoryColor: Color {
         switch item.category {
         case .girl:
-            return .blue
+            return .purple
         case .hero:
             return .green
         }
