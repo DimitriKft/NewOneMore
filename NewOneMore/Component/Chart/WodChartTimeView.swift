@@ -6,7 +6,6 @@
 //
 
 
-
 import SwiftUI
 import Charts
 
@@ -26,7 +25,8 @@ struct WodChartTimeView: View {
                     y: .value("Time", time)
                 )
                 .foregroundStyle(couleurCategorie)
-                .annotation(position: .top) {
+                .annotation(position: .top, alignment: .center) {
+                    // Affiche le temps au-dessus de chaque barre
                     Text(formatTime(time))
                         .font(.caption)
                         .fontWeight(.bold)
@@ -45,8 +45,6 @@ struct WodChartTimeView: View {
             AxisMarks(position: .leading) {
                 AxisGridLine()
                 AxisTick()
-//                AxisValueLabel()
-//                .offset(x: -30)
             }
         }
         .chartXAxis {
@@ -55,16 +53,22 @@ struct WodChartTimeView: View {
                 AxisTick()
             }
         }
-        .frame(height: 100)
-        .padding(50)
+        .frame(height: 170)
+        .padding(.horizontal, 30) // Ajout de marge sur les côtés
     }
     
-    // Fonction pour formater les temps en HH:mm:ss
+    // Fonction pour formater les temps en HH:mm ou mm:ss selon la durée
     private func formatTime(_ time: Double) -> String {
         let hours = Int(time) / 3600
         let minutes = (Int(time) % 3600) / 60
         let seconds = Int(time) % 60
-        return String(format: "%02dh%02dm%02ds", hours, minutes, seconds)
+
+        // Si le temps est supérieur à une heure, afficher heures et minutes, sinon minutes et secondes
+        if hours > 0 {
+            return String(format: "%02dh%02dm", hours, minutes)
+        } else {
+            return String(format: "%02dm%02ds", minutes, seconds)
+        }
     }
 
     // Fonction pour formater les dates
@@ -76,5 +80,5 @@ struct WodChartTimeView: View {
 }
 
 #Preview {
-    WodChartTimeView(times: [3600, 4500, 5400, 6000, 7200], dates: [Date(), Date().addingTimeInterval(-86400), Date().addingTimeInterval(-172800), Date().addingTimeInterval(-259200), Date().addingTimeInterval(-345600)], couleurCategorie: .green)
+    WodChartTimeView(times: [3600, 3650, 5400, 6000, 7200], dates: [Date(), Date().addingTimeInterval(-86400), Date().addingTimeInterval(-172800), Date().addingTimeInterval(-259200), Date().addingTimeInterval(-345600)], couleurCategorie: .green)
 }

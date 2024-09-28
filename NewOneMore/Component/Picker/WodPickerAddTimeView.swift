@@ -86,9 +86,13 @@ struct WodPickerAddTimeView: View {
                     .cornerRadius(10)
             }
             .padding(.top, 20)
-            .padding(.bottom, 10) // Ajout de padding en bas pour améliorer l'espacement
+            .padding(.bottom, 20) // Ajout de padding en bas pour améliorer l'espacement
         }
-        .background(wodColor.opacity(0.9))
+        .background(
+            BlurView()
+                .clipShape(RoundedRectangle(cornerRadius: 20))
+        )
+        .padding()
         .cornerRadius(20)
         .padding()
     }

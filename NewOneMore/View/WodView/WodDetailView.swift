@@ -9,7 +9,7 @@ import SwiftUI
 import Charts
 
 enum WodActiveSheet: Identifiable {
-    case history, deleteConfirmation
+    case history, deleteConfirmation, description
     var id: Int {
         hashValue
     }
@@ -56,9 +56,15 @@ struct WodDetailView: View {
                                 activeSheet = .history
                             }
                             .padding(.bottom, 20)
+
+                            // Nouveau bouton info pour ouvrir la description du WOD
+                            ActionBtnView(iconSF: "info.circle", color: wod.couleurCategorie, colorPrimary: .black) {
+                                activeSheet = .description
+                            }
+                            .padding(.bottom, 20)
                         }
                         .padding(.trailing, 20)
-                        .padding(.bottom, 10)
+                        .padding(.top, 10)
                     }
                     .foregroundStyle(wod.couleurCategorie)
                     VStack {
@@ -90,7 +96,7 @@ struct WodDetailView: View {
                     .font(.title2)
                     .fontWeight(.black)
                     .foregroundStyle(wod.couleurCategorie.secondary)
-                    .padding(.top, 40)
+                    .padding(.top, 35)
                 Text("\(formatTime(bestTime ?? wod.times.min() ?? 0.0))")
                     .font(.largeTitle)
                     .fontWeight(.black)
@@ -136,23 +142,21 @@ struct WodDetailView: View {
 
                     VStack {
                         Spacer()
-
-                        // Affichage du picker
-                        WodPickerAddTimeView(newTime: $newTime, wodColor: wod.couleurCategorie) {
-                            addNewTime()
-                            withAnimation {
-                                isPickerVisible = false
+                        VStack {
+                            WodPickerAddTimeView(newTime: $newTime, wodColor: wod.couleurCategorie) {
+                                addNewTime()
+                                withAnimation {
+                                    isPickerVisible = false
+                                }
                             }
                         }
-                        .frame(maxWidth: .infinity)
-                        .background(Color.white.opacity(0.9))
-                        .cornerRadius(20)
-                        .padding()
+                        .frame(width: 350, height: 350)
 
                         Spacer()
                     }
                     .transition(.move(edge: .bottom))
                 }
+                .ignoresSafeArea()
             }
         }
         .navigationBarBackButtonHidden(true)
@@ -162,7 +166,7 @@ struct WodDetailView: View {
             bestTime = wod.times.min()
         }
 
-        // Feuille modale pour afficher l'historique ou confirmer la suppression
+        // Feuille modale pour afficher l'historique, la description ou confirmer la suppression
         .sheet(item: $activeSheet) { item in
             switch item {
             case .history:
@@ -172,6 +176,11 @@ struct WodDetailView: View {
                     dates: wod.dates,
                     couleurCategorie: wod.couleurCategorie,
                     wod: wod
+                )
+            case .description:
+                WodDescriptionView(
+                    name: wod.nom, subtitle: wod.subtitle,
+                    couleurCategorie: wod.couleurCategorie
                 )
             case .deleteConfirmation:
                 deleteMovementAlert
@@ -274,6 +283,9 @@ struct WodDetailView: View {
     }
 }
 
+
+
 #Preview{
     WodDetailView(wod: Wod(nom: "Murph", subtitle: "1 Mile Run, 100 Pull-ups, 200 Push-ups, 300 Squats, 1 Mile Run", image: "Murph", descriptionName: "Hero WOD", times: [3600, 4200, 4500], dates: [now, now - oneDay, now - 2 * oneDay], categories: [.hero]))
 }
+
