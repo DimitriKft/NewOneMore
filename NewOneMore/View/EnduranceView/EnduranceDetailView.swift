@@ -204,7 +204,7 @@ struct EnduranceDetailView: View {
             return
         }
 
-        if timeInSeconds < 200 { // Limiter si temps trop court
+        if timeInSeconds < 1 { // Limiter si temps trop court
             showAlert = true
         } else {
             let currentDate = Date()

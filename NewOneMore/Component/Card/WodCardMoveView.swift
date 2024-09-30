@@ -26,8 +26,8 @@ struct WodCardMoveView: View {
 
     var iconCategory: String {
         switch item.category {
-        case .girl: return "figure.run.circle.fill"
-        case .hero: return "shield.fill"
+        case .girl: return "figure.cross.training"
+        case .hero: return "medal.fill"
         }
     }
     

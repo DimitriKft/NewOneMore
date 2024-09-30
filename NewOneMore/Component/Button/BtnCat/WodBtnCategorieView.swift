@@ -1,29 +1,30 @@
 //
-//  EnduranceBtnCategorieView.swift
+//  WodBtnCategorieView.swift
 //  NewOneMore
 //
-//  Created by dimitri on 30/09/2024.
+//  Created by dimitri on 28/09/2024.
 //
+
 
 
 import SwiftUI
 
-struct EnduranceBtnCategorieView: View {
-    @Binding var selectedCategory: EnduranceCategories? // Permet de passer une catégorie optionnelle
-    var category: EnduranceCategories? // Catégorie optionnelle, `nil` signifie "Toutes"
+struct WodBtnCategorieView: View {
+    @Binding var selectedCategory: WodCategories? // Permet de passer une catégorie optionnelle
+    var category: WodCategories? // Catégorie optionnelle, `nil` signifie "Toutes"
 
     var colorCategory: Color {
         switch category {
-        case .run: return .orange
-        case .swim: return .blue
+        case .girl: return .purple
+        case .hero: return .green
         default: return .black
         }
     }
 
     var iconCategory: String {
         switch category {
-        case .run: return "figure.run.circle.fill"
-        case .swim: return "shield.fill"
+        case .girl: return "figure.cross.training"
+        case .hero: return "medal.fill"
         default: return "square.grid.2x2"
         }
     }
@@ -50,6 +51,6 @@ struct EnduranceBtnCategorieView: View {
 }
 
 #Preview {
-    EnduranceBtnCategorieView(selectedCategory: .constant(.run), category: .run)
+    WodBtnCategorieView(selectedCategory: .constant(.girl), category: .girl)
 }
 

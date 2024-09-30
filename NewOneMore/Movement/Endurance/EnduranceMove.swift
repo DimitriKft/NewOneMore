@@ -19,5 +19,8 @@ struct EnduranceMove: Hashable {
 
 
 var enduranceMoves: [EnduranceMove] = [
-    EnduranceMove(nom: "Marathon", subtitle: "...", imageName: "Marathon", category: .run)
+    // Run
+    EnduranceMove(nom: "Marathon", subtitle: "...", imageName: "Marathon", category: .run),
+    // Swim
+    EnduranceMove(nom: "100-mètres-Crawl", subtitle: "...", imageName: "100-metres-Crawl", category: .swim)
 ]

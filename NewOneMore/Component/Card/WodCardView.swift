@@ -26,6 +26,7 @@ struct WodCardView: View {
                     Image(image)
                         .resizable()
                         .frame(width: 165, height: 110)
+                        .grayscale(1.0)
                         .clipShape(RoundedCornerShape(corners: [.topLeft, .topRight], radius: 12))
                     Spacer()
                 }

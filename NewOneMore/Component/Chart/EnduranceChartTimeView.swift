@@ -19,7 +19,7 @@ struct EnduranceChartTimeView: View {
             let lastFiveDates = Array(dates.suffix(5))
 
             ForEach(Array(zip(lastFiveTimes.indices, lastFiveTimes)), id: \.0) { index, time in
-                LineMark(
+               BarMark(
                     x: .value("Index", index),
                     y: .value("Time", time)
                 )
