@@ -1,15 +1,15 @@
 //
-//  WodPickerAddTimeView.swift
+//  EndurancePickerAddTimeView.swift
 //  NewOneMore
 //
-//  Created by dimitri on 28/09/2024.
+//  Created by dimitri on 30/09/2024.
 //
 
 import SwiftUI
 
-struct WodPickerAddTimeView: View {
+struct EndurancePickerAddTimeView: View {
     @Binding var newTime: String
-    var wodColor: Color
+    var enduranceColor: Color
     var addNewTime: () -> Void
 
     // Etat pour les heures, minutes et secondes
@@ -34,7 +34,7 @@ struct WodPickerAddTimeView: View {
                 }
                 .pickerStyle(WheelPickerStyle())
                 .frame(width: 80)
-                .background(wodColor)
+                .background(enduranceColor)
                 .cornerRadius(10)
                 .clipped()
 
@@ -46,7 +46,7 @@ struct WodPickerAddTimeView: View {
                 }
                 .pickerStyle(WheelPickerStyle())
                 .frame(width: 100)
-                .background(wodColor)
+                .background(enduranceColor)
                 .cornerRadius(10)
                 .clipped()
 
@@ -58,7 +58,7 @@ struct WodPickerAddTimeView: View {
                 }
                 .pickerStyle(WheelPickerStyle())
                 .frame(width: 100)
-                .background(wodColor)
+                .background(enduranceColor)
                 .cornerRadius(10)
                 .clipped()
             }
@@ -75,7 +75,7 @@ struct WodPickerAddTimeView: View {
                     .foregroundColor(.white)
                     .padding(.vertical, 12) // Padding vertical ajusté
                     .padding(.horizontal, 30) // Padding horizontal pour un bouton plus large
-                    .background(wodColor)
+                    .background(enduranceColor)
                     .cornerRadius(10)
             }
             .padding(.top, 20)
@@ -106,7 +106,7 @@ struct WodPickerAddTimeView: View {
 }
 
 #Preview {
-    WodPickerAddTimeView(newTime: .constant("00:12:24"), wodColor: .purple, addNewTime: {
+    EndurancePickerAddTimeView(newTime: .constant("00:12:24"), enduranceColor: .blue, addNewTime: {
         print("Nouveau temps ajouté")
     })
 }

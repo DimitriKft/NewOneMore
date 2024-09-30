@@ -1,13 +1,13 @@
 //
-//  WodCardView.swift
+//  EnduranceCardView.swift
 //  NewOneMore
 //
-//  Created by dimitri on 28/09/2024.
+//  Created by dimitri on 30/09/2024.
 //
 
 import SwiftUI
 
-struct WodCardView: View {
+struct EnduranceCardView: View {
     var colorCategory: Color
     var image: String
     var nom: String
@@ -123,5 +123,5 @@ struct WodCardView: View {
 }
 
 #Preview {
-    WodCardView(colorCategory: .blue, image: "Murph", nom: "Murph", times: [1200, 1500, 1800], dates: [Date(), Date().addingTimeInterval(-86400), Date().addingTimeInterval(-172800)])
+    EnduranceCardView(colorCategory: .blue, image: "Run", nom: "10K Run", times: [3600, 3700, 3900], dates: [Date(), Date().addingTimeInterval(-86400), Date().addingTimeInterval(-172800)])
 }

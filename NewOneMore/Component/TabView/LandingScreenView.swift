@@ -22,6 +22,10 @@ struct LandingScreenView: View {
                       .tabItem {
                           Label("Wod", systemImage: "figure.cross.training")
                       }
+            EnduranceListView()
+                      .tabItem {
+                          Label("Endurance", systemImage: "figure.run")
+                      }
 
                   
               }

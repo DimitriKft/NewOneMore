@@ -1,26 +1,26 @@
 //
-//  WodDetailView.swift
+//  EnduranceDetailView.swift
 //  NewOneMore
 //
-//  Created by dimitri on 28/09/2024.
+//  Created by dimitri on 30/09/2024.
 //
 
 import SwiftUI
 import Charts
 
-enum WodActiveSheet: Identifiable {
-    case history, deleteConfirmation, description
+enum EnduranceActiveSheet: Identifiable {
+    case history, deleteConfirmation
     var id: Int {
         hashValue
     }
 }
 
-struct WodDetailView: View {
-    let wod: Wod
+struct EnduranceDetailView: View {
+    let endurance: Endurance
     @Environment(\.dismiss) var dismiss
     @State private var newTime: String = ""
     @State private var showAlert: Bool = false
-    @State private var activeSheet: WodActiveSheet? = nil
+    @State private var activeSheet: EnduranceActiveSheet? = nil
     @Environment(\.modelContext) private var modelContext
 
     // Variable pour garder une trace du meilleur temps
@@ -34,41 +34,41 @@ struct WodDetailView: View {
             VStack {
                 // Image et informations de base
                 ZStack {
-                    Image(wod.image)
+                    Image(endurance.image)
                         .resizable()
                         .aspectRatio(contentMode: .fill)
                         .frame(width: UIScreen.main.bounds.width, height: 300)
                         .clipped()
                     HStack {
-                        ActionBtnView(iconSF: "arrow.left", color: wod.couleurCategorie, colorPrimary: .black) {
+                        ActionBtnView(iconSF: "arrow.left", color: endurance.couleurCategorie, colorPrimary: .black) {
                             dismiss()
                         }
                         .padding()
                         .padding(.bottom, 150)
                         Spacer()
                         VStack {
-                            ActionBtnView(iconSF: "trash", color: wod.couleurCategorie, colorPrimary: .black) {
+                            ActionBtnView(iconSF: "trash", color: endurance.couleurCategorie, colorPrimary: .black) {
                                 activeSheet = .deleteConfirmation
                             }
                             .padding(.bottom, 20)
                             
-                            ActionBtnView(iconSF: "clock", color: wod.couleurCategorie, colorPrimary: .black) {
+                            ActionBtnView(iconSF: "clock", color: endurance.couleurCategorie, colorPrimary: .black) {
                                 activeSheet = .history
                             }
                             .padding(.bottom, 20)
 
-                            // Nouveau bouton info pour ouvrir la description du WOD
-                            ActionBtnView(iconSF: "info.circle", color: wod.couleurCategorie, colorPrimary: .black) {
-                                activeSheet = .description
-                            }
-                            .padding(.bottom, 20)
+                            // Nouveau bouton info pour ouvrir la description du mouvement d'endurance
+//                            ActionBtnView(iconSF: "info.circle", color: endurance.couleurCategorie, colorPrimary: .black) {
+//                                activeSheet = .description
+//                            }
+//                            .padding(.bottom, 20)
                         }
                         .padding(.trailing, 20)
                         .padding(.top, 10)
                     }
-                    .foregroundStyle(wod.couleurCategorie)
+                    .foregroundStyle(endurance.couleurCategorie)
                     VStack {
-                        Text(wod.nom)
+                        Text(endurance.nom)
                             .font(.headline)
                             .fontWeight(.black)
                             .foregroundColor(.white)
@@ -87,7 +87,7 @@ struct WodDetailView: View {
                     .cornerRadius(5)
                     .overlay(
                         RoundedRectangle(cornerRadius: 5)
-                            .stroke(wod.couleurCategorie, lineWidth: 1)
+                            .stroke(endurance.couleurCategorie, lineWidth: 1)
                     )
                     .offset(y: 150)
                 }
@@ -95,12 +95,12 @@ struct WodDetailView: View {
                 Text("Meilleur temps")
                     .font(.title2)
                     .fontWeight(.black)
-                    .foregroundStyle(wod.couleurCategorie.secondary)
+                    .foregroundStyle(endurance.couleurCategorie.secondary)
                     .padding(.top, 35)
-                Text("\(formatTime(bestTime ?? wod.times.min() ?? 0.0))")
+                Text("\(formatTime(bestTime ?? endurance.times.min() ?? 0.0))")
                     .font(.largeTitle)
                     .fontWeight(.black)
-                    .foregroundStyle(wod.couleurCategorie)
+                    .foregroundStyle(endurance.couleurCategorie)
 
                 // Bouton pour ouvrir le picker
                 Button(action: {
@@ -113,7 +113,7 @@ struct WodDetailView: View {
                         .fontWeight(.bold)
                         .foregroundColor(.white)
                         .padding()
-                        .background(wod.couleurCategorie)
+                        .background(endurance.couleurCategorie)
                         .cornerRadius(10)
                         .shadow(radius: 4)
                 }
@@ -122,10 +122,10 @@ struct WodDetailView: View {
 
                 
                 // Graphique des temps
-                WodChartTimeView(
-                    times: wod.times,
-                    dates: wod.dates,
-                    couleurCategorie: wod.couleurCategorie
+                EnduranceChartTimeView(
+                    times: endurance.times,
+                    dates: endurance.dates,
+                    couleurCategorie: endurance.couleurCategorie
                 )
                 .padding(.bottom, 95)
             }
@@ -145,7 +145,7 @@ struct WodDetailView: View {
                     VStack {
                         Spacer()
                         VStack {
-                            WodPickerAddTimeView(newTime: $newTime, wodColor: wod.couleurCategorie) {
+                            EndurancePickerAddTimeView(newTime: $newTime, enduranceColor: endurance.couleurCategorie) {
                                 addNewTime()
                                 withAnimation {
                                     isPickerVisible = false
@@ -165,25 +165,25 @@ struct WodDetailView: View {
         .ignoresSafeArea(edges: .top)
         .onAppear {
             // Mettre à jour le meilleur temps au chargement de la vue
-            bestTime = wod.times.min()
+            bestTime = endurance.times.min()
         }
 
         // Feuille modale pour afficher l'historique, la description ou confirmer la suppression
         .sheet(item: $activeSheet) { item in
             switch item {
             case .history:
-                WodHistoryView(
-                    name: wod.nom,
-                    times: wod.times,
-                    dates: wod.dates,
-                    couleurCategorie: wod.couleurCategorie,
-                    wod: wod
+                EnduranceHistoryView(
+                    name: endurance.nom,
+                    times: endurance.times,
+                    dates: endurance.dates,
+                    couleurCategorie: endurance.couleurCategorie,
+                    endurance: endurance
                 )
-            case .description:
-                WodDescriptionView(
-                    name: wod.nom, subtitle: wod.subtitle,
-                    couleurCategorie: wod.couleurCategorie
-                )
+//            case .description:
+//                EnduranceDescriptionView(
+//                    name: endurance.nom, subtitle: endurance.subtitle,
+//                    couleurCategorie: endurance.couleurCategorie
+//                )
             case .deleteConfirmation:
                 deleteMovementAlert
             }
@@ -192,7 +192,7 @@ struct WodDetailView: View {
         .alert(isPresented: $showAlert) {
             Alert(
                 title: Text("Pas si vite !"),
-                message: Text("Le record du monde pour le WOD Murph est impressionnant ! Tu pourras ajuster ce record quand tu t'en approcheras 😅"),
+                message: Text("Le record du monde pour cette activité d'endurance est impressionnant ! Tu pourras ajuster ce record quand tu t'en approcheras 😅"),
                 dismissButton: .default(Text("D'accord"))
             )
         }
@@ -204,22 +204,22 @@ struct WodDetailView: View {
             return
         }
 
-        if timeInSeconds < 200 { // Ex: limiter si temps trop court
+        if timeInSeconds < 200 { // Limiter si temps trop court
             showAlert = true
         } else {
             let currentDate = Date()
-            wod.addTime(timeInSeconds, date: currentDate, categorie: .hero) // Ajustez la catégorie si nécessaire
+            endurance.addTime(timeInSeconds, date: currentDate, categorie: .run) // Ajustez la catégorie si nécessaire
 
-            // Sauvegarde dans le modèle WOD
+            // Sauvegarde dans le modèle Endurance
             do {
-                modelContext.insert(wod)
+                modelContext.insert(endurance)
                 try modelContext.save()
             } catch {
                 print("Erreur lors de la sauvegarde des données : \(error.localizedDescription)")
             }
 
             // Mettre à jour le meilleur temps
-            bestTime = wod.times.min()
+            bestTime = endurance.times.min()
 
             // Réinitialiser le champ de temps
             newTime = ""
@@ -251,7 +251,7 @@ struct WodDetailView: View {
 
     var deleteMovementAlert: some View {
         VStack {
-            Text("Supprimer \(wod.nom) ?")
+            Text("Supprimer \(endurance.nom) ?")
                 .font(.title)
             Text("Cette action est irréversible 😱")
                 .padding(.bottom, 20)
@@ -275,7 +275,7 @@ struct WodDetailView: View {
     }
 
     func deleteMovement() {
-        modelContext.delete(wod)
+        modelContext.delete(endurance)
         do {
             try modelContext.save()
             dismiss()
@@ -286,8 +286,16 @@ struct WodDetailView: View {
 }
 
 
-
-#Preview{
-    WodDetailView(wod: Wod(nom: "Murph", subtitle: "1 Mile Run, 100 Pull-ups, 200 Push-ups, 300 Squats, 1 Mile Run", image: "Murph", descriptionName: "Hero WOD", times: [3600, 4200, 4500], dates: [now, now - oneDay, now - 2 * oneDay], categories: [.hero]))
+#Preview {
+    EnduranceDetailView(
+        endurance: Endurance(
+            nom: "10K Run",
+            subtitle: "Course de 10 kilomètres",
+            image: "Run",
+            descriptionName: "Course à pied",
+            times: [3600, 3700, 3800], // Temps en secondes
+            dates: [Date(), Date().addingTimeInterval(-86400), Date().addingTimeInterval(-172800)], // Dates
+            categories: [.run]
+        )
+    )
 }
-
