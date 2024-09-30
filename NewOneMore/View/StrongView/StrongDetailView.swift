@@ -32,6 +32,7 @@ struct StrongDetailView: View {
                         .resizable()
                         .aspectRatio(contentMode: .fill)
                         .frame(width: UIScreen.main.bounds.width, height: 300)
+                        .grayscale(1.0)
                         .clipped()
                     HStack {
                         ActionBtnView(iconSF: "arrow.left", color: strong.couleurCategorie, colorPrimary: .black) {

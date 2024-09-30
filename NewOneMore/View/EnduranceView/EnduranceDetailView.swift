@@ -9,7 +9,7 @@ import SwiftUI
 import Charts
 
 enum EnduranceActiveSheet: Identifiable {
-    case history, deleteConfirmation
+    case history, deleteConfirmation, description
     var id: Int {
         hashValue
     }
@@ -38,6 +38,7 @@ struct EnduranceDetailView: View {
                         .resizable()
                         .aspectRatio(contentMode: .fill)
                         .frame(width: UIScreen.main.bounds.width, height: 300)
+                        .grayscale(1.0)
                         .clipped()
                     HStack {
                         ActionBtnView(iconSF: "arrow.left", color: endurance.couleurCategorie, colorPrimary: .black) {
@@ -58,10 +59,10 @@ struct EnduranceDetailView: View {
                             .padding(.bottom, 20)
 
                             // Nouveau bouton info pour ouvrir la description du mouvement d'endurance
-//                            ActionBtnView(iconSF: "info.circle", color: endurance.couleurCategorie, colorPrimary: .black) {
-//                                activeSheet = .description
-//                            }
-//                            .padding(.bottom, 20)
+                            ActionBtnView(iconSF: "info.circle", color: endurance.couleurCategorie, colorPrimary: .black) {
+                                activeSheet = .description
+                            }
+                            .padding(.bottom, 20)
                         }
                         .padding(.trailing, 20)
                         .padding(.top, 10)
@@ -179,11 +180,11 @@ struct EnduranceDetailView: View {
                     couleurCategorie: endurance.couleurCategorie,
                     endurance: endurance
                 )
-//            case .description:
-//                EnduranceDescriptionView(
-//                    name: endurance.nom, subtitle: endurance.subtitle,
-//                    couleurCategorie: endurance.couleurCategorie
-//                )
+            case .description:
+                EnduranceDescriptionView(
+                    name: endurance.nom, subtitle: endurance.subtitle,
+                    couleurCategorie: endurance.couleurCategorie
+                )
             case .deleteConfirmation:
                 deleteMovementAlert
             }

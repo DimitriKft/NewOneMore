@@ -26,6 +26,7 @@ struct BodyWeightDetailView: View {
                         .resizable()
                         .aspectRatio(contentMode: .fill)
                         .frame(width: UIScreen.main.bounds.width, height: 300)
+                        .grayscale(1.0)
                         .clipped()
                     HStack {
                         ActionBtnView(iconSF: "arrow.left", color: bodyWeight.couleurCategorie, colorPrimary: .black) {
