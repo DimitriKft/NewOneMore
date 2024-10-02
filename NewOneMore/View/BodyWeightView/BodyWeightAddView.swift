@@ -12,6 +12,7 @@ import SwiftData
 struct BodyWeightAddView: View {
     @Environment(\.modelContext) private var modelContext
     @Environment(\.dismiss) private var dismiss
+    @Environment(\.colorScheme) var colorScheme
     
     var selectedBodyWeights: [String]
     
@@ -73,7 +74,13 @@ struct BodyWeightAddView: View {
             if let selectedItem = selectedItem {
                 VStack {
                     Spacer()
-                    PrimaryBtnView(label: " Ajouter \(selectedItem.nom)", action: ajouterItem, color: .white, colorSecondary: .black, icon: "plus.circle.fill")
+                    PrimaryBtnView(
+                              label: " Ajouter \(selectedItem.nom)",
+                              action: ajouterItem,
+                              color: colorScheme == .dark ? .white : .gray,
+                              colorSecondary: colorScheme == .dark ? .black : .white,
+                              icon: "plus.circle.fill"
+                          )
                 }
                 .padding(.bottom, 20)
             }

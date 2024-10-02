@@ -103,7 +103,12 @@ struct WodDetailView: View {
                     .fontWeight(.black)
                     .foregroundStyle(wod.couleurCategorie)
 
-                // Bouton pour ouvrir le picker
+                Text("Entre ton temps")
+                    .font(.caption2)
+                    .fontWeight(.bold)
+                    .foregroundStyle(.secondary)
+                    .padding(.top, 3)
+                    .padding(.bottom, -15)
                 Button(action: {
                     withAnimation {
                         isPickerVisible = true

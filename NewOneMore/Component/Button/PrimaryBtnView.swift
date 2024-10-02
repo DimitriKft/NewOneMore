@@ -28,7 +28,8 @@ struct PrimaryBtnView: View {
                         .foregroundColor(colorSecondary)
                     Text("\(label)")
                         .font(.headline)
-                        .foregroundColor(colorSecondary)   
+                        .foregroundColor(colorSecondary)
+                    
                 }
             }
         }
@@ -37,7 +38,7 @@ struct PrimaryBtnView: View {
 }
 
 #Preview {
-    PrimaryBtnView(label: "Label", action: {
+    PrimaryBtnView(label: "eeeeeeeeeeeee", action: {
         print("Test btn primary")
     }, color: .yellow, colorSecondary: .black, icon: "ant.fill")
 }

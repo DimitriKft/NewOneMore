@@ -95,6 +95,12 @@ struct EnduranceDetailView: View {
                     .font(.largeTitle)
                     .fontWeight(.black)
                     .foregroundStyle(endurance.couleurCategorie)
+                Text("Entre ton temps")
+                    .font(.caption2)
+                    .fontWeight(.bold)
+                    .foregroundStyle(.secondary)
+                    .padding(.top, 3)
+                    .padding(.bottom, -15)
                 Button(action: {
                     withAnimation {
                         isPickerVisible = true
@@ -123,7 +129,6 @@ struct EnduranceDetailView: View {
 
             if isPickerVisible {
                 ZStack {
-                    // Fond semi-transparent
                     Color.black.opacity(0.4)
                         .ignoresSafeArea()
                         .onTapGesture {
@@ -154,11 +159,8 @@ struct EnduranceDetailView: View {
         .navigationBarBackButtonHidden(true)
         .ignoresSafeArea(edges: .top)
         .onAppear {
-            // Mettre à jour le meilleur temps au chargement de la vue
             bestTime = endurance.times.min()
         }
-
-        // Feuille modale pour afficher l'historique, la description ou confirmer la suppression
         .sheet(item: $activeSheet) { item in
             switch item {
             case .history:
@@ -279,8 +281,8 @@ struct EnduranceDetailView: View {
             subtitle: "Course de 10 kilomètres",
             image: "Run",
             descriptionName: "Course à pied",
-            times: [3600, 3700, 3800], // Temps en secondes
-            dates: [Date(), Date().addingTimeInterval(-86400), Date().addingTimeInterval(-172800)], // Dates
+            times: [3600, 3700, 3800],
+            dates: [Date(), Date().addingTimeInterval(-86400), Date().addingTimeInterval(-172800)], 
             categories: [.run]
         )
     )
