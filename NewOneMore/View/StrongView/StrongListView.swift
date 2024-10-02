@@ -39,7 +39,7 @@ struct StrongListView: View {
                         Text("Ajoute ton premier PR")
                             .font(.title)
                             .fontWeight(.bold)
-                       Text("Pour selectionier ton premier mouvement, appuis sur le bouton **+** ci-dessus, tu pourra consulter les mouvements disponible pour tes **PR** et les ajouter ici. ")
+                       Text("Pour sélectionner ton premier mouvement de force, appuie sur le bouton + ci-dessus. Tu pourras consulter les mouvements disponibles pour tes PR et les ajouter ici.")
                             .foregroundStyle(.secondary)
                     }
                     .padding()

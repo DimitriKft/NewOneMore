@@ -25,10 +25,10 @@ var enduranceMoves: [EnduranceMove] = [
     EnduranceMove(nom: "Sprint 100m", subtitle: "Course de trail sur 50 kilomètres, combinant endurance et difficulté terrain.", imageName: "Sprint-100m", category: .run),
     
     // Swim
-    EnduranceMove(nom: "100-mètres-Crawl", subtitle: "Course de natation rapide de 100 mètres en crawl.", imageName: "100-metres-Crawl", category: .swim),
-    EnduranceMove(nom: "200-mètres-Papillon", subtitle: "Épreuve exigeante de natation en style papillon sur 200 mètres.", imageName: "200-metres-Papillon", category: .swim),
-    EnduranceMove(nom: "1500-mètres-Natation", subtitle: "Course d'endurance en natation sur 1500 mètres, souvent en eau libre.", imageName: "1500-metres-Natation", category: .swim),
-    EnduranceMove(nom: "50-mètres-Dos", subtitle: "Course de natation rapide de 50 mètres en dos crawlé.", imageName: "50-metres-Dos", category: .swim),
+    EnduranceMove(nom: "100m Crawl", subtitle: "Course de natation rapide de 100 mètres en crawl.", imageName: "100-metres-Crawl", category: .swim),
+    EnduranceMove(nom: "200m Papillon", subtitle: "Épreuve exigeante de natation en style papillon sur 200 mètres.", imageName: "200m Papillon", category: .swim),
+    EnduranceMove(nom: "1500m Natation", subtitle: "Course d'endurance en natation sur 1500 mètres, souvent en eau libre.", imageName: "1500-metres-Natation", category: .swim),
+    EnduranceMove(nom: "50m-Dos", subtitle: "Course de natation rapide de 50 mètres en dos crawlé.", imageName: "50-metres-Dos", category: .swim),
     EnduranceMove(nom: "Ironman Swim", subtitle: "Épreuve de natation de 3.8 kilomètres dans la compétition d'Ironman.", imageName: "Ironman-Swim", category: .swim),
 
     

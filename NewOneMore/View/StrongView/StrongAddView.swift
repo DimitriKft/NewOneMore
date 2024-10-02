@@ -42,9 +42,8 @@ struct StrongAddView: View {
                 }
                 .padding(.horizontal)
                 TextField("Rechercher un mouvement", text: $searchText)
-                    .padding(10)
-                    .frame(width: 340)
-                    .background(Color(.black))
+                    .padding(8)
+                    .background(Color.gray.opacity(0.2))
                     .cornerRadius(8)
                     .padding(.horizontal)
                 ScrollView {

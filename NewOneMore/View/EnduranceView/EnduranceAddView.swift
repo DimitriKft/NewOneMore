@@ -42,10 +42,9 @@ struct EnduranceAddView: View {
                 }
                 .padding(.horizontal)
                 
-                TextField("Rechercher un exercice", text: $searchText)
-                    .padding(10)
-                    .frame(width: 340)
-                    .background(Color(.black))
+                TextField("Rechercher une activité", text: $searchText)
+                    .padding(8)
+                    .background(Color.gray.opacity(0.2))
                     .cornerRadius(8)
                     .padding(.horizontal)
                 
