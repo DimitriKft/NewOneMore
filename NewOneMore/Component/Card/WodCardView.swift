@@ -65,7 +65,7 @@ struct WodCardView: View {
                             .opacity(0.4)
                             .overlay(
                                 RoundedRectangle(cornerRadius: 5)
-                                    .stroke(Color.black, lineWidth: 0.6)
+                                    .stroke(colorCategory, lineWidth: 0.6)
                                     .opacity(0.8)
                             )
                         HStack {
@@ -83,7 +83,7 @@ struct WodCardView: View {
                             .opacity(0.4)
                             .overlay(
                                 RoundedRectangle(cornerRadius: 5)
-                                    .stroke(Color.black, lineWidth: 0.6)
+                                    .stroke(colorCategory, lineWidth: 0.6)
                                     .opacity(0.8)
                             )
                         HStack {

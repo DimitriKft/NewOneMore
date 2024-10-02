@@ -13,7 +13,7 @@ struct OneMoreApp: App {
     var body: some Scene {
         WindowGroup {
             LandingScreenView()
-                .preferredColorScheme(.dark)
+               
         }
         .modelContainer(for: [Strong.self, BodyWeight.self, Wod.self, Endurance.self])
     }
