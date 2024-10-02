@@ -1,17 +1,17 @@
 //
-//  BodyWeightCardView.swift
+//  EnduranceCardView.swift
 //  NewOneMore
 //
-//  Created by dimitri on 25/09/2024.
+//  Created by dimitri on 30/09/2024.
 //
 
 import SwiftUI
 
-struct BodyWeightCardView: View {
+struct EnduranceCardView: View {
     var colorCategory: Color
     var image: String
     var nom: String
-    var scores: [Int]
+    var times: [Double] // En secondes
     var dates: [Date]
     
     var body: some View {
@@ -34,7 +34,7 @@ struct BodyWeightCardView: View {
                 
                 VStack {
                     Text(nom.count > 16 ? "\(nom.prefix(18)).." : nom)
-                        .font(.system(size: 11))
+                        .font(.caption)
                         .fontWeight(.black)
                         .foregroundColor(.white)
                 }
@@ -65,13 +65,13 @@ struct BodyWeightCardView: View {
                             .opacity(0.4)
                             .overlay(
                                 RoundedRectangle(cornerRadius: 5)
-                                    .stroke(Color.black, lineWidth: 0.6)
+                                    .stroke(colorCategory, lineWidth: 0.6)
                                     .opacity(0.8)
                             )
                         HStack {
-                            Image(systemName: "flame.fill")
+                            Image(systemName: "timer")
                                 .font(.system(size: 10))
-                            Text("\(scores.max() ?? 0) Rep")
+                            Text("\(formatTime(times.min() ?? 0.0))")
                         }
                     }
                     
@@ -83,7 +83,7 @@ struct BodyWeightCardView: View {
                             .opacity(0.4)
                             .overlay(
                                 RoundedRectangle(cornerRadius: 5)
-                                    .stroke(Color.black, lineWidth: 0.6)
+                                    .stroke(colorCategory, lineWidth: 0.6)
                                     .opacity(0.8)
                             )
                         HStack {
@@ -101,7 +101,13 @@ struct BodyWeightCardView: View {
         }
     }
 
-   
+    // Formatter le temps en minutes et secondes (mm:ss)
+    private func formatTime(_ time: Double) -> String {
+        let minutes = Int(time) / 60
+        let seconds = Int(time) % 60
+        return String(format: "%02d:%02d", minutes, seconds)
+    }
+
     private func daysSinceLastEntry() -> String {
         if let lastDate = dates.last {
             let calendar = Calendar.current
@@ -115,11 +121,8 @@ struct BodyWeightCardView: View {
         }
         return "N/A"
     }
-
 }
-
 
 #Preview {
-    BodyWeightCardView(colorCategory: .blue, image: "Kipping-Bar-Muscle-Up", nom: "Kipping-Bar-Muscle-Up", scores: [2, 80, 90], dates: [Date(), Date().addingTimeInterval(-86400), Date().addingTimeInterval(-172800)])
+    EnduranceCardView(colorCategory: .blue, image: "Run", nom: "10K Run", times: [3600, 3700, 3900], dates: [Date(), Date().addingTimeInterval(-86400), Date().addingTimeInterval(-172800)])
 }
-
