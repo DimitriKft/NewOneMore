@@ -34,15 +34,13 @@ class BodyWeight: ObservableObject {
         self.categories = categories.map { $0.rawValue }
     }
     
-    // Méthode pour ajouter un score avec une date et une catégorie
-    func addScore(_ score: Int, date: Date, categorie: BodyWeightCategories) {
-        self.scores.append(score)
-        self.dates.append(date)
-        let categorieString = categorie.rawValue
-        if !self.categories.contains(categorieString) {
-            self.categories.append(categorieString)
-        }
+    // Méthode pour ajouter un score avec une date (sans toucher aux catégories)
+    func addScore(_ score: Int, date: Date) {
+        self.scores.append(score)  // Ajoute le score à la liste des scores
+        self.dates.append(date)    // Ajoute la date à la liste des dates
+        // Ne rien faire avec la catégorie ici, elle reste fixe pour chaque mouvement
     }
+
     
     // Méthode pour récupérer les catégories en tant qu'énumérations
     func getCategories() -> [BodyWeightCategories] {

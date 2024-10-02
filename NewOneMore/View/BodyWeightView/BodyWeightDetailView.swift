@@ -41,12 +41,12 @@ struct BodyWeightDetailView: View {
                             }
                             .padding(.bottom, 20)
                             
-                            ActionBtnView(iconSF: "clock", color: bodyWeight.couleurCategorie, colorPrimary: .black) {
+                            ActionBtnView(iconSF: "list.star", color: bodyWeight.couleurCategorie, colorPrimary: .black) {
                                 activeSheet = .history
                             }
                             .padding(.bottom, 20)
   
-                            ActionBtnView(iconSF: "chart.bar.fill", color: bodyWeight.couleurCategorie, colorPrimary: .black) {
+                            ActionBtnView(iconSF: "chart.bar", color: bodyWeight.couleurCategorie, colorPrimary: .black) {
                                 activeSheet = .calculator
                             }
                             .hidden()
@@ -162,7 +162,7 @@ struct BodyWeightDetailView: View {
             }
         } else {
             let currentDate = Date()
-            bodyWeight.addScore(score, date: currentDate, categorie: .calisthenics)
+            bodyWeight.addScore(score, date: currentDate)
 
             do {
                 modelContext.insert(bodyWeight)

@@ -34,20 +34,19 @@ class Strong: ObservableObject {
     }
     
     // Méthode pour ajouter un score avec une date et une catégorie
-    func addScore(_ score: Double, date: Date, categorie: Categories) {
-        self.scores.append(score)
-        self.dates.append(date)
-        let categorieString = categorie.rawValue
-        if !self.categories.contains(categorieString) {
-            self.categories.append(categorieString)
-        }
+    func addScore(_ score: Double, date: Date) {
+        self.scores.append(score)  // Ajoute le score à la liste des scores
+        self.dates.append(date)    // Ajoute la date à la liste des dates
+        // Ne rien faire avec la catégorie ici, elle est fixe pour le mouvement
     }
+
     
     // Méthode pour récupérer les catégories en tant qu'énumérations
     func getCategories() -> [Categories] {
         return self.categories.compactMap { Categories(rawValue: $0) }
     }
     
+  
     
     
     var couleurCategorie: Color {

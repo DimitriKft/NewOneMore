@@ -47,12 +47,12 @@ struct StrongDetailView: View {
                             }
                             .padding(.bottom, 20)
                             
-                            ActionBtnView(iconSF: "clock", color: strong.couleurCategorie, colorPrimary: .black) {
+                            ActionBtnView(iconSF: "list.star", color: strong.couleurCategorie, colorPrimary: .black) {
                                 activeSheet = .history
                             }
                             .padding(.bottom, 20)
                             
-                            ActionBtnView(iconSF: "chart.bar.fill", color: strong.couleurCategorie, colorPrimary: .black) {
+                            ActionBtnView(iconSF: "chart.bar", color: strong.couleurCategorie, colorPrimary: .black) {
                                 activeSheet = .calculator
                             }
                         }
@@ -168,7 +168,7 @@ struct StrongDetailView: View {
             showAlert = true
         } else {
             let currentDate = Date()
-            strong.addScore(score, date: currentDate, categorie: .halterophilie)
+            strong.addScore(score, date: currentDate)
 
             do {
                 modelContext.insert(strong)

@@ -22,17 +22,12 @@ struct EnduranceDetailView: View {
     @State private var showAlert: Bool = false
     @State private var activeSheet: EnduranceActiveSheet? = nil
     @Environment(\.modelContext) private var modelContext
-
-    // Variable pour garder une trace du meilleur temps
     @State private var bestTime: Double?
-
-    // État pour afficher ou cacher le picker sous forme modale
     @State private var isPickerVisible: Bool = false
 
     var body: some View {
         ZStack(alignment: .topLeading) {
             VStack {
-                // Image et informations de base
                 ZStack {
                     Image(endurance.image)
                         .resizable()
@@ -53,12 +48,10 @@ struct EnduranceDetailView: View {
                             }
                             .padding(.bottom, 20)
                             
-                            ActionBtnView(iconSF: "clock", color: endurance.couleurCategorie, colorPrimary: .black) {
+                            ActionBtnView(iconSF: "list.star", color: endurance.couleurCategorie, colorPrimary: .black) {
                                 activeSheet = .history
                             }
                             .padding(.bottom, 20)
-
-                            // Nouveau bouton info pour ouvrir la description du mouvement d'endurance
                             ActionBtnView(iconSF: "info.circle", color: endurance.couleurCategorie, colorPrimary: .black) {
                                 activeSheet = .description
                             }
@@ -102,8 +95,6 @@ struct EnduranceDetailView: View {
                     .font(.largeTitle)
                     .fontWeight(.black)
                     .foregroundStyle(endurance.couleurCategorie)
-
-                // Bouton pour ouvrir le picker
                 Button(action: {
                     withAnimation {
                         isPickerVisible = true
@@ -121,8 +112,6 @@ struct EnduranceDetailView: View {
                 .padding(.top, 20)
                 .padding(.bottom, 20)
 
-                
-                // Graphique des temps
                 EnduranceChartTimeView(
                     times: endurance.times,
                     dates: endurance.dates,
@@ -131,7 +120,7 @@ struct EnduranceDetailView: View {
                 .padding(.bottom, 95)
             }
 
-            // Picker apparaissant par-dessus l'interface
+
             if isPickerVisible {
                 ZStack {
                     // Fond semi-transparent
@@ -205,13 +194,11 @@ struct EnduranceDetailView: View {
             return
         }
 
-        if timeInSeconds < 1 { // Limiter si temps trop court
+        if timeInSeconds < 1 {
             showAlert = true
         } else {
             let currentDate = Date()
-            endurance.addTime(timeInSeconds, date: currentDate, categorie: .run) // Ajustez la catégorie si nécessaire
-
-            // Sauvegarde dans le modèle Endurance
+            endurance.addTime(timeInSeconds, date: currentDate)
             do {
                 modelContext.insert(endurance)
                 try modelContext.save()
@@ -219,10 +206,8 @@ struct EnduranceDetailView: View {
                 print("Erreur lors de la sauvegarde des données : \(error.localizedDescription)")
             }
 
-            // Mettre à jour le meilleur temps
-            bestTime = endurance.times.min()
 
-            // Réinitialiser le champ de temps
+            bestTime = endurance.times.min()
             newTime = ""
         }
     }

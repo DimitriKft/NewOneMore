@@ -53,7 +53,7 @@ struct WodDetailView: View {
                             }
                             .padding(.bottom, 20)
                             
-                            ActionBtnView(iconSF: "clock", color: wod.couleurCategorie, colorPrimary: .black) {
+                            ActionBtnView(iconSF: "list.star", color: wod.couleurCategorie, colorPrimary: .black) {
                                 activeSheet = .history
                             }
                             .padding(.bottom, 20)
@@ -209,7 +209,7 @@ struct WodDetailView: View {
             showAlert = true
         } else {
             let currentDate = Date()
-            wod.addTime(timeInSeconds, date: currentDate, categorie: .hero) // Ajustez la catégorie si nécessaire
+            wod.addTime(timeInSeconds, date: currentDate) // Ajustez la catégorie si nécessaire
 
             // Sauvegarde dans le modèle WOD
             do {
