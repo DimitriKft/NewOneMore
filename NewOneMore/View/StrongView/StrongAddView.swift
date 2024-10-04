@@ -72,6 +72,7 @@ struct StrongAddView: View {
             if let selectedItem = selectedItem {
                 VStack {
                     Spacer()
+               
                     PrimaryBtnView(
                               label: " Ajouter \(selectedItem.nom)",
                               action: ajouterItem,

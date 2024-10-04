@@ -114,19 +114,13 @@ struct StrongListView: View {
     
     var filteredStrongs: [Strong] {
         let filteredByCategory: [Strong]
-        
-        // Si une catégorie est sélectionnée, filtrer les mouvements par cette catégorie
         if let category = selectedCategory {
             filteredByCategory = strongs.filter { strong in
-                // Comparaison directe avec la catégorie sélectionnée
                 return matchesSelectedCategory(strong: strong, selectedCategory: category)
             }
         } else {
-            // Si aucune catégorie n'est sélectionnée, renvoyer tous les mouvements
             filteredByCategory = strongs
         }
-        
-        // Si un texte de recherche est entré, filtrer également par le nom
         if searchText.isEmpty {
             return filteredByCategory
         } else {

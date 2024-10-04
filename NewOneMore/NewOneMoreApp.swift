@@ -10,11 +10,23 @@ import SwiftData
 
 @main
 struct OneMoreApp: App {
+    @State private var showSplash = true
     var body: some Scene {
         WindowGroup {
-            LandingScreenView()
-               
-        }
+                    if showSplash {
+                        SplashScreenView()
+                            .onAppear {
+                                // Basculer vers LandingScreenView après l'animation
+                                DispatchQueue.main.asyncAfter(deadline: .now() + 4) {
+                                    withAnimation {
+                                        showSplash = false // Cacher la SplashScreen après 4 secondes
+                                    }
+                                }
+                            }
+                    } else {
+                        RGPDAlertView()
+                    }
+                }
         .modelContainer(for: [Strong.self, BodyWeight.self, Wod.self, Endurance.self])
     }
 }
