@@ -16,13 +16,13 @@ enum EnduranceCategories: String, Codable, CaseIterable {
 
 @Model
 class Endurance: ObservableObject {
-    @Attribute var nom: String
-    @Attribute var subtitle: String
-    @Attribute var image: String
-    @Attribute var descriptionName: String
-    @Attribute var times: [Double] // En secondes
-    @Attribute var dates: [Date]
-    @Attribute var categories: [String]
+    @Attribute var nom: String = ""
+    @Attribute var subtitle: String = ""
+    @Attribute var image: String = ""
+    @Attribute var descriptionName: String = ""
+    @Attribute var times: [Double] = [0.0]
+    @Attribute var dates: [Date] = [Date.now]
+    @Attribute var categories: [String] = [""]
     
     init(nom: String, subtitle: String, image: String, descriptionName: String, times: [Double] = [], dates: [Date] = [], categories: [EnduranceCategories] = [.run]) {
         self.nom = nom

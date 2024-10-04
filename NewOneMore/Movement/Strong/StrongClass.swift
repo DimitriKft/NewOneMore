@@ -15,13 +15,13 @@ enum Categories: String, Codable, CaseIterable {
 
 @Model
 class Strong: ObservableObject {
-    @Attribute var nom: String
-    @Attribute var subtitle: String
-    @Attribute var image: String
-    @Attribute var descriptionName: String
-    @Attribute var scores: [Double]
-    @Attribute var dates: [Date]
-    @Attribute var categories: [String]
+    @Attribute var nom: String = ""
+    @Attribute var subtitle: String = ""
+    @Attribute var image: String = ""
+    @Attribute var descriptionName: String =   ""
+    @Attribute var scores: [Double] = [0.0]
+    @Attribute var dates: [Date] = [Date.now]
+    @Attribute var categories: [String] = [""]
     
     init(nom: String, subtitle: String, image: String, descriptionName: String, scores: [Double] = [], dates: [Date] = [], categories: [Categories] = [.halterophilie]) {
         self.nom = nom
@@ -63,3 +63,4 @@ class Strong: ObservableObject {
         }
     }
 }
+

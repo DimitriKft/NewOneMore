@@ -16,13 +16,13 @@ enum BodyWeightCategories: String, Codable, CaseIterable {
 
 @Model
 class BodyWeight: ObservableObject {
-    @Attribute var nom: String
-    @Attribute var subtitle: String
-    @Attribute var image: String
-    @Attribute var descriptionName: String
-    @Attribute var scores: [Int]
-    @Attribute var dates: [Date]
-    @Attribute var categories: [String]
+    @Attribute var nom: String = ""
+    @Attribute var subtitle: String = ""
+    @Attribute var image: String = ""
+    @Attribute var descriptionName: String = ""
+    @Attribute var scores: [Int] = [0]
+    @Attribute var dates: [Date] = [Date.now]
+    @Attribute var categories: [String] = [""]
     
     init(nom: String, subtitle: String, image: String, descriptionName: String, scores: [Int] = [], dates: [Date] = [], categories: [BodyWeightCategories] = [.calisthenics]) {
         self.nom = nom
