@@ -22,17 +22,12 @@ struct WodDetailView: View {
     @State private var showAlert: Bool = false
     @State private var activeSheet: WodActiveSheet? = nil
     @Environment(\.modelContext) private var modelContext
-
-    // Variable pour garder une trace du meilleur temps
     @State private var bestTime: Double?
-
-    // État pour afficher ou cacher le picker sous forme modale
     @State private var isPickerVisible: Bool = false
 
     var body: some View {
         ZStack(alignment: .topLeading) {
             VStack {
-                // Image et informations de base
                 ZStack {
                     Image(wod.image)
                         .resizable()
@@ -57,8 +52,6 @@ struct WodDetailView: View {
                                 activeSheet = .history
                             }
                             .padding(.bottom, 20)
-
-                            // Nouveau bouton info pour ouvrir la description du WOD
                             ActionBtnView(iconSF: "info.circle", color: wod.couleurCategorie, colorPrimary: .black) {
                                 activeSheet = .description
                             }
@@ -125,9 +118,6 @@ struct WodDetailView: View {
                 }
                 .padding(.top, 20)
                 .padding(.bottom, 20)
-
-                
-                // Graphique des temps
                 WodChartTimeView(
                     times: wod.times,
                     dates: wod.dates,
@@ -135,11 +125,8 @@ struct WodDetailView: View {
                 )
                 .padding(.bottom, 95)
             }
-
-            // Picker apparaissant par-dessus l'interface
             if isPickerVisible {
                 ZStack {
-                    // Fond semi-transparent
                     Color.black.opacity(0.4)
                         .ignoresSafeArea()
                         .onTapGesture {
@@ -170,11 +157,8 @@ struct WodDetailView: View {
         .navigationBarBackButtonHidden(true)
         .ignoresSafeArea(edges: .top)
         .onAppear {
-            // Mettre à jour le meilleur temps au chargement de la vue
             bestTime = wod.times.min()
         }
-
-        // Feuille modale pour afficher l'historique, la description ou confirmer la suppression
         .sheet(item: $activeSheet) { item in
             switch item {
             case .history:
@@ -210,24 +194,18 @@ struct WodDetailView: View {
             return
         }
 
-        if timeInSeconds < 200 { // Ex: limiter si temps trop court
+        if timeInSeconds < 200 {
             showAlert = true
         } else {
             let currentDate = Date()
-            wod.addTime(timeInSeconds, date: currentDate) // Ajustez la catégorie si nécessaire
-
-            // Sauvegarde dans le modèle WOD
+            wod.addTime(timeInSeconds, date: currentDate)
             do {
                 modelContext.insert(wod)
                 try modelContext.save()
             } catch {
                 print("Erreur lors de la sauvegarde des données : \(error.localizedDescription)")
             }
-
-            // Mettre à jour le meilleur temps
             bestTime = wod.times.min()
-
-            // Réinitialiser le champ de temps
             newTime = ""
         }
     }
