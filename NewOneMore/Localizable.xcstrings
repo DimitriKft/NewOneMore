@@ -1,0 +1,226 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "" : {
+
+    },
+    "%@" : {
+
+    },
+    "%@ Kg" : {
+
+    },
+    "%@ Kg (%lf%% de ton 1RM)" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$@ Kg (%2$lf%% de ton 1RM)"
+          }
+        }
+      }
+    },
+    "%@ Rep" : {
+
+    },
+    "%@Kg" : {
+
+    },
+    "%lld %% de ton 1RM :" : {
+
+    },
+    "%lld h" : {
+
+    },
+    "%lld Rep" : {
+
+    },
+    "%lld RM" : {
+
+    },
+    "Ajoute ta première activité d'endurance" : {
+
+    },
+    "Ajoute ton premier PR" : {
+
+    },
+    "Ajoute ton premier WOD" : {
+
+    },
+    "Ajouter" : {
+
+    },
+    "Annuler" : {
+
+    },
+    "Bienvenue dans One More" : {
+
+    },
+    "Cette action est irréversible 😱" : {
+
+    },
+    "Cette action est irréversible." : {
+
+    },
+    "Compris" : {
+
+    },
+    "D'accord" : {
+
+    },
+    "Endurance" : {
+
+    },
+    "Entre ton 1RM ici.." : {
+
+    },
+    "Entre ton temps" : {
+
+    },
+    "Estimation de tes RM" : {
+
+    },
+    "Filtrer par catégorie" : {
+
+    },
+    "Force" : {
+
+    },
+    "Formule de Brzycki" : {
+
+    },
+    "Gym" : {
+
+    },
+    "Heures" : {
+
+    },
+    "Historique de tes performances en" : {
+
+    },
+    "Historique de tes RM en" : {
+
+    },
+    "Historique de tes WOD en" : {
+
+    },
+    "Index" : {
+
+    },
+    "Le record du monde en deadlift de Hafþór Júlíus Björnsson est de 501 Kg ! On modifiera la limite quand tu lui arriveras à la cheville 😅" : {
+
+    },
+    "Le record du monde en pompes d'affiée de Carlton Williams est de 2682 répétitions ! On modifiera la limite quand tu lui arriveras à la cheville 😅" : {
+
+    },
+    "Le record du monde pour cette activité d'endurance est impressionnant ! Tu pourras ajuster ce record quand tu t'en approcheras 😅" : {
+
+    },
+    "Le record du monde pour le WOD Murph est impressionnant ! Tu pourras ajuster ce record quand tu t'en approcheras 😅" : {
+
+    },
+    "Meilleur temps" : {
+
+    },
+    "Minutes" : {
+
+    },
+    "One More" : {
+
+    },
+    "Pas si vite !" : {
+
+    },
+    "Pour ajouter un WOD, appuie sur le bouton **+** ci-dessus, tu pourras sélectionner les WODs disponibles." : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "To add a WOD, press the + button above, and you will be able to select the available WODs."
+          }
+        }
+      }
+    },
+    "Pour ajouter une activité d'endurance, appuie sur le bouton **+** ci-dessus, tu pourras sélectionner les activités disponibles." : {
+
+    },
+    "Pour sauvegarder vos mouvements et scores de manière sécurisée, One More utilise iCloud." : {
+
+    },
+    "Pour sélectionner ton premier mouvement de force, appuie sur le bouton + ci-dessus. Tu pourras consulter les mouvements disponibles pour tes PR et les ajouter ici." : {
+
+    },
+    "Pour sélectionner ton premier mouvement, appuie sur le bouton **+** ci-dessus, tu pourras consulter les mouvements disponibles pour tes **PR** et les ajouter ici." : {
+
+    },
+    "PR: %@ Kg" : {
+
+    },
+    "PR: %lld Rep" : {
+
+    },
+    "PR: %lld Répétitions" : {
+
+    },
+    "Rechercher un mouvement" : {
+
+    },
+    "Rechercher un WOD" : {
+
+    },
+    "Rechercher une activité" : {
+
+    },
+    "Score" : {
+
+    },
+    "Secondes" : {
+
+    },
+    "Slogan" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stronger, faster, one more time."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Plus fort, plus rapide, encore une fois."
+          }
+        }
+      }
+    },
+    "Supprimer" : {
+
+    },
+    "Supprimer %@ ?" : {
+
+    },
+    "Supprimer ce score ?" : {
+
+    },
+    "Supprimer ce temps ?" : {
+
+    },
+    "Time" : {
+
+    },
+    "Toutes les catégories" : {
+
+    },
+    "Valider le temps" : {
+
+    },
+    "Wod" : {
+
+    },
+    "WODs" : {
+
+    }
+  },
+  "version" : "1.0"
+}

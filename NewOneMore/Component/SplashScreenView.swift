@@ -43,7 +43,7 @@ struct SplashScreenView: View {
                         .fontWidth(.expanded)
                         .foregroundColor(.primary)
                         .transition(.opacity)
-                    Text("Plus fort, plus rapide, encore une fois.")
+                    Text("Slogan")
                         .font(.system(size: 11))
                         .fontWeight(.ultraLight)
                         .fontWidth(.expanded)
