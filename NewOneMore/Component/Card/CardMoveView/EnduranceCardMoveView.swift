@@ -26,8 +26,8 @@ struct EnduranceCardMoveView: View {
 
     var iconCategory: String {
         switch item.category {
-        case .run: return "figure.run.circle.fill"
-        case .swim: return "shield.fill"
+        case .run: return "figure.run"
+        case .swim: return "figure.pool.swim"
         }
     }
     
