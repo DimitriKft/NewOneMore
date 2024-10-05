@@ -48,7 +48,7 @@ struct StrongCardView: View {
                     RoundedRectangle(cornerRadius: 20)
                         .stroke(Color.white.opacity(0.1), lineWidth: 1)
                 )
-                .frame(width: 140, height: 32)
+                .frame(width: 157, height: 32)
                 .cornerRadius(5)
                 .overlay(
                     RoundedRectangle(cornerRadius: 5)
@@ -59,7 +59,7 @@ struct StrongCardView: View {
                 HStack {
                     ZStack {
                         Rectangle()
-                            .frame(width: 65, height: 28)
+                            .frame(width: 75, height: 28)
                             .cornerRadius(5)
                             .foregroundStyle(.ultraThickMaterial)
                             .opacity(0.4)
@@ -77,7 +77,7 @@ struct StrongCardView: View {
                     
                     ZStack {
                         Rectangle()
-                            .frame(width: 65, height: 28)
+                            .frame(width: 75, height: 28)
                             .cornerRadius(5)
                             .foregroundStyle(.ultraThickMaterial)
                             .opacity(0.4)

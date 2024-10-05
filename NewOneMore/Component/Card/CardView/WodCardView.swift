@@ -48,7 +48,7 @@ struct WodCardView: View {
                     RoundedRectangle(cornerRadius: 20)
                         .stroke(Color.white.opacity(0.1), lineWidth: 1)
                 )
-                .frame(width: 140, height: 32)
+                .frame(width: 157, height: 32)
                 .cornerRadius(5)
                 .overlay(
                     RoundedRectangle(cornerRadius: 5)
@@ -59,7 +59,7 @@ struct WodCardView: View {
                 HStack {
                     ZStack {
                         Rectangle()
-                            .frame(width: 65, height: 28)
+                            .frame(width: 75, height: 28)
                             .cornerRadius(5)
                             .foregroundStyle(.ultraThickMaterial)
                             .opacity(0.4)
@@ -77,7 +77,7 @@ struct WodCardView: View {
                     
                     ZStack {
                         Rectangle()
-                            .frame(width: 65, height: 28)
+                            .frame(width: 75, height: 28)
                             .cornerRadius(5)
                             .foregroundStyle(.ultraThickMaterial)
                             .opacity(0.4)
@@ -101,12 +101,18 @@ struct WodCardView: View {
         }
     }
 
-    // Formatter le temps en minutes et secondes (mm:ss)
-    private func formatTime(_ time: Double) -> String {
-        let minutes = Int(time) / 60
+    func formatTime(_ time: Double) -> String {
+        let hours = Int(time) / 3600
+        let minutes = (Int(time) % 3600) / 60
         let seconds = Int(time) % 60
-        return String(format: "%02d:%02d", minutes, seconds)
+
+        if hours > 0 {
+            return String(format: "%dh%02dm%02ds", hours, minutes, seconds)
+        } else {
+            return String(format: "%02dm%02ds", minutes, seconds)
+        }
     }
+
 
     private func daysSinceLastEntry() -> String {
         if let lastDate = dates.last {
