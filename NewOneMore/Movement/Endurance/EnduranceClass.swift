@@ -10,8 +10,8 @@ import SwiftData
 import SwiftUI
 
 enum EnduranceCategories: String, Codable, CaseIterable {
-    case run = "Run"
-    case swim = "Swim"
+    case outdoor = "Outdoor"
+    case indoor = "Indoor"
 }
 
 @Model
@@ -24,7 +24,7 @@ class Endurance: ObservableObject {
     @Attribute var dates: [Date] = [Date.now]
     @Attribute var categories: [String] = [""]
     
-    init(nom: String, subtitle: String, image: String, descriptionName: String, times: [Double] = [], dates: [Date] = [], categories: [EnduranceCategories] = [.run]) {
+    init(nom: String, subtitle: String, image: String, descriptionName: String, times: [Double] = [], dates: [Date] = [], categories: [EnduranceCategories] = [.outdoor]) {
         self.nom = nom
         self.subtitle = subtitle
         self.image = image
@@ -53,9 +53,9 @@ class Endurance: ObservableObject {
         }
         
         switch firstCat {
-        case .run:
+        case .outdoor:
             return .orange
-        case .swim:
+        case .indoor:
             return .blue
         }
     }

@@ -16,20 +16,20 @@ struct EnduranceMove: Hashable {
 
 
 var enduranceMoves: [EnduranceMove] = [
-    // Run
-    EnduranceMove(nom: "Marathon", subtitle: "Course de 42.195 kilomètres, un défi d'endurance extrême.", imageName: "Marathon", category: .run),
-    EnduranceMove(nom: "10K Run", subtitle: "Course de 10 kilomètres, idéale pour tester la vitesse et l'endurance.", imageName: "10K-Run", category: .run),
-    EnduranceMove(nom: "5K Run", subtitle: "Course rapide de 5 kilomètres, souvent utilisée pour les courses locales.", imageName: "5K-Run", category: .run),
-    EnduranceMove(nom: "Half Marathon", subtitle: "Course de 21.1 kilomètres, un défi entre le 10K et le marathon complet.", imageName: "Half-Marathon", category: .run),
-    EnduranceMove(nom: "Sprint 400m", subtitle: "Course de 400 mètres, un test de vitesse sur une courte distance.", imageName: "Sprint-400m", category: .run),
-    EnduranceMove(nom: "Sprint 100m", subtitle: "Course de trail sur 50 kilomètres, combinant endurance et difficulté terrain.", imageName: "Sprint-100m", category: .run),
+    // Outoor
+    EnduranceMove(nom: "Marathon", subtitle: "Course de 42.195 kilomètres, un défi d'endurance extrême.", imageName: "Marathon", category: .outdoor),
+    EnduranceMove(nom: "10K Run", subtitle: "Course de 10 kilomètres, idéale pour tester la vitesse et l'endurance.", imageName: "10K-Run", category: .outdoor),
+    EnduranceMove(nom: "5K Run", subtitle: "Course rapide de 5 kilomètres, souvent utilisée pour les courses locales.", imageName: "5K-Run", category: .outdoor),
+    EnduranceMove(nom: "Half Marathon", subtitle: "Course de 21.1 kilomètres, un défi entre le 10K et le marathon complet.", imageName: "Half-Marathon", category: .outdoor),
+    EnduranceMove(nom: "Sprint 400m", subtitle: "Course de 400 mètres, un test de vitesse sur une courte distance.", imageName: "Sprint-400m", category: .outdoor),
+    EnduranceMove(nom: "Sprint 100m", subtitle: "Course de trail sur 50 kilomètres, combinant endurance et difficulté terrain.", imageName: "Sprint-100m", category: .outdoor),
     
-    // Swim
-    EnduranceMove(nom: "100m Crawl", subtitle: "Course de natation rapide de 100 mètres en crawl.", imageName: "100-metres-Crawl", category: .swim),
-    EnduranceMove(nom: "200m Papillon", subtitle: "Épreuve exigeante de natation en style papillon sur 200 mètres.", imageName: "200m Papillon", category: .swim),
-    EnduranceMove(nom: "1500m Natation", subtitle: "Course d'endurance en natation sur 1500 mètres, souvent en eau libre.", imageName: "1500-metres-Natation", category: .swim),
-    EnduranceMove(nom: "50m-Dos", subtitle: "Course de natation rapide de 50 mètres en dos crawlé.", imageName: "50-metres-Dos", category: .swim),
-    EnduranceMove(nom: "Ironman Swim", subtitle: "Épreuve de natation de 3.8 kilomètres dans la compétition d'Ironman.", imageName: "Ironman-Swim", category: .swim),
+    // Indoor
+    EnduranceMove(nom: "100m Crawl", subtitle: "Course de natation rapide de 100 mètres en crawl.", imageName: "100-metres-Crawl", category: .outdoor),
+    EnduranceMove(nom: "200m Papillon", subtitle: "Épreuve exigeante de natation en style papillon sur 200 mètres.", imageName: "200m Papillon", category: .outdoor),
+    EnduranceMove(nom: "1500m Natation", subtitle: "Course d'endurance en natation sur 1500 mètres, souvent en eau libre.", imageName: "1500-metres-Natation", category: .outdoor),
+    EnduranceMove(nom: "50m-Dos", subtitle: "Course de natation rapide de 50 mètres en dos crawlé.", imageName: "50-metres-Dos", category: .outdoor),
+    EnduranceMove(nom: "Ironman Swim", subtitle: "Épreuve de natation de 3.8 kilomètres dans la compétition d'Ironman.", imageName: "Ironman-Swim", category: .outdoor),
 
     
 //    // Row (Aviron)

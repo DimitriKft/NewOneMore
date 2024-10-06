@@ -283,7 +283,7 @@ struct EnduranceDetailView: View {
             descriptionName: "Course à pied",
             times: [3600, 3700, 3800],
             dates: [Date(), Date().addingTimeInterval(-86400), Date().addingTimeInterval(-172800)], 
-            categories: [.run]
+            categories: [.outdoor]
         )
     )
 }

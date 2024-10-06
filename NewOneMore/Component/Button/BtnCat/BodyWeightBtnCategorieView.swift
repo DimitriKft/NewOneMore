@@ -39,7 +39,7 @@ struct BodyWeightBtnCategorieView: View {
                         .foregroundStyle(.white)
                         .font(.largeTitle)
                 }
-                Text(category?.rawValue ?? "Tous")
+                Text(category?.localizedName() ?? NSLocalizedString("Tous", comment: ""))
                     .font(.system(size: 10))
                     .bold()
             }

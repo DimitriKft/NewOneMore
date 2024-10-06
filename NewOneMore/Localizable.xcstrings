@@ -268,6 +268,23 @@
         }
       }
     },
+    "Calisthénie" : {
+      "comment" : "Catégorie de calisthenics",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Calisthenics"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Calisthénie"
+          }
+        }
+      }
+    },
     "Cette action est irréversible 😱" : {
       "localizations" : {
         "en" : {
@@ -460,19 +477,19 @@
         }
       }
     },
-    "Haltérophile" : {
-      "extractionState" : "manual",
+    "Gymnastique" : {
+      "comment" : "Catégorie de gymnastique",
       "localizations" : {
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Weightlifting"
+            "value" : "Gymnastics"
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Haltérophilie"
+            "value" : "Gtmnastique"
           }
         }
       }
@@ -488,7 +505,7 @@
         },
         "fr" : {
           "stringUnit" : {
-            "state" : "needs_review",
+            "state" : "translated",
             "value" : "Haltérophilie"
           }
         }
@@ -573,6 +590,12 @@
           }
         }
       }
+    },
+    "Key" : {
+      "extractionState" : "manual"
+    },
+    "Key 1" : {
+      "extractionState" : "manual"
     },
     "Le record du monde en deadlift de Hafþór Júlíus Björnsson est de 501 Kg ! On modifiera la limite quand tu lui arriveras à la cheville 😅" : {
       "localizations" : {
@@ -671,7 +694,21 @@
       }
     },
     "Musculation" : {
-      "comment" : "Catégorie de musculation"
+      "comment" : "Catégorie de musculation",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bodybuilding"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Musculation"
+          }
+        }
+      }
     },
     "One More" : {
       "localizations" : {

@@ -12,6 +12,16 @@ import SwiftUI
 enum BodyWeightCategories: String, Codable, CaseIterable {
     case calisthenics = "Calisthénie"
     case gymnastique = "Gymnastique"
+    
+    // Méthode pour obtenir une chaîne localisée
+    func localizedName() -> String {
+          switch self {
+          case .calisthenics:
+              return NSLocalizedString("Calisthénie", comment: "Catégorie de calisthenics")
+          case .gymnastique:
+              return NSLocalizedString("Gymnastique", comment: "Catégorie de gymnastique")
+          }
+      }
 }
 
 @Model

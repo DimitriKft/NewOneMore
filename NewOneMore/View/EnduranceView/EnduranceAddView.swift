@@ -38,8 +38,8 @@ struct EnduranceAddView: View {
                 }
                 HStack(alignment: .top, spacing: 65) {
                     EnduranceBtnCategorieView(selectedCategory: $selectedCategory, category: nil)
-                    EnduranceBtnCategorieView(selectedCategory: $selectedCategory, category: .run)
-                    EnduranceBtnCategorieView(selectedCategory: $selectedCategory, category: .swim)
+                    EnduranceBtnCategorieView(selectedCategory: $selectedCategory, category: .outdoor)
+                    EnduranceBtnCategorieView(selectedCategory: $selectedCategory, category: .indoor)
                 }
                 .padding(.horizontal)
                 
@@ -91,9 +91,9 @@ struct EnduranceAddView: View {
     
     func colorForCategory(_ category: EnduranceCategories) -> Color {
         switch category {
-        case .run:
+        case .outdoor:
             return Color.orange
-        case .swim:
+        case .indoor:
             return Color.blue
         }
     }

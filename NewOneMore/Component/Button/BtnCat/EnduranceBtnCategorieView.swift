@@ -14,16 +14,16 @@ struct EnduranceBtnCategorieView: View {
 
     var colorCategory: Color {
         switch category {
-        case .run: return .orange
-        case .swim: return .blue
+        case .outdoor: return .orange
+        case .indoor: return .blue
         default: return .black
         }
     }
 
     var iconCategory: String {
         switch category {
-        case .run: return "figure.run"
-        case .swim: return "figure.pool.swim"
+        case .outdoor: return "figure.run"
+        case .indoor: return "figure.pool.swim"
         default: return "square.grid.2x2"
         }
     }
@@ -49,6 +49,6 @@ struct EnduranceBtnCategorieView: View {
 }
 
 #Preview {
-    EnduranceBtnCategorieView(selectedCategory: .constant(.run), category: .run)
+    EnduranceBtnCategorieView(selectedCategory: .constant(.outdoor), category: .outdoor)
 }
 

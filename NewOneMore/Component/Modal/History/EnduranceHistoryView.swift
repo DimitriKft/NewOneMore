@@ -147,5 +147,5 @@ struct EnduranceHistoryView: View {
 }
 
 #Preview {
-    EnduranceHistoryView(name: "10K Run", times: [3600, 4200, 4500], dates: [Date(), Date(), Date()], couleurCategorie: .blue, endurance: Endurance(nom: "10K Run", subtitle: "10K running endurance test", image: "10K", descriptionName: "Endurance", times: [3600, 4200, 4500], dates: [Date(), Date(), Date()], categories: [.run]))
+    EnduranceHistoryView(name: "10K Run", times: [3600, 4200, 4500], dates: [Date(), Date(), Date()], couleurCategorie: .blue, endurance: Endurance(nom: "10K Run", subtitle: "10K running endurance test", image: "10K", descriptionName: "Endurance", times: [3600, 4200, 4500], dates: [Date(), Date(), Date()], categories: [.outdoor]))
 }

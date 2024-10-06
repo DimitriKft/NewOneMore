@@ -17,17 +17,17 @@ struct EnduranceCardMoveView: View {
     // Fonction pour déterminer la couleur en fonction de la catégorie WOD
     var categoryColor: Color {
         switch item.category {
-        case .run:
+        case .outdoor:
             return .orange
-        case .swim:
+        case .indoor:
             return .blue
         }
     }
 
     var iconCategory: String {
         switch item.category {
-        case .run: return "figure.run"
-        case .swim: return "figure.pool.swim"
+        case .outdoor: return "figure.run"
+        case .indoor: return "figure.pool.swim"
         }
     }
     
@@ -77,7 +77,7 @@ struct EnduranceCardMoveView: View {
 
 #Preview {
     EnduranceCardMoveView(
-        item: EnduranceMove(nom: "Fran", subtitle: "21-15-9 Thrusters & Pull-Ups", imageName: "Fran", category: .run),
+        item: EnduranceMove(nom: "Fran", subtitle: "21-15-9 Thrusters & Pull-Ups", imageName: "Fran", category: .outdoor),
         isSelected: false,
         onSelect: {
             print("Fran selected")
