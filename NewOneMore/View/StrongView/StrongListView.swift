@@ -138,9 +138,9 @@ struct StrongListView: View {
     
     private func categoryFilterButtons() -> [ActionSheet.Button] {
         var buttons: [ActionSheet.Button] = Categories.allCases.map { category in
-                .default(Text(category.rawValue)) {
-                    selectedCategory = category
-                }
+            .default(Text(category.localizedName())) {
+                selectedCategory = category
+            }
         }
         buttons.append(.cancel(Text("Annuler")))
         buttons.append(.default(Text("Toutes les catégories")) {
@@ -148,6 +148,7 @@ struct StrongListView: View {
         })
         return buttons
     }
+
     
     func formatDate(_ date: Date) -> String {
         let formatter = DateFormatter()

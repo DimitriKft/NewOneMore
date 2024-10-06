@@ -42,7 +42,6 @@ struct EnduranceBtnCategorieView: View {
                 }
                 Text(category?.rawValue ?? "Tous")
                     .font(.system(size: 10))
-                    .foregroundStyle(.white)
                     .bold()
             }
         }

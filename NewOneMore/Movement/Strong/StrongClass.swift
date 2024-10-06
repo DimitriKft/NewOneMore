@@ -10,6 +10,16 @@ import SwiftUI
 enum Categories: String, Codable, CaseIterable {
     case halterophilie = "Haltérophilie"
     case musculation = "Musculation"
+    
+    // Méthode pour obtenir une chaîne localisée
+    func localizedName() -> String {
+          switch self {
+          case .halterophilie:
+              return NSLocalizedString("Haltérophilie", comment: "Catégorie d'haltérophilie")
+          case .musculation:
+              return NSLocalizedString("Musculation", comment: "Catégorie de musculation")
+          }
+      }
   
 }
 
@@ -59,7 +69,7 @@ class Strong: ObservableObject {
             return .yellow
         case .musculation:
             return .red
-    
+
         }
     }
 }

@@ -12,7 +12,7 @@ struct BtnAddMoveView: View {
     var action: () -> Void
     var color: Color
     var colorSecondary: Color
-    var imageName: String // Nom de l'image
+    var imageName: String
     var body: some View {
         Button {
             action()
@@ -23,7 +23,7 @@ struct BtnAddMoveView: View {
                     .cornerRadius(12)
                     .foregroundColor(color)
                 HStack(alignment: .firstTextBaseline, spacing: 20) {
-                    Image(imageName) // Utilisation de l'image à la place du symbole SF
+                    Image(imageName)
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .frame(width: 24, height: 24)
@@ -46,6 +46,6 @@ struct BtnAddMoveView: View {
         },
         color: .yellow,
         colorSecondary: .black,
-        imageName: "yourImageName" // Remplacez par le nom de votre image dans les assets
+        imageName: "yourImageName" 
     )
 }

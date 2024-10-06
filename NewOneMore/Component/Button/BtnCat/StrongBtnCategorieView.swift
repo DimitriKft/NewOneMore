@@ -44,9 +44,9 @@ struct StrongBtnCategorieView: View {
                         .font(.largeTitle)
                      
                 }
-                Text(category?.rawValue ?? "Tous")
+                Text(category?.localizedName() ?? NSLocalizedString("Tous", comment: ""))
+
                     .font(.system(size: 10))
-                    .foregroundStyle(.white)
                     .bold()
             }
         }

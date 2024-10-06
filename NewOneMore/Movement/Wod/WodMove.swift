@@ -19,7 +19,7 @@ let wodMoves = [
     // WOD Girls
     WodMove(nom:
                 "Annie",
-            subtitle: "Le WOD Annie est un benchmark CrossFit combinant 50, 40, 30, 20, et 10 répétitions de double unders et de sit-ups.    Annie Sakamoto est l’une des athlètes pionnières du CrossFit et fait partie des premières adeptes du mouvement. Elle est surtout connue pour avoir contribué au développement du CrossFit aux côtés de son fondateur, Greg Glassman. Annie a également été coach et compétitrice aux CrossFit Games, gagnant une reconnaissance pour sa passion et son expertise.",
+            subtitle: NSLocalizedString("annie", comment: ""),
             imageName: "Annie",
             category: .girl),
     WodMove(nom:

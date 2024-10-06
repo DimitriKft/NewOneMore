@@ -56,7 +56,8 @@ struct StrongCardMoveView: View {
                         Image(systemName: iconCategory)
                             .foregroundStyle(categoryColor)
                             .font(.system(size: 14))
-                        Text(item.category.rawValue)
+                        Text(item.category.localizedName())
+
                             .font(.system(size: 12, weight: .bold))
                             .foregroundColor(.gray)
                     }
