@@ -25,7 +25,7 @@ struct StrongModalCalculatorView: View {
                 .font(.title)
                 .fontWeight(.bold)
          
-            Text("\(Int(percentage)) % de ton 1RM :")
+            Text(String(format: "%.0f", percentage) + " % de ton 1RM :")
                 .font(.headline)
                 .padding(.top, 10)
             
