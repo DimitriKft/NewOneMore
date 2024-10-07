@@ -45,14 +45,17 @@ struct BodyWeightDetailView: View {
                                 activeSheet = .history
                             }
                             .padding(.bottom, 20)
-  
+                            ActionBtnView(iconSF: "info.circle", color: bodyWeight.couleurCategorie, colorPrimary: .black) {
+                                activeSheet = .description
+                            }
+                            .padding(.bottom, 20)
                             ActionBtnView(iconSF: "chart.bar", color: bodyWeight.couleurCategorie, colorPrimary: .black) {
                                 activeSheet = .calculator
                             }
                             .hidden()
                         }
                         .padding(.trailing, 20)
-                        .padding(.bottom, 10)
+                        .padding(.bottom, -60)
                     }
                     .foregroundStyle(bodyWeight.couleurCategorie)
                     VStack {
@@ -100,6 +103,11 @@ struct BodyWeightDetailView: View {
                 StrongModalCalculatorView(pr: Double(bodyWeight.scores.max() ?? 0), color: bodyWeight.couleurCategorie, couleurCategorie: bodyWeight.couleurCategorie)
             case .history:
                 BodyWeightModalHistoryView(name: bodyWeight.nom, scores: bodyWeight.scores, dates: bodyWeight.dates, bodyWeight: bodyWeight, couleurCategorie: bodyWeight.couleurCategorie)
+            case .description:
+                EnduranceDescriptionView(
+                    name: bodyWeight.nom, subtitle: bodyWeight.subtitle,
+                    couleurCategorie: bodyWeight.couleurCategorie
+                )
             case .deleteConfirmation:
                 deleteMovementAlert
             }

@@ -8,7 +8,7 @@ import SwiftUI
 import Charts
 
 enum ActiveSheet: Identifiable {
-    case calculator, history, deleteConfirmation
+    case calculator, history, deleteConfirmation, description
     
     var id: Int {
         hashValue
@@ -55,9 +55,14 @@ struct StrongDetailView: View {
                             ActionBtnView(iconSF: "chart.bar", color: strong.couleurCategorie, colorPrimary: .black) {
                                 activeSheet = .calculator
                             }
+                            .padding(.bottom, 20)
+                            ActionBtnView(iconSF: "info.circle", color: strong.couleurCategorie, colorPrimary: .black) {
+                                activeSheet = .description
+                            }
+                            .padding(.bottom, 20)
                         }
                         .padding(.trailing, 20)
-                        .padding(.bottom, 10)
+                        .padding(.bottom, -80)
                     }
                     .foregroundStyle(strong.couleurCategorie)
                     VStack {
@@ -105,6 +110,11 @@ struct StrongDetailView: View {
                 StrongModalCalculatorView(pr: strong.scores.max() ?? 0.0, color: strong.couleurCategorie, couleurCategorie: strong.couleurCategorie)
             case .history:
                 StrongModalHistoryView(name: strong.nom, scores: strong.scores, dates: strong.dates, couleurCategorie: strong.couleurCategorie, strong: strong)
+            case .description:
+                EnduranceDescriptionView(
+                    name: strong.nom, subtitle: strong.subtitle,
+                    couleurCategorie: strong.couleurCategorie
+                )
             case .deleteConfirmation:
                 deleteMovementAlert
             }
