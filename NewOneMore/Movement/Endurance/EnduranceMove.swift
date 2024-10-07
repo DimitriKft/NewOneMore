@@ -23,14 +23,15 @@ var enduranceMoves: [EnduranceMove] = [
     EnduranceMove(nom: "Half Marathon", subtitle: "Course de 21.1 kilomètres, un défi entre le 10K et le marathon complet.", imageName: "Half-Marathon", category: .outdoor),
     EnduranceMove(nom: "Sprint 400m", subtitle: "Course de 400 mètres, un test de vitesse sur une courte distance.", imageName: "Sprint-400m", category: .outdoor),
     EnduranceMove(nom: "Sprint 100m", subtitle: "Course de trail sur 50 kilomètres, combinant endurance et difficulté terrain.", imageName: "Sprint-100m", category: .outdoor),
-    
-    // Indoor
     EnduranceMove(nom: "100m Crawl", subtitle: "Course de natation rapide de 100 mètres en crawl.", imageName: "100-metres-Crawl", category: .outdoor),
     EnduranceMove(nom: "200m Papillon", subtitle: "Épreuve exigeante de natation en style papillon sur 200 mètres.", imageName: "200m Papillon", category: .outdoor),
     EnduranceMove(nom: "1500m Natation", subtitle: "Course d'endurance en natation sur 1500 mètres, souvent en eau libre.", imageName: "1500-metres-Natation", category: .outdoor),
     EnduranceMove(nom: "50m-Dos", subtitle: "Course de natation rapide de 50 mètres en dos crawlé.", imageName: "50-metres-Dos", category: .outdoor),
     EnduranceMove(nom: "Ironman Swim", subtitle: "Épreuve de natation de 3.8 kilomètres dans la compétition d'Ironman.", imageName: "Ironman-Swim", category: .outdoor),
 
+    
+    // Indoor
+    EnduranceMove(nom: "Assault Bike 100m", subtitle: "...", imageName: "assault-bike-100m", category: .indoor),
     
 //    // Row (Aviron)
 //    EnduranceMove(nom: "500-mètres-Row", subtitle: "Épreuve rapide d'aviron sur 500 mètres, souvent utilisée en CrossFit.", imageName: "500-metres-Row", category: .swim),

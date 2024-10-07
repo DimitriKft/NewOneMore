@@ -27,7 +27,7 @@ struct EnduranceCardMoveView: View {
     var iconCategory: String {
         switch item.category {
         case .outdoor: return "figure.run"
-        case .indoor: return "figure.pool.swim"
+        case .indoor: return "figure.indoor.cycle"
         }
     }
     

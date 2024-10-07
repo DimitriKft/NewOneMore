@@ -15,17 +15,21 @@ struct EnduranceDescriptionView: View {
 
     var body: some View {
         VStack(spacing: 20) {
+            HStack {
+                Spacer()
+                ActionBtnView(iconSF: "chevron.down.circle.fill", color: couleurCategorie, colorPrimary: .black, action: { dismiss() })
+            }
             Text(name)
                 .font(.title)
                 .fontWeight(.bold)
                 .foregroundColor(couleurCategorie)
 
-            Text(subtitle)
-                .font(.body)
-                .padding()
-
+            ScrollView {
+                Text(subtitle)
+                    .font(.body)
+                    .padding()
+            }
             Spacer()
-
             PrimaryBtnView(
                 label: "Retour",
                 action: { dismiss() },

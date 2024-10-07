@@ -591,12 +591,6 @@
         }
       }
     },
-    "Key" : {
-      "extractionState" : "manual"
-    },
-    "Key 1" : {
-      "extractionState" : "manual"
-    },
     "Le record du monde en deadlift de Hafþór Júlíus Björnsson est de 501 Kg ! On modifiera la limite quand tu lui arriveras à la cheville 😅" : {
       "localizations" : {
         "en" : {
@@ -704,7 +698,7 @@
         },
         "fr" : {
           "stringUnit" : {
-            "state" : "needs_review",
+            "state" : "translated",
             "value" : "Musculation"
           }
         }

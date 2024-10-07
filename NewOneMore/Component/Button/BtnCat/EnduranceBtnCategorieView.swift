@@ -23,7 +23,7 @@ struct EnduranceBtnCategorieView: View {
     var iconCategory: String {
         switch category {
         case .outdoor: return "figure.run"
-        case .indoor: return "figure.pool.swim"
+        case .indoor: return "figure.indoor.cycle"
         default: return "square.grid.2x2"
         }
     }
