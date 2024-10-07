@@ -43,7 +43,18 @@
         }
       }
     },
+    "%@ Kg (%@%% de ton 1RM)" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$@ Kg (%2$@%% de ton 1RM)"
+          }
+        }
+      }
+    },
     "%@ Kg (%lf%% de ton 1RM)" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -348,6 +359,9 @@
           }
         }
       }
+    },
+    "de ton PR :" : {
+
     },
     "Endurance" : {
       "localizations" : {

@@ -20,15 +20,23 @@ struct StrongModalCalculatorView: View {
                 Spacer()
                 ActionBtnView(iconSF: "chevron.down.circle.fill", color: couleurCategorie, colorPrimary: .black, action: { dismiss() })
             }
+            .padding(.top, 10)
           
             Text("PR: \(String(format: "%.1f", pr)) Kg")
                 .font(.title)
+                .fontWidth(.expanded)
                 .fontWeight(.bold)
          
-            Text(String(format: "%.0f", percentage) + " % de ton 1RM :")
-                .font(.headline)
-                .padding(.top, 10)
-            
+            HStack {
+                Text(String(format: "%.0f", percentage) + " %")
+                    .font(.largeTitle)
+                    .fontWeight(.semibold)
+                    
+                Text("de ton PR :")
+                    .font(.title2)
+                    .fontWeight(.semibold)
+            }
+            .padding(.top)
             Text("\(String(format: "%.1f", calculatePercentage())) Kg")
                 .font(.largeTitle)
                 .fontWeight(.bold)
@@ -36,7 +44,7 @@ struct StrongModalCalculatorView: View {
                 .padding(.bottom, 20)
             
             // Slider pour ajuster le pourcentage
-            Slider(value: $percentage, in: 0...100, step: 1)
+            Slider(value: $percentage, in: 0...100, step: 5)
                 .padding(.horizontal)
             
             Text("Estimation de tes RM")
@@ -48,10 +56,10 @@ struct StrongModalCalculatorView: View {
                 .font(.caption)
                 .padding(.bottom, 10)
             
-            // Liste des estimations RM
+            // Liste des estimations RM basées uniquement sur le PR
             VStack(spacing: 10) {
                 ForEach(2...7, id: \.self) { reps in
-                    let estimatedRM = calculateRM(reps: reps)
+                    let estimatedRM = calculateRMForPR(reps: reps) // Utilise directement le PR pour les calculs
                     HStack {
                         Text("\(reps) RM")
                             .font(.title3)
@@ -61,7 +69,8 @@ struct StrongModalCalculatorView: View {
                         
                         Spacer()
                         
-                        Text("\(String(format: "%.1f", estimatedRM)) Kg (\(Double((estimatedRM / pr) * 100))% de ton 1RM)")
+                        // Affichage de la valeur estimée pour les RM basés sur le PR
+                        Text("\(String(format: "%d", Int(estimatedRM))) Kg (\(String(format: "%d", Int((estimatedRM / pr) * 100)))% de ton 1RM)")
                             .font(.body)
                             .foregroundColor(.white)
                     }
@@ -69,7 +78,6 @@ struct StrongModalCalculatorView: View {
                     .background(color)
                     .opacity(0.8)
                     .cornerRadius(10)
-                    .animation(.easeInOut(duration: 0.2), value: percentage)
                 }
             }
             .padding(.horizontal)
@@ -80,16 +88,17 @@ struct StrongModalCalculatorView: View {
         .padding()
     }
     
-    // Calculer le pourcentage de la charge
+    // Calculer le pourcentage de la charge ajustée par le curseur
     func calculatePercentage() -> Double {
         return pr * (percentage / 100)
     }
     
     // Calculer la charge pour un nombre donné de répétitions (Formule de Brzycki)
-    func calculateRM(reps: Int) -> Double {
+    // Basé uniquement sur le PR, sans tenir compte du pourcentage du curseur
+    func calculateRMForPR(reps: Int) -> Double {
         // La formule originale de Brzycki pour estimer le 1RM
         let percentageRM = (1.0278 - (0.0278 * Double(reps)))
-        return calculatePercentage() * percentageRM
+        return pr * percentageRM
     }
 }
 
