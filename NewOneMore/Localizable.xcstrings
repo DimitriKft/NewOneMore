@@ -585,6 +585,23 @@
         }
       }
     },
+    "HangPowerClean" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The Hang Power Clean is a derivative of the traditional clean, performed from a hanging position, meaning the bar starts above the ground, typically at knee level.\n\nHang Phase – After lifting the bar off the ground, lower it to your knees while maintaining tension in the hips. This phase heavily engages the back and legs.\n\nPull Phase – From this position, explosively pull the bar upward, using the power of the hips and legs to generate speed. The body drops under the bar into a partial squat.\n\nCatch Phase – Catch the bar on your shoulders in a \"power\" position (half-bent knees), then stand up fully.\n\nThis movement builds power, speed, and coordination while placing less strain on the lower back compared to a full clean. "
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Le Hang Power Clean est un mouvement dérivé du clean classique, mais réalisé à partir d'une position suspendue (\"hang\"), ce qui signifie que la barre commence au-dessus du sol, généralement au niveau des genoux.\n\nPhase de Hang – Après avoir soulevé la barre du sol, abaissez-la jusqu'aux genoux tout en maintenant une position de hanche tendue. Cela engage fortement les muscles du dos et des jambes.\n\nPhase de Pull – De cette position, tirez la barre vers le haut de manière explosive en utilisant la puissance des hanches et des jambes pour générer de la vitesse. Le corps passe rapidement sous la barre dans un squat partiel.\n\nPhase de Catch – Attrapez la barre sur vos épaules en position de \"power\" (demi-flexion des genoux), puis remontez jusqu'à la position debout.\n\nCe mouvement développe la puissance, la vitesse, et renforce la coordination, tout en limitant la tension sur le bas du dos par rapport au clean complet. "
+          }
+        }
+      }
+    },
     "Heures" : {
       "localizations" : {
         "en" : {

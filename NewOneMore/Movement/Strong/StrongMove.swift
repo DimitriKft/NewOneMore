@@ -33,7 +33,11 @@ let stringMoovs = [
         subtitle: NSLocalizedString("FrontSquat", comment: ""),
         imageName: "Front-Squat",
         category: .halterophilie),
-    StrongMove(nom: "Hang Power Clean", subtitle: "...", imageName: "Hang-Power-Clean", category: .halterophilie),
+    StrongMove(
+        nom: "Hang Power Clean",
+        subtitle: NSLocalizedString("HangPowerClean", comment: ""),
+        imageName: "Hang-Power-Clean",
+        category: .halterophilie),
     StrongMove(nom: "Hang Power Snatch", subtitle: "...", imageName: "Hang-Power-Snatch", category: .halterophilie),
     StrongMove(nom: "Hang Snatch", subtitle: "...", imageName: "Hang-Snatch", category: .halterophilie),
     StrongMove(nom: "Jerk", subtitle: "...", imageName: "Jerk", category: .halterophilie),
