@@ -91,9 +91,9 @@ struct GymAddView: View {
     func colorForCategory(_ category: GymCategories) -> Color {
         switch category {
         case .calisthenics:
-            return Color.yellow
+            return Color.mint
         case .gymnastique:
-            return Color.red
+            return Color.indigo
         }
     }
     

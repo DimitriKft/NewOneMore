@@ -86,10 +86,10 @@
         }
       }
     },
-    "%@ Rép" : {
+    "%@ reps" : {
 
     },
-    "%@ reps" : {
+    "%@ Reps" : {
 
     },
     "%@Kg" : {
@@ -512,7 +512,7 @@
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Gtmnastique"
+            "value" : "Gymnastique"
           }
         }
       }

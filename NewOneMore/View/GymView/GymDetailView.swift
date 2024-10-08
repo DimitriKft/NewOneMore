@@ -176,7 +176,7 @@ struct GymDetailView: View {
 
         print("Score entré : \(score)") // Vérifiez si le score est correct
 
-        if score > 100 {
+        if score > 2000 {
             print("Le score est supérieur à 100, afficher l'alerte.")
             showAlert = true
         } else {
