@@ -51,18 +51,19 @@ struct StrongDetailView: View {
                                 activeSheet = .history
                             }
                             .padding(.bottom, 20)
-                            
-                            ActionBtnView(iconSF: "chart.bar", color: strong.couleurCategorie, colorPrimary: .black) {
-                                activeSheet = .calculator
-                            }
-                            .padding(.bottom, 20)
                             ActionBtnView(iconSF: "info.circle", color: strong.couleurCategorie, colorPrimary: .black) {
                                 activeSheet = .description
                             }
                             .padding(.bottom, 20)
+                            ActionBtnView(iconSF: "chart.bar", color: strong.couleurCategorie, colorPrimary: .black) {
+                                activeSheet = .calculator
+                            }
+                            .padding(.bottom, 20)
+                            .opacity(strong.scores.isEmpty ? 0 : 1)
                         }
                         .padding(.trailing, 20)
                         .padding(.bottom, -80)
+
                     }
                     .foregroundStyle(strong.couleurCategorie)
                     VStack {
@@ -102,8 +103,6 @@ struct StrongDetailView: View {
         }
         .navigationBarBackButtonHidden(true)
         .ignoresSafeArea(edges: .top)
-
-        // Gestion centralisée des modales via l'énumération ActiveSheet
         .sheet(item: $activeSheet) { item in
             switch item {
             case .calculator:
