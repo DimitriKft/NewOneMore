@@ -5,7 +5,7 @@
 //  Created by dimitri on 19/09/2024.
 //
 
-import Foundation
+import SwiftUI
 
 
 struct StrongMove: Hashable {
@@ -15,11 +15,24 @@ struct StrongMove: Hashable {
     let category: Categories
 }
 
-let stringMoovs = [    
+let stringMoovs = [
     // Haltérophilie
-    StrongMove(nom: "Clean and Jerk", subtitle: "...", imageName: "Clean-And-Jerk", category: .halterophilie),
-    StrongMove(nom: "Clean", subtitle: "...", imageName: "Clean", category: .halterophilie),
-    StrongMove(nom: "Front Squat", subtitle: "...", imageName: "Front-Squat", category: .halterophilie),
+    StrongMove(
+        nom: "Clean and Jerk",
+        subtitle:  NSLocalizedString("CleanAndJerk", comment: ""),
+        imageName: "Clean-And-Jerk",
+        category: .halterophilie
+    ),
+    StrongMove(
+        nom: "Clean",
+        subtitle: NSLocalizedString("Clean", comment: ""),
+        imageName: "Clean",
+        category: .halterophilie),
+    StrongMove(
+        nom: "Front Squat",
+        subtitle: NSLocalizedString("FrontSquat", comment: ""),
+        imageName: "Front-Squat",
+        category: .halterophilie),
     StrongMove(nom: "Hang Power Clean", subtitle: "...", imageName: "Hang-Power-Clean", category: .halterophilie),
     StrongMove(nom: "Hang Power Snatch", subtitle: "...", imageName: "Hang-Power-Snatch", category: .halterophilie),
     StrongMove(nom: "Hang Snatch", subtitle: "...", imageName: "Hang-Snatch", category: .halterophilie),
@@ -39,7 +52,7 @@ let stringMoovs = [
     // Haltérophilie
     StrongMove(nom: "Push Jerk", subtitle: "Variante du Jerk où l'athlète utilise une légère flexion des jambes pour rattraper la barre au-dessus de la tête.", imageName: "Push-Jerk", category: .halterophilie),
     StrongMove(nom: "Sumo Deadlift", subtitle: "Un deadlift avec une position large des jambes, engageant davantage les hanches et les adducteurs.", imageName: "Sumo-Deadlift", category: .halterophilie),
-
+    
     
     // Musculation
     StrongMove(nom: "Barbell Curl", subtitle: "...", imageName: "Barbell-Curl", category: .musculation),
@@ -67,5 +80,5 @@ let stringMoovs = [
     StrongMove(nom: "Cable Crunch", subtitle: "Exercice pour les abdominaux réalisé à la machine à câble.", imageName: "Cable-Crunch", category: .musculation),
     StrongMove(nom: "Dumbbell Bench Press", subtitle: "Variante du Bench Press réalisée avec des haltères pour un mouvement plus libre et une activation accrue des muscles stabilisateurs.", imageName: "Dumbbell-Bench-Press", category: .musculation),
     StrongMove(nom: "T-Bar Row", subtitle: "Exercice de tirage pour développer l'épaisseur du dos, particulièrement le milieu du dos et les rhomboïdes.", imageName: "T-Bar-Row", category: .musculation)
-
+    
 ]

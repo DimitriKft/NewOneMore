@@ -296,7 +296,7 @@
         },
         "fr" : {
           "stringUnit" : {
-            "state" : "needs_review",
+            "state" : "translated",
             "value" : "Calisthénie"
           }
         }
@@ -330,6 +330,40 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Cette action est irréversible."
+          }
+        }
+      }
+    },
+    "Clean" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "This fundamental weightlifting movement involves lifting the barbell from the ground to the shoulders in one fluid, explosive motion.\n\nStarting Position – Begin with the barbell on the floor, feet shoulder-width apart, and hands gripping the bar just outside the knees. Maintain a flat back and engage your core.\n\nPull Phase – As you lift the barbell, drive through your legs while keeping the bar close to your body. Extend your hips and knees explosively, creating upward momentum.\n\nCatch Phase – As the bar reaches its highest point, quickly rotate your elbows underneath the bar and catch it on your shoulders in a front squat position. Absorb the weight by bending your knees and stabilizing your body.\n\nThe Clean develops explosive strength, speed, and full-body coordination, making it a cornerstone of strength training and a key movement in competitive weightlifting."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ce mouvement fondamental de l'haltérophilie consiste à soulever la barre du sol jusqu'aux épaules en un seul mouvement fluide et explosif.\n\nPosition de départ – Commencez avec la barre au sol, les pieds écartés à la largeur des épaules et les mains saisissant la barre juste à l'extérieur des genoux. Gardez le dos droit et engagez votre ceinture abdominale.\n\nPhase de tirage – En soulevant la barre, poussez avec vos jambes tout en maintenant la barre près du corps. Étendez les hanches et les genoux de manière explosive pour créer un élan vers le haut.\n\nPhase de réception – Lorsque la barre atteint son point le plus haut, faites rapidement pivoter vos coudes sous la barre et attrapez-la sur vos épaules dans une position de squat avant. Absorbez le poids en fléchissant les genoux et stabilisez votre corps.\n\nLe Clean développe la force explosive, la vitesse et la coordination de tout le corps, en faisant un pilier de l'entraînement en force et un mouvement clé en compétition d'haltérophilie."
+          }
+        }
+      }
+    },
+    "CleanAndJerk" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "This iconic weightlifting movement is divided into two distinct phases:\n\n1. The Clean – Lift the barbell from the ground in an explosive motion to your shoulders, primarily using the power of your legs and back. This exercise develops strength, speed, and coordination.\n\n2. The Jerk – Once the barbell is on your shoulders, push it overhead with a rapid extension of your legs and arms. The Jerk requires precise technique and optimal mobility.\n\nThis full-body movement engages almost every muscle and is one of the major events in weightlifting competitions."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ce mouvement emblématique de l'haltérophilie se divise en deux phases distinctes :\n\n        1. Le Clean – Soulevez la barre du sol en un mouvement explosif jusqu'aux épaules, en utilisant principalement la puissance des jambes et du dos. Cet exercice développe la force, la vitesse et la coordination.\n\n        2. Le Jerk – Une fois la barre sur les épaules, poussez-la au-dessus de la tête grâce à une extension rapide des jambes et des bras. Le Jerk exige une technique précise et une mobilité optimale.\n\n        Ce mouvement complet sollicite pratiquement tous les muscles du corps et est l'une des épreuves majeures en compétition d'haltérophilie."
           }
         }
       }
@@ -480,6 +514,23 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Formule de Brzycki"
+          }
+        }
+      }
+    },
+    "FrontSquat" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The Front Squat is a classic squat exercise where the barbell rests on the front of the shoulders, emphasizing the anterior part of the body, especially the quadriceps and core.\n\nStarting Position – Place the barbell on the front of your shoulders, either by crossing your arms or keeping your elbows high to hold the bar in place. Stand with feet shoulder-width apart, keeping your torso upright and your head in a neutral position.\n\nControlled Descent – Slowly lower yourself, keeping the weight on your heels and your elbows raised. Bend your hips and knees, maintaining a straight back, until your thighs are parallel to the floor or lower.\n\nPowerful Ascent – Push through your heels while straightening your hips and knees. Keep a stable, controlled posture while engaging your core to balance the bar.\n\nThis exercise is excellent for strengthening the legs and improving core stability while developing mobility in the ankles, hips, and shoulders.\n\n"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Le Front Squat est un exercice de squat classique où la barre repose à l'avant des épaules, renforçant ainsi la partie antérieure du corps, en particulier les quadriceps et le tronc.\n\nPosition de départ – Placez la barre sur le devant de vos épaules, en croisant les bras ou avec les coudes bien hauts pour maintenir la barre en place. Gardez les pieds écartés à la largeur des épaules, le torse droit et la tête en position neutre.\n\nDescente contrôlée – Abaissez-vous lentement en gardant le poids sur les talons et les coudes élevés. Fléchissez les hanches et les genoux, en gardant le dos droit, jusqu'à ce que vos cuisses soient parallèles au sol ou plus bas.\n\nRemontée puissante – Poussez avec vos talons tout en redressant les hanches et les genoux. Maintenez une posture stable et contrôlée tout en engageant le tronc pour garder la barre en équilibre.\n\nCet exercice est excellent pour renforcer les jambes et améliorer la stabilité du tronc, tout en développant la mobilité des chevilles, des hanches et des épaules."
           }
         }
       }
