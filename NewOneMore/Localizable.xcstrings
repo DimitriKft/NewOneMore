@@ -86,6 +86,12 @@
         }
       }
     },
+    "%@ Rép" : {
+
+    },
+    "%@ reps" : {
+
+    },
     "%@Kg" : {
       "localizations" : {
         "en" : {
@@ -411,6 +417,9 @@
         }
       }
     },
+    "Es-tu sûr que ce score est possible ? 😅" : {
+
+    },
     "Estimation de tes RM" : {
       "localizations" : {
         "en" : {
@@ -556,6 +565,9 @@
           }
         }
       }
+    },
+    "Historique de tes PR en" : {
+
     },
     "Historique de tes RM en" : {
       "localizations" : {
@@ -814,6 +826,9 @@
         }
       }
     },
+    "Pour sélectionner ton premier mouvement de gymnastique ou calisthénie, appuie sur le bouton + ci-dessus. Tu pourras consulter les mouvements disponibles pour tes PR et les ajouter ici." : {
+
+    },
     "Pour sélectionner ton premier mouvement, appuie sur le bouton **+** ci-dessus, tu pourras consulter les mouvements disponibles pour tes **PR** et les ajouter ici." : {
       "localizations" : {
         "en" : {
@@ -845,6 +860,9 @@
           }
         }
       }
+    },
+    "PR: %@ reps" : {
+
     },
     "PR: %lld Rep" : {
       "localizations" : {

@@ -1,20 +1,33 @@
 //
-//  BodyWeightDetailView.swift
+//  GymDetailView.swift
 //  NewOneMore
 //
-//  Created by dimitri on 25/09/2024.
+//  Created by dimitri on 08/10/2024.
 //
 
+//
+//  GymDetailView.swift
+//  NewOneMore
+//
+//  Created by dimitri on 08/10/2024.
+//
 import SwiftUI
 import Charts
 
+enum GymActiveSheet: Identifiable {
+    case history, deleteConfirmation, description
+    
+    var id: Int {
+        hashValue
+    }
+}
 
-struct BodyWeightDetailView: View {
-    let bodyWeight: BodyWeight
+struct GymDetailView: View {
+    let gym: Gym
     @Environment(\.dismiss) var dismiss
     @State private var newScore: String = ""
-    @State private var showwAlert: Bool = false
-    @State private var activeSheet: ActiveSheet? = nil
+    @State private var showAlert: Bool = false
+    @State private var activeSheet: GymActiveSheet? = nil
     @Environment(\.modelContext) private var modelContext
 
     var body: some View {
@@ -22,44 +35,43 @@ struct BodyWeightDetailView: View {
             VStack {
                 // Image et informations de base
                 ZStack {
-                    Image(bodyWeight.image)
+                    Image(gym.image)
                         .resizable()
                         .aspectRatio(contentMode: .fill)
                         .frame(width: UIScreen.main.bounds.width, height: 300)
                         .grayscale(1.0)
                         .clipped()
                     HStack {
-                        ActionBtnView(iconSF: "arrow.left", color: bodyWeight.couleurCategorie, colorPrimary: .black) {
+                        ActionBtnView(iconSF: "arrow.left", color: gym.couleurCategorie, colorPrimary: .black) {
                             dismiss()
                         }
                         .padding()
                         .padding(.bottom, 150)
                         Spacer()
                         VStack {
-                            ActionBtnView(iconSF: "trash", color: bodyWeight.couleurCategorie, colorPrimary: .black) {
+                            ActionBtnView(iconSF: "trash", color: gym.couleurCategorie, colorPrimary: .black) {
                                 activeSheet = .deleteConfirmation
                             }
                             .padding(.bottom, 20)
                             
-                            ActionBtnView(iconSF: "list.star", color: bodyWeight.couleurCategorie, colorPrimary: .black) {
+                            ActionBtnView(iconSF: "list.star", color: gym.couleurCategorie, colorPrimary: .black) {
                                 activeSheet = .history
                             }
+                        
+                            
+                         
                             .padding(.bottom, 20)
-                            ActionBtnView(iconSF: "info.circle", color: bodyWeight.couleurCategorie, colorPrimary: .black) {
+                            ActionBtnView(iconSF: "info.circle", color: gym.couleurCategorie, colorPrimary: .black) {
                                 activeSheet = .description
                             }
                             .padding(.bottom, 20)
-                            ActionBtnView(iconSF: "chart.bar", color: bodyWeight.couleurCategorie, colorPrimary: .black) {
-                                activeSheet = .calculator
-                            }
-                            .hidden()
                         }
                         .padding(.trailing, 20)
-                        .padding(.bottom, -60)
+                        .padding(.bottom, -30)
                     }
-                    .foregroundStyle(bodyWeight.couleurCategorie)
+                    .foregroundStyle(gym.couleurCategorie)
                     VStack {
-                        Text(bodyWeight.nom)
+                        Text(gym.nom)
                             .font(.headline)
                             .fontWeight(.black)
                             .foregroundColor(.white)
@@ -78,19 +90,19 @@ struct BodyWeightDetailView: View {
                     .cornerRadius(5)
                     .overlay(
                         RoundedRectangle(cornerRadius: 5)
-                            .stroke(bodyWeight.couleurCategorie, lineWidth: 1)
+                            .stroke(gym.couleurCategorie, lineWidth: 1)
                     )
                     .offset(y: 150)
                 }
-                Text("PR: \(bodyWeight.scores.max() ?? 0) Répétitions")
+                Text("PR: \(String(format: "%.0f", gym.scores.max() ?? 0.0)) reps")
                     .font(.largeTitle)
                     .fontWeight(.black)
-                    .foregroundStyle(bodyWeight.couleurCategorie)
+                    .foregroundStyle(gym.couleurCategorie)
                     .padding(.top, 40)
 
-                BodyWeightFieldAddScoreView(newScore: $newScore, strongColor: bodyWeight.couleurCategorie, addNewScore: addNewScore)
+                StrongFieldAddScoreView(newScore: $newScore, strongColor: gym.couleurCategorie, addNewScore: addNewScore)
 
-//                BodyWeightChartScoreView(scores: bodyWeight.scores, dates: bodyWeight.dates, couleurCategorie: bodyWeight.couleurCategorie)
+                GymChartScoreView(scores: gym.scores, dates: gym.dates, couleurCategorie: gym.couleurCategorie)
             }
         }
         .navigationBarBackButtonHidden(true)
@@ -99,23 +111,21 @@ struct BodyWeightDetailView: View {
         // Gestion centralisée des modales via l'énumération ActiveSheet
         .sheet(item: $activeSheet) { item in
             switch item {
-            case .calculator:
-                StrongModalCalculatorView(pr: Double(bodyWeight.scores.max() ?? 0), color: bodyWeight.couleurCategorie, couleurCategorie: bodyWeight.couleurCategorie)
             case .history:
-                BodyWeightModalHistoryView(name: bodyWeight.nom, scores: bodyWeight.scores, dates: bodyWeight.dates, bodyWeight: bodyWeight, couleurCategorie: bodyWeight.couleurCategorie)
+                GymModalHistoryView(name: gym.nom, scores: gym.scores, dates: gym.dates, couleurCategorie: gym.couleurCategorie, gym: gym)
             case .description:
                 EnduranceDescriptionView(
-                    name: bodyWeight.nom, subtitle: bodyWeight.subtitle,
-                    couleurCategorie: bodyWeight.couleurCategorie
+                    name: gym.nom, subtitle: gym.subtitle,
+                    couleurCategorie: gym.couleurCategorie
                 )
             case .deleteConfirmation:
                 deleteMovementAlert
             }
         }
-        .alert(isPresented: $showwAlert) {
+        .alert(isPresented: $showAlert) {
             Alert(
                 title: Text("Pas si vite !"),
-                message: Text("Le record du monde en pompes d'affiée de Carlton Williams est de 2682 répétitions ! On modifiera la limite quand tu lui arriveras à la cheville 😅"),
+                message: Text("Es-tu sûr que ce score est possible ? 😅"),
                 dismissButton: .default(Text("D'accord"))
             )
         }
@@ -123,7 +133,7 @@ struct BodyWeightDetailView: View {
 
     var deleteMovementAlert: some View {
         VStack {
-            Text("Supprimer \(bodyWeight.nom) ?")
+            Text("Supprimer \(gym.nom) ?")
                 .font(.title)
             Text("Cette action est irréversible 😱")
                 .padding(.bottom, 20)
@@ -147,9 +157,11 @@ struct BodyWeightDetailView: View {
     }
 
     func deleteMovement() {
-        modelContext.delete(bodyWeight)
+        print("Tentative de suppression")
+        modelContext.delete(gym)
         do {
             try modelContext.save()
+            print("Suppression réussie")
         } catch {
             print("Erreur lors de la suppression : \(error.localizedDescription)")
         }
@@ -157,23 +169,22 @@ struct BodyWeightDetailView: View {
     }
 
     func addNewScore() {
-        guard let score = Int(newScore), score > 0 else {
+        guard let score = Double(newScore), score > 0 else {
             print("Le score entré n'est pas valide.")
             return
         }
 
-        print("Score entré : \(score)")
+        print("Score entré : \(score)") // Vérifiez si le score est correct
 
-        if score > 2682 {
-            DispatchQueue.main.async {
-                showwAlert = true
-            }
+        if score > 100 {
+            print("Le score est supérieur à 100, afficher l'alerte.")
+            showAlert = true
         } else {
             let currentDate = Date()
-            bodyWeight.addScore(score, date: currentDate)
+            gym.addScore(score, date: currentDate)
 
             do {
-                modelContext.insert(bodyWeight)
+                modelContext.insert(gym)
                 try modelContext.save()
             } catch {
                 print("Erreur lors de la sauvegarde des données : \(error.localizedDescription)")
@@ -185,8 +196,8 @@ struct BodyWeightDetailView: View {
 }
 
 
+
+
 #Preview{
-    BodyWeightDetailView(bodyWeight: BodyWeight(nom: "Pull-Up", subtitle: "Les tractions sont un exercice fondamental du street workout.", image: "Pull-Up", descriptionName: "Exercice de base", scores: [10, 12, 15, 18], dates: [now, now - oneDay, now - 2 * oneDay, now - 3 * oneDay], categories: [.calisthenics]))
+    GymDetailView(gym: Gym(nom: "Pull-Up", subtitle: "Un exercice de calisthénie classique pour la force du haut du corps.", image: "Pull-Up-Strict", descriptionName: "Un mouvement de base pour développer la force du dos et des bras.", scores: [10, 12, 15], dates: [now, now - oneDay, now - 2 * oneDay], categories: [.calisthenics]))
 }
-
-

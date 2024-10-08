@@ -1,5 +1,5 @@
 //
-//  BodyWeightChartScoreView.swift
+//  GymChartScoreView.swift
 //  NewOneMore
 //
 //  Created by dimitri on 25/09/2024.
@@ -10,8 +10,8 @@
 import SwiftUI
 import Charts
 
-struct BodyWeightChartScoreView: View {
-    let scores: [Int]
+struct GymChartScoreView: View {
+    let scores: [Double]
     let dates: [Date]
     let couleurCategorie: Color
 
@@ -27,7 +27,7 @@ struct BodyWeightChartScoreView: View {
                 )
                 .foregroundStyle(couleurCategorie)
                 .annotation(position: .top) {
-                    Text("\(score) Rep")
+                    Text(String(format: "%.0f", score) + " Reps")
                         .font(.caption)
                         .fontWeight(.bold)
                         .foregroundColor(.primary)
@@ -67,6 +67,6 @@ struct BodyWeightChartScoreView: View {
 
 
 #Preview {
-    BodyWeightChartScoreView(scores: [23, 45, 56, 78, 90], dates: [Date(), Date(), Date(), Date(), Date()], couleurCategorie: .blue)
+    GymChartScoreView(scores: [23, 45, 56, 78, 90], dates: [Date(), Date(), Date(), Date(), Date()], couleurCategorie: .blue)
 }
 

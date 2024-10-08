@@ -9,14 +9,14 @@ import SwiftUI
 
 struct LandingScreenView: View {
     @Environment(\.colorScheme) var colorScheme // Détecte le mode clair ou sombre
-
+    
     var body: some View {
         TabView {
             StrongListView()
                 .tabItem {
                     Label("Force", systemImage: "figure.strengthtraining.traditional")
                 }
-            BodyWeightListView()
+            GymListView()
                 .tabItem {
                     Label("Gym", systemImage: "figure.play")
                 }
@@ -30,7 +30,7 @@ struct LandingScreenView: View {
                 }
         }
         .accentColor(colorScheme == .dark ? .white : .black) // Couleur des icônes et labels en fonction du mode
-//        .background(colorScheme == .dark ? Color.black : Color.white) // Ajuste le fond
+        //        .background(colorScheme == .dark ? Color.black : Color.white) // Ajuste le fond
         .tint(colorScheme == .dark ? .white : .black) // Couleur d'accentuation (tint)
     }
 }

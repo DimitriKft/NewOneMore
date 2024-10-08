@@ -27,6 +27,6 @@ struct OneMoreApp: App {
                         RGPDAlertView()
                     }
                 }
-        .modelContainer(for: [Strong.self, BodyWeight.self, Wod.self, Endurance.self])
+        .modelContainer(for: [Strong.self, Gym.self, Wod.self, Endurance.self])
     }
 }
