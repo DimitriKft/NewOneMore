@@ -619,6 +619,23 @@
         }
       }
     },
+    "HangSnatch" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The Hang Snatch is a variation of the traditional snatch, where the bar is lifted from a hanging position, usually above the knees, rather than directly from the ground.\n\nHang Phase – After lifting the bar, lower it to the thighs or knees while maintaining tension in the back and hips. This phase engages the muscles of the legs, back, and core.\n\nPull Phase – From the hanging position, explosively pull the bar overhead, primarily using the power of the legs and hips. The whole body is involved to generate speed and lift the bar.\n\nCatch Phase – Catch the bar in a low position, with knees bent and arms extended overhead. Stabilize the bar, then stand up to complete the lift.\n\nThe Hang Snatch is an excellent variation to develop speed, coordination, and explosive strength, while placing less strain on the lower back compared to the full snatch. "
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Le Hang Snatch est une variation du snatch classique, où la barre est soulevée à partir d'une position suspendue, généralement au-dessus des genoux, plutôt que directement depuis le sol.\n\nPhase de Hang – Après avoir soulevé la barre, abaissez-la jusqu'aux cuisses ou aux genoux, tout en maintenant une tension dans le dos et les hanches. Cette phase sollicite les muscles des jambes, du dos et du tronc.\n\nPhase de Pull – À partir de cette position suspendue, tirez la barre de manière explosive au-dessus de votre tête, en utilisant principalement la puissance des jambes et des hanches. Le corps tout entier est mis à contribution pour générer de la vitesse et soulever la barre.\n\nPhase de Catch – Attrapez la barre en position basse, avec les genoux fléchis et les bras tendus au-dessus de la tête. Stabilisez la barre, puis redressez-vous pour terminer l'ascension.\n\nLe Hang Snatch est une excellente variante pour développer la vitesse, la coordination et la force explosive, en mettant moins de stress sur le bas du dos par rapport au snatch complet. "
+          }
+        }
+      }
+    },
     "Heures" : {
       "localizations" : {
         "en" : {
