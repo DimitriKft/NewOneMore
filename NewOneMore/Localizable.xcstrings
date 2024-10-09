@@ -602,6 +602,23 @@
         }
       }
     },
+    "HangPowerSnatch" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The Hang Power Snatch is a variation of the traditional snatch, performed from a hanging position, meaning the bar starts above the ground, typically at thigh or knee level.\n\nHang Phase – After lifting the bar off the ground, lower it to the thighs or knees while maintaining tension in the lower back and hips. This phase mainly engages the legs and back muscles.\n\nPull Phase – From this position, explosively pull the bar overhead using the power of the legs and hips to generate speed. The arms guide the bar, but the majority of the force is initiated by the lower body.\n\nCatch Phase – Catch the bar overhead in a \"power\" position, with the knees slightly bent. Stabilize the bar, then stand up fully.\n\nThe Hang Power Snatch is an excellent exercise for developing power, speed, and coordination, while reducing strain on the lower back compared to the full snatch."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : " Le Hang Power Snatch est une variante du snatch classique, effectuée à partir d'une position suspendue (\"hang\"), ce qui signifie que la barre commence au-dessus du sol, généralement au niveau des cuisses ou des genoux.\n\nPhase de Hang – Après avoir soulevé la barre du sol, abaissez-la jusqu'aux cuisses ou aux genoux tout en maintenant la tension dans le bas du dos et les hanches. Cela engage principalement les muscles des jambes et du dos.\n\nPhase de Pull – À partir de cette position, tirez la barre de manière explosive au-dessus de votre tête en utilisant la force des jambes et des hanches pour générer de la vitesse. Les bras viennent guider la barre, mais l'essentiel du mouvement est initié par le bas du corps.\n\nPhase de Catch – Attrapez la barre au-dessus de votre tête en position de \"power\", c'est-à-dire avec les genoux légèrement fléchis. Stabilisez la barre, puis redressez-vous jusqu'à la position debout.\n\nLe Hang Power Snatch est un excellent exercice pour développer la puissance, la rapidité et la coordination, tout en réduisant la tension sur le bas du dos comparé au snatch complet."
+          }
+        }
+      }
+    },
     "Heures" : {
       "localizations" : {
         "en" : {
