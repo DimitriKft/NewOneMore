@@ -78,24 +78,79 @@ let stringMoovs = [
         subtitle: NSLocalizedString("PowerSnatch", comment: ""),
         imageName: "Power-Snatch",
         category: .halterophilie),
-    StrongMove(nom: "Push Press", subtitle: "...", imageName: "Push-Press", category: .halterophilie),
-    StrongMove(nom: "Snatch", subtitle: "...", imageName: "Snatch", category: .halterophilie),
-    StrongMove(nom: "Split Jerk", subtitle: "...", imageName: "Split-Jerk", category: .halterophilie),
-    StrongMove(nom: "Squat Clean", subtitle: "..t.", imageName: "Squat-Clean", category: .halterophilie),
-    StrongMove(nom: "Thruster", subtitle: "...", imageName: "Thruster", category: .halterophilie),
-    StrongMove(nom: "Back Squat", subtitle: "...", imageName: "Back-Squat", category: .halterophilie),
-    StrongMove(nom: "Deadlift", subtitle: "...", imageName: "deadlift", category: .halterophilie),
-    // Haltérophilie
-    StrongMove(nom: "Push Jerk", subtitle: "Variante du Jerk où l'athlète utilise une légère flexion des jambes pour rattraper la barre au-dessus de la tête.", imageName: "Push-Jerk", category: .halterophilie),
-    StrongMove(nom: "Sumo Deadlift", subtitle: "Un deadlift avec une position large des jambes, engageant davantage les hanches et les adducteurs.", imageName: "Sumo-Deadlift", category: .halterophilie),
+    StrongMove(
+        nom: "Push Press",
+        subtitle: NSLocalizedString("PushPress", comment: ""),
+        imageName: "Push-Press",
+        category: .halterophilie),
+    StrongMove(
+        nom: "Snatch",
+        subtitle: NSLocalizedString("Snatch", comment: ""),
+        imageName: "Snatch",
+        category: .halterophilie),
+    StrongMove(
+        nom: "Split Jerk",
+        subtitle: NSLocalizedString("SplitJerk", comment: ""),
+        imageName: "Split-Jerk",
+        category: .halterophilie),
+    StrongMove(
+        nom: "Squat Clean",
+        subtitle: NSLocalizedString("SquatClean", comment: ""),
+        imageName: "Squat-Clean",
+        category: .halterophilie),
+    StrongMove(
+        nom: "Thruster",
+        subtitle: NSLocalizedString("Thruster", comment: ""),
+        imageName: "Thruster",
+        category: .halterophilie),
+    StrongMove(
+        nom: "Back Squat",
+        subtitle: NSLocalizedString("BackSquat", comment: ""),
+        imageName: "Back-Squat",
+        category: .halterophilie),
+    StrongMove(
+        nom: "Deadlift",
+        subtitle: NSLocalizedString("Deadlift", comment: ""),
+        imageName: "deadlift",
+        category: .halterophilie),
+    StrongMove(
+        nom: "Push Jerk",
+        subtitle: NSLocalizedString("PushJerk", comment: ""),
+        imageName: "Push-Jerk",
+        category: .halterophilie),
+    StrongMove(
+        nom: "Sumo Deadlift",
+        subtitle: NSLocalizedString("SumoDeadlift", comment: ""),
+        imageName: "Sumo-Deadlift",
+        category: .halterophilie),
     
     
     // Musculation
-    StrongMove(nom: "Barbell Curl", subtitle: "...", imageName: "Barbell-Curl", category: .musculation),
-    StrongMove(nom: "Decline Bench Press", subtitle: "...", imageName: "Decline-Bench-Press", category: .musculation),
-    StrongMove(nom: "Dumbbell Curl", subtitle: "...", imageName: "Dumbell-Curl", category: .musculation),
-    StrongMove(nom: "Shoulder Press", subtitle: "...", imageName: "Shoulder-Press", category: .musculation),
-    StrongMove(nom: "Front Raise", subtitle: "...", imageName: "Front-Raise", category: .musculation),
+    StrongMove(nom:
+                "Barbell Curl",
+               subtitle: NSLocalizedString("BarbellCurl", comment: ""),
+               imageName: "Barbell-Curl",
+               category: .musculation),
+    StrongMove(
+        nom: "Decline Bench Press",
+        subtitle: NSLocalizedString("DeclineBenchPress", comment: ""),
+        imageName: "Decline-Bench-Press",
+        category: .musculation),
+    StrongMove(
+        nom: "Dumbbell Curl",
+        subtitle: NSLocalizedString("DumbellCurl", comment: ""),
+        imageName: "Dumbell-Curl",
+        category: .musculation),
+    StrongMove(
+        nom: "Shoulder Press",
+        subtitle: NSLocalizedString("ShoulderPress", comment: ""),
+        imageName: "Shoulder-Press",
+        category: .musculation),
+    StrongMove(
+        nom: "Front Raise",
+        subtitle: NSLocalizedString("FrontRaise", comment: ""),
+        imageName: "Front-Raise",
+        category: .musculation),
     StrongMove(nom: "Bench Press", subtitle: "...", imageName: "Bench-Press", category: .musculation),
     StrongMove(nom: "Hammer Curl", subtitle: "...", imageName: "Hammer-Curl", category: .musculation),
     StrongMove(nom: "Incline Bench Press", subtitle: "...", imageName: "Incline-Bench-Press", category: .musculation),
@@ -115,6 +170,7 @@ let stringMoovs = [
     StrongMove(nom: "Lat Pulldown", subtitle: "Exercice de tirage vertical pour développer les dorsaux et la largeur du dos.", imageName: "Lat-Pulldown", category: .musculation),
     StrongMove(nom: "Cable Crunch", subtitle: "Exercice pour les abdominaux réalisé à la machine à câble.", imageName: "Cable-Crunch", category: .musculation),
     StrongMove(nom: "Dumbbell Bench Press", subtitle: "Variante du Bench Press réalisée avec des haltères pour un mouvement plus libre et une activation accrue des muscles stabilisateurs.", imageName: "Dumbbell-Bench-Press", category: .musculation),
-    StrongMove(nom: "T-Bar Row", subtitle: "Exercice de tirage pour développer l'épaisseur du dos, particulièrement le milieu du dos et les rhomboïdes.", imageName: "T-Bar-Row", category: .musculation)
+    StrongMove(nom: "T-Bar Row", subtitle: "Exercice de tirage pour développer l'épaisseur du dos, particulièrement le milieu du dos et les rhomboïdes.", imageName: "T-Bar-Row", category: .musculation),
+    StrongMove(nom: "Strict Press", subtitle: "...", imageName: "strict-press", category: .musculation),
     
 ]

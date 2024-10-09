@@ -269,6 +269,40 @@
         }
       }
     },
+    "BackSquat" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The Back Squat is a fundamental exercise in both bodybuilding and weightlifting. It involves holding a barbell across the upper trapezius while performing a full squat. This movement is crucial for building leg strength, hip power, and lower back stability.\n\nStarting position – Place the barbell on the upper trapezius, with your feet shoulder-width apart. Grip the bar firmly on both sides, with elbows slightly pointing back to stabilize the position. Engage the core and keep the chest up.\n\nSquat descent – Bend at the hips and knees to lower yourself into a full squat position, ensuring that your hips drop below knee level. Maintain a straight back and keep your heels firmly planted on the ground.\n\nAscent – Push through your heels to rise back up, engaging primarily the quadriceps and glute muscles. Ensure the barbell remains stable across your upper back throughout the upward movement.\n\nReturn to starting position – Stand back up with the barbell in place, controlling the movement throughout.\n\nThe Back Squat is a foundational exercise for improving lower body strength and power. It also engages stabilizer muscles in the core, lower back, and hips."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Le Back Squat est l'un des exercices de base en musculation et en haltérophilie. Il consiste à porter une barre sur le haut des trapèzes et à effectuer un squat complet. Cet exercice est primordial pour développer la force des jambes, des hanches et du bas du dos.\n\nPosition de départ – Placez la barre sur le haut des trapèzes, en gardant les pieds écartés à la largeur des épaules. Les mains sont placées de part et d'autre de la barre, avec les coudes légèrement pointés vers l'arrière pour stabiliser la position. Engagez le tronc et gardez la poitrine haute.\n\nDescente en squat – Fléchissez les hanches et les genoux pour abaisser votre corps en position de squat complet, en veillant à ce que les hanches descendent sous le niveau des genoux. Gardez le dos droit et les talons fermement ancrés au sol.\n\nPhase ascendante – Poussez sur les talons pour vous redresser, en engageant principalement les quadriceps et les muscles des fessiers. Veillez à garder la barre stable sur les trapèzes pendant toute la remontée.\n\nRetour à la position de départ – Revenez à la position debout avec la barre toujours en place, en vous assurant de bien contrôler le mouvement à chaque étape.\n\nLe Back Squat est un mouvement fondamental pour améliorer la force et la puissance du bas du corps. Il sollicite également les muscles stabilisateurs du tronc, du bas du dos et des hanches.\n\n"
+          }
+        }
+      }
+    },
+    "BarbellCurl" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The Barbell Curl is a classic bodybuilding exercise that primarily targets the biceps and forearms. It involves lifting a barbell with your arms to work the muscles in the arms and is often used to develop the size and strength of the biceps.\n\nStarting position – Stand with your feet shoulder-width apart, holding the barbell with a supinated grip (palms facing up) at shoulder-width. Your arms should be fully extended downward, with the bar resting against your thighs.\n\nElbow placement – Keep your elbows close to your body and stationary throughout the movement. This helps focus the work on your biceps and prevents the use of the shoulders or back to cheat the movement.\n\nUpward phase – Slowly lift the bar upwards by bending your elbows, contracting the biceps fully at the top of the movement. The bar should reach about shoulder height or slightly lower, depending on your range of motion.\n\nMovement control – During the upward phase, ensure you do not swing your body or use your back to assist in lifting the bar. Focus on isolating the biceps.\n\nDownward phase – Slowly lower the bar back down in a controlled manner to maximize tension on the muscles throughout the exercise. Return to the starting position with your arms fully extended, and repeat the movement.\n\nThe Barbell Curl is a fundamental exercise in most arm workout routines. It is crucial for sculpting and strengthening the biceps while also developing forearm strength."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Le Barbell Curl est un exercice de musculation classique qui cible principalement les biceps et les avant-bras. Il consiste à soulever une barre avec les bras pour travailler l'ensemble des muscles du bras et est souvent utilisé pour développer la taille et la force des biceps.\n\nPosition de départ – Tenez-vous debout, les pieds écartés à la largeur des épaules, en tenant la barre avec une prise en supination (paumes tournées vers le haut) à la largeur des épaules. Les bras doivent être tendus vers le bas, avec la barre reposant contre vos cuisses.\n\nPlacement des coudes – Gardez vos coudes proches de votre corps et immobiles tout au long du mouvement. Cela vous permettra de concentrer le travail sur vos biceps et d'éviter l'utilisation des épaules ou du dos pour tricher.\n\nPhase de montée – Soulevez lentement la barre vers le haut en fléchissant vos coudes, en contractant les biceps au maximum en haut du mouvement. La barre doit atteindre environ le niveau des épaules ou un peu plus bas, selon votre amplitude de mouvement.\n\nContrôle du mouvement – Pendant la montée, assurez-vous de ne pas balancer votre corps ou utiliser votre dos pour aider à soulever la barre. Concentrez-vous sur l'isolement des biceps.\n\nPhase de descente – Redescendez lentement la barre en contrôlant le mouvement pour maximiser la tension sur les muscles tout au long de l'exercice. Revenez à la position de départ, bras tendus, et répétez le mouvement.\n\nLe Barbell Curl est un exercice de base dans la plupart des programmes d'entraînement pour les bras. Il est essentiel pour sculpter et renforcer les biceps tout en développant la force des avant-bras."
+          }
+        }
+      }
+    },
     "Bienvenue dans One More" : {
       "localizations" : {
         "en" : {
@@ -403,6 +437,57 @@
     "de ton PR :" : {
 
     },
+    "Deadlift" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The Deadlift is a fundamental strength exercise that works nearly every muscle in the body. It involves lifting a barbell from the ground to a standing position, primarily engaging the legs, back, and hips.\n\nStarting position – Position the barbell on the floor with feet shoulder-width apart and toes slightly pointed outward. Grip the bar with hands just outside shoulder-width, using either an overhand or mixed grip. Keep your back straight, chest up, and gaze forward.\n\nLifting phase – With a straight back, push through your legs to lift the bar. Engage your core and glutes, keeping the bar close to your shins as you rise. As the bar passes your knees, drive your hips forward to reach the standing position.\n\nFinal position – At the top, your legs should be straight, and your shoulders aligned with your hips. Maintain a neutral spine without overextending your lower back.\n\nControlled descent – Hinge at the hips first, then bend the knees, lowering the bar back to the floor in a controlled manner while keeping your back straight. The bar should stay close to your legs throughout the descent.\n\nThe Deadlift is a foundational movement for building lower back strength, leg power, and core stability. It’s one of the most effective exercises for developing overall strength and explosiveness."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Le Deadlift est un exercice de force par excellence qui sollicite pratiquement tous les muscles du corps. Il consiste à soulever une barre du sol jusqu'à la position debout, en utilisant principalement les muscles des jambes, du dos et des hanches.\n\nPosition de départ – Placez la barre au sol, les pieds écartés à la largeur des épaules, avec les orteils légèrement pointés vers l'extérieur. Saisissez la barre avec les mains légèrement plus écartées que vos épaules, en utilisant une prise en pronation ou mixte. Gardez le dos droit, la poitrine haute et le regard fixé droit devant.\n\nPhase de traction – En gardant le dos bien droit, poussez avec vos jambes pour soulever la barre. Contractez les muscles du tronc et des fessiers, et veillez à ce que la barre reste proche de vos tibias pendant la montée. Lorsque la barre passe au-dessus des genoux, poussez vos hanches vers l'avant pour atteindre la position debout.\n\nPosition finale – En position debout, les jambes sont tendues et les épaules alignées avec les hanches. Maintenez une posture neutre sans surétendre le bas du dos.\n\nDescente contrôlée – Fléchissez les hanches en premier, puis les genoux, pour ramener la barre au sol de manière contrôlée, tout en gardant le dos droit. La barre doit rester proche de vos jambes tout au long de la descente.\n\nLe Deadlift est un mouvement fondamental pour développer la force du bas du dos, des jambes, et des muscles stabilisateurs du tronc. Il fait partie des exercices les plus complets pour gagner en puissance et en explosivité."
+          }
+        }
+      }
+    },
+    "DeclineBenchPress" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The Decline Bench Press is a variation of the bench press that primarily targets the lower portion of the pectoral muscles. By lying on a decline bench, this exercise places more tension on the lower chest while also engaging the triceps and shoulders.\n\nStarting position – Lie down on a decline bench with your feet securely placed under the foot pads. Grasp the bar with a pronated grip (palms facing forward), slightly wider than shoulder-width.\n\nLowering the bar – Unlock the bar and slowly lower it towards the lower part of your chest, just above the sternum. Keep your elbows at about a 45-degree angle relative to your body to reduce shoulder strain and maximize chest activation.\n\nPressing phase – Push the bar upwards using the strength of your chest and triceps until your arms are fully extended. Avoid locking your elbows completely to maintain tension on the muscles.\n\nControl the movement – Throughout the movement, maintain good stability in your torso and avoid excessive arching of your back. Squeeze your chest at the top of the movement for maximum activation.\n\nBreathing – Inhale as you lower the bar, and exhale during the pressing phase.\n\nThe Decline Bench Press is an excellent exercise for developing the lower chest, which is often overlooked in other bench press variations. It also adds variety to chest workouts."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Le Decline Bench Press est une variante du développé couché qui cible principalement la partie inférieure des pectoraux. En étant allongé sur un banc incliné vers le bas, cet exercice met plus de tension sur les pectoraux inférieurs tout en activant également les triceps et les épaules.\n\nPosition de départ – Allongez-vous sur un banc décliné avec vos pieds solidement fixés sous les supports prévus à cet effet. Attrapez la barre avec une prise en pronation (paumes tournées vers l'avant), légèrement plus large que la largeur des épaules.\n\nDescente de la barre – Débloquez la barre et abaissez-la lentement vers le bas de votre poitrine, juste au-dessus du sternum. Gardez vos coudes à environ 45 degrés par rapport à votre corps pour minimiser la tension sur les épaules et maximiser l'activation des pectoraux.\n\nPhase de poussée – Poussez la barre vers le haut en utilisant la force de vos pectoraux et de vos triceps, jusqu'à ce que vos bras soient complètement étendus. Veillez à ne pas bloquer complètement les coudes pour garder la tension sur les muscles.\n\nContrôle du mouvement – Pendant tout le mouvement, assurez-vous de maintenir une bonne stabilité dans votre torse et d’éviter de cambrer excessivement le dos. Contractez vos pectoraux au sommet du mouvement pour une activation maximale.\n\nRespiration – Inspirez en abaissant la barre, et expirez lors de la phase de poussée.\n\nLe Decline Bench Press est un excellent exercice pour développer la partie inférieure des pectoraux, souvent négligée dans les autres variantes du développé couché. Il permet aussi d'ajouter de la variété dans les entraînements de la poitrine."
+          }
+        }
+      }
+    },
+    "DumbellCurl" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The Dumbbell Curl is a classic strength training exercise that primarily targets the biceps, helping to strengthen and build the front part of the arm. This exercise focuses on elbow flexion and can be performed while standing or seated.\n\nStarting position – Hold a pair of dumbbells in each hand, arms down by your sides, and palms facing forward (supinated grip). Keep your feet shoulder-width apart and maintain a straight back.\n\nCurling phase – While keeping your elbows close to your body, curl the dumbbells up toward your shoulders. Make sure only your forearms move to isolate the biceps. Avoid using momentum from your body.\n\nContract your biceps – As the dumbbells reach their highest point (at shoulder level), squeeze your biceps to maximize muscle activation.\n\nLowering phase – Slowly lower the dumbbells in a controlled manner back to the starting position. Don’t let the weights drop; maintaining control is key for muscle development.\n\nBreathing – Inhale as you lower the dumbbells, and exhale as you lift them.\n\nThe Dumbbell Curl is excellent for building arm strength and can be easily modified to target different parts of the biceps, depending on the hand position or variation used (incline, alternating, etc.).\n\n"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Le Dumbbell Curl est un exercice de musculation classique qui cible principalement les biceps, aidant à renforcer et à développer la partie antérieure du bras. Cet exercice se concentre sur la flexion du coude, et il peut être réalisé en position debout ou assise.\n\nPosition de départ – Tenez une paire d'haltères dans chaque main, les bras le long du corps et les paumes tournées vers l'avant (prise en supination). Gardez les pieds à la largeur des épaules et maintenez le dos droit.\n\nPhase de flexion – En gardant vos coudes près du corps, pliez les bras pour soulever les haltères vers vos épaules. Assurez-vous de ne bouger que les avant-bras pour isoler les biceps. Évitez d'utiliser l'élan du corps.\n\nContractez les biceps – Lorsque les haltères atteignent leur point le plus haut (au niveau des épaules), contractez les biceps pour maximiser l'activation musculaire.\n\nPhase de descente – Abaissez lentement les haltères en contrôlant le mouvement jusqu'à la position de départ. Ne laissez pas simplement les haltères tomber, le contrôle est essentiel pour un bon développement musculaire.\n\nRespiration – Inspirez en abaissant les haltères, et expirez pendant que vous soulevez.\n\nLe Dumbbell Curl est parfait pour développer la force des bras et peut être facilement modifié pour cibler différentes parties du biceps, selon la position des mains ou la variation utilisée (incliné, alterné, etc.)."
+          }
+        }
+      }
+    },
     "Endurance" : {
       "localizations" : {
         "en" : {
@@ -514,6 +599,23 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Formule de Brzycki"
+          }
+        }
+      }
+    },
+    "FrontRaise" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The Front Raise is a strength training exercise that primarily targets the front part of the shoulders (anterior deltoids). It is an excellent exercise for building shoulder strength and definition and is often included as a supplementary exercise in bodybuilding programs.\n\nStarting position – Hold a pair of dumbbells in front of your thighs with straight arms and your palms facing your body (neutral grip). Your feet should be shoulder-width apart and knees slightly bent to stabilize your body.\n\nLifting phase – Slowly raise your arms straight in front of you, keeping a slight bend in your elbows. The dumbbells should be lifted until your arms are parallel to the ground, forming a 90-degree angle with your body.\n\nHold at the top – Once your arms are at shoulder height, hold the position briefly to maximize contraction of the deltoids.\n\nLowering phase – Slowly lower the dumbbells back to the starting position, maintaining control of the movement and avoiding body swinging for momentum.\n\nBreathing – Inhale as you lower the dumbbells, and exhale as you raise them.\n\nThe Front Raise can be performed with dumbbells, a barbell, or cables, and it helps improve shoulder definition and muscle balance."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Le Front Raise est un exercice de musculation qui cible principalement la partie antérieure des épaules (deltoïdes antérieurs). C'est un excellent exercice pour développer la force et la définition des épaules, souvent utilisé comme complément dans les programmes de musculation.\n\nPosition de départ – Tenez une paire d'haltères devant vos cuisses, les bras tendus et les paumes tournées vers le corps (prise neutre). Les pieds doivent être écartés à la largeur des hanches et les genoux légèrement fléchis pour stabiliser le corps.\n\nPhase de levée – Levez lentement les bras droit devant vous, en gardant une légère flexion des coudes. Les haltères doivent être levés jusqu’à ce que vos bras soient parallèles au sol, formant un angle de 90 degrés par rapport à votre corps.\n\nMaintien en position haute – Une fois les bras à la hauteur des épaules, maintenez la position brièvement pour maximiser la contraction des deltoïdes.\n\nPhase de descente – Redescendez lentement les haltères à la position de départ, en gardant le contrôle du mouvement et en évitant de balancer le corps pour créer de l'élan.\n\nRespiration – Inspirez en abaissant les haltères et expirez lorsque vous les levez.\n\nLe Front Raise peut être effectué avec des haltères, une barre ou des câbles, et il aide à améliorer la définition et l'équilibre musculaire des épaules."
           }
         }
       }
@@ -1100,6 +1202,40 @@
         }
       }
     },
+    "PushJerk" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The Push Jerk is an explosive movement that combines a press of the barbell overhead with a rapid extension of the legs and a partial jump to catch the bar in a locked-out position. This movement heavily engages the legs, shoulders, and arms while requiring good coordination and body control.\n\nStarting position – Position the barbell on your shoulders, with your feet hip-width apart. Ensure that your elbows are slightly forward, and your hands grip the bar just outside shoulder-width.\n\nDip phase – Perform a slight bend of the knees and hips while keeping your torso upright. The movement should be quick and controlled with limited range.\n\nDrive phase – Push powerfully through your legs to create a strong upward drive, transferring the energy to the barbell. The goal is to generate enough force to propel the bar overhead.\n\nJerk phase – As the bar rises, perform a partial jump to position yourself under the bar with your feet slightly spread for stability. Lock your arms overhead, with the bar aligned above your shoulders and hips.\n\nFinal position – Straighten your legs to finish the movement in a standing position, with arms extended and the bar securely locked overhead.\n\nThe Push Jerk is a key movement in weightlifting and CrossFit that develops explosive power, coordination, and shoulder strength."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Le Push Jerk est un mouvement explosif qui combine une poussée de la barre au-dessus de la tête avec une extension rapide des jambes et un saut partiel pour attraper la barre en position verrouillée. Ce mouvement sollicite fortement les jambes, les épaules et les bras tout en nécessitant une bonne coordination et un excellent contrôle du corps.\n\nPosition de départ – Placez la barre sur vos épaules, les pieds écartés à la largeur des hanches. Assurez-vous que vos coudes sont légèrement orientés vers l'avant et que vos mains tiennent fermement la barre, avec une prise légèrement plus large que vos épaules.\n\nPhase de descente (dip) – Effectuez une légère flexion des genoux et des hanches tout en maintenant le torse droit. Le mouvement doit être rapide et contrôlé, avec une amplitude limitée.\n\nPhase de poussée (drive) – Poussez avec force à travers vos jambes pour créer une impulsion puissante, transférant cette énergie à la barre. L'objectif est de générer suffisamment de force pour propulser la barre au-dessus de votre tête.\n\nPhase de réception (jerk) – Pendant que la barre s'élève, effectuez un saut partiel pour vous retrouver en position fléchie sous la barre. Vos pieds doivent s'écarter légèrement pour vous donner plus de stabilité. Verrouillez les bras au-dessus de votre tête, avec la barre alignée au-dessus des épaules et des hanches.\n\nPosition finale – Redressez vos jambes pour terminer le mouvement en position debout, les bras tendus et la barre bien verrouillée au-dessus de votre tête.\n\nLe Push Jerk est un mouvement clé en haltérophilie et en CrossFit, qui développe la puissance explosive, la coordination et la force des épaules."
+          }
+        }
+      }
+    },
+    "PushPress" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The Push Press is a weightlifting movement that involves pushing a barbell from your shoulders to overhead using leg drive to generate more power. Unlike the strict press, the Push Press allows the use of leg extension to propel the bar upwards.\n\nStarting Position – Hold the barbell on your shoulders with your elbows slightly forward. Your feet should be hip-width apart, and your back straight. Keep your core tight and eyes facing forward.\n\nDip – Slightly bend your knees and lower into a half-squat position to create momentum. Keep your back straight and your heels on the ground.\n\nDrive – As soon as you’re in the lowered position, push explosively with your legs, transferring the force to the barbell. Your hips and legs extend, propelling the bar upwards.\n\nFinal Press – Once the bar reaches your forehead, finish the movement by pressing with your arms until the bar is fully overhead, with elbows locked.\n\nStabilization – Stabilize the bar overhead, maintaining good posture, then lower it back to your shoulders to repeat the movement.\n\nThe Push Press is excellent for building power, shoulder strength, and explosiveness, while engaging the legs for a heavier load. "
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Le Push Press est un mouvement d'haltérophilie qui consiste à pousser une barre depuis les épaules jusqu'au-dessus de la tête, en utilisant un élan des jambes pour générer plus de puissance. Contrairement au strict press, le Push Press permet d'utiliser une extension des jambes pour pousser la barre.\n\nPosition de départ – Tenez la barre sur les épaules avec les coudes légèrement pointés vers l'avant. Les pieds doivent être écartés à la largeur des hanches, et le dos bien droit. Gardez votre tronc contracté et votre regard droit devant.\n\nDip – Pliez légèrement les genoux et descendez dans une position semi-accroupie pour générer de l'élan. Gardez le dos droit et les talons au sol.\n\nDrive – Dès que vous êtes en position basse, poussez de manière explosive avec les jambes, en transférant la force à la barre. Les hanches et les jambes s'étendent, propulsant la barre vers le haut.\n\nPression finale – Une fois que la barre est au niveau du front, terminez le mouvement avec les bras en poussant jusqu'à ce que la barre soit complètement au-dessus de votre tête, avec les coudes verrouillés.\n\nStabilisation – Stabilisez la barre au-dessus de la tête en maintenant une bonne posture, puis ramenez-la doucement sur les épaules pour répéter le mouvement.\n\nLe Push Press est idéal pour développer la puissance, la force des épaules, et l'explosivité, tout en impliquant les jambes dans le mouvement pour une charge plus importante."
+          }
+        }
+      }
+    },
     "Rechercher un mouvement" : {
       "localizations" : {
         "en" : {
@@ -1180,6 +1316,23 @@
         }
       }
     },
+    "ShoulderPress" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The Shoulder Press is a fundamental strength training exercise that primarily targets the shoulders (deltoids), while also engaging the triceps and the upper chest. This exercise is effective for building shoulder strength and muscle mass, and it can be performed with a barbell, dumbbells, or on a machine.\n\nStarting position – Hold a barbell or a pair of dumbbells at shoulder height, feet shoulder-width apart. Your palms should face forward (pronated grip). Make sure your back is straight and your core is engaged to stabilize your body.\n\nPressing phase – Slowly press the barbell or dumbbells upward, keeping your elbows slightly in front. The movement should be controlled, using primarily the shoulder muscles.\n\nFull extension – At the top of the movement, your arms should be fully extended overhead. Be careful not to lock your elbows to avoid joint stress.\n\nLowering phase – Slowly bring the barbell or dumbbells back down to the starting position at shoulder height, maintaining control throughout the descent.\n\nBreathing – Inhale as you lower the barbell or dumbbells, and exhale as you press upward.\n\nThis exercise is highly versatile and can be modified by using different variations, such as the Dumbbell Shoulder Press, which allows for unilateral work, or the Arnold Press, which adds wrist rotation for extra shoulder engagement."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Le Shoulder Press est un exercice de musculation fondamental qui cible principalement les épaules (deltoïdes), tout en sollicitant également les triceps et la partie supérieure de la poitrine. Cet exercice est efficace pour développer la force et la masse musculaire des épaules, et il peut être exécuté avec une barre, des haltères ou à la machine.\n\nPosition de départ – Tenez une barre ou une paire d'haltères à hauteur des épaules, les pieds écartés à la largeur des hanches. Les paumes sont tournées vers l'avant (prise pronation). Assurez-vous que votre dos est bien droit et votre tronc engagé pour stabiliser le corps.\n\nPhase de poussée – Poussez lentement la barre ou les haltères vers le haut, en gardant les coudes légèrement en avant. Le mouvement doit être contrôlé, en utilisant principalement les muscles des épaules.\n\nExtension complète – À la fin du mouvement, les bras sont complètement étendus au-dessus de la tête. Assurez-vous de ne pas bloquer les coudes pour éviter de stresser les articulations.\n\nPhase de descente – Ramenez lentement la barre ou les haltères à la position initiale au niveau des épaules, en gardant le contrôle du mouvement. Ne laissez pas simplement la barre tomber.\n\nRespiration – Inspirez en abaissant la barre ou les haltères, et expirez lorsque vous poussez vers le haut.\n\nCet exercice est très polyvalent et peut être adapté en utilisant différentes variantes, comme le Dumbbell Shoulder Press, qui permet de travailler les épaules de manière unilatérale, ou le Arnold Press, qui ajoute une rotation des poignets pour un travail supplémentaire sur les épaules."
+          }
+        }
+      }
+    },
     "Slogan" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -1193,6 +1346,74 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Plus fort, plus rapide, encore une fois."
+          }
+        }
+      }
+    },
+    "Snatch" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The Snatch is one of the two Olympic weightlifting movements (alongside the Clean and Jerk). This movement involves lifting a barbell from the ground to overhead in one smooth, explosive motion.\n\nStarting position – Start in a squat position, feet hip-width apart, hands gripping the bar with a wide grip, hips low, and back straight. Your gaze is forward, ready to initiate a powerful lift.\n\nThe first pull – Lift the bar from the ground while keeping your arms straight and extending your legs, maintaining the bar close to your body. The goal is to transfer power from the legs to the lift.\n\nThe second pull – As the bar reaches knee height, begin an explosive extension of the hips and shoulders to propel the bar upward. This phase is critical for generating the necessary power.\n\nDropping under the bar – Once the bar reaches its maximum elevation, use your agility to quickly drop into a squat position, arms extended overhead.\n\nThe catch – Catch the bar in a deep squat with fully extended arms. Stability and control are key to holding the bar overhead.\n\nStanding up – Once the bar is stabilized, extend your legs to stand up, keeping the bar firmly overhead.\n\nThe Snatch is a technical movement that demands strength, coordination, and great mobility. It's one of the most impressive lifts in weightlifting due to the speed and precision required to successfully complete the snatch.\n\n"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Le Snatch, ou arraché en français, est l’un des deux mouvements olympiques en haltérophilie (avec le Clean and Jerk). Ce mouvement consiste à soulever une barre du sol jusqu’au-dessus de la tête en un seul mouvement fluide et explosif.\n\nLa position de départ – Commencez en position accroupie, les pieds à largeur des hanches, les mains saisissant la barre avec une prise large, les hanches abaissées et le dos droit. Le regard est droit devant, prêt à initier un mouvement puissant.\n\nLe premier tirage – Soulevez la barre du sol en gardant vos bras tendus et en étendant vos jambes, tout en maintenant la barre proche du corps. L'objectif est de transférer la puissance des jambes au mouvement.\n\nLe deuxième tirage – Lorsque la barre atteint la hauteur des genoux, commencez une extension explosive des hanches et des épaules pour propulser la barre vers le haut. Cette phase est essentielle pour générer la puissance nécessaire.\n\nPassage sous la barre – Une fois la barre en élévation maximale, utilisez votre agilité pour vous abaisser rapidement en position de squat, les bras tendus au-dessus de la tête.\n\nLa réception – Attrapez la barre en position accroupie avec les bras complètement tendus. La stabilité et le contrôle sont essentiels pour maintenir la barre au-dessus de la tête.\n\nLa montée – Une fois la barre stabilisée, effectuez une extension des jambes pour vous relever, en gardant la barre fermement au-dessus de la tête.\n\nLe Snatch est un mouvement technique qui demande de la force, de la coordination et une grande mobilité. C’est l’un des mouvements les plus impressionnants en haltérophilie en raison de la rapidité et de la précision requises pour réussir l’arraché."
+          }
+        }
+      }
+    },
+    "SplitJerk" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Split Jerk\nThe Split Jerk is the second part of the Clean and Jerk in weightlifting, where the barbell is driven from the shoulders to an overhead position. This movement combines strength, power, and technical coordination.\n\nStarting position – The barbell rests on the shoulders after a Clean. Feet are hip-width apart, elbows slightly in front of the bar, and the core is tight.\n\nThe dip – Drop slightly by bending the knees while keeping the torso upright. This is a quick, controlled motion that sets up the explosive power needed to drive the bar upward.\n\nThe drive – Push forcefully with the legs to propel the bar upward, fully extending the hips and knees. The bar should rise due to the power generated by this explosive extension.\n\nThe split – As the bar rises overhead, quickly move one foot forward and the other back into a split stance. The arms lock out overhead, securing the bar in a stable position.\n\nStabilization and catch – Stabilize the bar in the split position, keeping the torso upright and the arms fully locked out. The bar must be held directly over the center of gravity to ensure balance.\n\nRecovery – Bring the front foot back first, followed by the back foot, returning to a standing position while keeping the bar overhead.\n\nThe Split Jerk is an essential technique for lifting heavy weights, allowing for maximum power generation while ensuring a stable reception under the bar. It requires good coordination, solid balance, and excellent mobility."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Split Jerk\nLe Split Jerk est la deuxième partie du mouvement d’haltérophilie Clean and Jerk, où la barre est propulsée de la position épaules au-dessus de la tête. Ce mouvement combine force, puissance et technique de coordination.\n\nPosition de départ – La barre repose sur les épaules après un Clean. Les pieds sont à largeur des hanches, les coudes légèrement en avant de la barre, et le tronc bien gainé.\n\nLe dip – Descendez légèrement en fléchissant les genoux et en gardant le torse droit. C'est un mouvement rapide et contrôlé qui permet de préparer l'explosivité nécessaire pour propulser la barre.\n\nLe drive – Poussez puissamment avec les jambes pour propulser la barre vers le haut, en étendant complètement les hanches et les genoux. La barre doit s’élever grâce à la puissance générée par cette extension explosive.\n\nLa séparation (Split) – Lorsque la barre est propulsée au-dessus de la tête, déplacez rapidement un pied vers l’avant et l’autre vers l’arrière dans une position de fente (split). Les bras sont complètement tendus, verrouillant la barre au-dessus de la tête.\n\nStabilisation et réception – Stabilisez la barre dans cette position fendue, en maintenant le torse droit et les bras bien verrouillés. La barre doit être maintenue directement au-dessus du centre de gravité pour assurer l'équilibre.\n\nRécupération – Ramenez d'abord le pied avant vers l'arrière, suivi du pied arrière, pour revenir à une position debout, tout en maintenant la barre au-dessus de la tête.\n\nLe Split Jerk est une technique essentielle pour soulever de lourdes charges, car il permet de générer un maximum de puissance tout en garantissant une réception stable sous la barre. Il nécessite une bonne coordination, un équilibre solide et une grande mobilité."
+          }
+        }
+      }
+    },
+    "SquatClean" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Squat Clean\nThe Squat Clean is a key movement in weightlifting, often regarded as one of the most efficient techniques for lifting heavy loads from the ground to the shoulders by receiving the bar in a deep squat position.\n\nStarting position – Begin with the barbell on the ground. Feet are shoulder-width apart, hands gripping the bar slightly wider than shoulder-width. Keep the back straight, hips slightly above the knees, and chest open. Engage the core.\n\nInitial pull – Using primarily the legs and back, lift the bar by fully extending the hips and knees. The arms remain straight, and the weight should be evenly distributed across the feet. The goal is to generate an explosive movement to propel the bar upward.\n\nPull under the bar – Once the bar reaches shoulder height, drop quickly underneath it by flexing the knees and hips into a deep squat position. The elbows should rotate under the bar, catching it on the shoulders.\n\nThe catch – Catch the bar in a deep squat position with the hips below the knees and the elbows forward, supporting the bar on the shoulders. Keep the core tight and the back straight.\n\nThe stand-up – After stabilizing in the squat position, stand up by pushing through the legs to return to a standing position while keeping the bar on the shoulders.\n\nThe Squat Clean is a highly technical movement that develops power, coordination, flexibility, and functional strength. It is one of the most effective lifts for moving heavy loads while engaging nearly all the muscles in the body."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Squat Clean\nLe Squat Clean est un mouvement clé en haltérophilie, souvent considéré comme l'une des techniques les plus efficaces pour soulever des charges lourdes du sol jusqu'aux épaules, en passant par une réception en position accroupie profonde.\n\nPosition de départ – Commencez avec la barre posée au sol. Les pieds sont écartés à la largeur des épaules, les bras légèrement plus larges que les épaules. Le dos est droit, les hanches légèrement au-dessus des genoux et la poitrine ouverte. Le tronc est bien gainé.\n\nLe tirage initial – En utilisant principalement la force des jambes et du dos, soulevez la barre en extension complète des hanches et des genoux. Les bras restent tendus et le poids doit être bien réparti sur toute la plante des pieds. L'objectif est de générer un mouvement explosif pour donner de la vitesse à la barre.\n\nLe passage sous la barre – Une fois que la barre atteint une hauteur suffisante (environ au niveau des épaules), passez rapidement en dessous en fléchissant les genoux et les hanches pour entrer en position accroupie profonde (squat). Les coudes doivent passer sous la barre, avec les bras en position haute pour la réception sur les épaules.\n\nLa réception – Recevez la barre dans une position de squat profond, avec les hanches sous les genoux et les coudes en avant, supportant la barre sur les épaules. Maintenez le tronc bien gainé et le dos droit.\n\nLe redressement – Une fois bien stabilisé dans la position de squat, redressez-vous en poussant sur les jambes pour vous relever en position debout, tout en maintenant la barre sur les épaules.\n\nLe Squat Clean est un mouvement technique et complexe qui développe la puissance, la coordination, la souplesse et la force fonctionnelle. Il fait partie des mouvements les plus efficaces pour soulever de lourdes charges, tout en sollicitant presque tous les muscles du corps."
+          }
+        }
+      }
+    },
+    "SumoDeadlift" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The Sumo Deadlift is a variation of the deadlift that is characterized by a wider stance and hand placement inside the knees. This movement primarily targets the legs, hips, and lower back, and is often used to develop maximum strength with heavy loads.\n\nStarting position – Stand with your feet wider than shoulder-width apart, with your toes slightly pointed outward. The bar should be against your shins. Grip the bar with your hands positioned inside your knees, with straight arms, using either an overhand grip (palms facing you) or a mixed grip (one hand overhand, the other underhand).\n\nTorso position – Bend your hips and knees to lower your hips while keeping your back straight. Your shoulders should be over or slightly in front of the bar, and your chest should be up and proud.\n\nPull phase – Engage your leg and hip muscles to lift the bar vertically by driving through your heels. The movement should start with your legs extending, followed by your hips, keeping the bar close to your body throughout the lift.\n\nLockout phase – Continue lifting the bar until you are standing fully upright, with your hips and knees fully extended. Lockout the final position by engaging your glutes and standing tall, with the bar against your thighs.\n\nDescent phase – To lower the bar, reverse the movement by bending at the hips and lowering the bar in a controlled manner while keeping your back straight. Repeat the movement for each repetition.\n\nThe Sumo Deadlift is an excellent alternative for individuals who find the conventional deadlift stance uncomfortable or want to vary their training by targeting the leg and hip muscles differently.\n\nLe Sumo Deadlift permet de réduire l'amplitude de mouvement tout en permettant de soulever des charges lourdes, ce qui en fait un excellent exercice pour développer la force du bas du corps.\n\n\n\n\n\n\n\n\n\n"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Le Sumo Deadlift est une variante du soulevé de terre qui se distingue par une position des pieds plus large et un positionnement des mains à l'intérieur des genoux. Ce mouvement sollicite principalement les jambes, les hanches et le bas du dos, et est souvent utilisé pour développer la force maximale en soulevant des charges lourdes.\n\nPosition de départ – Écartez vos pieds largement au-delà de la largeur des épaules, avec vos orteils légèrement tournés vers l'extérieur. La barre doit être placée contre vos tibias. Prenez une prise sur la barre avec vos mains positionnées à l'intérieur de vos genoux, bras tendus, dans une prise en pronation (les paumes vers vous) ou mixte (une main en pronation, l'autre en supination).\n\nPosition du torse – Fléchissez les hanches et les genoux pour abaisser vos hanches tout en gardant le dos droit. Vos épaules doivent être au-dessus ou légèrement en avant de la barre, et votre poitrine doit être fièrement relevée.\n\nPhase de traction – Engagez les muscles des jambes et des hanches pour soulever la barre verticalement en poussant à travers les talons. Le mouvement doit commencer par une extension des jambes, puis des hanches, en gardant la barre proche du corps tout au long du mouvement.\n\nPhase de verrouillage – Continuez à lever la barre jusqu'à ce que vous soyez complètement debout, avec les hanches et les genoux complètement étendus. Verrouillez la position finale en engageant les fessiers et en vous tenant droit, la barre contre vos cuisses.\n\nPhase de descente – Pour redescendre la barre, inversez le mouvement en fléchissant les hanches et en abaissant la barre de manière contrôlée tout en gardant le dos droit. Répétez le mouvement pour chaque répétition.\n\nLe Sumo Deadlift est une excellente alternative pour les personnes qui trouvent la position classique du soulevé de terre inconfortable ou qui souhaitent diversifier leur entraînement en ciblant différemment les muscles des jambes et des hanches.\n\n"
           }
         }
       }
@@ -1257,6 +1478,23 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Supprimer ce temps ?"
+          }
+        }
+      }
+    },
+    "Thruster" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The Thruster is a combined movement that merges a front squat and a push press. It's highly effective for building strength, power, and endurance. This multi-joint exercise is widely used in CrossFit workouts due to its ability to engage multiple muscle groups in one movement.\n\nStarting position – Hold the barbell in the front rack position (resting on the front of the shoulders). Feet should be shoulder-width apart, and elbows should be pointed forward to support the bar. Engage the core and keep the chest upright.\n\nThe squat – Drop into a full squat, with the hips descending below the knees, while maintaining the barbell stable on the shoulders. Keep the heels on the ground and the back straight.\n\nThe explosive transition – As you rise from the squat, drive explosively through the legs, transferring power from your lower body to the bar.\n\nThe press – Once you've generated enough force from your legs, use that momentum to push the bar overhead in a push press. Fully extend the arms, and keep your feet grounded.\n\nReturn to starting position – Lower the bar back to the front rack position and get ready for the next repetition.\n\nThe Thruster is a highly functional exercise that primarily works the legs, shoulders, and core. It's an excellent movement for enhancing both strength and cardiovascular capacity.\n\nCette description complète du Thruster permet de bien saisir les différentes étapes du mouvement.\n\n\n\n\n\n\n\n\n\n"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Le Thruster est un mouvement combiné qui allie un front squat et un push press. Il est extrêmement efficace pour développer à la fois la force, la puissance et l'endurance. Ce mouvement polyarticulaire est largement utilisé dans les entraînements de CrossFit en raison de sa capacité à solliciter plusieurs groupes musculaires en un seul exercice.\n\nPosition de départ – Tenez la barre en position de front rack (reposant sur le devant des épaules). Les pieds sont écartés à la largeur des épaules, et les coudes sont relevés devant vous pour soutenir la barre. Engagez le tronc et gardez la poitrine haute.\n\nLe squat – Descendez en position accroupie complète (squat), les hanches en-dessous des genoux, tout en maintenant la barre en position stable sur les épaules. Veillez à ce que les talons restent au sol et le dos bien droit.\n\nLa transition explosive – En sortant du squat, poussez de manière explosive avec les jambes, en transférant la puissance des jambes vers la barre.\n\nLe press – Une fois que vous avez généré suffisamment de force depuis les jambes, utilisez cette énergie pour pousser la barre au-dessus de la tête dans un push press. Les bras doivent se tendre complètement, et les pieds restent fermes au sol.\n\nRetour en position initiale – Redescendez la barre doucement vers la position de front rack et préparez-vous pour la répétition suivante.\n\nLe Thruster est un mouvement fonctionnel complet qui sollicite principalement les jambes, les épaules, et le tronc. C'est un exercice très efficace pour améliorer à la fois la force et la capacité cardiovasculaire."
           }
         }
       }
