@@ -30,13 +30,13 @@ struct EnduranceDescriptionView: View {
                     .padding()
             }
             Spacer()
-            PrimaryBtnView(
-                label: "Retour",
-                action: { dismiss() },
-                color: .secondary,
-                colorSecondary: .white,
-                icon: "arrow.uturn.left"
-            )
+//            PrimaryBtnView(
+//                label: "Retour",
+//                action: { dismiss() },
+//                color: .secondary,
+//                colorSecondary: .white,
+//                icon: "arrow.uturn.left"
+//            )
         }
         .padding()
     }

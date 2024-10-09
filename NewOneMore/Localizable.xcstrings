@@ -719,6 +719,23 @@
         }
       }
     },
+    "Jerk" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The Jerk is an explosive weightlifting movement where the bar is pushed from the shoulders to overhead in a rapid, powerful motion.\n\nDip Phase – Start with the bar on your shoulders, feet hip-width apart. Slightly bend your knees and dip straight down, keeping the torso upright and creating tension in the legs.\n\nDrive Phase – From this bent position, explosively push with your legs to generate upward force, propelling the bar overhead.\n\nCatch Phase – As the bar rises, quickly move your feet into a split stance (split jerk) or stay in a squat stance (power jerk) while catching the bar with arms fully extended overhead.\n\nStabilization – Once the bar is secured overhead, straighten up by bringing the feet back to their original position, maintaining full control before lowering the bar.\n\nThe Jerk requires perfect coordination between leg power and upper body stability, making it one of the key movements for successful heavy lifts in weightlifting. "
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Le Jerk est un mouvement explosif d’haltérophilie où la barre est poussée de la position d’épaulé à au-dessus de la tête en un mouvement rapide et puissant.\n\nPhase de Dip – Commencez avec la barre sur vos épaules, vos pieds écartés à la largeur des hanches. Pliez légèrement les genoux en descendant droit, en gardant le tronc bien droit et en générant de la tension dans les jambes.\n\nPhase de Drive – À partir de cette position fléchie, poussez de manière explosive avec vos jambes pour générer de la force vers le haut, propulsant la barre au-dessus de votre tête.\n\nPhase de Catch – Dès que la barre monte, déplacez rapidement vos pieds en avant et en arrière pour entrer dans une position de fente (split jerk) ou restez en position de squat (power jerk) tout en attrapant la barre les bras tendus au-dessus de votre tête.\n\nStabilisation – Une fois la barre sécurisée au-dessus de votre tête, redressez-vous en ramenant les pieds à leur position d'origine, en maintenant un contrôle total avant de relâcher la barre.\n\nLe Jerk exige une parfaite coordination entre la puissance des jambes et la stabilité du haut du corps, et c’est un des mouvements clés pour réussir les levées lourdes en haltérophilie. "
+          }
+        }
+      }
+    },
     "Le record du monde en deadlift de Hafþór Júlíus Björnsson est de 501 Kg ! On modifiera la limite quand tu lui arriveras à la cheville 😅" : {
       "localizations" : {
         "en" : {
@@ -815,6 +832,40 @@
         }
       }
     },
+    "MuscleClean" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The Muscle Clean is a variation in weightlifting where the bar is lifted to the shoulders without a squat or knee bend to catch the bar. This movement emphasizes upper body strength and hip power.\n\nStarting Position – Stand with the bar on the ground, feet hip-width apart, and hands slightly wider than shoulder-width. Hips should be slightly above the knees, with the core engaged.\n\nInitial Pull – Lift the bar in a single continuous motion, using mostly the strength of your legs and hips, while keeping your torso tight and shoulders over the bar.\n\nHip Drive – Once the bar passes the knees, rapidly extend the hips and legs while pulling the bar toward your shoulders with an explosive arm movement.\n\nFinish Position – Catch the bar on your shoulders, elbows high, without squatting or bending the knees. The bar should land cleanly on your shoulders with your legs still straight.\n\nThe Muscle Clean strongly engages the arms and shoulders, focusing on upper body control without using a dip to help catch the bar. "
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Le Muscle Clean est une variation de l’haltérophilie où la barre est soulevée jusqu'aux épaules sans inclure de phase de squat ou de flexion des jambes pour attraper la barre. Ce mouvement met l'accent sur la force du haut du corps et la puissance des hanches.\n\nPosition de départ – Tenez la barre au sol avec les pieds écartés à la largeur des hanches et les mains légèrement plus larges que les épaules. Les hanches doivent être légèrement plus hautes que les genoux, et le tronc bien gainé.\n\nTirage initial – Soulevez la barre en un seul mouvement continu en utilisant principalement la force des jambes et des hanches, tout en gardant le tronc rigide et les épaules au-dessus de la barre.\n\nPuissance des hanches – Une fois la barre passée aux genoux, effectuez une extension rapide des hanches et des jambes tout en tirant la barre vers vos épaules avec un mouvement explosif des bras.\n\nFin du mouvement – Attrapez la barre sur vos épaules, coudes hauts, sans vous accroupir ou fléchir les jambes. La barre doit être positionnée proprement sur les épaules, avec les jambes toujours droites.\n\nLe Muscle Clean sollicite fortement les muscles des bras et des épaules et se concentre sur le contrôle du haut du corps sans utiliser de flexion pour aider à réceptionner la barre. "
+          }
+        }
+      }
+    },
+    "MuscleSnatch" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : " The Muscle Snatch is a technical variation of the snatch where the bar is lifted overhead without squatting or bending the knees to catch the bar. This movement emphasizes upper body strength and coordination.\n\nStarting Position – Hold the bar with a wide grip, feet hip-width apart. Hips should be slightly above the knees, with the core engaged.\n\nInitial Pull – Lift the bar from the ground in a controlled, fluid motion, using leg and hip power while keeping your torso tight and shoulders over the bar.\n\nHip Extension – Once the bar passes the knees, explosively extend your hips and legs to generate momentum. At the same time, pull the bar upward with your arms.\n\nFinish – Push the bar overhead without squatting or bending your knees. The movement ends with the arms fully extended overhead, the bar stable in position, and the legs remaining straight.\n\nThe Muscle Snatch is a demanding exercise that develops upper body power and coordination while requiring precise technique to lift the bar overhead without assistance from the legs. \"\"\"\n\nCes descriptions détaillent le Muscle Snatch, mettant en avant la puissance du haut du corps et la technique nécessaire pour effectuer le mouvement sans recourir aux jambes."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Le Muscle Snatch est une variante technique de l'arraché où la barre est soulevée au-dessus de la tête sans effectuer de squat ou de flexion des jambes pour réceptionner la barre. Ce mouvement met l'accent sur la force du haut du corps et la coordination.\n\nPosition de départ – Tenez la barre avec une prise large, les pieds écartés à la largeur des hanches. Les hanches doivent être légèrement plus hautes que les genoux, et le tronc bien engagé.\n\nTirage initial – Soulevez la barre du sol en un mouvement fluide et contrôlé, en utilisant la puissance des jambes et des hanches, tout en gardant le tronc rigide et les épaules au-dessus de la barre.\n\nExtension des hanches – Une fois la barre passée aux genoux, effectuez une extension explosive des hanches et des jambes pour donner de l’élan à la barre. Simultanément, tirez la barre vers le haut avec les bras.\n\nFinalisation – Poussez la barre au-dessus de la tête sans vous accroupir ni fléchir les genoux. Le mouvement se termine avec les bras tendus au-dessus de la tête, la barre en position stable, et les jambes toujours droites.\n\nLe Muscle Snatch est un exercice exigeant qui développe la puissance du haut du corps et la coordination, tout en demandant une technique précise pour maîtriser la montée de la barre sans aide des jambes"
+          }
+        }
+      }
+    },
     "Musculation" : {
       "comment" : "Catégorie de musculation",
       "localizations" : {
@@ -844,6 +895,23 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "One More"
+          }
+        }
+      }
+    },
+    "OverHeadSquat" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The Overhead Squat is a fundamental exercise in weightlifting and CrossFit, requiring mobility, strength, and stability. It involves performing a squat while holding a barbell overhead with straight arms.\n\nStarting Position – Hold the barbell overhead with a wide grip, feet slightly wider than shoulder-width. Your arms should be fully extended, and your core engaged for stability.\n\nSquat Descent – Slowly lower yourself by bending at the hips and knees. Keep the barbell overhead throughout the movement. The torso should remain as upright as possible, and the knees should not cave inward.\n\nSquat Depth – Lower until your hips are below knee level (deep squat). Keep your heels grounded and the barbell aligned over your shoulders.\n\nAscent – Push through your heels to stand up while keeping the barbell stable overhead. Engage your quads, glutes, and core to ensure a strong, stable ascent.\n\nThe Overhead Squat is an excellent exercise for improving leg strength, shoulder mobility, and core stability. It is often used as preparation for other weightlifting movements, such as the snatch. \"\"\"\n\nCes descriptions mettent en avant l’importance de la mobilité et de la stabilité pour réussir un Overhead Squat, tout en fournissant une technique détaillée pour optimiser l'exécution du mouvement.\n\n\n\n\n\n\n"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Le Overhead Squat est un exercice fondamental en haltérophilie et en CrossFit, qui exige de la mobilité, de la force, et de la stabilité. Il consiste à effectuer un squat tout en maintenant une barre au-dessus de la tête avec les bras tendus.\n\nPosition de départ – Tenez la barre au-dessus de la tête avec une prise large, les pieds légèrement plus écartés que la largeur des épaules. Les bras doivent être complètement tendus, et le tronc bien engagé pour maintenir la stabilité.\n\nDescente en squat – Abaissez-vous lentement en fléchissant les hanches et les genoux. Gardez la barre bien au-dessus de la tête tout au long du mouvement. Le buste doit rester aussi droit que possible, et les genoux ne doivent pas s’effondrer vers l’intérieur.\n\nProfondeur du squat – Descendez jusqu'à ce que vos hanches soient en dessous du niveau des genoux (squat profond). Gardez les talons bien ancrés dans le sol et la barre toujours dans l'alignement des épaules.\n\nRemontée – Poussez dans les talons pour vous redresser tout en maintenant la barre stable au-dessus de la tête. Engagez vos cuisses, vos fessiers et votre tronc pour assurer une montée solide et stable.\n\nLe Overhead Squat est un excellent exercice pour améliorer la force des jambes, la mobilité des épaules et la stabilité du tronc. Il est souvent utilisé en préparation à d’autres mouvements d'haltérophilie, tels que l'arraché. "
           }
         }
       }
@@ -943,6 +1011,40 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pour sélectionner ton premier mouvement, appuie sur le bouton **+** ci-dessus, tu pourras consulter les mouvements disponibles pour tes **PR** et les ajouter ici."
+          }
+        }
+      }
+    },
+    "PowerClean" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The Power Clean is an explosive weightlifting exercise that combines strength, speed, and technique to lift a barbell from the floor to the shoulders in a quick, powerful movement.\n\nStarting Position – Stand with your feet hip-width apart and hands gripping the barbell slightly wider than shoulder-width. Your back should be straight, hips slightly above the knees, and eyes looking forward.\n\nFirst Pull – Lift the barbell by driving through your legs while keeping a neutral back. The barbell should stay close to your body as you lift, and you should feel the power mainly in your legs and lower back.\n\nTransition – As the bar passes your knees, begin extending your hips and shrugging your shoulders while pulling with your arms. This creates an explosive acceleration of the bar.\n\nCatch the Bar – When the bar reaches its highest point, quickly rotate your elbows forward and get under the bar in a quarter-squat position. The barbell should rest on your upper chest, and you should be stable in this position.\n\nStand Up – Push through your legs to stand up fully, holding the bar on your shoulders.\n\nThe Power Clean is an excellent exercise for developing power, coordination, and overall athletic performance. It also serves as the foundation for more complex movements like the full clean. \"\"\"\n\nCes explications soulignent les aspects techniques du Power Clean, un mouvement clé pour développer la puissance et l'explosivité en haltérophilie."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Le Power Clean est un exercice explosif en haltérophilie qui combine force, vitesse et technique pour soulever une barre du sol jusqu’aux épaules en un mouvement rapide.\n\nPosition de départ – Placez-vous avec les pieds à la largeur des hanches, les mains en prise prononcée sur la barre, légèrement plus larges que les épaules. Votre dos doit être droit, les hanches légèrement au-dessus des genoux et le regard vers l’avant.\n\nPremier tirage – Soulevez la barre en poussant avec les jambes, en maintenant un dos neutre. La barre doit rester près du corps en montant, et vous devez sentir l’effort principalement dans les jambes et le bas du dos.\n\nTransition – Lorsque la barre passe les genoux, commencez à étendre vos hanches et à hausser les épaules tout en tirant avec les bras. Cela crée une accélération explosive de la barre.\n\nRecevoir la barre – Lorsque la barre atteint sa hauteur maximale, tirez rapidement vos coudes vers l’avant et placez-vous sous la barre en position de quart de squat. La barre doit reposer sur le haut de votre poitrine, et vous devez être stable dans cette position.\n\nRemontée – Poussez avec les jambes pour vous redresser complètement en position debout, en maintenant la barre sur vos épaules.\n\nLe Power Clean est un exercice excellent pour développer la puissance et la coordination, ainsi que pour améliorer la performance athlétique globale. Il est également utilisé comme base pour d'autres mouvements complexes comme le clean complet."
+          }
+        }
+      }
+    },
+    "PowerSnatch" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The Power Snatch is an explosive weightlifting movement designed to lift a barbell from the ground to overhead in one quick and powerful motion, without dropping into a full squat.\n\nStarting Position – Stand with your feet slightly wider than hip-width and hands gripping the barbell in a wide pronated grip, much wider than shoulder-width. Your back should be straight, hips slightly above the knees, and eyes looking forward.\n\nFirst Pull – Lift the bar by pushing through your legs while keeping a neutral back. The barbell should stay close to your body as you lift, with most of the effort coming from your legs and back.\n\nTransition – As the bar reaches your knees, begin extending your hips and shrugging your shoulders while pulling with your arms. This generates explosive acceleration of the bar upwards.\n\nCatch the Bar – At the bar's highest point, quickly rotate your elbows under the bar and catch it overhead with your legs slightly bent or in a quarter-squat position. The bar should be locked out with straight arms overhead.\n\nStand Up – Stabilize yourself and push through your legs to stand up fully, keeping the bar locked out overhead.\n\nThe Power Snatch is excellent for building power, coordination, and explosiveness, engaging nearly every muscle in the body. \"\"\"\n\nCes descriptions mettent en valeur l'importance de la technique et de l'explosivité dans l'exécution du Power Snatch, un mouvement phare en haltérophilie."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Le Power Snatch est un mouvement explosif en haltérophilie, conçu pour soulever une barre du sol au-dessus de la tête en un mouvement rapide et puissant, sans passer par une position de squat complet.\n\nPosition de départ – Adoptez une position avec les pieds légèrement plus larges que la largeur des hanches et les mains en prise prononcée, beaucoup plus écartées que les épaules. Le dos doit être droit, les hanches légèrement au-dessus des genoux, et le regard droit devant.\n\nPremier tirage – Soulevez la barre en poussant avec les jambes tout en maintenant un dos neutre. La barre doit rester près de votre corps au fur et à mesure que vous la soulevez, et l'effort principal doit provenir de vos jambes et de votre dos.\n\nTransition – Lorsque la barre atteint vos genoux, commencez à étendre vos hanches et à hausser les épaules tout en tirant avec les bras. Cela génère une accélération explosive de la barre vers le haut.\n\nRecevoir la barre – À la hauteur maximale de la barre, tirez rapidement vos coudes sous la barre et attrapez-la au-dessus de la tête en position de quart de squat ou avec les jambes légèrement fléchies. La barre doit être verrouillée avec les bras tendus au-dessus de la tête.\n\nRemontée – Stabilisez-vous et poussez avec les jambes pour revenir en position debout complète, les bras toujours tendus au-dessus de la tête.\n\nLe Power Snatch est idéal pour développer la puissance, la coordination et l'explosivité, tout en sollicitant presque tous les muscles du corps."
           }
         }
       }
