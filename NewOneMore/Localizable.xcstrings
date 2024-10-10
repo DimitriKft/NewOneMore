@@ -172,6 +172,40 @@
         }
       }
     },
+    "AirSquat" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The Air Squat, also known as the bodyweight squat, is a fundamental exercise in strength training and conditioning. It primarily targets the leg muscles, especially the quadriceps, glutes, and hamstrings. This exercise is also beneficial for improving mobility and strengthening the core.\n\nStarting position – Stand with your feet shoulder-width apart and your toes slightly pointed outward. Keep your chest high and extend your arms out in front of you or at your hips for balance.\n\nDescent – Bend your knees and push your hips back as if you're sitting down in a chair. Make sure to keep your back straight and your knees aligned with your toes. Lower yourself until your thighs are parallel to the floor, or as low as your mobility allows.\n\nAscent – Push through your heels to return to the starting position, keeping your chest high and engaging your leg and glute muscles.\n\nRepetition – Perform multiple repetitions while maintaining good form. Be sure to control the movement, especially on the descent.\n\nBreathing – Inhale as you lower down and exhale as you rise up.\n\nThe Air Squat is a basic movement that can be done anywhere without equipment. It’s an excellent exercise for strengthening the legs, improving hip and ankle mobility, and building muscular endurance."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "L'Air Squat, également appelé squat au poids du corps, est un exercice fondamental en musculation et en conditionnement physique. Il cible principalement les muscles des jambes, en particulier les quadriceps, les fessiers et les ischio-jambiers. Cet exercice est également bénéfique pour améliorer la mobilité et renforcer le tronc.\n\nPosition de départ – Placez-vous debout, les pieds écartés à la largeur des épaules, les orteils légèrement tournés vers l'extérieur. Maintenez la poitrine haute et les bras tendus devant vous ou au niveau de vos hanches pour l'équilibre.\n\nDescente – Pliez les genoux et poussez vos hanches vers l'arrière comme si vous vous asseyiez sur une chaise. Assurez-vous de garder le dos droit et les genoux alignés avec les orteils. Descendez jusqu'à ce que vos cuisses soient parallèles au sol, ou aussi bas que votre mobilité le permet.\n\nRemontée – Poussez sur vos talons pour vous redresser à la position de départ, en gardant la poitrine haute et en contractant les muscles des jambes et des fessiers.\n\nRépétition – Effectuez plusieurs répétitions en maintenant une posture correcte. Assurez-vous de bien contrôler le mouvement, surtout lors de la descente.\n\nRespiration – Inspirez en descendant et expirez en remontant.\n\nL'Air Squat est un mouvement de base qui peut être pratiqué n'importe où sans équipement. C'est un exercice complet pour renforcer les jambes, améliorer la mobilité des hanches et des chevilles, et développer l'endurance musculaire."
+          }
+        }
+      }
+    },
+    "AirSquatJump" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The Air Squat Jump is an explosive variation of the classic Air Squat, combining strength and power. This movement primarily targets the quadriceps, glutes, hamstrings, and also strengthens the calves while improving explosiveness and coordination.\n\nStarting position – Stand with your feet shoulder-width apart and your toes slightly pointed outward. Keep your chest high and your arms extended in front of you for balance.\n\nSquat descent – Bend your knees and push your hips back as you would in a regular squat. Lower yourself until your thighs are parallel to the ground, maintaining a straight back and keeping your knees aligned with your toes.\n\nExplosive jump – From the squat position, push through your heels to jump upwards. Extend your hips, knees, and ankles simultaneously to generate maximum power.\n\nLanding – Land softly on the balls of your feet, then immediately bend your knees to return to a squat position in preparation for the next jump.\n\nRepetition – Perform multiple repetitions, smoothly transitioning between squats and jumps while controlling the landing to avoid joint strain.\n\nBreathing – Inhale as you descend into the squat and exhale as you jump.\n\nThe Air Squat Jump increases cardiovascular intensity while building power and explosiveness. It's often used in conditioning circuits or CrossFit workouts."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "L'Air Squat Jump est une variante explosive de l'Air Squat classique, qui combine la force et la puissance. Ce mouvement sollicite principalement les quadriceps, les fessiers, les ischio-jambiers et renforce également les mollets tout en améliorant l'explosivité et la coordination.\n\nPosition de départ – Tenez-vous debout, les pieds écartés à la largeur des épaules, les orteils légèrement tournés vers l'extérieur. Gardez la poitrine haute et les bras devant vous pour maintenir l'équilibre.\n\nDescente en squat – Fléchissez les genoux et poussez les hanches vers l'arrière comme pour un squat classique. Descendez jusqu'à ce que vos cuisses soient parallèles au sol, tout en maintenant le dos droit et les genoux alignés avec vos orteils.\n\nSaut explosif – À partir de cette position accroupie, poussez vigoureusement sur vos talons pour sauter vers le haut. Étendez vos hanches, vos genoux et vos chevilles simultanément pour générer un maximum de puissance.\n\nAtterrissage – Atterrissez doucement sur la plante des pieds, puis fléchissez immédiatement les genoux pour revenir en position de squat afin de préparer le saut suivant.\n\nRépétition – Effectuez plusieurs répétitions en enchaînant les squats et les sauts de manière fluide, tout en maintenant le contrôle lors de l'atterrissage pour éviter les chocs sur les articulations.\n\nRespiration – Inspirez en descendant dans le squat et expirez en sautant.\n\nL'Air Squat Jump est un exercice qui augmente l'intensité cardiovasculaire tout en développant la puissance et l'explosivité. Il est souvent utilisé dans les circuits de conditionnement ou dans les séances de CrossFit."
+          }
+        }
+      }
+    },
     "Ajoute ta première activité d'endurance" : {
       "localizations" : {
         "en" : {
@@ -336,6 +370,23 @@
         }
       }
     },
+    "Burpee" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The Burpee is a full-body, cardio-intensive exercise that combines multiple movements into one. It works the entire body, including the legs, arms, core, and cardiovascular system. It's often used in HIIT (High-Intensity Interval Training) and CrossFit workouts to build endurance, strength, and explosiveness.\n\nStarting position – Stand with your feet shoulder-width apart, arms relaxed at your sides.\n\nSquat down – Lower into a squat position, placing your hands on the floor in front of you, slightly wider than your shoulders.\n\nPlank position – Quickly jump your feet back into a plank position, with your hands directly under your shoulders and your body in a straight line from head to heels.\n\nPush-up (optional) – Perform a push-up by lowering your chest to the floor, then pushing back up into the plank position. If this is too challenging, you can skip the push-up and remain in the plank.\n\nJump forward – Jump your feet back toward your hands to return to the squat position.\n\nVertical jump – From the squat position, explode upward into a jump, raising your arms overhead. Land softly and immediately transition into the next repetition.\n\nBreathing – Inhale as you lower down and exhale as you jump and perform the push-up.\n\nThe Burpee is a highly intense exercise that can be modified based on fitness level. It’s effective for burning calories, strengthening the body, and improving muscular and cardiovascular endurance. It's a staple in conditioning workouts or fitness circuits."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Le Burpee est un exercice polyarticulaire et cardio complet qui combine plusieurs mouvements en un seul. Il sollicite l'ensemble du corps, notamment les jambes, les bras, le tronc, ainsi que les systèmes cardiovasculaire et respiratoire. Il est souvent utilisé dans les entraînements de type HIIT (High-Intensity Interval Training) et CrossFit pour développer l'endurance, la force et l'explosivité.\n\nPosition de départ – Tenez-vous debout, les pieds écartés à la largeur des hanches, les bras relâchés sur les côtés.\n\nDescente en squat – Abaissez-vous en position de squat en plaçant les mains au sol devant vous, légèrement plus larges que vos épaules.\n\nPosition de planche – Sautez rapidement vos pieds vers l'arrière pour vous retrouver en position de planche (gainage), les mains directement sous les épaules et le corps aligné de la tête aux pieds.\n\nPompe (facultatif) – Effectuez une pompe en abaissant votre poitrine au sol, puis poussez pour revenir en position de planche. Si cette étape est trop difficile, vous pouvez la sauter et rester en planche.\n\nSaut vers l'avant – Ramenez vos pieds rapidement vers l'avant, près de vos mains, pour revenir à la position de squat.\n\nSaut vertical – Depuis la position de squat, explosez vers le haut en sautant et en levant les bras au-dessus de votre tête. Atterrissez en douceur et enchaînez immédiatement avec la prochaine répétition.\n\nRespiration – Inspirez pendant la descente et expirez lors du saut et de la pompe.\n\nLe Burpee est un exercice très intense qui peut être modifié selon le niveau de condition physique de chacun. Il est efficace pour brûler des calories, renforcer le corps et améliorer l'endurance musculaire et cardio-respiratoire. C'est un mouvement couramment intégré dans des séances de conditionnement physique ou des circuits."
+          }
+        }
+      }
+    },
     "CableCrunch" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -432,6 +483,57 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Cette action est irréversible."
+          }
+        }
+      }
+    },
+    "ChestToBar" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The Chest-To-Bar Pull-Up is an advanced variation of the traditional pull-up where the goal is to pull your body up until your chest touches or is very close to the bar. This movement increases the engagement of the back, shoulder, and arm muscles while strengthening the core.\n\nStarting position – Hang from a bar with an overhand grip (palms facing forward) or underhand grip (palms facing you), slightly wider than shoulder-width. Keep your body straight and engage your core muscles to maintain a solid position.\n\nPull phase – Pull firmly with your arms while contracting your back muscles to bring your chest to the bar. Try to keep your elbows close to your body to maximize back activation.\n\nChest contact with the bar – Continue pulling until your chest touches or gets very close to the bar. This differs from traditional pull-ups where only the chin goes above the bar. Here, the range of motion is increased to engage more muscles.\n\nControlled descent – Lower yourself slowly and in a controlled manner until you return to the starting position with your arms fully extended. Avoid dropping abruptly to protect your shoulders and encourage good technique.\n\nBreathing – Inhale as you lower and exhale during the pull phase.\n\nVariations – This movement can be performed strictly (no momentum) to build more strength or with a slight kip (swing) to string together more reps.\n\nThe Chest-To-Bar Pull-Up is an excellent exercise to build upper body strength, especially in the back and biceps. It's commonly used in CrossFit and functional weightlifting workouts due to its physical demand and its ability to improve pulling power."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Le Chest-To-Bar Pull-Up est une variante plus avancée de la traction classique, où l'objectif est de tirer son corps jusqu'à ce que la poitrine touche ou soit très proche de la barre. Ce mouvement intensifie l'engagement des muscles du dos, des épaules et des bras, tout en renforçant le gainage du corps.\n\nPosition de départ – Suspendez-vous à une barre avec une prise en pronation (paumes vers l'avant) ou en supination (paumes vers vous), légèrement plus large que la largeur des épaules. Gardez le corps bien droit et engagez les muscles abdominaux pour maintenir une position solide.\n\nPhase de traction – Tirez fermement sur vos bras tout en contractant vos muscles du dos pour amener votre poitrine à la barre. Essayez de garder les coudes près du corps pour maximiser l'activation du dos.\n\nContact avec la barre – Continuez à tirer jusqu'à ce que votre poitrine touche ou soit proche de la barre. Cet aspect diffère des tractions classiques où le menton dépasse simplement la barre. Ici, l'amplitude est augmentée pour solliciter davantage les muscles.\n\nDescente contrôlée – Descendez lentement en contrôlant le mouvement jusqu'à retrouver la position de départ avec les bras tendus. Évitez de vous laisser tomber brusquement afin de protéger vos épaules et d'encourager une bonne technique.\n\nRespiration – Inspirez en descendant et expirez pendant la phase de traction.\n\nVariations – Ce mouvement peut être réalisé strictement (sans élan) pour développer davantage de force ou avec un léger mouvement de balancement (kipping) pour enchaîner plus de répétitions.\n\nLe Chest-To-Bar Pull-Up est un excellent exercice pour développer la force du haut du corps, en particulier dans le dos et les biceps. Il est fréquemment utilisé dans les entraînements de CrossFit et d'haltérophilie fonctionnelle en raison de son exigence physique et de sa capacité à améliorer la puissance de traction.\n\n"
+          }
+        }
+      }
+    },
+    "ChinUp" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The Chin-Up is a variation of the pull-up where the palms are facing towards you (supinated grip). It’s a classic strength training exercise that primarily targets the muscles of the back and biceps. Compared to the Pull-Up, it emphasizes the arms, particularly the biceps, while still engaging the latissimus dorsi and other back muscles.\n\nStarting position – Hang from a bar with a supinated grip (palms facing you), with your hands shoulder-width apart or slightly narrower. Keep your arms straight and your feet slightly forward to maintain tension in your core.\n\nPull phase – Keeping your body stable, pull your elbows down and contract your biceps and back muscles to bring your chin above the bar. Actively engage your arm muscles while maintaining a straight spine.\n\nContraction phase – Pause briefly as your chin clears the bar, squeezing the upper back and biceps.\n\nDescent phase – Slowly lower yourself in a controlled manner, extending your arms until they are fully straight. Maintain control throughout the movement.\n\nBreathing – Exhale as you pull up and inhale as you lower down.\n\nAdditional tips – The Chin-Up is an excellent exercise for building arm and back strength. It’s often easier than the Pull-Up due to the hand position, which allows for more bicep involvement. If you’re a beginner, you can use a resistance band to assist with the movement or perform partial reps to improve your form.\n\nThe Chin-Up is a fundamental exercise that can be incorporated into almost any strength training program to build upper body strength."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Le Chin-Up est une variante des tractions où les paumes des mains sont orientées vers soi (prise supination). C'est un mouvement de musculation classique qui cible principalement les muscles du dos et des biceps. Comparé au Pull-Up, il sollicite davantage les bras, notamment les biceps, tout en engageant le grand dorsal et d'autres muscles du dos.\n\nPosition de départ – Accrochez-vous à une barre avec une prise en supination (paumes vers soi), les mains espacées de la largeur des épaules ou légèrement plus rapprochées. Gardez les bras tendus et les pieds légèrement en avant pour maintenir une légère tension dans les abdominaux.\n\nPhase de traction – En gardant le corps stable, tirez vos coudes vers le bas et contractez les biceps et le dos pour amener votre menton au-dessus de la barre. Engagez activement les muscles des bras tout en maintenant la colonne vertébrale droite.\n\nPhase de contraction – Maintenez une brève pause lorsque votre menton dépasse la barre, en contractant fortement les muscles du haut du dos et des biceps.\n\nPhase de descente – Contrôlez lentement la descente en allongeant progressivement les bras jusqu'à ce qu'ils soient complètement tendus. Assurez-vous de garder le contrôle de votre mouvement tout au long de cette phase.\n\nRespiration – Expirez lorsque vous tirez vers le haut, et inspirez lorsque vous redescendez.\n\nConseils supplémentaires – Le Chin-Up est un excellent exercice pour développer la force des bras et du dos. Il est souvent plus facile que le Pull-Up en raison de la position des mains, qui permet une plus grande participation des biceps. Si vous débutez, vous pouvez utiliser un élastique de résistance pour faciliter le mouvement ou effectuer des répétitions partielles pour améliorer votre technique.\n\nLe Chin-Up est un mouvement de base qui peut être intégré dans presque tous les programmes de musculation pour renforcer le haut du corps."
+          }
+        }
+      }
+    },
+    "ClappingPushUp" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The Clapping Push-Up is an explosive variation of the traditional push-up, designed to build power, speed, and coordination. This exercise intensely engages the chest, triceps, shoulders, and core muscles, while improving the ability to generate force quickly.\n\nStarting position – Begin in a plank position with your hands slightly wider than shoulder-width apart, and your feet together or slightly apart for stability. Your body should form a straight line from head to heels, with your core engaged.\n\nLowering phase – Bend your arms to lower your chest towards the ground while keeping your back straight. Lower until your elbows reach about a 90-degree angle.\n\nExplosive phase – Push off the ground explosively with your arms, lifting your hands off the floor. At the peak of this movement, perform a quick clap in front of your chest.\n\nLanding and absorbing – After the clap, quickly bring your hands back to the ground, absorbing the landing with slightly bent arms to minimize impact on your wrists and shoulders.\n\nReset position – After landing, immediately transition into another repetition or pause before continuing.\n\nBreathing – Exhale during the explosive push phase and inhale during the lowering phase.\n\nThe Clapping Push-Up is an advanced exercise requiring strength and coordination. It’s ideal for those looking to improve upper body explosiveness and endurance. Commonly used in functional training, this exercise can be incorporated into conditioning circuits or as a challenge to test upper body power."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Le Clapping Push-Up est une variation explosive des pompes classiques, conçue pour développer la puissance, la vitesse et la coordination. Cet exercice sollicite intensément les muscles des pectoraux, des triceps, des épaules ainsi que le gainage abdominal, tout en améliorant la capacité à générer de la force rapidement.\n\nPosition de départ – Commencez en position de planche, les mains placées légèrement plus larges que la largeur des épaules, et les pieds joints ou légèrement écartés pour plus de stabilité. Le corps doit former une ligne droite de la tête aux pieds, les abdominaux bien engagés.\n\nPhase de descente – Fléchissez les bras pour abaisser la poitrine vers le sol tout en gardant le dos droit. Descendez jusqu'à ce que vos coudes atteignent un angle d'environ 90 degrés.\n\nPhase explosive – Poussez de manière explosive sur vos bras afin de décoller vos mains du sol. Au sommet de ce mouvement, réalisez un claquement de mains rapide devant la poitrine.\n\nAtterrissage et absorption – Après le claquement, ramenez rapidement vos mains au sol pour absorber l'atterrissage avec les bras légèrement fléchis afin de minimiser l'impact sur les poignets et les épaules.\n\nReprise de la position – Après l'atterrissage, enchaînez directement avec une nouvelle répétition ou faites une pause avant de recommencer.\n\nRespiration – Expirez lors de la phase de poussée explosive et inspirez lors de la descente.\n\nLe Clapping Push-Up est un exercice avancé qui nécessite force et coordination. Il est idéal pour ceux qui souhaitent améliorer leur explosivité musculaire et leur endurance. Utilisé fréquemment dans les entraînements fonctionnels, cet exercice peut être intégré dans des circuits de conditionnement physique ou comme défi pour tester la puissance du haut du corps.\n\n"
           }
         }
       }
@@ -535,6 +637,40 @@
           "stringUnit" : {
             "state" : "needs_review",
             "value" : "Le Decline Bench Press est une variante du développé couché qui cible principalement la partie inférieure des pectoraux. En étant allongé sur un banc incliné vers le bas, cet exercice met plus de tension sur les pectoraux inférieurs tout en activant également les triceps et les épaules.\n\nPosition de départ – Allongez-vous sur un banc décliné avec vos pieds solidement fixés sous les supports prévus à cet effet. Attrapez la barre avec une prise en pronation (paumes tournées vers l'avant), légèrement plus large que la largeur des épaules.\n\nDescente de la barre – Débloquez la barre et abaissez-la lentement vers le bas de votre poitrine, juste au-dessus du sternum. Gardez vos coudes à environ 45 degrés par rapport à votre corps pour minimiser la tension sur les épaules et maximiser l'activation des pectoraux.\n\nPhase de poussée – Poussez la barre vers le haut en utilisant la force de vos pectoraux et de vos triceps, jusqu'à ce que vos bras soient complètement étendus. Veillez à ne pas bloquer complètement les coudes pour garder la tension sur les muscles.\n\nContrôle du mouvement – Pendant tout le mouvement, assurez-vous de maintenir une bonne stabilité dans votre torse et d’éviter de cambrer excessivement le dos. Contractez vos pectoraux au sommet du mouvement pour une activation maximale.\n\nRespiration – Inspirez en abaissant la barre, et expirez lors de la phase de poussée.\n\nLe Decline Bench Press est un excellent exercice pour développer la partie inférieure des pectoraux, souvent négligée dans les autres variantes du développé couché. Il permet aussi d'ajouter de la variété dans les entraînements de la poitrine."
+          }
+        }
+      }
+    },
+    "Dips" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dips are a strength exercise that primarily targets the triceps, chest, and shoulders. This compound movement is commonly used to build upper body strength and can be performed on parallel bars, rings, or even on a bench for more accessible variations.\n\nStarting position – Place your hands on parallel bars, with your arms extended and your body straight. Your feet should not touch the ground, and your shoulders should align with your wrists.\n\nLowering phase – Keeping your elbows close to your body, slowly lower yourself by bending your arms. Lower until your elbows form a 90-degree angle or slightly beyond. Your forearms should remain perpendicular to the floor.\n\nPushing phase – Engage your triceps and chest to push your body back up to the starting position with extended arms, but avoid fully locking your elbows.\n\nBreathing – Inhale on the way down and exhale during the push back up.\n\nAdditional tips – For added difficulty, you can hold a dumbbell between your legs or use a weighted dip belt. For an easier version, use an assisted dip machine or a resistance band to reduce your body weight. Be sure to keep your shoulders engaged to avoid unnecessary strain.\n\nDips are great for building upper body strength and improving shoulder stability. They are often included in strength training or fitness programs to increase triceps and chest strength."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Les Dips sont un exercice de musculation qui cible principalement les triceps, les pectoraux et les épaules. Cet exercice polyarticulaire est souvent utilisé pour développer la force du haut du corps et peut être réalisé sur des barres parallèles, des anneaux ou même sur un banc pour des variantes plus accessibles.\n\nPosition de départ – Placez vos mains sur des barres parallèles, bras tendus et corps droit. Vos pieds ne doivent pas toucher le sol, et vos épaules doivent être alignées avec vos poignets.\n\nPhase de descente – En gardant les coudes près du corps, fléchissez les bras pour abaisser lentement votre corps. Descendez jusqu'à ce que vos coudes forment un angle de 90 degrés ou légèrement plus. Vos avant-bras doivent rester perpendiculaires au sol.\n\nPhase de poussée – Contractez vos triceps et vos pectoraux pour repousser votre corps vers la position de départ, bras tendus, en évitant de bloquer complètement les coudes.\n\nRespiration – Inspirez lors de la descente et expirez pendant la poussée vers le haut.\n\nConseils supplémentaires – Pour plus de difficulté, vous pouvez ajouter du poids en tenant une haltère entre vos jambes ou en utilisant une ceinture de lest. Pour une version plus accessible, utilisez une machine à dips assistée ou un élastique de résistance pour diminuer la charge corporelle. Veillez à garder vos épaules engagées pour éviter toute tension excessive.\n\nLes Dips sont excellents pour renforcer le haut du corps et améliorer la stabilité des épaules. Ils sont souvent intégrés dans les programmes de musculation ou de fitness pour augmenter la force des triceps et des pectoraux."
+          }
+        }
+      }
+    },
+    "DoubleUnder" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The Double Under, or double jump rope, is an advanced jump rope variation where the rope passes under your feet twice during a single jump. It requires precise timing, increased speed, and exceptional coordination.\n\nStarting position – Stand with your feet hip-width apart, holding the jump rope in each hand. Keep your elbows close to your body and a slight bend in your knees to absorb the jump.\n\nExplosive jump – Perform a higher jump than with a Simple Under, trying to stay light on your feet. The key is to minimize ground contact time and use a quick, explosive movement to allow the rope to pass twice under your feet.\n\nFast rope rotation – Unlike the Simple Under, your wrist movement needs to be much faster to rotate the rope twice during a single jump. Ensure your wrists are firm, and avoid using too much arm movement. Keep your arms relaxed.\n\nCoordination and rhythm – The Double Under demands excellent rhythm and coordination for the rope to pass under your feet twice in one jump. Breathe steadily and aim for a consistent pace.\n\nThe Double Under is a great exercise to enhance endurance, coordination, and cardiovascular fitness. It is commonly used in functional training, like CrossFit, to intensify the workout in a short period."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Le Double Under, ou double saut à la corde, est une variante avancée du saut à la corde où la corde passe sous vos pieds deux fois pendant un seul saut. Il demande un timing précis, une vitesse accrue et une coordination exceptionnelle.\n\nPosition de départ – Tenez-vous debout, les pieds écartés à la largeur des hanches, en tenant la corde à sauter dans chaque main. Vos coudes doivent rester proches du corps, avec une légère flexion des genoux pour amortir les sauts.\n\nSaut explosif – Effectuez un saut plus haut que lors d’un Simple Under, en essayant de rester léger sur vos pieds. La clé est de minimiser le temps passé au sol et d'utiliser un mouvement rapide et explosif pour permettre à la corde de passer deux fois sous vos pieds.\n\nRotation rapide de la corde – Contrairement au Simple Under, le mouvement des poignets doit être beaucoup plus rapide pour faire tourner la corde deux fois pendant un seul saut. Assurez-vous de maintenir les poignets fermes et de ne pas trop utiliser les bras, qui doivent rester détendus.\n\nCoordination et rythme – Le Double Under exige un excellent sens du rythme et de la coordination pour que la corde passe deux fois en un seul saut. Respirez régulièrement et essayez de garder une cadence régulière.\n\nLe Double Under est un excellent exercice pour améliorer l'endurance, la coordination et la condition cardiovasculaire. Il est souvent utilisé dans les entraînements fonctionnels comme le CrossFit pour intensifier l'effort en un court laps de temps."
           }
         }
       }
@@ -855,6 +991,40 @@
         }
       }
     },
+    "HandstandPushUp" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The Handstand Push-Up is an advanced bodyweight exercise, commonly practiced in gymnastics and CrossFit. It involves performing push-ups in a handstand position, heavily engaging the shoulders, triceps, and upper back muscles. It also strengthens core stability and overall balance.\n\nStarting position – Get into a handstand position, either against a wall for stability or freely if you can control the balance. Place your hands shoulder-width apart, with fingers slightly spread for better grip. Keep your body straight, legs extended, and toes pointing upward.\n\nDescent – Slowly bend your elbows to lower your head toward the ground. Keep your elbows close to your body at about a 45-degree angle. Maintain core engagement and control the descent to avoid falling abruptly.\n\nPush phase – Once your head lightly touches the floor or a support (like a cushion), push firmly through your hands to extend your arms and return to the starting position. Engage your shoulder, tricep, and upper back muscles for this phase.\n\nBreathing – Inhale as you lower and exhale as you push back up.\n\nWall variation – If you lack balance, start by practicing the exercise against a wall. This allows you to focus on the arm movement without worrying about balance.\n\nProgression – If you're new to handstands, start by practicing holding the handstand position using a wall to build strength and stability. You can also begin with Pike Push-Ups to strengthen your shoulders before progressing to Handstand Push-Ups.\n\nThe Handstand Push-Up is a demanding exercise that builds functional shoulder and arm strength along with great body control. Progress cautiously to avoid injuries."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Le Handstand Push-Up est un exercice avancé de musculation, souvent pratiqué en gymnastique et en CrossFit. Il consiste à effectuer des pompes en position d'équilibre sur les mains, en sollicitant intensément les épaules, les triceps et les muscles du haut du dos. C'est un exercice qui renforce également la stabilité du tronc et l'équilibre global.\n\nPosition de départ – Mettez-vous en position d'équilibre sur les mains, soit contre un mur pour plus de stabilité, soit librement si vous avez déjà la maîtrise de l'équilibre. Placez vos mains à la largeur des épaules, les doigts légèrement écartés pour une meilleure prise. Gardez votre corps bien droit, les jambes tendues et les pieds pointés vers le haut.\n\nDescente – Pliez lentement les coudes pour abaisser votre tête vers le sol. Les coudes doivent rester proches du corps, à environ 45 degrés par rapport au torse. Gardez le corps bien gainé et contrôlez la descente pour éviter toute chute brutale.\n\nPhase de poussée – Une fois que votre tête touche légèrement le sol ou un support (comme un coussin), poussez fermement sur vos mains pour étendre les bras et revenir à la position de départ. Engagez les muscles des épaules, des triceps et du haut du dos pour effectuer cette phase.\n\nRespiration – Inspirez en descendant et expirez en poussant pour remonter.\n\nVariation murale – Si vous manquez encore de stabilité, commencez par faire l'exercice contre un mur. Cela vous permettra de vous concentrer sur le mouvement des bras sans avoir à gérer l'équilibre.\n\nProgression – Si vous débutez dans l'entraînement en équilibre, commencez par travailler la position de l'équilibre, en utilisant le mur pour développer votre force et stabilité. Vous pouvez aussi commencer par des Pike Push-Ups pour renforcer vos épaules avant de passer aux Handstand Push-Ups.\n\nLe Handstand Push-Up est un exercice exigeant qui développe une force fonctionnelle dans les épaules et les bras, ainsi qu'un excellent contrôle du corps. Il est essentiel de progresser avec prudence pour éviter les blessures.\n\n"
+          }
+        }
+      }
+    },
+    "HandstandWalk" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The Handstand Walk is an advanced exercise that involves walking on your hands while balancing upside down. It requires significant shoulder, arm, and core strength, as well as excellent coordination and stability.\n\nStarting position – Begin in a handstand position against a wall or with the help of a partner to find your balance. Your hands should be shoulder-width apart, with fingers spread wide to create a stable base.\n\nEngage the core – Tighten your abs and glutes to maintain a straight body line. A strong core is essential to prevent arching the back or losing balance.\n\nControlled stepping – Once you find your balance, start walking by moving one hand at a time forward. Make sure the movement is controlled and fluid, keeping a slight bend in your elbows to better absorb the motion.\n\nShoulder engagement – Shoulders play a key role in stabilizing and propelling the body during the walk. It’s crucial to activate them strongly to maintain balance and control each step.\n\nBreathing and rhythm – Breathe steadily and aim for a consistent pace. The slower and more controlled your steps, the more stable you’ll be.\n\nThe Handstand Walk is commonly used in disciplines like CrossFit and gymnastics to improve coordination, upper body strength, and balance. It’s a fantastic exercise for those looking to enhance their functional strength and agility.\n\n\n\n\n\n\n"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Le Handstand Walk, ou marche sur les mains, est un exercice avancé qui consiste à marcher en équilibre sur les mains. Il nécessite une force considérable des épaules, des bras, du tronc, ainsi qu'une excellente coordination et stabilité.\n\nPosition de départ – Commencez en position de handstand (équilibre sur les mains) contre un mur ou en vous aidant d'un partenaire pour trouver votre équilibre. Les mains doivent être écartées à la largeur des épaules, les doigts bien étalés pour assurer une base solide.\n\nEngagement du tronc – Contractez les abdominaux et les fessiers pour maintenir le corps en ligne droite. Un tronc fort est essentiel pour éviter de cambrer le dos ou de perdre l'équilibre.\n\nDémarche contrôlée – Une fois l’équilibre trouvé, commencez à marcher en déplaçant une main à la fois vers l'avant. Veillez à ce que le mouvement soit contrôlé et fluide, en gardant une légère flexion dans les coudes pour mieux absorber les mouvements.\n\nUtilisation des épaules – Les épaules jouent un rôle clé dans la stabilisation et la propulsion pendant la marche. Il est important de les activer fortement pour maintenir l'équilibre et contrôler chaque pas.\n\nRespiration et rythme – Respirez régulièrement et essayez de maintenir un rythme constant. Plus vous marchez lentement et contrôlez vos mouvements, plus vous serez stable.\n\nLe Handstand Walk est souvent utilisé dans des disciplines comme le CrossFit et la gymnastique pour améliorer la coordination, la force du haut du corps et l'équilibre. Il s'agit d'un excellent exercice pour ceux qui cherchent à développer leur force fonctionnelle et leur agilité."
+          }
+        }
+      }
+    },
     "HangPowerClean" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -1006,6 +1176,23 @@
         }
       }
     },
+    "IronCross" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The Iron Cross is an iconic gymnastics rings movement that requires exceptional upper body strength, stability, and precise technique. This exercise primarily engages the shoulders, arms, chest, and core muscles.\n\nStarting position – Begin by hanging passively from the rings, with your arms fully extended overhead. Ensure your body is aligned, and your core muscles are engaged to maintain stability.\n\nControlled descent – Slowly move your arms out to the sides, keeping your elbows locked and lowering the rings until you reach a horizontal position. The goal is to create a cross shape with your body, arms extended horizontally, and your body straight.\n\nMuscle engagement – Use the strength of your shoulders, biceps, and chest to stabilize the rings. Your core must remain tight to prevent swinging and to maintain balance.\n\nHold the position – Once you’ve achieved a perfect cross, hold this posture for as long as possible. It’s important to stay static, with your arms perfectly straight and the rings level with your shoulders.\n\nReturn to the starting position – To complete the exercise, slowly bring the rings back up and return to a passive hang.\n\nThe Iron Cross is one of the most demanding movements in gymnastics. It develops extreme strength in the shoulders, arms, and core, and is a true test of stability and body control."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "L'Iron Cross est un mouvement emblématique de la gymnastique aux anneaux, nécessitant une force exceptionnelle du haut du corps, une stabilité et une maîtrise de la technique. Cet exercice sollicite principalement les épaules, les bras, les pectoraux et les muscles du tronc.\n\nPosition de départ – Commencez en suspension passive aux anneaux, bras tendus au-dessus de la tête. Assurez-vous que votre corps est aligné et vos muscles du tronc engagés pour maintenir la stabilité.\n\nDescente contrôlée – Écartez lentement les bras sur les côtés, en maintenant les coudes verrouillés et en descendant les anneaux jusqu’à atteindre une position horizontale. L'objectif est de créer une forme en croix avec votre corps, bras tendus à l'horizontale et le corps droit.\n\nEngagement musculaire – Utilisez la force des épaules, des biceps et des pectoraux pour stabiliser les anneaux. Le tronc doit rester contracté pour éviter tout balancement et pour maintenir l’équilibre.\n\nMaintien de la position – Une fois en position de croix parfaite, maintenez cette posture aussi longtemps que possible. Il est important de rester statique, avec les bras parfaitement droits et les anneaux à hauteur des épaules.\n\nRetour à la position initiale – Pour terminer l'exercice, ramenez lentement les anneaux vers le haut et resuspendez-vous dans la position de départ.\n\nL'Iron Cross est l'un des mouvements les plus exigeants en gymnastique. Il développe une force extrême au niveau des épaules, des bras et du tronc. C’est également un test ultime de la stabilité et du contrôle corporel."
+          }
+        }
+      }
+    },
     "Jerk" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -1019,6 +1206,57 @@
           "stringUnit" : {
             "state" : "needs_review",
             "value" : "Le Jerk est un mouvement explosif d’haltérophilie où la barre est poussée de la position d’épaulé à au-dessus de la tête en un mouvement rapide et puissant.\n\nPhase de Dip – Commencez avec la barre sur vos épaules, vos pieds écartés à la largeur des hanches. Pliez légèrement les genoux en descendant droit, en gardant le tronc bien droit et en générant de la tension dans les jambes.\n\nPhase de Drive – À partir de cette position fléchie, poussez de manière explosive avec vos jambes pour générer de la force vers le haut, propulsant la barre au-dessus de votre tête.\n\nPhase de Catch – Dès que la barre monte, déplacez rapidement vos pieds en avant et en arrière pour entrer dans une position de fente (split jerk) ou restez en position de squat (power jerk) tout en attrapant la barre les bras tendus au-dessus de votre tête.\n\nStabilisation – Une fois la barre sécurisée au-dessus de votre tête, redressez-vous en ramenant les pieds à leur position d'origine, en maintenant un contrôle total avant de relâcher la barre.\n\nLe Jerk exige une parfaite coordination entre la puissance des jambes et la stabilité du haut du corps, et c’est un des mouvements clés pour réussir les levées lourdes en haltérophilie. "
+          }
+        }
+      }
+    },
+    "Jumping Jack" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The Jumping Jack is a simple yet effective cardio exercise, often used in warm-ups, fitness circuits, or conditioning workouts. It primarily engages the leg and arm muscles while increasing heart rate for improved cardiovascular endurance.\n\nStarting position – Stand upright with your feet together and arms at your sides.\n\nJump movement – Jump by spreading your feet out to the sides while simultaneously raising your arms above your head. Your hands should nearly touch at the top of the movement.\n\nReturn to start position – Jump again to bring your feet back together and lower your arms to your sides.\n\nRepetition – Perform the movement in a continuous, rhythmic fashion. Make sure to coordinate the movement of both your arms and legs.\n\nBreathing – Inhale as you jump your feet outward and exhale as you bring them back together.\n\nThe Jumping Jack is often used as a warm-up exercise to increase blood flow and activate muscles before engaging in more intense workouts. It’s also great for improving coordination and agility."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Le Jumping Jack est un exercice cardio simple mais efficace, souvent utilisé dans les échauffements, les circuits de fitness ou les séances de conditionnement physique. Il sollicite principalement les muscles des jambes et des bras tout en augmentant la fréquence cardiaque pour une amélioration de l'endurance cardiovasculaire.\n\nPosition de départ – Tenez-vous debout, les pieds joints et les bras le long du corps.\n\nMouvement de saut – Sautez en écartant les pieds de manière latérale tout en levant simultanément les bras au-dessus de votre tête. Vos mains devraient presque se toucher en haut du mouvement.\n\nRetour à la position initiale – Sautez à nouveau pour ramener vos pieds ensemble et redescendez vos bras le long de votre corps.\n\nRépétition – Enchaînez le mouvement de manière continue et rythmée. Veillez à bien coordonner les mouvements des bras et des jambes.\n\nRespiration – Inspirez en sautant les pieds vers l'extérieur et expirez en ramenant les pieds ensemble.\n\nLe Jumping Jack est souvent utilisé comme un exercice d'échauffement pour augmenter le flux sanguin et activer les muscles avant un entraînement plus intense. Il est également excellent pour améliorer la coordination et l'agilité."
+          }
+        }
+      }
+    },
+    "KippingBarMuscleUp" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The Kipping Bar Muscle-Up is a dynamic version of the muscle-up that uses momentum to assist in getting over the bar. This movement requires coordination, strength, and good timing while reducing the effort needed to perform the transition. It primarily targets the back, shoulders, arms, and core muscles, utilizing the momentum generated by the lower body.\n\nStarting position – Hang from a bar with a grip slightly wider than shoulder-width, palms facing forward. Engage your core and let your legs remain slightly relaxed to initiate the swing.\n\nKip swing phase – Swing your legs backward while engaging your core and shoulders. Then, quickly bring your legs forward and up to generate momentum. This phase helps create upward force without relying solely on your arms to pull.\n\nPull-up phase – As your legs reach their highest point, use that momentum to initiate the pull-up. Pull with your arms and back while continuing to use your legs' momentum.\n\nTransition – Use the momentum and strength to quickly transition your hips over the bar. Engage your shoulders and core to ensure a smooth transition without straining your arms too much.\n\nDip phase – Once above the bar, push up with your arms to finish in a dip position, with your arms fully extended above the bar.\n\nDescent – Control your descent back into a hanging position, ready to perform another repetition.\n\nBreathing – Inhale during the kip swing, exhale as you transition over the bar, and inhale again on the way down.\n\nAdditional tips – Ensure you have good control of the kip swing before attempting the full muscle-up. The key to this movement is timing between the momentum and the pull-up. Working on kipping pull-ups first can help you better coordinate your body for this movement.\n\nThe Kipping Bar Muscle-Up is a great exercise for improving coordination and upper-body explosive power, frequently used in gymnastics and CrossFit training."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Le Kipping Bar Muscle-Up est une version dynamique du muscle-up à la barre qui utilise l’élan pour aider à passer au-dessus de la barre. Ce mouvement demande de la coordination, de la force et un bon timing, tout en réduisant l'effort nécessaire pour réussir la transition. Il sollicite principalement les muscles du dos, des épaules, des bras et du tronc, tout en utilisant l'élan généré par le bas du corps.\n\nPosition de départ – Suspendez-vous à une barre fixe avec une prise légèrement plus large que les épaules, les paumes tournées vers l’avant. Engagez les muscles du tronc et laissez vos jambes légèrement détendues pour le mouvement de balancier.\n\nPhase de balancier (kip) – Balancez vos jambes vers l'arrière tout en engageant les muscles du tronc et des épaules. Ensuite, amenez rapidement vos jambes vers l'avant et le haut pour générer un élan. Cette phase vous aide à créer une force ascendante sans avoir besoin d'utiliser uniquement les bras pour tracter.\n\nPhase de traction – Dès que vos jambes sont à leur point le plus haut, utilisez cet élan pour commencer la traction. Tirez-vous avec les bras et le dos tout en continuant d'utiliser l'élan de vos jambes.\n\nTransition – Utilisez l’élan et la force pour passer rapidement vos hanches au-dessus de la barre. Engagez vos épaules et votre tronc pour bien réussir cette transition sans trop forcer sur les bras.\n\nPhase de dips – Une fois au-dessus de la barre, poussez sur vos bras pour finir en position de dips, avec les bras tendus au-dessus de la barre.\n\nDescente – Contrôlez votre descente en revenant en position pendue sous la barre, prêt à enchaîner une autre répétition.\n\nRespiration – Inspirez pendant la phase de balancier, expirez en passant au-dessus de la barre, et inspirez à nouveau lors de la descente.\n\nConseils supplémentaires – Assurez-vous d'avoir une bonne maîtrise du balancier (kip) avant d'essayer le muscle-up complet. La clé de ce mouvement est le timing entre l'élan et la traction. Travailler d'abord sur les tractions kipping peut vous aider à bien coordonner votre corps pour ce mouvement.\n\nLe Kipping Bar Muscle-Up est un excellent exercice pour améliorer la coordination et la puissance explosive du haut du corps. Il est souvent utilisé en gymnastique et dans les entraînements de CrossFit.\n\n"
+          }
+        }
+      }
+    },
+    "KippingRingMuscleUp" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The Kipping Ring Muscle-Up is an advanced exercise that combines a pull-up with a transition above the rings, followed by a dip. This variation uses body swing, known as \"kipping,\" to generate momentum, making the transition between the pull and push phases easier. It requires strength, technique, and excellent coordination.\n\nStarting position – Hang from the rings with arms extended and palms facing inward. Engage your core and keep your legs slightly forward.\n\nThe Kipping – Initiate a body swing by bringing your legs forward and then backward. Use this motion to create momentum upwards. The kipping motion makes the movement more explosive and helps transition above the rings.\n\nPull-up phase – Once momentum is created, pull your body upwards by engaging your lats, biceps, and shoulders. You need to pull hard enough to get your torso above the rings.\n\nTransition – As your torso reaches ring height, quickly transition your chest over the rings by pushing your wrists inward. This phase is crucial to completing the muscle-up.\n\nDip phase – Once you're above the rings, finish the movement by doing a dip. Extend your arms to push yourself fully above the rings until your arms are straight.\n\nControlled descent – Lower yourself slowly back to the starting position by reversing the transition and controlling the descent with your arms extended. Then, initiate the next swing for the following rep.\n\nBreathing – Exhale during the pulling and pushing phases, and inhale during the descent.\n\nThe Kipping Ring Muscle-Up requires practice to master the synchronization between body momentum and transition, but it allows you to pass over the rings more easily by using the momentum from kipping."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Le Kipping Ring Muscle-Up est un exercice avancé qui combine un pull-up avec une transition au-dessus des anneaux, suivie d'un dip. Cette variation du muscle-up utilise le balancement du corps, appelé \"kipping\", pour générer de l'élan et faciliter la transition entre les phases de tirage et de poussée. Il demande à la fois de la force, de la technique et une excellente coordination.\n\nPosition de départ – Suspendez-vous aux anneaux avec les bras tendus et les paumes vers l'intérieur. Engagez les muscles du tronc et laissez vos jambes légèrement en avant.\n\nLe Kipping – Entraînez un balancement du corps en ramenant vos jambes vers l'avant puis vers l'arrière. Utilisez ce mouvement pour créer un élan vers le haut. Le kipping permet de rendre le mouvement plus explosif et de faciliter la montée au-dessus des anneaux.\n\nPhase de tirage – Une fois l'élan créé, tirez votre corps vers le haut en engageant vos dorsaux, vos biceps et vos épaules. Vous devez tirer suffisamment fort pour amener votre torse au-dessus des anneaux.\n\nTransition – Lorsque votre torse atteint la hauteur des anneaux, basculez rapidement votre poitrine au-dessus des anneaux en poussant les poignets vers l'intérieur. Cette phase est cruciale pour réussir le muscle-up.\n\nPhase de poussée (Dip) – Une fois au-dessus des anneaux, terminez le mouvement avec un dip. Tendez les bras pour vous hisser complètement au-dessus des anneaux, jusqu'à ce que vos bras soient droits.\n\nRetour contrôlé – Descendez lentement dans la position de départ, en inversant la transition et en contrôlant la descente avec les bras tendus, puis reprenez un nouvel élan pour le mouvement suivant.\n\nRespiration – Expirez en tirant et poussant lors des phases de montée et de dip, et inspirez en descendant.\n\nLe Kipping Ring Muscle-Up est un exercice qui nécessite de la pratique pour bien maîtriser la synchronisation entre l'élan du corps et la transition, mais il permet de passer plus facilement au-dessus des anneaux grâce à l'élan généré par le kipping.\n\n"
           }
         }
       }
@@ -1172,6 +1410,23 @@
         }
       }
     },
+    "Lunge" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The Lunge is a fundamental exercise for developing leg strength and stability. This compound movement primarily works the quadriceps, hamstrings, and glutes while improving balance and coordination. It can be performed with or without weights, depending on the desired difficulty level.\n\nStarting position – Stand with your feet hip-width apart. Place your hands on your hips or hold dumbbells to increase difficulty.\n\nLowering phase – Take a big step forward with one leg. Lower your body by bending both knees until the back knee is close to the floor without touching it. The front knee should align with the ankle, forming a 90-degree angle. Keep your torso upright and engage your core for balance.\n\nPushing phase – Push back through your front heel to return to the starting position, keeping the weight centered over your front leg. Alternate legs or perform all reps on one leg before switching sides.\n\nBreathing – Inhale as you lower yourself, and exhale as you push back up.\n\nAdditional tips – For added difficulty, hold dumbbells in each hand or use a barbell on your shoulders. Ensure your torso stays upright and your front knee doesn’t extend past your toes.\n\nLunges are an excellent exercise for strengthening the muscles in the legs and glutes while improving functional stability and body balance. They are commonly included in strength training or fitness programs."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Le Lunge ou Fente est un exercice fondamental pour développer la force et la stabilité des jambes. Cet exercice polyarticulaire sollicite principalement les quadriceps, les ischio-jambiers et les fessiers, tout en améliorant l'équilibre et la coordination. Il peut être réalisé avec ou sans poids, en fonction du niveau de difficulté souhaité.\n\nPosition de départ – Tenez-vous debout, pieds écartés de la largeur des hanches. Vous pouvez placer vos mains sur vos hanches ou tenir des haltères pour augmenter la difficulté.\n\nPhase de descente – Faites un grand pas en avant avec une jambe. Abaissez votre corps en fléchissant les deux genoux jusqu'à ce que le genou arrière soit proche du sol, sans le toucher. Le genou avant doit être aligné avec la cheville, formant un angle de 90 degrés. Gardez votre torse droit et engagez les abdominaux pour maintenir l'équilibre.\n\nPhase de poussée – Repoussez sur votre talon avant pour revenir à la position de départ, en gardant le poids centré sur votre jambe avant. Alternez les jambes ou effectuez toutes les répétitions sur une jambe avant de changer de côté.\n\nRespiration – Inspirez en descendant et expirez en remontant.\n\nConseils supplémentaires – Pour plus de difficulté, vous pouvez tenir des haltères dans chaque main ou utiliser une barre sur vos épaules. Assurez-vous de garder le buste droit et de ne pas laisser le genou avant dépasser la pointe du pied.\n\nLes Lunges sont un excellent exercice pour renforcer les muscles des jambes et des fessiers, tout en améliorant la stabilité fonctionnelle et l'équilibre du corps. Ils sont souvent intégrés dans les programmes de renforcement musculaire ou de conditionnement physique."
+          }
+        }
+      }
+    },
     "Meilleur temps" : {
       "localizations" : {
         "en" : {
@@ -1217,6 +1472,23 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Minutes"
+          }
+        }
+      }
+    },
+    "MountainClimber" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The Mountain Climber is a dynamic, full-body exercise that engages strength, endurance, and coordination. This exercise primarily targets the abs, legs, shoulders, and arms, while improving core stability and increasing heart rate.\n\nStarting position – Begin in a high plank position with your hands placed directly under your shoulders and feet together. Your body should form a straight line from head to heels. Engage your core to keep your trunk stable.\n\nKnee drive movement – Quickly bring one knee toward your chest while keeping the other leg extended. Alternate by bringing the other knee toward your chest in a dynamic and continuous motion, as if running in place while staying in a plank position.\n\nBreathing – Breathe rhythmically, synchronizing your breath with the movements: inhale deeply and exhale with each knee drive.\n\nPosition control – Keep your hips low and your core engaged throughout the exercise to prevent your hips from rising or your back from sagging. Your shoulders should remain stable, and your hands should stay firmly planted on the ground.\n\nRepetition – Perform multiple quick repetitions, maintaining a good pace while controlling your breathing and posture.\n\nThe Mountain Climber is often used in CrossFit, HIIT, or as part of core-strengthening routines while also improving cardiovascular fitness."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Le Mountain Climber est un exercice dynamique et complet qui sollicite à la fois la force, l'endurance et la coordination. Cet exercice engage principalement les muscles abdominaux, les jambes, les épaules et les bras, tout en améliorant la stabilité du tronc et en augmentant le rythme cardiaque.\n\nPosition de départ – Commencez en position de planche haute, avec les mains placées directement sous les épaules et les pieds joints. Le corps doit former une ligne droite de la tête aux talons. Engagez vos abdominaux pour garder le tronc stable.\n\nMouvement de montée de genoux – Ramenez rapidement un genou vers votre poitrine tout en maintenant l'autre jambe tendue. Alternez ensuite en ramenant l'autre genou vers la poitrine, de manière dynamique et continue, comme si vous couriez sur place tout en restant dans la position de planche.\n\nRespiration – Respirez de manière rythmée en synchronisant votre respiration avec les mouvements : inspirez profondément et expirez à chaque montée de genou.\n\nMaintien de la position – Gardez les hanches basses et le tronc bien gainé tout au long de l'exercice pour éviter de lever les fesses ou d'affaisser le dos. Les épaules doivent rester stables et les mains fermement ancrées au sol.\n\nRépétition – Effectuez plusieurs répétitions rapides, en maintenant un bon rythme tout en contrôlant votre respiration et votre posture.\n\nCet exercice de Mountain Climber est souvent utilisé dans les séances de CrossFit, de HIIT, ou en complément des entraînements pour renforcer la sangle abdominale tout en travaillant le cardio."
           }
         }
       }
@@ -1288,6 +1560,23 @@
         }
       }
     },
+    "OneArmPushUp" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The One-Arm Push-Up is an advanced variation of the traditional push-up that requires exceptional strength, stability, and balance. This exercise primarily targets the chest, triceps, and shoulders while intensely engaging the core and stabilizing muscles.\n\nStarting position – Begin in a plank position, widening your feet slightly for added stability. Place one hand on the ground directly under your shoulder and the other behind your back or slightly out to the side to help with balance.\n\nLowering phase – Bend your working arm to slowly lower your body toward the ground, keeping your core tight and avoiding any shift in the hips. The descent should be controlled and performed with perfect form.\n\nPush-up phase – Once your chest is near the ground, push through your arm to return to the starting position, maintaining good body alignment throughout.\n\nBreathing – Inhale as you lower yourself down, and exhale as you push back up.\n\nAdditional tips – This exercise is extremely demanding, so if you're just starting out, try easier variations like elevated hand push-ups or knee push-ups. It's important to master the form before moving on to full repetitions.\n\nThe One-Arm Push-Up is an excellent way to test and build functional strength and overall balance. It engages not only the upper body muscles but also the legs and core to stabilize and control the movement."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Le One-Arm Push-Up est une variante avancée du push-up traditionnel qui nécessite une force, une stabilité et un équilibre exceptionnels. Cet exercice cible principalement les pectoraux, les triceps et les épaules, tout en sollicitant intensément le tronc et les muscles stabilisateurs.\n\nPosition de départ – Commencez en position de planche, en écartant légèrement les pieds pour améliorer la stabilité. Placez une main au sol sous votre épaule et l'autre main derrière votre dos ou légèrement à l'écart, pour maintenir l'équilibre.\n\nDescente – Fléchissez le bras actif pour abaisser lentement votre corps vers le sol, en gardant le tronc bien contracté et en évitant que le bassin ne se déplace sur le côté. La descente doit être contrôlée et réalisée avec une technique impeccable.\n\nPhase de poussée – Une fois que votre poitrine approche du sol, poussez avec votre bras pour ramener votre corps à la position initiale, tout en maintenant un bon alignement du corps.\n\nRespiration – Inspirez pendant la descente et expirez en remontant.\n\nConseils supplémentaires – Cet exercice est extrêmement exigeant, donc si vous débutez, commencez par des variations plus faciles, comme les push-ups avec une main surélevée ou les push-ups avec des genoux au sol. Il est important de maîtriser parfaitement la forme avant de passer à des répétitions complètes.\n\nLe One-Arm Push-Up est un excellent exercice pour tester et développer une force fonctionnelle et un équilibre global. Il engage non seulement les muscles du haut du corps, mais aussi les jambes et le tronc pour stabiliser et contrôler le mouvement."
+          }
+        }
+      }
+    },
     "OverHeadSquat" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -1317,6 +1606,23 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pas si vite !"
+          }
+        }
+      }
+    },
+    "PistolSquat" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The Pistol Squat is an advanced single-leg squat exercise where all your body weight is placed on one leg while the other leg is extended in front of you. This exercise strengthens the legs, improves balance, ankle mobility, and knee stability. It primarily targets the quadriceps, glutes, and stabilizing muscles of the lower body.\n\nStarting position – Stand with your feet hip-width apart. Lift one foot off the ground and extend that leg forward while keeping your arms stretched out for balance. All your weight should be on the supporting leg.\n\nDescent – While keeping your back straight, slowly bend the supporting leg and lower your body toward the ground. The opposite leg remains extended in front of you without touching the ground. Aim to lower until your hip is below the knee level, or as low as your mobility allows.\n\nStabilization – Throughout the movement, engage your core for balance and stabilize your knee to avoid inward collapse.\n\nAscent phase – Push through the heel of the supporting leg to rise back up to a standing position. Squeeze your glutes and quads for an explosive upward phase while keeping the opposite leg lifted and extended.\n\nBreathing – Inhale on the way down and exhale as you push back up.\n\nAdditional tips – The Pistol Squat is a challenging exercise. If you lack the strength or mobility, start with partial movement or use a stable surface for balance. You can also use a resistance band or hold onto a wall to assist during the ascent phase.\n\nThe Pistol Squat is an excellent exercise for improving balance, coordination, and leg strength, especially in gymnastics, calisthenics, or CrossFit routines."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Le Pistol Squat est un exercice avancé de squat unilatéral, où tout le poids du corps repose sur une seule jambe, tandis que l'autre jambe est tendue devant vous. Cet exercice renforce la force des jambes, l'équilibre, la mobilité des chevilles, et la stabilité des genoux. Il cible principalement les quadriceps, les fessiers et les muscles stabilisateurs du bas du corps.\n\nPosition de départ – Commencez debout, les pieds écartés à la largeur des hanches. Levez un pied du sol et tendez la jambe vers l'avant tout en gardant les bras tendus pour l'équilibre. Tout votre poids doit reposer sur la jambe d'appui.\n\nDescente – Tout en gardant le dos droit, pliez lentement la jambe d'appui et abaissez votre corps en direction du sol. L'autre jambe reste tendue devant vous, sans toucher le sol. Essayez de descendre jusqu'à ce que votre hanche soit en dessous de la hauteur du genou, ou aussi bas que votre mobilité le permet.\n\nStabilisation – Tout au long du mouvement, engagez le tronc pour maintenir l'équilibre et stabilisez vos genoux pour éviter qu'ils ne s'effondrent vers l'intérieur.\n\nPhase de montée – Poussez à travers le talon de la jambe d'appui pour remonter en position debout. Serrez les fessiers et les quadriceps pour effectuer cette phase explosive, tout en gardant la jambe opposée levée et tendue.\n\nRespiration – Inspirez en descendant et expirez lorsque vous remontez.\n\nConseils supplémentaires – Le Pistol Squat est un exercice difficile. Si vous n'avez pas encore la force ou la mobilité suffisante, commencez par faire le mouvement partiellement ou utilisez une surface stable pour vous aider à maintenir l'équilibre. Vous pouvez aussi tenir une bande de résistance ou vous appuyer contre un mur pour obtenir de l'aide dans la phase de montée.\n\nLe Pistol Squat est un excellent exercice pour améliorer l'équilibre, la coordination et la force des jambes, surtout lorsqu'il est utilisé dans des routines de gymnastique, de calisthénie ou de CrossFit."
           }
         }
       }
@@ -1489,6 +1795,57 @@
         }
       }
     },
+    "PullUpButterfly" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The Pull-Up Butterfly is an advanced technique primarily used in CrossFit to perform pull-ups at a very fast pace. Unlike the Kipping Pull-Up, the motion is circular and continuous, allowing for a smoother and more efficient execution. This movement is often used in competitions or during WODs requiring a high volume of repetitions.\n\nStarting position – Hang from a bar with an overhand grip, hands slightly wider than shoulder-width apart. Keep your arms straight and your body aligned.\n\nSwing phase – Initiate the movement by pushing your hips forward while engaging your core and slightly bending your knees. This creates a circular motion, bringing your chest towards the bar.\n\nPull phase – As your chest nears the bar, pull with your arms while continuing the circular motion of the hips. Your chin should pass above the bar in a fluid and continuous motion.\n\nDescent phase – Unlike a typical descent, continue the motion by kicking your legs forward, creating another circle with your lower body. This dynamic descent allows you to reuse the momentum for the next rep without pausing.\n\nCoordination and rhythm – The key to this technique is timing. It’s crucial to combine the ascent and descent into a constant flow, almost without stopping between reps.\n\nBreathing – Inhale as you pull up and exhale as you begin your descent to maintain a steady flow of oxygen.\n\nAdditional tips – The Pull-Up Butterfly is a technical and demanding exercise that requires full body control and good coordination. It’s recommended to master strict pull-ups and Kipping Pull-Ups before attempting this technique. Use gloves or grips to protect your hands, as the rapid repetition can cause skin tears.\n\nThe Pull-Up Butterfly is ideal for athletes looking to maximize their work volume in the shortest amount of time and is often used to save time in CrossFit competitions."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Le Pull-Up Butterfly est une technique avancée utilisée principalement dans le CrossFit pour réaliser des tractions avec une cadence très rapide. Contrairement au Pull-Up Kipping, le mouvement est circulaire et continu, permettant une exécution plus fluide et efficace. Ce mouvement est souvent utilisé lors de compétitions ou dans les WODs nécessitant un grand volume de répétitions.\n\nPosition de départ – Accrochez-vous à une barre avec une prise pronation (paumes vers l’extérieur), les mains légèrement plus larges que la largeur des épaules. Gardez les bras tendus et le corps aligné.\n\nPhase de bascule – Initiez le mouvement en basculant les hanches vers l’avant tout en engageant les abdominaux et en fléchissant légèrement les genoux. Cela crée un mouvement circulaire en amenant la poitrine vers la barre.\n\nPhase de traction – Dès que la poitrine se rapproche de la barre, tirez avec les bras tout en poursuivant le mouvement circulaire des hanches. Votre menton doit passer au-dessus de la barre dans une fluidité continue.\n\nPhase de descente – Contrairement à la descente classique, continuez le mouvement en projetant les jambes vers l’avant, créant ainsi un autre cercle avec le bas du corps. Cette descente dynamique permet de réutiliser l'élan pour la prochaine répétition sans avoir à s’arrêter.\n\nCoordination et rythme – Le secret de cette technique réside dans le timing. Il est crucial d’associer la montée et la descente dans un flux constant, presque sans pauses entre les répétitions.\n\nRespiration – Inspirez lors de la montée et expirez lorsque vous amorcez la descente pour maintenir un flux d’oxygène constant.\n\nConseils supplémentaires – Le Pull-Up Butterfly est un exercice technique et exigeant qui nécessite un contrôle total du corps et une bonne coordination. Il est recommandé de bien maîtriser les tractions strictes et les Pull-Ups Kipping avant d’aborder cette technique. Utilisez des gants ou des maniques pour protéger vos mains, car l’enchaînement rapide de répétitions peut provoquer des déchirures cutanées.\n\nLe Pull-Up Butterfly est idéal pour les athlètes qui cherchent à augmenter leur volume de travail en un minimum de temps et est souvent utilisé pour gagner du temps dans les compétitions CrossFit."
+          }
+        }
+      }
+    },
+    "PullUpKipping" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The Pull-Up Kipping is a pull-up technique commonly used in CrossFit, combining a swinging motion with explosive pulling power. Unlike strict pull-ups, this variation uses hip power and momentum to perform more repetitions in less time.\n\nStarting position – Hang from a bar with an overhand grip, hands slightly wider than shoulder-width apart. The body should be fully relaxed.\n\nSwing phase (kip) – Initiate a swing by pushing the chest slightly forward while keeping the legs straight and engaging the core. Then, push the hips back and squeeze the glutes to generate momentum.\n\nPull phase – As you reach the peak of the swing, use the momentum to pull your chin above the bar by strongly contracting the back and arm muscles. The hips and legs actively contribute to the motion.\n\nDescent phase – Lower yourself in a controlled manner while maintaining the swing to smoothly transition into the next repetition. Use the momentum to keep a continuous flow of reps.\n\nBreathing – Inhale during the swing phase and exhale as you pull up.\n\nAdditional tips – The key to mastering the Pull-Up Kipping is understanding the timing and coordination between the hip and arm movements. If you're new to this exercise, it's advised to first build strength with strict pull-ups before incorporating this technique to avoid injury.\n\nThe Pull-Up Kipping is an excellent way to increase muscular endurance, especially in CrossFit WODs (Workout of the Day), where a high volume of exercises is required."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Le Pull-Up Kipping est une technique de traction utilisée principalement dans le CrossFit, qui combine un mouvement de balancement avec une traction explosive. Contrairement aux tractions strictes, cette variation fait appel à la puissance des hanches et de l'élan pour accomplir plus de répétitions en moins de temps.\n\nPosition de départ – Suspendez-vous à une barre avec une prise pronation (paumes vers l'extérieur), les mains légèrement plus larges que la largeur des épaules. Le corps doit être complètement relâché.\n\nPhase de balancement (kip) – Initiez un balancement en poussant légèrement la poitrine vers l’avant, tout en gardant les jambes tendues et en engageant les abdominaux. Ensuite, poussez les hanches vers l’arrière et contractez les fessiers pour générer un élan.\n\nPhase de traction – Lorsque vous atteignez l'apogée du balancement, utilisez l'élan généré pour tirer votre menton au-dessus de la barre en contractant fortement les muscles du dos et des bras. Les hanches et les jambes participent activement au mouvement.\n\nPhase de descente – Laissez-vous redescendre de façon contrôlée en prolongeant l'élan pour enchaîner rapidement sur une nouvelle répétition. Utilisez le balancement pour créer une dynamique de répétitions continues.\n\nRespiration – Inspirez pendant la phase de balancement et expirez au moment de la traction.\n\nConseils supplémentaires – La clé pour maîtriser le Pull-Up Kipping est de comprendre l'importance du timing et de la coordination entre le mouvement des hanches et des bras. Si vous êtes novice, il est conseillé de s’entraîner d’abord avec des tractions strictes avant d’intégrer cette technique pour éviter les blessures.\n\nLe Pull-Up Kipping est un excellent moyen d’augmenter l’endurance musculaire, en particulier dans les WOD (Workout of the Day) de CrossFit, où le volume d'exercices est élevé."
+          }
+        }
+      }
+    },
+    "PullUpStrict" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The Pull-Up Strict is an upper-body strength movement that primarily targets the back muscles (latissimus dorsi), biceps, shoulders, and forearms. Unlike other pull-up variations, the Strict Pull-Up relies purely on strength without the use of momentum or body swinging, making it a highly demanding exercise.\n\nStarting position – Hang from a pull-up bar with your hands slightly wider than shoulder-width apart and palms facing forward. Your body should be fully extended, with your legs either crossed or straight.\n\nPulling phase – Pull your body upwards by engaging your back and arm muscles. Focus on keeping your shoulders down and your elbows pointing towards the ground as you bring your chin over the bar.\n\nControlled descent – Slowly lower yourself back down to the starting position, with arms fully extended. Maintain core engagement throughout to prevent body swinging.\n\nBreathing – Inhale at the bottom of the movement and exhale as you pull yourself up.\n\nAdditional tips – Avoid using momentum from your legs or core. Use a full range of motion and focus on controlling both the ascent and descent phases for maximum muscle activation.\n\nThe Pull-Up Strict is an excellent exercise for building functional upper-body strength while improving posture and muscle coordination."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Le Pull-Up Strict est un mouvement de force pour le haut du corps qui cible principalement les muscles du dos (grands dorsaux), les biceps, les épaules et les avant-bras. Contrairement à d'autres variantes de tractions, le Pull-Up Strict ne fait pas appel à l'élan ou au balancement du corps, ce qui en fait un exercice exigeant en force pure.\n\nPosition de départ – Suspendez-vous à une barre de traction avec les mains placées légèrement plus larges que la largeur des épaules, les paumes tournées vers l'avant. Votre corps doit être complètement droit, avec les jambes légèrement croisées ou tendues.\n\nPhase de traction – Tirez votre corps vers le haut en activant les muscles du dos et des bras. Concentrez-vous sur le fait de garder les épaules basses et les coudes dirigés vers le sol, en amenant votre menton au-dessus de la barre.\n\nDescente contrôlée – Redescendez lentement et avec contrôle jusqu'à ce que vos bras soient complètement tendus à la position initiale. Assurez-vous de garder le tronc engagé tout au long du mouvement pour éviter les balancements.\n\nRespiration – Inspirez en bas du mouvement et expirez en tirant votre corps vers le haut.\n\nConseils supplémentaires – Évitez de donner de l’élan avec les jambes ou le tronc. Utilisez une amplitude complète et concentrez-vous sur le contrôle de chaque phase du mouvement pour maximiser l'activation musculaire.\n\nLe Pull-Up Strict est un excellent exercice pour développer la force fonctionnelle du haut du corps tout en améliorant la posture et la coordination des muscles stabilisateurs."
+          }
+        }
+      }
+    },
     "PushJerk" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -1519,6 +1876,40 @@
           "stringUnit" : {
             "state" : "needs_review",
             "value" : "Le Push Press est un mouvement d'haltérophilie qui consiste à pousser une barre depuis les épaules jusqu'au-dessus de la tête, en utilisant un élan des jambes pour générer plus de puissance. Contrairement au strict press, le Push Press permet d'utiliser une extension des jambes pour pousser la barre.\n\nPosition de départ – Tenez la barre sur les épaules avec les coudes légèrement pointés vers l'avant. Les pieds doivent être écartés à la largeur des hanches, et le dos bien droit. Gardez votre tronc contracté et votre regard droit devant.\n\nDip – Pliez légèrement les genoux et descendez dans une position semi-accroupie pour générer de l'élan. Gardez le dos droit et les talons au sol.\n\nDrive – Dès que vous êtes en position basse, poussez de manière explosive avec les jambes, en transférant la force à la barre. Les hanches et les jambes s'étendent, propulsant la barre vers le haut.\n\nPression finale – Une fois que la barre est au niveau du front, terminez le mouvement avec les bras en poussant jusqu'à ce que la barre soit complètement au-dessus de votre tête, avec les coudes verrouillés.\n\nStabilisation – Stabilisez la barre au-dessus de la tête en maintenant une bonne posture, puis ramenez-la doucement sur les épaules pour répéter le mouvement.\n\nLe Push Press est idéal pour développer la puissance, la force des épaules, et l'explosivité, tout en impliquant les jambes dans le mouvement pour une charge plus importante."
+          }
+        }
+      }
+    },
+    "PushUp" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The Push-Up is a basic strength-building exercise that primarily targets the chest muscles (pectorals), triceps, shoulders, and core. It’s a functional movement that requires no equipment and can be performed almost anywhere.\n\nStarting position – Position yourself in a plank, with your hands slightly wider than shoulder-width apart, arms extended, and feet close together. Your body should form a straight line from head to toe, maintaining core engagement and a flat back.\n\nControlled descent – Bend your elbows and lower your body in a controlled manner toward the ground until your chest is just above the floor, keeping your elbows close to your body (or slightly flared depending on the variation).\n\nPush-up phase – Push through your hands to bring your body back to the starting position, fully extending your arms without locking your elbows.\n\nBreathing – Inhale as you lower yourself down and exhale as you push up.\n\nAdditional tips – Make sure to maintain proper form throughout, avoiding sagging in your lower back or dropping your hips. To increase difficulty, bring your feet closer together or elevate them on a higher surface.\n\nPush-Ups are a great exercise to build upper body strength while also improving muscular endurance."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Le Push-Up (ou pompe) est un exercice de base pour le renforcement musculaire qui sollicite principalement les muscles de la poitrine (pectoraux), les triceps, les épaules, et le tronc. C'est un mouvement fonctionnel qui ne nécessite aucun équipement et peut être exécuté presque partout.\n\nPosition de départ – Placez-vous en position de planche, les mains légèrement plus larges que la largeur des épaules, les bras tendus, et les pieds rapprochés. Le corps doit former une ligne droite de la tête aux pieds, en maintenant les abdominaux engagés et le dos droit.\n\nDescente contrôlée – Fléchissez les coudes et abaissez votre corps de manière contrôlée vers le sol jusqu'à ce que votre poitrine soit à quelques centimètres du sol, tout en gardant les coudes près du corps (ou légèrement écartés en fonction de la variante).\n\nPhase de poussée – Poussez sur vos mains pour ramener votre corps à la position de départ, en tendant complètement les bras sans bloquer les coudes.\n\nRespiration – Inspirez pendant la descente et expirez en remontant.\n\nConseils supplémentaires – Assurez-vous de maintenir une bonne posture tout au long du mouvement, en évitant de cambrer le dos ou de laisser les hanches tomber. Pour augmenter la difficulté, vous pouvez rapprocher les pieds ou élever vos pieds sur une surface plus haute.\n\nLes Push-Ups sont un excellent exercice pour renforcer la force du haut du corps tout en améliorant l'endurance musculaire.\n\n"
+          }
+        }
+      }
+    },
+    "PushUpDiamond" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The Push-Up Diamond is a variation of the traditional push-up that primarily targets the triceps, chest, and shoulders, while also engaging the core. The main difference is the hand placement, forming a diamond shape, which increases the difficulty and tricep engagement.\n\nStarting position – Position yourself in a plank, with your hands close together under your chest, forming a diamond shape with your thumbs and index fingers. Your feet should be close together, and your body should remain aligned from head to toe.\n\nLowering phase – Bend your elbows to slowly lower your body toward the ground, keeping your elbows close to your body. Your chest should move toward your hands while maintaining alignment in your back and hips.\n\nPush-up phase – Push through your hands to bring your body back to the starting position, fully extending your arms and keeping your triceps engaged throughout.\n\nBreathing – Inhale as you lower yourself down, and exhale as you push back up.\n\nAdditional tips – Ensure that your core remains tight to avoid arching your lower back. This variation requires more arm and tricep strength but also challenges the core more than standard push-ups.\n\nPush-Up Diamonds are a great way to specifically target the triceps while still working other upper body muscles."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Le Push-Up Diamond (ou pompe diamant) est une variante du push-up traditionnel qui cible principalement les triceps, les pectoraux, et les épaules, tout en sollicitant le tronc. La principale différence réside dans la position des mains, formant un diamant, ce qui augmente la difficulté et l'engagement des triceps.\n\nPosition de départ – Placez-vous en position de planche, les mains rapprochées sous votre poitrine, en formant un losange avec vos pouces et vos index. Vos pieds doivent être rapprochés, et votre corps aligné de la tête aux pieds.\n\nDescente – Fléchissez les coudes pour abaisser lentement votre corps vers le sol, tout en maintenant les coudes proches du corps. Votre poitrine doit descendre vers vos mains sans perdre l'alignement du dos et du bassin.\n\nPhase de poussée – Poussez sur vos mains pour ramener votre corps à la position initiale, en tendant complètement les bras et en maintenant vos triceps engagés tout au long du mouvement.\n\nRespiration – Inspirez pendant la descente et expirez en remontant.\n\nConseils supplémentaires – Assurez-vous que votre tronc reste bien engagé pour éviter de cambrer le bas du dos. Cette variante exige davantage de force dans les bras et les triceps, mais elle est aussi plus exigeante pour le tronc.\n\nLes Push-Ups Diamond sont une excellente manière de renforcer spécifiquement les triceps tout en sollicitant d'autres muscles du haut du corps."
           }
         }
       }
@@ -1567,6 +1958,74 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Rechercher une activité"
+          }
+        }
+      }
+    },
+    "RingDips" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The Ring Dips is a challenging exercise that primarily targets the chest, triceps, and shoulders, while heavily engaging the stabilizing muscles such as the abs and back. Unlike traditional dips on fixed bars, the unstable nature of the rings makes this exercise particularly demanding and effective for functional strength development.\n\nStarting position – Grab the rings with palms facing inward and extend your arms to lift your body. Your arms should be fully extended, and your feet should not touch the ground. Engage your core and keep your body straight.\n\nControlled descent – Slowly lower your body by bending your elbows. Lower yourself until your shoulders drop below the level of your elbows. Maintain continuous tension in your body to prevent excessive swinging.\n\nExplosive push – Engage your triceps and chest, pushing the rings down to lift yourself back to the starting position with arms extended. Keep the rings close to your body throughout the movement to maintain balance.\n\nStability and control – Throughout the exercise, control the swing of the rings by activating your core stabilizing muscles. Aim to keep the rings as steady as possible.\n\nBreathing – Inhale as you lower and exhale during the pushing phase as you return to the top.\n\nRing Dips require significant stabilizing strength and are an excellent exercise for developing upper-body strength and muscle endurance."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Le Ring Dips est un exercice exigeant qui sollicite fortement les muscles des pectoraux, des triceps, et des épaules tout en engageant les stabilisateurs du corps, notamment les abdominaux et les dorsaux. Contrairement aux dips classiques effectués sur des barres fixes, la nature instable des anneaux rend cet exercice particulièrement difficile et efficace pour le développement de la force fonctionnelle.\n\nPosition de départ – Saisissez les anneaux avec les paumes tournées vers l'intérieur et tendez les bras pour soulever votre corps. Les bras doivent être complètement tendus, et les pieds ne doivent pas toucher le sol. Engagez votre tronc et maintenez le corps bien droit.\n\nDescente contrôlée – Abaissez lentement votre corps en fléchissant les coudes. Descendez jusqu'à ce que vos épaules soient en dessous du niveau des coudes. Maintenez une tension continue dans tout le corps pour éviter de vous balancer.\n\nRemontée explosive – En engageant fortement vos triceps et vos pectoraux, repoussez les anneaux vers le bas pour remonter en position de départ, bras tendus. Assurez-vous de garder les anneaux proches du corps tout au long du mouvement pour maintenir l'équilibre.\n\nStabilité et contrôle – Tout au long de l'exercice, contrôlez le balancement des anneaux en activant les muscles stabilisateurs du tronc. Essayez de maintenir les anneaux aussi stables que possible.\n\nRespiration – Inspirez en descendant et expirez pendant la phase de poussée, lorsque vous remontez.\n\nLes Ring Dips demandent une grande force de stabilisation et constituent un excellent exercice pour développer la force du haut du corps ainsi que l'endurance musculaire."
+          }
+        }
+      }
+    },
+    "RingPullUp" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The Ring Pull-Up is a variation of the classic pull-up, performed on rings. This version adds extra instability, which works not only the main muscles of the back and arms but also the stabilizing muscles throughout the body.\n\nStarting position – Hang from the rings with arms extended and palms facing inward. Engage your core to maintain a stable position.\n\nPulling phase – Pull your body upwards, keeping the rings close to you. Draw your shoulders back and your elbows down as you ascend until your chin is above the rings. This phase primarily engages the back muscles (latissimus dorsi) and biceps.\n\nControlled descent – Lower yourself slowly back to the starting position, controlling the movement to maintain ring stability. Keep your shoulders active at the end of the movement to protect the joint.\n\nBreathing – Inhale before pulling and exhale as you pull upwards. Inhale again during the descent.\n\nThe Ring Pull-Up is an excellent exercise for strengthening the upper body, particularly the back, shoulders, and arms. The instability of the rings also activates stabilizing muscles, making this exercise more challenging than the traditional version on a fixed bar.\n\n\n\n\n\n\n"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Le Ring Pull-Up est une variante du pull-up classique, réalisée sur des anneaux. Cette version ajoute une instabilité supplémentaire, ce qui fait travailler non seulement les muscles principaux du dos et des bras, mais aussi les muscles stabilisateurs du corps entier.\n\nPosition de départ – Accrochez-vous aux anneaux avec les bras tendus et les paumes tournées vers l'intérieur. Engagez votre tronc pour maintenir une position stable.\n\nPhase de tirage – Tirez votre corps vers le haut en gardant les anneaux proches de vous. Ramenez vos épaules vers l'arrière et vos coudes vers le bas tout en montant jusqu'à ce que votre menton passe au-dessus des anneaux. Cette phase sollicite principalement les muscles du dos (grand dorsal) et les biceps.\n\nContrôle de la descente – Redescendez lentement à la position de départ en contrôlant bien le mouvement pour maintenir la stabilité des anneaux. Ne laissez pas vos épaules se relâcher en fin de mouvement, gardez-les actives pour protéger l'articulation.\n\nRespiration – Inspirez avant de tirer et expirez lorsque vous tirez vers le haut. Inspirez à nouveau lors de la descente.\n\nLe Ring Pull-Up est un excellent exercice pour renforcer le haut du corps, en particulier le dos, les épaules et les bras. L'instabilité des anneaux sollicite également les muscles stabilisateurs, rendant cet exercice plus difficile que la version traditionnelle sur barre fixe."
+          }
+        }
+      }
+    },
+    "RingToesToBar" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The Ring Toes-to-Bar is a variation of the classic movement performed on a fixed bar, but this time on rings. This movement combines core strength, flexibility, and coordination, with the added challenge of ring instability.\n\nStarting position – Hang from the rings with straight arms and legs. Engage your core and keep your shoulders active.\n\nLifting phase – Keeping your legs straight, lift them towards the rings by flexing your hips. Aim to touch your toes to the rings. This movement primarily targets the abs, hip flexors, and shoulders.\n\nControlled descent – Lower your legs back down while maintaining control to avoid swinging. Keep your core engaged during the return to the starting position to maintain stability.\n\nBreathing – Inhale at the start, exhale as you lift your legs, then inhale again on the way down.\n\nThe Ring Toes-to-Bar is an excellent exercise for building core strength and improving hip flexibility. The instability of the rings makes this exercise more challenging than its bar version, engaging more stabilizing muscles."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Le Ring Toes-to-Bar est une variation du mouvement classique effectué sur une barre fixe, réalisé cette fois sur des anneaux. Ce mouvement combine la force du tronc, la flexibilité et la coordination, tout en ajoutant l'instabilité inhérente aux anneaux.\n\nPosition de départ – Suspendez-vous aux anneaux avec les bras tendus et les jambes droites. Engagez votre tronc et gardez vos épaules actives.\n\nPhase de montée – En gardant vos jambes droites, soulevez-les en direction des anneaux en pliant les hanches. Essayez d'amener vos orteils à toucher les anneaux. Ce mouvement sollicite principalement les abdominaux, les fléchisseurs de hanches, et les épaules.\n\nContrôle de la descente – Redescendez vos jambes en maintenant un bon contrôle du mouvement pour éviter de balancer. Ne relâchez pas complètement votre tronc lors du retour à la position de départ afin de conserver la stabilité.\n\nRespiration – Inspirez en position de départ, expirez en montant les jambes, puis inspirez à nouveau lors de la descente.\n\nLe Ring Toes-to-Bar est un excellent exercice pour renforcer la ceinture abdominale et améliorer la souplesse des hanches. L'instabilité des anneaux rend cet exercice plus difficile que sa version sur barre fixe, en sollicitant davantage les muscles stabilisateurs."
+          }
+        }
+      }
+    },
+    "RobeClimb" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The Rope Climb is a classic physical conditioning exercise that demands strength, coordination, and endurance. This exercise primarily works the arms, back, and core muscles while also developing agility and power.\n\nStarting position – Stand in front of the rope. Grip the rope firmly with your hands, arms slightly bent. Use a good grip with your palms facing you.\n\nFoot placement – Proper foot placement is essential for climbing efficiently. You can use the \"J-hook\" technique, where the rope is placed between your feet, and you wrap it around one foot to provide more support as you pull up.\n\nArm pull and leg push – Use the strength of your arms to pull yourself up, but be sure to engage your legs by pushing with your foot to make progress more efficient. Climb in a smooth, controlled manner.\n\nBody stabilization – Engage your core muscles to stabilize your body and avoid swinging during the climb.\n\nControlled descent – Once at the top, descend slowly while maintaining control of your body. Always use your legs to control the descent and avoid burning your hands on the rope.\n\nThe Rope Climb is an excellent exercise for developing upper body strength, muscular endurance, and coordination. It’s commonly used in CrossFit workouts, obstacle courses, and military training."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Le Rope Climb, ou grimper à la corde, est un exercice classique de conditionnement physique qui demande de la force, de la coordination et de l’endurance. Cet exercice sollicite principalement les bras, le dos et les muscles du tronc, tout en développant l'agilité et la puissance.\n\nPosition de départ – Commencez debout devant la corde. Saisissez-la fermement avec les mains, les bras légèrement fléchis. Utilisez un bon grip avec les paumes orientées vers vous.\n\nPlacement des pieds – Le placement des pieds est essentiel pour monter efficacement. Vous pouvez utiliser la technique du \"J-hook\", où la corde est placée entre vos pieds, et vous l'enroulez autour d'un pied pour fournir plus de soutien pendant que vous tirez.\n\nTirage des bras et poussée des jambes – Utilisez la force des bras pour vous tirer vers le haut, mais n’oubliez pas d'engager les jambes en poussant avec le pied pour progresser plus efficacement. Montez de manière fluide et contrôlée.\n\nStabilisation du corps – Contractez les muscles abdominaux pour stabiliser votre corps et éviter les balancements pendant la montée.\n\nDescente contrôlée – Une fois au sommet, redescendez lentement en maintenant la maîtrise de votre corps. Utilisez toujours les jambes pour contrôler la descente et éviter de vous brûler les mains avec la corde.\n\nLe Rope Climb est un excellent exercice pour développer la force du haut du corps, l'endurance musculaire et la coordination. Il est couramment utilisé dans les entraînements de CrossFit, les parcours d'obstacles et les exercices militaires."
           }
         }
       }
@@ -1650,6 +2109,23 @@
           "stringUnit" : {
             "state" : "needs_review",
             "value" : "Le Shoulder Press est un exercice de musculation fondamental qui cible principalement les épaules (deltoïdes), tout en sollicitant également les triceps et la partie supérieure de la poitrine. Cet exercice est efficace pour développer la force et la masse musculaire des épaules, et il peut être exécuté avec une barre, des haltères ou à la machine.\n\nPosition de départ – Tenez une barre ou une paire d'haltères à hauteur des épaules, les pieds écartés à la largeur des hanches. Les paumes sont tournées vers l'avant (prise pronation). Assurez-vous que votre dos est bien droit et votre tronc engagé pour stabiliser le corps.\n\nPhase de poussée – Poussez lentement la barre ou les haltères vers le haut, en gardant les coudes légèrement en avant. Le mouvement doit être contrôlé, en utilisant principalement les muscles des épaules.\n\nExtension complète – À la fin du mouvement, les bras sont complètement étendus au-dessus de la tête. Assurez-vous de ne pas bloquer les coudes pour éviter de stresser les articulations.\n\nPhase de descente – Ramenez lentement la barre ou les haltères à la position initiale au niveau des épaules, en gardant le contrôle du mouvement. Ne laissez pas simplement la barre tomber.\n\nRespiration – Inspirez en abaissant la barre ou les haltères, et expirez lorsque vous poussez vers le haut.\n\nCet exercice est très polyvalent et peut être adapté en utilisant différentes variantes, comme le Dumbbell Shoulder Press, qui permet de travailler les épaules de manière unilatérale, ou le Arnold Press, qui ajoute une rotation des poignets pour un travail supplémentaire sur les épaules."
+          }
+        }
+      }
+    },
+    "SimpleUnder" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The Simple Under, or single jump rope, is one of the most basic forms of jump rope exercises. It serves as a great foundation for improving coordination, speed, and cardiovascular endurance.\n\nStarting position – Stand with your feet hip-width apart, arms by your sides, holding a jump rope in each hand. Keep a slight bend in your knees to better absorb impact.\n\nJump – Rotate the rope around your body, performing a light jump with each rotation. Your feet should leave the ground just enough for the rope to pass underneath, minimizing air time.\n\nControl the rotation – Use mainly your wrists to rotate the rope, keeping your elbows close to your body. Your arms and shoulders should remain relaxed to avoid early fatigue.\n\nBreathing – Breathe steadily throughout the exercise to maintain a consistent rhythm.\n\nThe Simple Under is excellent for beginners and can be incorporated into high-intensity workout routines to improve endurance and coordination. As you progress, you can move on to more complex variations like the Double Under."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Le Simple Under, ou simple saut à la corde, est l'une des formes les plus basiques du saut à la corde. Il constitue une excellente base pour améliorer la coordination, la rapidité, et l'endurance cardiovasculaire.\n\nPosition de départ – Tenez-vous debout avec vos pieds à la largeur des hanches, les bras le long du corps, tenant une corde à sauter dans chaque main. Gardez une légère flexion au niveau des genoux pour mieux absorber les impacts.\n\nSaut – Faites tourner la corde autour de votre corps en effectuant un saut léger à chaque rotation. Vos pieds doivent quitter le sol juste assez pour permettre à la corde de passer sous eux, en minimisant le temps passé en l'air.\n\nContrôle de la rotation – Utilisez principalement vos poignets pour faire tourner la corde, en gardant les coudes près du corps. Les bras et les épaules doivent rester détendus pour éviter de se fatiguer trop vite.\n\nRespiration – Respirez régulièrement pendant l'exercice pour maintenir une bonne cadence.\n\nLe Simple Under est un excellent exercice pour les débutants et peut être intégré dans des routines d'entraînement de haute intensité pour améliorer l'endurance et la coordination. À mesure que vous progressez, vous pouvez passer à des variantes plus complexes comme le Double Under."
           }
         }
       }
@@ -1739,6 +2215,23 @@
         }
       }
     },
+    "StrictBarMuscleUp" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The Strict Bar Muscle-Up is an advanced exercise that combines a strict pull-up and a transition over the bar to finish in a dip position. Unlike the regular muscle-up, where momentum is often used, this version requires full-body control and significant strength. It primarily targets the back, shoulders, arms, and core muscles.\n\nStarting position – Hang from a bar with a grip slightly wider than shoulder-width, palms facing forward. Engage your core and keep your legs straight or slightly bent behind you for more control.\n\nPull-up phase – Slowly pull yourself towards the bar, keeping your body straight and avoiding swinging. Most of the force should come from your back and biceps. Continue pulling until your chest is at bar level.\n\nTransition – Once your chest is close to the bar, engage your shoulders and core to transition your hips and torso over the bar. This transition requires good coordination and shoulder mobility.\n\nDip phase – Once you're above the bar, push up with your arms to finish in a dip position with your arms fully extended.\n\nDescent – Slowly reverse the motion, lowering yourself back down into a hanging position. Maintain control throughout the descent.\n\nBreathing – Inhale before pulling up, exhale as you transition over the bar, and inhale again as you descend.\n\nAdditional tips – Focus on strict technique, avoiding any use of momentum. This movement is challenging and requires strong foundational strength in pull-ups and dips. It may help to practice the transition separately to master it before attempting a full strict muscle-up.\n\nThe Strict Bar Muscle-Up is an impressive exercise that develops both upper-body strength and coordination, making it a staple in advanced gymnastics and calisthenics training."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Le Strict Bar Muscle-Up est un exercice avancé qui combine une traction stricte et un passage au-dessus de la barre pour terminer en position de dips. Contrairement au muscle-up classique où l’élan est souvent utilisé, cette version exige un contrôle total du corps et une grande force. Il sollicite principalement les muscles du dos, des épaules, des bras et du tronc.\n\nPosition de départ – Suspendez-vous à une barre fixe avec une prise légèrement plus large que la largeur des épaules, les paumes tournées vers l’avant. Engagez les muscles du tronc et gardez les jambes tendues ou légèrement pliées derrière vous pour plus de contrôle.\n\nPhase de traction – Tirez-vous lentement vers la barre en gardant le corps droit et en évitant de balancer. La force provient principalement du dos et des biceps. Continuez de tirer jusqu’à ce que votre poitrine soit au niveau de la barre.\n\nTransition – Une fois que votre poitrine est proche de la barre, engagez les épaules et le tronc pour faire passer vos hanches et votre torse au-dessus de la barre. Ce passage exige une bonne coordination et de la mobilité dans les épaules.\n\nPhase de dips – Une fois au-dessus de la barre, poussez sur vos bras pour terminer en position de dips, avec les bras complètement tendus.\n\nDescente – Inversez lentement le mouvement en redescendant dans une position pendue sous la barre. Maintenez le contrôle tout au long de la descente.\n\nRespiration – Inspirez avant de tirer, expirez en passant au-dessus de la barre et inspirez de nouveau en descendant.\n\nConseils supplémentaires – Concentrez-vous sur la technique stricte, en évitant d'utiliser de l'élan. Ce mouvement est difficile et nécessite un bon développement musculaire préalable en tractions et dips. Il peut être utile de pratiquer la transition à part pour la maîtriser avant de tenter un muscle-up strict complet.\n\nLe Strict Bar Muscle-Up est un exercice impressionnant qui développe à la fois la force du haut du corps et la coordination, faisant partie des compétences avancées en gymnastique et calisthénie.\n\n"
+          }
+        }
+      }
+    },
     "StrictPress" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -1752,6 +2245,23 @@
           "stringUnit" : {
             "state" : "needs_review",
             "value" : "Le Strict Press, également appelé Overhead Press, est un exercice fondamental de musculation qui permet de développer la force des épaules, des triceps, et du haut du dos. Cet exercice se distingue par l'absence d'assistance des jambes ou du bas du corps.\n\nPosition de départ – Placez-vous debout, les pieds écartés à la largeur des hanches, avec la barre en position rack sur les clavicules et les mains placées un peu plus larges que les épaules. Vos coudes doivent être légèrement en avant de la barre, et votre tronc engagé.\n\nPhase de poussée – Poussez la barre directement au-dessus de votre tête en maintenant le tronc gainé et en évitant d’utiliser vos jambes. Évitez de cambrer le dos ; utilisez la force des épaules et des triceps pour élever la barre.\n\nRetour contrôlé – Redescendez lentement la barre jusqu'à la position initiale, en gardant toujours le contrôle du mouvement et une bonne posture.\n\nRespiration – Inspirez avant de pousser et expirez à la fin de la phase de poussée.\n\nConseils supplémentaires – Gardez vos pieds fermement ancrés au sol et évitez d'utiliser le rebond des jambes ou du dos pour aider la montée. Cet exercice exige une bonne mobilité des épaules et de la ceinture scapulaire.\n\nLe Strict Press est un excellent mouvement pour développer la force pure des épaules sans l'assistance des jambes ou de l'élan."
+          }
+        }
+      }
+    },
+    "StrictRingMuscleUp" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The Strict Ring Muscle-Up is a more challenging version of the muscle-up because it doesn't allow the use of momentum from kipping. This exercise requires great upper body strength and strict control, as it is performed in a strictly vertical manner without swinging the body.\n\nStarting position – Hang from the rings with arms extended and palms facing inward. Firmly engage your core, and your legs must remain still throughout the movement.\n\nPull-up phase – Pull your body upwards using only the strength of your arms, shoulders, and lats. The ascent must be controlled without the aid of any momentum. Pull your torso until your upper chest reaches ring level.\n\nTransition – Once your chest reaches ring height, smoothly transition by tipping your chest over the rings while turning your wrists inward. This is the most technical part of the muscle-up and requires perfect timing and strength.\n\nDip phase – After transitioning, push with force to fully extend your arms and lift yourself completely above the rings, completing the movement.\n\nControlled descent – Lower yourself slowly back to the starting position by reversing the transition with control. This is also crucial for building stabilizing muscles.\n\nBreathing – Exhale during the pull and push phases, inhale during the descent.\n\nThe Strict Ring Muscle-Up requires considerable strength in the arms, shoulders, and core. It builds stability and balance by relying purely on strength to overcome the rings, making it an excellent exercise for developing upper body strength."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Le Strict Ring Muscle-Up est une version plus difficile du muscle-up, car il ne permet pas l'utilisation de l'élan généré par un kipping. Cet exercice exige une grande force dans le haut du corps et un contrôle strict, car il s'effectue de manière strictement verticale sans balancement du corps.\n\nPosition de départ – Suspendez-vous aux anneaux avec les bras tendus et les paumes vers l'intérieur. Engagez fermement votre tronc et vos jambes doivent rester immobiles tout au long du mouvement.\n\nPhase de tirage (Pull-Up) – Tirez votre corps vers le haut en utilisant uniquement la force de vos bras, de vos épaules et de vos dorsaux. La montée doit être contrôlée et sans aide d'un élan. Amenez votre torse jusqu'à ce que la partie supérieure de la poitrine soit au niveau des anneaux.\n\nTransition – Une fois votre poitrine à hauteur des anneaux, effectuez la transition en basculant doucement votre poitrine au-dessus des anneaux tout en amenant vos poignets vers l'intérieur. Cette transition est la partie la plus technique du muscle-up et demande un timing et une force impeccable.\n\nPhase de poussée (Dip) – Après la transition, poussez avec force pour tendre les bras et vous hisser complètement au-dessus des anneaux. Cela complète le mouvement.\n\nRetour contrôlé – Redescendez lentement à la position de départ en inversant la transition avec contrôle. Cette partie est aussi importante pour le renforcement des muscles stabilisateurs.\n\nRespiration – Expirez en tirant et en poussant, inspirez lors de la descente.\n\nLe Strict Ring Muscle-Up demande une force considérable dans les bras, les épaules et le tronc. Il renforce la stabilité et l'équilibre en n'utilisant que la force pure pour surmonter les anneaux, ce qui en fait un excellent exercice pour le développement de la force dans le haut du corps."
           }
         }
       }
@@ -1870,6 +2380,23 @@
         }
       }
     },
+    "ToesToBar" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The Toes-To-Bar is a compound exercise that primarily targets the abs, shoulders, and arms, while improving coordination and hip flexibility. It's commonly practiced in CrossFit and gymnastics to strengthen the core and develop upper-body strength.\n\nStarting position – Hang from a pull-up bar with an overhand grip (palms facing outward) at shoulder-width. Keep your arms extended and engage your shoulders to stabilize your body.\n\nInitial movement – Engage your abs and lift your legs, keeping your body as straight as possible. Also, engage your hips to start a slight swing, which helps in the exercise.\n\nToe lift – Swing your hips backward and bring your legs toward the bar. The goal is to touch the bar with your toes while keeping your body under control. You can use a slight \"kipping\" motion for momentum, but doing it strictly maximizes the muscle effort.\n\nControlled descent – Lower your legs in a controlled manner, keeping tension in your abs and shoulders. Maintain a steady rhythm, avoiding excessive swinging.\n\nBreathing – Sync your breathing with the movement: inhale as you lower and exhale as you lift your toes to the bar.\n\nThe Toes-To-Bar exercise heavily engages the anterior chain, while improving hip and shoulder mobility and flexibility."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Le Toes-To-Bar est un exercice complet qui cible principalement les abdominaux, les épaules, les bras, et améliore la coordination ainsi que la souplesse des hanches. Il est couramment pratiqué dans les entraînements de CrossFit et en gymnastique pour renforcer la ceinture abdominale et développer la force du haut du corps.\n\nPosition de départ – Suspendez-vous à une barre fixe avec les mains en pronation (paumes tournées vers l'extérieur) à une largeur légèrement supérieure à celle des épaules. Gardez les bras tendus et engagez les épaules pour stabiliser votre corps.\n\nMouvement initial – Activez vos abdominaux et soulevez vos jambes tout en maintenant le corps le plus droit possible. Engagez également vos hanches pour commencer le mouvement de balancier, nécessaire à l'exercice.\n\nMontée des orteils – Faites basculer vos hanches vers l'arrière et amenez vos jambes vers la barre. L'objectif est de toucher la barre avec vos orteils tout en gardant le corps sous contrôle. Vous pouvez utiliser un léger mouvement de \"kipping\" pour générer de l'élan, mais l'idéal est de le faire en strict pour maximiser l'effort musculaire.\n\nContrôle de la descente – Redescendez vos jambes de manière contrôlée sans perdre la tension dans vos abdominaux et vos épaules. Gardez une bonne cadence et évitez de vous balancer excessivement.\n\nRespiration – Synchronisez votre respiration avec les mouvements : inspirez au moment de la descente et expirez lorsque vous ramenez vos orteils vers la barre.\n\nCet exercice de Toes-To-Bar sollicite fortement la chaîne musculaire antérieure tout en améliorant la mobilité et la souplesse des hanches et des épaules."
+          }
+        }
+      }
+    },
     "Tous" : {
 
     },
@@ -1918,6 +2445,23 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Valider le temps"
+          }
+        }
+      }
+    },
+    "WallWalk" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The Wall Walk is a gymnastics exercise often used in functional training and CrossFit circuits. This movement strengthens the shoulders, arms, core, and overall mobility. It’s a great progression toward the handstand and helps improve stability and coordination.\n\nStarting position – Begin lying face down on the floor with your feet near the wall and your hands placed close to your shoulders. Engage your core muscles and push through your arms to start lifting your body.\n\nWalk your feet up the wall – While maintaining a solid plank position, start placing your feet on the wall. Slowly walk your hands towards the wall as you walk your feet up against it.\n\nVertical position – Continue walking until your body is fully aligned and you’re in a handstand position against the wall, with your nose or chest close to the wall. Hold a solid position with straight arms and a tight core.\n\nControlled descent – To come back down, reverse the movement by walking your hands away from the wall and sliding your feet down until you return to a plank position.\n\nReturn to the starting position – Once your feet are back on the floor, lower yourself down into the starting position, lying face down on the floor.\n\nThe Wall Walk is an excellent exercise to build shoulder stability and prepare for more advanced movements like handstand push-ups. It also engages the core muscles and helps develop the coordination needed to maintain balance."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Le Wall Walk est un exercice de gymnastique souvent utilisé dans les entraînements fonctionnels et les circuits de CrossFit. Cet exercice développe la force des épaules, des bras, du tronc et la mobilité générale. Il s'agit d'une progression vers le handstand (équilibre sur les mains) et aide à améliorer la stabilité et la coordination.\n\nPosition de départ – Allongez-vous face contre le sol, les pieds près du mur, les mains placées près des épaules. Activez les muscles du tronc et poussez avec vos bras pour commencer à soulever votre corps.\n\nMarcher avec les pieds contre le mur – Tout en maintenant une position de planche solide, commencez à placer vos pieds sur le mur. Avancez vos mains vers le mur tout en marchant lentement avec vos pieds contre le mur.\n\nPosition verticale – Continuez à marcher jusqu'à ce que votre corps soit complètement aligné et que vous soyez en position d'équilibre contre le mur, le nez ou la poitrine près du mur. Maintenez une position solide avec les bras tendus et les abdominaux bien engagés.\n\nRedescente contrôlée – Pour redescendre, faites l'inverse du mouvement, en éloignant lentement vos mains du mur et en faisant glisser vos pieds vers le bas du mur jusqu'à revenir en position de planche.\n\nRetour à la position de départ – Une fois les pieds de retour au sol, redescendez en position de départ, allongé face au sol.\n\nLe Wall Walk est un excellent exercice pour renforcer la stabilité des épaules et préparer à des mouvements plus avancés comme les handstand push-ups. Il engage également les muscles du tronc et développe la coordination nécessaire pour maintenir l'équilibre."
           }
         }
       }
