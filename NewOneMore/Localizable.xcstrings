@@ -303,6 +303,23 @@
         }
       }
     },
+    "BenchPress" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The Bench Press is one of the fundamental exercises in strength training, primarily used to build muscle mass and strength in the chest, but it also engages the shoulders and triceps.\n\nStarting position – Lie flat on a horizontal bench with your feet planted firmly on the floor to stabilize your body. Grip the bar with your hands slightly wider than shoulder-width apart. Your arms should be extended with a slight bend in the elbows.\n\nLowering the bar – Slowly lower the bar down to the lower part of your chest (around nipple level), keeping your elbows slightly flared out. Keep your wrists straight and ensure that your lower back maintains a slight arch to avoid undue strain.\n\nPause at the bottom – Once the bar is near your chest, pause briefly without letting it bounce off your body, maintaining control of the movement to maximize muscle contraction.\n\nPressing phase – Press the bar upwards, keeping your feet grounded and exhaling as you push. Make sure your elbows are in a stable position and avoid locking them fully at the top.\n\nBreathing – Inhale as you lower the bar and exhale as you press it back up.\n\nThe Bench Press is a key movement for developing upper body strength, commonly used in strength, hypertrophy, and powerlifting programs."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Le Bench Press (développé couché) est l'un des exercices de base en musculation, principalement utilisé pour développer la force et la masse musculaire des pectoraux, mais il engage également les épaules et les triceps.\n\nPosition de départ – Allongez-vous sur un banc horizontal, les pieds à plat sur le sol pour stabiliser votre corps. Prenez la barre avec une prise légèrement plus large que la largeur des épaules. Vos bras doivent être tendus, avec les coudes légèrement fléchis.\n\nDescente de la barre – Abaissez lentement la barre vers le bas de votre poitrine (environ au niveau des mamelons), en maintenant les coudes légèrement inclinés vers l'extérieur. Gardez les poignets droits et assurez-vous que le bas du dos reste légèrement cambré pour éviter toute tension excessive.\n\nPause en position basse – Une fois la barre près de la poitrine, faites une brève pause sans la laisser rebondir sur votre corps pour garder le contrôle du mouvement et maximiser la contraction des muscles.\n\nPhase de poussée – Poussez la barre vers le haut, en maintenant les pieds bien ancrés au sol et en expirant en poussant. Assurez-vous de garder les coudes dans une position stable et de ne pas les verrouiller complètement en haut du mouvement.\n\nRespiration – Inspirez en abaissant la barre et expirez lorsque vous la poussez vers le haut.\n\nLe Bench Press est un mouvement clé pour développer la force du haut du corps, utilisé dans les programmes d’entraînement de force, d’hypertrophie et de powerlifting."
+          }
+        }
+      }
+    },
     "Bienvenue dans One More" : {
       "localizations" : {
         "en" : {
@@ -315,6 +332,40 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bienvenue dans One More"
+          }
+        }
+      }
+    },
+    "CableTricepsPushdown" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cable Triceps Pushdown is an isolation exercise that primarily targets the triceps, offering a wide range of load and intensity possibilities thanks to the cable machine. This exercise is effective for building triceps strength and definition.\n\nStarting position – Stand facing a high pulley machine, with your feet shoulder-width apart. Grab the bar or rope attached to the pulley with a pronated grip (palms facing down). Your elbows should be tucked close to your torso, and your forearms aligned with the pulley.\n\nControlled descent – Exhale as you push the bar or rope down until your arms are fully extended, contracting your triceps. Keep your elbows stationary and avoid letting your shoulders engage in the movement.\n\nFull range of motion – Push down until your arms are fully extended and your triceps are maximally contracted.\n\nReturn to the starting position – Inhale as you slowly allow the bar to rise back up until your forearms are again at a 90-degree angle to your upper arms. Be sure to keep your elbows close to your body throughout the movement.\n\nControlled movement – Maintain a smooth motion and avoid using momentum or swinging your body. Control is key to fully engage the triceps.\n\nBreathing – Exhale as you push down, inhale as you return to the starting position.\n\nThis exercise is particularly effective for isolating the triceps and strengthening them, with a focus on elbow stability to prevent other muscles in the arm from assisting."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Le Cable Triceps Pushdown est un exercice d'isolation qui cible principalement les triceps, offrant une grande variété de possibilités de charges et d’intensité grâce à la poulie. Cet exercice est efficace pour développer la force et la définition des triceps.\n\nPosition de départ – Tenez-vous debout face à une machine à poulie haute, les pieds écartés à la largeur des hanches. Attrapez la barre ou la corde fixée à la poulie avec une prise en pronation (paumes vers le bas). Vos coudes doivent être serrés contre votre torse, et vos avant-bras alignés avec la poulie.\n\nDescente contrôlée – En expirant, poussez la barre ou la corde vers le bas jusqu’à ce que vos bras soient complètement tendus, en contractant vos triceps. Gardez vos coudes fixes et ne laissez pas vos épaules intervenir dans le mouvement.\n\nAmplitude complète – Descendez la barre jusqu'à ce que vos bras soient complètement tendus et vos triceps contractés au maximum.\n\nRetour à la position de départ – En inspirant, laissez la barre remonter lentement et de manière contrôlée jusqu’à ce que vos avant-bras soient de nouveau à 90 degrés par rapport à vos bras. Assurez-vous de garder vos coudes près du corps tout au long du mouvement.\n\nContrôle du mouvement – Maintenez un mouvement fluide et évitez d'utiliser l'élan ou de balancer le corps. Ce contrôle est essentiel pour maximiser la sollicitation des triceps.\n\nRespiration – Expirez en descendant, inspirez en remontant.\n\nCet exercice est particulièrement efficace pour isoler les triceps et les renforcer, avec un accent mis sur la stabilité des coudes pour éviter toute intervention des autres muscles du bras.\n\n"
+          }
+        }
+      }
+    },
+    "CalfRaise" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The Calf Raise is a strength exercise that specifically targets the calf muscles, primarily the gastrocnemius and soleus. This exercise can be performed with or without weights, in a standing or seated position, and is designed to strengthen and develop the size and power of the calves.\n\nStarting position – Stand on a stable surface, with your feet shoulder-width apart. If using weights, place them on your shoulders or hold a barbell behind your neck, or hold dumbbells in each hand. Your feet should be flat on the ground, or slightly elevated with heels hanging off a platform if using one.\n\nCalf extension – Exhale as you rise onto the balls of your feet as high as possible, fully contracting your calf muscles. Ensure proper alignment throughout your body without swinging or using momentum.\n\nControl the range – Hold the top position for a brief moment to maximize the muscular engagement, then slowly lower back down to the starting position, controlling the movement and avoiding dropping your heels too quickly.\n\nReturn to starting position – Slowly lower your heels toward the floor while inhaling, maintaining a fluid, controlled movement throughout the exercise.\n\nPossible variations – Perform the exercise on one leg to increase intensity or change the foot angle to target different parts of the calf.\n\nBreathing – Exhale as you rise onto your toes, and inhale as you lower down.\n\nThe Calf Raise is an effective exercise for strengthening the calves, improving balance, ankle stability, and contributing to enhanced performance in activities such as running and jumping."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Le Calf Raise, ou extension des mollets, est un exercice de musculation qui cible spécifiquement les muscles du mollet, en particulier le gastrocnémien et le soléaire. Cet exercice peut être réalisé avec ou sans charge, en position debout ou assise, et permet de renforcer et de développer la taille et la force des mollets.\n\nPosition de départ – Placez-vous debout sur une surface stable, les pieds écartés à la largeur des épaules. Si vous utilisez une machine ou une charge, placez les poids sur vos épaules ou tenez une barre derrière la nuque, ou prenez des haltères dans chaque main. Vos pieds doivent être à plat au sol, ou légèrement surélevés avec les talons dans le vide si vous utilisez une plateforme.\n\nExtension des mollets – En expirant, montez sur la pointe des pieds aussi haut que possible, en contractant les muscles du mollet au maximum. Veillez à maintenir un bon alignement du corps, sans balancer ou tricher avec le mouvement.\n\nContrôle de l'amplitude – Maintenez la position de contraction quelques secondes pour maximiser le travail musculaire, puis redescendez lentement à la position initiale, en contrôlant le mouvement sans laisser les talons retomber brusquement.\n\nRetour à la position de départ – Abaissez lentement les talons vers le sol, en inspirant. Assurez-vous de garder un mouvement fluide et contrôlé tout au long de l'exercice.\n\nVariation possible – L'exercice peut être réalisé à une seule jambe pour augmenter l'intensité ou en modifiant l'angle du pied pour cibler différentes parties du mollet.\n\nRespiration – Expirez en montant sur la pointe des pieds, inspirez en redescendant.\n\nLe Calf Raise est un excellent exercice pour renforcer les mollets, améliorer l'équilibre, la stabilité des chevilles, et contribuer à des performances accrues dans d'autres mouvements sportifs tels que la course ou les sauts."
           }
         }
       }
@@ -484,6 +535,23 @@
           "stringUnit" : {
             "state" : "needs_review",
             "value" : "Le Dumbbell Curl est un exercice de musculation classique qui cible principalement les biceps, aidant à renforcer et à développer la partie antérieure du bras. Cet exercice se concentre sur la flexion du coude, et il peut être réalisé en position debout ou assise.\n\nPosition de départ – Tenez une paire d'haltères dans chaque main, les bras le long du corps et les paumes tournées vers l'avant (prise en supination). Gardez les pieds à la largeur des épaules et maintenez le dos droit.\n\nPhase de flexion – En gardant vos coudes près du corps, pliez les bras pour soulever les haltères vers vos épaules. Assurez-vous de ne bouger que les avant-bras pour isoler les biceps. Évitez d'utiliser l'élan du corps.\n\nContractez les biceps – Lorsque les haltères atteignent leur point le plus haut (au niveau des épaules), contractez les biceps pour maximiser l'activation musculaire.\n\nPhase de descente – Abaissez lentement les haltères en contrôlant le mouvement jusqu'à la position de départ. Ne laissez pas simplement les haltères tomber, le contrôle est essentiel pour un bon développement musculaire.\n\nRespiration – Inspirez en abaissant les haltères, et expirez pendant que vous soulevez.\n\nLe Dumbbell Curl est parfait pour développer la force des bras et peut être facilement modifié pour cibler différentes parties du biceps, selon la position des mains ou la variation utilisée (incliné, alterné, etc.)."
+          }
+        }
+      }
+    },
+    "DumbellFly" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The Dumbbell Fly is an exercise that primarily targets the chest muscles, while also engaging the shoulders and stabilizer muscles. It’s excellent for stretching and strengthening the chest, while enhancing shoulder mobility.\n\nStarting position – Lie on a flat bench with your feet firmly on the ground. Hold a dumbbell in each hand with a neutral grip (palms facing each other) and extend your arms above your chest with a slight bend at the elbows.\n\nControlled descent – Inhale as you slowly lower your arms out to the sides, maintaining a slight bend in your elbows. Lower the dumbbells until you feel a good stretch in your chest, without exceeding your comfort and mobility range.\n\nReturn movement – Exhale as you bring the dumbbells back toward the center, over your chest. Contract your chest muscles throughout the movement, avoiding fully locking your arms at the top to protect your shoulder joints.\n\nControl the range – It’s important to keep the movement controlled and avoid jerking or lowering the dumbbells too quickly, as this can strain the shoulders.\n\nBreathing – Inhale as you lower the dumbbells, exhale as you bring them back together.\n\nPossible variations – This exercise can also be performed on an incline or decline bench to target different portions of the chest.\n\nThe Dumbbell Fly is an effective exercise to develop chest strength and range of motion, while improving shoulder stability."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Le Dumbbell Fly, ou écarté avec haltères, est un exercice qui cible principalement les pectoraux, tout en engageant les épaules et les muscles stabilisateurs. C'est un excellent exercice pour étirer et renforcer les muscles de la poitrine, tout en améliorant la mobilité des épaules.\n\nPosition de départ – Allongez-vous sur un banc plat, les pieds bien ancrés au sol. Tenez une haltère dans chaque main avec une prise neutre (paumes face à face) et tendez les bras au-dessus de votre poitrine, légèrement fléchis.\n\nDescente contrôlée – En inspirant, abaissez lentement les bras de chaque côté, en maintenant une légère flexion des coudes. Continuez de descendre jusqu’à ce que vous sentiez un bon étirement dans vos pectoraux, mais sans aller au-delà de vos capacités de confort et de mobilité.\n\nMouvement de retour – Expirez en ramenant les haltères vers le centre, au-dessus de votre poitrine. Contractez vos pectoraux tout au long du mouvement, en évitant de tendre complètement les bras à la fin pour protéger les articulations des épaules.\n\nContrôle de l’amplitude – L’important dans cet exercice est de garder un mouvement contrôlé et d’éviter les à-coups ou une descente trop rapide, car cela pourrait stresser les épaules.\n\nRespiration – Inspirez en abaissant les haltères, expirez en les ramenant vers le centre.\n\nVariation possible – L’exercice peut être réalisé sur un banc incliné ou décliné pour cibler différentes portions des pectoraux.\n\nLe Dumbbell Fly est un exercice efficace pour développer la force et l’amplitude des pectoraux tout en améliorant la stabilité des épaules."
           }
         }
       }
@@ -687,6 +755,23 @@
         }
       }
     },
+    "HammerCurl" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The Hammer Curl is a strength exercise targeting the biceps as well as the brachialis and brachioradialis muscles (forearms). This movement helps build arm strength and size while reducing wrist strain compared to traditional curls.\n\nStarting position – Stand upright with a dumbbell in each hand, arms hanging by your sides. Palms should face inward (neutral grip), and feet should be shoulder-width apart.\n\nCurl movement – Keeping your elbows close to your body, curl the weights towards your shoulders. The forearms move upwards but the palms remain facing inward throughout the motion.\n\nContraction phase – At the top of the movement (dumbbells near your shoulders), squeeze your biceps and hold briefly to maximize muscle tension.\n\nReturn to starting position – Slowly lower the dumbbells back to the starting position with controlled movement, arms fully extended by your sides.\n\nBreathing – Inhale during the lowering (eccentric) phase and exhale as you curl the weights up (concentric phase).\n\nThe Hammer Curl is an excellent exercise to vary your bicep routine, targeting the forearms and grip strength while reducing strain on the wrist joints."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Le Hammer Curl est un exercice de musculation ciblant les biceps ainsi que les muscles brachiaux et brachio-radiaux (avant-bras). Ce mouvement permet d’améliorer la force et le volume des bras tout en réduisant la sollicitation des poignets par rapport aux curls traditionnels.\n\nPosition de départ – Tenez-vous debout avec un haltère dans chaque main, les bras le long du corps. Les paumes des mains doivent être tournées vers l'intérieur (en position neutre) et les pieds écartés à la largeur des hanches.\n\nMouvement de flexion – En gardant les coudes près du corps, pliez les bras pour soulever les haltères vers vos épaules. Les avant-bras montent mais les paumes restent tournées vers l’intérieur tout au long du mouvement.\n\nPhase de contraction – Lorsque vous atteignez le sommet du mouvement (les haltères proches des épaules), contractez les biceps et maintenez une brève pause pour maximiser la tension musculaire.\n\nRetour à la position de départ – Abaissez lentement les haltères en contrôlant le mouvement jusqu'à la position de départ, les bras complètement tendus le long du corps.\n\nRespiration – Inspirez pendant la phase de descente (excentrique) et expirez pendant la phase de montée (concentrique).\n\nLe Hammer Curl est un excellent exercice pour varier les mouvements de biceps et permet de cibler les avant-bras et la force de prise, tout en réduisant la tension sur les articulations du poignet."
+          }
+        }
+      }
+    },
     "HangPowerClean" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -805,6 +890,23 @@
         }
       }
     },
+    "InclineBenchPress" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The Incline Bench Press is a variation of the bench press that primarily targets the upper chest while also engaging the shoulders and triceps. It's commonly used to balance upper body muscle development.\n\nStarting position – Lie on an incline bench (typically set at 30-45 degrees), with your feet firmly planted on the ground and your shoulder blades pinched against the bench. Grip the barbell with a grip slightly wider than shoulder-width, palms facing forward.\n\nControlled descent – Slowly lower the barbell towards your upper chest, controlling the motion. Keep your elbows at approximately 45 degrees relative to your body to reduce shoulder strain.\n\nPress phase – Once the barbell lightly touches your chest, press it upwards by contracting your chest, shoulders, and triceps. Exhale during this phase to maximize power.\n\nReturn to starting position – Continue pushing until your arms are fully extended but without locking your elbows. Control the barbell back to the starting position.\n\nBreathing – Inhale as you lower the bar and exhale as you press it up.\n\nThe Incline Bench Press is a fundamental exercise for building and strengthening the upper chest, enhancing both strength and torso aesthetics."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "L'Incline Bench Press est une variante du développé couché qui cible principalement la partie supérieure des pectoraux, tout en sollicitant les épaules et les triceps. Il est souvent utilisé pour équilibrer le développement musculaire du torse.\n\nPosition de départ – Allongez-vous sur un banc incliné (généralement à 30-45 degrés), les pieds fermement posés au sol et les omoplates resserrées contre le banc. Saisissez la barre avec une prise légèrement plus large que la largeur des épaules, les paumes des mains orientées vers l’avant.\n\nDescente contrôlée – Abaissez lentement la barre vers la partie supérieure de votre poitrine, en contrôlant le mouvement. Gardez les coudes à environ 45 degrés par rapport au corps pour minimiser la tension sur les épaules.\n\nPhase de poussée – Une fois que la barre touche légèrement la poitrine, poussez-la vers le haut en contractant les pectoraux, les épaules et les triceps. Expirez pendant cette phase pour maximiser la puissance.\n\nRetour à la position de départ – Continuez de pousser jusqu’à ce que les bras soient complètement tendus, mais sans verrouiller complètement les coudes. Contrôlez la barre pour revenir à la position de départ.\n\nRespiration – Inspirez en abaissant la barre et expirez en poussant vers le haut.\n\nL'Incline Bench Press est un exercice fondamental pour renforcer et développer la partie supérieure des pectoraux, améliorant à la fois la force et l’esthétique du torse."
+          }
+        }
+      }
+    },
     "Index" : {
       "localizations" : {
         "en" : {
@@ -834,6 +936,23 @@
           "stringUnit" : {
             "state" : "needs_review",
             "value" : "Le Jerk est un mouvement explosif d’haltérophilie où la barre est poussée de la position d’épaulé à au-dessus de la tête en un mouvement rapide et puissant.\n\nPhase de Dip – Commencez avec la barre sur vos épaules, vos pieds écartés à la largeur des hanches. Pliez légèrement les genoux en descendant droit, en gardant le tronc bien droit et en générant de la tension dans les jambes.\n\nPhase de Drive – À partir de cette position fléchie, poussez de manière explosive avec vos jambes pour générer de la force vers le haut, propulsant la barre au-dessus de votre tête.\n\nPhase de Catch – Dès que la barre monte, déplacez rapidement vos pieds en avant et en arrière pour entrer dans une position de fente (split jerk) ou restez en position de squat (power jerk) tout en attrapant la barre les bras tendus au-dessus de votre tête.\n\nStabilisation – Une fois la barre sécurisée au-dessus de votre tête, redressez-vous en ramenant les pieds à leur position d'origine, en maintenant un contrôle total avant de relâcher la barre.\n\nLe Jerk exige une parfaite coordination entre la puissance des jambes et la stabilité du haut du corps, et c’est un des mouvements clés pour réussir les levées lourdes en haltérophilie. "
+          }
+        }
+      }
+    },
+    "LateralRaise" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The Lateral Raise is a strength training exercise primarily targeting the deltoid muscles, especially the lateral (middle) part of the shoulders. It’s ideal for improving shoulder width and enhancing upper body aesthetics.\n\nStarting position – Stand with your feet hip-width apart and your knees slightly bent. Hold a dumbbell in each hand with your arms at your sides, palms facing inward (neutral grip). Keep your chest lifted and shoulders back.\n\nArm raise – Slowly lift your arms out to the sides until they are parallel to the floor. Ensure a slight bend in your elbows throughout the movement. Avoid lifting the dumbbells above shoulder height.\n\nContraction – Once your arms are at shoulder height, squeeze your deltoids and hold the position for one second.\n\nControlled lowering – Slowly lower your arms back to the starting position. Avoid letting the weights drop too quickly, controlling the movement for maximum effectiveness.\n\nBreathing – Inhale as you lift the weights and exhale as you lower them.\n\nThe Lateral Raise is an essential exercise for shoulder definition and strength, especially to develop broad, well-balanced shoulders."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Le Lateral Raise est un exercice de musculation ciblant principalement les muscles deltoïdes, en particulier la partie latérale (médiane) des épaules. Il est idéal pour améliorer la largeur des épaules et donner une apparence plus musclée au haut du corps.\n\nPosition de départ – Tenez-vous debout, les pieds à la largeur des hanches et les genoux légèrement fléchis. Saisissez un haltère dans chaque main, les bras le long du corps, avec les paumes tournées vers l'intérieur (prises neutres). Gardez la poitrine relevée et les épaules en arrière.\n\nLevé des bras – Levez lentement les bras sur les côtés jusqu’à ce qu’ils soient parallèles au sol. Assurez-vous de maintenir une légère flexion des coudes tout au long du mouvement. Ne laissez pas les haltères monter au-dessus de la hauteur des épaules.\n\nContraction – Une fois que les bras sont à la hauteur des épaules, contractez les deltoïdes et maintenez la position pendant une seconde.\n\nDescente contrôlée – Abaissez lentement les bras jusqu'à la position de départ. Évitez de laisser les poids tomber brusquement, en contrôlant le mouvement pour maximiser l'efficacité.\n\nRespiration – Inspirez pendant la levée des poids et expirez en les abaissant.\n\nLe Lateral Raise est un exercice essentiel pour la définition et la force des épaules, en particulier pour développer des épaules larges et bien équilibrées."
           }
         }
       }
@@ -902,6 +1021,57 @@
         }
       }
     },
+    "LegCurl" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The Leg Curl, or hamstring curl, is an isolation exercise that primarily targets the hamstring muscles located at the back of the thighs. It is performed using a specialized machine and is highly effective for strengthening this often-neglected part of the leg.\n\nStarting position – Lie face down on the leg curl machine. Adjust the machine so that the axis of rotation aligns with your knees and the pad rests against your ankles. Grip the handles beneath the machine to stabilize your body.\n\nLeg curl – Exhale as you bend your legs, pulling the pad toward your glutes by contracting your hamstrings. Ensure that only your legs are moving while keeping the rest of your body still, focusing the effort on your hamstrings.\n\nFull range of motion – Curl your legs as much as possible, aiming to bring your heels close to your glutes, maintaining a strong contraction in the back of your thighs.\n\nReturn to starting position – Inhale as you slowly lower your legs back to the starting position, controlling the movement to maximize effectiveness and avoid unnecessary joint strain.\n\nControlled movement – As with all isolation exercises, the movement should be slow and controlled. Avoid using momentum or letting the weights drop too quickly.\n\nBreathing – Exhale as you curl your legs, and inhale as you return to the starting position.\n\nThe Leg Curl is an excellent exercise for strengthening the hamstrings, promoting better muscle balance between the front and back of the legs, and helping to prevent injuries."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Le Leg Curl, ou flexion des jambes, est un exercice d’isolation qui cible principalement les muscles ischio-jambiers à l’arrière des cuisses. Il est réalisé à l’aide d’une machine spécifique et est très efficace pour renforcer cette partie de la jambe, souvent négligée par rapport aux quadriceps.\n\nPosition de départ – Allongez-vous sur la machine à leg curl, avec le ventre face contre le coussin. Ajustez la machine pour que l'axe de rotation soit aligné avec vos genoux et que le coussin repose sur vos chevilles. Saisissez les poignées sous la machine pour stabiliser votre corps.\n\nFlexion des jambes – En expirant, pliez les jambes en tirant le coussin vers les fessiers, en contractant les ischio-jambiers. Assurez-vous que seules vos jambes bougent et que le reste de votre corps reste immobile, concentrant ainsi l'effort sur les ischio-jambiers.\n\nAmplitude complète – Pliez les jambes autant que possible, en visant à rapprocher les talons des fessiers, tout en maintenant une contraction maximale des muscles à l’arrière des cuisses.\n\nRetour à la position de départ – En inspirant, redescendez lentement les jambes à la position de départ, en contrôlant le mouvement pour maximiser l'efficacité et éviter toute tension inutile sur les articulations.\n\nContrôle du mouvement – Comme pour tout exercice d’isolation, le mouvement doit être lent et contrôlé. Évitez d'utiliser de l'élan ou de laisser les poids tomber brusquement.\n\nRespiration – Expirez en fléchissant les jambes, inspirez en les redescendant.\n\nLe Leg Curl est un excellent exercice pour renforcer les ischio-jambiers, améliorant ainsi l'équilibre musculaire entre les muscles avant et arrière de la jambe, tout en prévenant les blessures."
+          }
+        }
+      }
+    },
+    "LegExtension" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Leg Extension is an isolation exercise that primarily targets the quadriceps, located at the front of the thighs. It is performed using a dedicated machine and is highly effective for strengthening the thigh muscles.\n\nStarting position – Sit on the leg extension machine with your back firmly pressed against the backrest. Adjust the machine so that the axis of rotation is aligned with your knees and the pad rests against your shins, just above your ankles. Grip the machine handles to ensure stability.\n\nLeg extension – Exhale as you push the pad upward by contracting your quadriceps, extending your legs fully. Keep the rest of your body still and focus on squeezing the quadriceps.\n\nFull range of motion – Make sure your legs are fully extended at the top of the movement, but avoid locking your knees to prevent excess pressure on the joints.\n\nReturn to the starting position – Inhale as you slowly lower the weight, bending your knees back to a 90-degree angle, controlling the descent to maximize the exercise's effectiveness.\n\nControlled movement – The movement should be smooth and controlled at all times. Avoid using momentum or letting the weight drop too quickly during the lowering phase.\n\nBreathing – Exhale as you extend your legs, inhale as you return to the starting position.\n\nLeg Extension is highly effective for isolating and strengthening the quadriceps, ideal for building leg strength and improving muscle aesthetics."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Le Leg Extension est un exercice d'isolation qui cible principalement le quadriceps, situé à l'avant des cuisses. Il est réalisé à l’aide d’une machine dédiée et est très efficace pour renforcer les muscles de la cuisse.\n\nPosition de départ – Asseyez-vous sur la machine de leg extension, avec le dos bien appuyé contre le dossier. Réglez la position de la machine pour que l'axe de rotation soit aligné avec vos genoux et que le coussin soit en contact avec vos tibias, juste au-dessus des chevilles. Saisissez les poignées de la machine pour assurer une bonne stabilité.\n\nExtension des jambes – En expirant, poussez le coussin vers le haut en contractant les quadriceps, jusqu'à ce que vos jambes soient complètement tendues. Gardez le reste de votre corps immobile et concentrez-vous sur la contraction de vos quadriceps.\n\nAmplitude complète – Assurez-vous que vos jambes soient complètement tendues à la fin du mouvement, sans pour autant verrouiller les genoux pour éviter une pression excessive sur les articulations.\n\nRetour à la position de départ – En inspirant, redescendez lentement les jambes jusqu'à ce que les genoux soient à 90 degrés, contrôlant le mouvement pour maximiser l'efficacité de l'exercice.\n\nContrôle du mouvement – Le mouvement doit être fluide et contrôlé à tout moment. Évitez d'utiliser de l'élan ou de relâcher les muscles trop rapidement pendant la phase descendante.\n\nRespiration – Expirez en montant, inspirez en redescendant.\n\nLe Leg Extension est un exercice très efficace pour isoler et renforcer les quadriceps, idéal pour développer la force des jambes et améliorer l’esthétique musculaire.\n\n"
+          }
+        }
+      }
+    },
+    "LegPress" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The Leg Press is a strength training exercise primarily targeting the quadriceps, hamstrings, and glutes. It’s an ideal movement for developing leg strength and muscle mass while offering a safer alternative to squats for those with lower back or knee pain.\n\nStarting position – Sit on the leg press machine with your back firmly against the seat and your feet shoulder-width apart on the platform. Your knees should be bent at about 90 degrees. Ensure your heels are pressed firmly against the platform.\n\nLeg extension – Push against the platform by contracting your quadriceps, keeping your feet flat. Extend your legs until they are almost fully straight, avoiding fully locking your knees.\n\nContraction – Hold the extended position for a second, squeezing your leg muscles.\n\nControlled return – Slowly bend your knees to lower the platform back toward you, controlling the movement and keeping your feet firmly on the platform.\n\nBreathing – Exhale as you push the platform away and inhale as you bring it back.\n\nThe Leg Press is an excellent exercise for those looking to build leg muscle mass and strength safely, with reduced injury risk compared to free-weight squats."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "La Leg Press est un exercice de musculation ciblant principalement les quadriceps, les ischio-jambiers et les fessiers. Il s'agit d'un mouvement idéal pour développer la force et la masse musculaire des jambes, tout en offrant une alternative sûre aux squats pour les personnes souffrant de douleurs au bas du dos ou aux genoux.\n\nPosition de départ – Asseyez-vous sur la machine à leg press avec le dos bien appuyé contre le dossier et les pieds écartés à la largeur des épaules sur la plateforme. Vos genoux doivent être fléchis à environ 90 degrés. Les pieds doivent être placés de manière à ce que les talons appuient bien contre la plateforme.\n\nExtension des jambes – Poussez contre la plateforme en contractant les quadriceps et en veillant à garder les pieds bien à plat. Étendez les jambes jusqu'à ce qu'elles soient presque complètement droites, sans verrouiller complètement les genoux.\n\nContraction – Maintenez la position d'extension maximale pendant une seconde, en contractant les muscles des jambes.\n\nRetour contrôlé – Fléchissez lentement les genoux pour ramener la plateforme vers vous, tout en contrôlant le mouvement et en maintenant les pieds fermement contre la plateforme.\n\nRespiration – Expirez en poussant la plateforme et inspirez en ramenant la plateforme vers vous.\n\nLa Leg Press est un excellent exercice pour ceux qui cherchent à augmenter la masse musculaire et la force des jambes, en toute sécurité et avec un risque réduit de blessure par rapport aux mouvements comme le squat libre.\n\n"
+          }
+        }
+      }
+    },
     "Meilleur temps" : {
       "localizations" : {
         "en" : {
@@ -914,6 +1084,23 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Meilleur temps"
+          }
+        }
+      }
+    },
+    "MilitaryPress" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The Military Press, also known as Shoulder Press or Overhead Press, is a compound exercise primarily targeting the shoulders (deltoids) and triceps, while also engaging the core stabilizers. It’s commonly used to build upper body strength and improve shoulder stability.\n\nStarting position – Stand with feet shoulder-width apart, holding a barbell at shoulder height with palms facing forward (pronated grip). The bar should rest just above the collarbone, with elbows slightly forward. Engage the core and squeeze the glutes to stabilize the body.\n\nPressing the bar overhead – Using primarily the shoulders and triceps, press the bar in a straight line overhead while keeping the back neutral and elbows directly under the bar. Avoid letting the bar drift forward or backward.\n\nFinal position – When the arms are fully extended overhead, ensure the bar is aligned with the shoulders, hips, and heels. Do not fully lock the elbows to avoid excessive strain on the joints.\n\nControlled return – Slowly lower the bar back to the starting position, maintaining control throughout the movement to avoid jerking the shoulders.\n\nBreathing – Exhale as you press the bar overhead and inhale as you lower it back to shoulder height.\n\nThe Military Press is a fundamental exercise for building shoulder strength and stability, while also improving posture and muscular balance."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Le Military Press, également appelé Shoulder Press ou Overhead Press, est un exercice de musculation polyarticulaire qui cible principalement les épaules (deltoïdes) et les triceps, tout en sollicitant les muscles stabilisateurs du tronc. Il est couramment utilisé pour développer la force du haut du corps et améliorer la stabilité des épaules.\n\nPosition de départ – Tenez-vous debout, les pieds écartés à la largeur des épaules, en maintenant une barre au niveau des épaules avec les paumes tournées vers l'avant (prise pronation). La barre doit reposer juste au-dessus de la clavicule, et les coudes légèrement orientés vers l'avant. Engagez les muscles abdominaux et serrez les fessiers pour stabiliser le corps.\n\nPoussée de la barre au-dessus de la tête – En utilisant principalement les épaules et les triceps, poussez la barre au-dessus de votre tête en une ligne droite, tout en gardant le dos neutre et les coudes sous la barre. Ne laissez pas la barre dévier vers l'avant ou l'arrière.\n\nPosition finale – Lorsque les bras sont complètement tendus au-dessus de la tête, veillez à ce que la barre soit alignée avec les épaules, les hanches et les talons. Ne verrouillez pas complètement les coudes pour éviter une trop grande pression sur les articulations.\n\nRetour contrôlé – Abaissez lentement la barre jusqu'à la position de départ, en maintenant le contrôle tout au long du mouvement pour éviter de brusques secousses sur les épaules.\n\nRespiration – Expirez en poussant la barre au-dessus de la tête et inspirez en la ramenant vers les épaules.\n\nLe Military Press est un exercice fondamental pour développer la force et la stabilité des épaules, tout en améliorant la posture et l'équilibre musculaire."
           }
         }
       }
@@ -1284,6 +1471,23 @@
         }
       }
     },
+    "RowingBar" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The Rowing Bar, also known as Bent-Over Row, is a compound exercise that primarily targets the muscles of the back (latissimus dorsi, trapezius) as well as the biceps and core stabilizers. It is an excellent movement for building upper body strength, especially the posterior chain.\n\nStarting position – Stand with your feet shoulder-width apart, holding a loaded barbell in front of you. Bend forward at the hips, keeping your back straight and knees slightly bent. The bar should be held with an overhand grip (palms down) at shoulder width, arms extended towards the floor.\n\nPulling the bar – Engage your back and arm muscles, pulling the bar towards your abdomen while keeping your elbows close to your body. The movement should be controlled, initiated by the back muscles without relying on the arms too much.\n\nFinal position – When the bar reaches your lower abdomen (or slightly above), pause and squeeze your shoulder blades together to maximize back muscle activation.\n\nControlled return – Lower the bar slowly by extending your arms while maintaining tension in your back and keeping your torso in position.\n\nBreathing – Exhale as you pull the bar upwards and inhale as you lower the bar back to the starting position.\n\nThe Rowing Bar is a key exercise for developing strong back muscles, improving posture, and increasing functional strength."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Le Rowing Bar, également appelé Bent-Over Row, est un exercice polyarticulaire de musculation qui cible principalement les muscles du dos (grand dorsal, trapèze) ainsi que les biceps et les muscles stabilisateurs du tronc. C'est un excellent mouvement pour développer la force du haut du corps, notamment la musculature postérieure.\n\nPosition de départ – Tenez-vous debout, pieds écartés à la largeur des épaules, une barre chargée devant vous. Penchez-vous en avant à partir des hanches, en gardant le dos droit et les genoux légèrement fléchis. La barre doit être tenue avec une prise pronation (paumes vers le bas) à la largeur des épaules, bras tendus vers le sol.\n\nTirage de la barre – En contractant les muscles du dos et des bras, tirez la barre vers votre abdomen en maintenant les coudes proches du corps. Le mouvement doit être contrôlé et initié par les muscles du dos, en évitant de compenser avec les bras.\n\nPosition finale – Lorsque la barre atteint le bas de votre abdomen (ou légèrement au-dessus), marquez une pause et contractez les omoplates ensemble pour maximiser l'activation des muscles du dos.\n\nRetour contrôlé – Abaissez lentement la barre en étendant les bras tout en maintenant la tension dans le dos et en conservant la position de votre tronc.\n\nRespiration – Expirez pendant le tirage de la barre et inspirez en abaissant la barre vers la position de départ.\n\nLe Rowing Bar est un exercice clé pour développer une masse musculaire dorsale solide, ainsi que pour améliorer la posture et la force fonctionnelle.\n\n"
+          }
+        }
+      }
+    },
     "Score" : {
       "localizations" : {
         "en" : {
@@ -1296,6 +1500,23 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Score"
+          }
+        }
+      }
+    },
+    "SeatedRow" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The Seated Row is a strength exercise that primarily targets the muscles of the back, including the lats, trapezius, and rhomboids. It also engages the biceps and forearms. This is an excellent exercise for building back strength and thickness.\n\nStarting position – Sit down at the seated row machine with your feet firmly placed on the footrests. Grasp the handles with a neutral grip (palms facing each other) or an overhand grip (palms facing down), depending on the machine and your goals.\n\nEngage your back – Keep your back straight, shoulders down, and chest up. Begin the exercise by pulling your shoulders back and squeezing your shoulder blades together to engage your back muscles before even pulling the handles.\n\nRowing movement – Pull the handles toward your abdomen, keeping your elbows close to your body. Squeeze your back muscles tightly at the end of the movement, while avoiding leaning too far backward.\n\nControlled return – Slowly return the handles to the starting position by extending your arms, maintaining tension in your back, and avoiding letting your shoulders roll forward.\n\nBreathing – Inhale as you return to the starting position and exhale as you pull the handles toward you.\n\nPossible variations – You can vary your grip (overhand, underhand, neutral) or use different attachments like straight bars, V-handles, or ropes to work different parts of your back.\n\nThe Seated Row is a fundamental exercise for building a strong, thick back, improving posture, and reinforcing the shoulder-trunk connection."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Le Seated Row est un exercice de musculation qui cible principalement les muscles du dos, y compris les dorsaux, les trapèzes, et les rhomboïdes. Il sollicite également les biceps et les avant-bras. C’est un excellent exercice pour développer la force et l’épaisseur du dos.\n\nPosition de départ – Asseyez-vous sur la machine à tirage assis, les pieds placés fermement sur les repose-pieds. Saisissez les poignées avec une prise neutre (paumes face à face) ou une prise en pronation (paumes vers le bas), en fonction de la machine et de vos objectifs.\n\nEngagement du dos – Gardez le dos droit, les épaules abaissées et la poitrine sortie. Commencez l’exercice en tirant les épaules vers l’arrière et en serrant les omoplates ensemble pour engager les muscles du dos avant même de tirer sur les poignées.\n\nMouvement de traction – Tirez les poignées vers votre abdomen, en gardant les coudes près du corps. Contractez fortement les muscles du dos en fin de mouvement, tout en évitant de basculer le torse vers l’arrière.\n\nRetour contrôlé – Redescendez les poignées lentement vers la position de départ en relâchant doucement les bras, tout en maintenant la tension dans le dos et en évitant que les épaules ne se projettent vers l’avant.\n\nRespiration – Inspirez lors de la phase de retour et expirez en tirant les poignées vers vous.\n\nVariations possibles – Vous pouvez varier la prise (pronation, supination, neutre) ou utiliser des barres droites, des poignées en V, ou des cordes pour solliciter différemment les muscles du dos.\n\nLe Seated Row est un exercice fondamental pour développer un dos fort et épais, tout en améliorant la posture et en renforçant la connexion entre les épaules et le tronc."
           }
         }
       }
@@ -1329,6 +1550,23 @@
           "stringUnit" : {
             "state" : "needs_review",
             "value" : "Le Shoulder Press est un exercice de musculation fondamental qui cible principalement les épaules (deltoïdes), tout en sollicitant également les triceps et la partie supérieure de la poitrine. Cet exercice est efficace pour développer la force et la masse musculaire des épaules, et il peut être exécuté avec une barre, des haltères ou à la machine.\n\nPosition de départ – Tenez une barre ou une paire d'haltères à hauteur des épaules, les pieds écartés à la largeur des hanches. Les paumes sont tournées vers l'avant (prise pronation). Assurez-vous que votre dos est bien droit et votre tronc engagé pour stabiliser le corps.\n\nPhase de poussée – Poussez lentement la barre ou les haltères vers le haut, en gardant les coudes légèrement en avant. Le mouvement doit être contrôlé, en utilisant principalement les muscles des épaules.\n\nExtension complète – À la fin du mouvement, les bras sont complètement étendus au-dessus de la tête. Assurez-vous de ne pas bloquer les coudes pour éviter de stresser les articulations.\n\nPhase de descente – Ramenez lentement la barre ou les haltères à la position initiale au niveau des épaules, en gardant le contrôle du mouvement. Ne laissez pas simplement la barre tomber.\n\nRespiration – Inspirez en abaissant la barre ou les haltères, et expirez lorsque vous poussez vers le haut.\n\nCet exercice est très polyvalent et peut être adapté en utilisant différentes variantes, comme le Dumbbell Shoulder Press, qui permet de travailler les épaules de manière unilatérale, ou le Arnold Press, qui ajoute une rotation des poignets pour un travail supplémentaire sur les épaules."
+          }
+        }
+      }
+    },
+    "SkullCrusher" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The Skull Crusher, also known as Lying Triceps Extension, is an isolation exercise that specifically targets the triceps, the muscles located at the back of the upper arm. It is highly effective for building both strength and size in the triceps.\n\nStarting position – Lie down on a flat bench holding an EZ bar or straight bar with a narrow grip. Your arms should be fully extended above your chest, with your elbows locked in a vertical position.\n\nControlled descent – Slowly bend your elbows to lower the bar toward your forehead while keeping your arms fixed. The movement should be controlled to avoid hitting your forehead with the bar.\n\nFull stretch – Lower the bar until it is a few inches from your forehead. Ensure that only your forearms move during the exercise, with your arms and elbows staying in a fixed position.\n\nExtension and contraction – Push the bar back up by straightening your arms to return to the starting position. Squeeze your triceps at the top of the movement to maximize muscle engagement.\n\nBreathing – Inhale as you lower the bar and exhale as you push it back up.\n\nThe Skull Crusher is ideal for isolating the triceps and is a key exercise in most strength training programs to increase arm size and improve triceps strength."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Le Skull Crusher, aussi connu sous le nom de Barre au front ou Triceps Extension allongé, est un exercice isolé de musculation qui cible spécifiquement les triceps, soit les muscles situés à l'arrière du bras. Il est très efficace pour développer la force et la taille des triceps.\n\nPosition de départ – Allongez-vous sur un banc plat avec une barre EZ ou une barre droite tenue en prise serrée. Vos bras doivent être tendus au-dessus de votre poitrine, avec vos coudes verrouillés en position verticale.\n\nDescente contrôlée – Pliez lentement les coudes pour abaisser la barre vers votre front, tout en maintenant vos bras fixes. Le mouvement doit être contrôlé pour éviter tout choc avec la barre.\n\nÉtirement complet – Descendez la barre jusqu'à ce qu'elle soit à quelques centimètres de votre front. Assurez-vous que seuls vos avant-bras bougent pendant l'exercice ; vos bras et coudes doivent rester fixes.\n\nExtension et contraction – Poussez la barre vers le haut en redressant vos bras pour revenir à la position de départ. Contractez vos triceps en haut du mouvement pour maximiser l'engagement musculaire.\n\nRespiration – Inspirez en abaissant la barre et expirez en la repoussant vers le haut.\n\nCet exercice est idéal pour isoler les triceps et ajouter de la masse musculaire au niveau des bras. Il est également très souvent utilisé dans les programmes de musculation pour améliorer la force des triceps.\n\n"
           }
         }
       }
@@ -1546,6 +1784,40 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Valider le temps"
+          }
+        }
+      }
+    },
+    "WeightedDips" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Weighted Dips are an advanced variation of classic dips, where additional weight is used to increase intensity and maximize muscle development in the triceps, chest, and shoulders. This exercise is highly effective for building upper body strength.\n\nStarting position – Attach a weight to your belt using a chain or wear a weighted vest. Position yourself between parallel bars with your arms fully extended, shoulders slightly retracted, and your chest slightly forward.\n\nControlled descent – Inhale as you bend your elbows and slowly lower your body. Keep your torso straight or lean slightly forward depending on whether you want to target your triceps more (upright position) or your chest (slight forward lean).\n\nDepth – Lower yourself until your elbows form a 90-degree angle or slightly lower if your mobility allows. Ensure your elbows don’t flare out too much to avoid shoulder strain.\n\nPush back up – Exhale as you push firmly on the bars to raise your body back to the starting position, fully extending your arms. Squeeze your triceps and chest at the top of the movement.\n\nControlled movement – Make sure the entire motion is smooth and controlled, both on the way down and up. Avoid any body swinging to maximize the exercise's effectiveness.\n\nBreathing – Inhale as you descend, exhale as you push up.\n\nBy adding weight, this exercise increases the load on the triceps and chest, making it an excellent way to build strength and muscle mass in the upper body."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Les Weighted Dips (Dips lestés) sont une variante plus avancée des dips classiques, où l’on ajoute un poids supplémentaire pour intensifier l’effort et maximiser le développement musculaire des triceps, pectoraux et épaules. Cet exercice est très efficace pour augmenter la force du haut du corps.\n\nPosition de départ – Fixez un poids à votre ceinture avec une chaîne ou un gilet lesté. Placez-vous entre les barres parallèles avec les bras tendus, les épaules légèrement rétractées et la poitrine légèrement avancée.\n\nDescente contrôlée – En inspirant, pliez les coudes et abaissez lentement votre corps. Gardez le tronc droit ou légèrement penché en avant selon si vous ciblez principalement les triceps (position droite) ou les pectoraux (léger basculement vers l’avant).\n\nProfondeur – Continuez de descendre jusqu'à ce que vos coudes soient à un angle d'environ 90 degrés ou légèrement en dessous si votre mobilité le permet. Assurez-vous que vos coudes ne s'écartent pas trop sur les côtés pour éviter les blessures.\n\nPoussée vers le haut – En expirant, poussez fermement sur les barres pour remonter votre corps à la position de départ, en redressant complètement les bras. Contractez vos triceps et pectoraux au sommet du mouvement.\n\nContrôle du mouvement – Assurez-vous que tout le mouvement est fluide et contrôlé, tant à la descente qu'à la montée. Évitez tout balancement du corps pour maximiser l’efficacité de l’exercice.\n\nRespiration – Inspirez en descendant, expirez en montant.\n\nCet exercice, avec l’ajout de poids, permet d’augmenter la charge sur les triceps et les pectoraux, ce qui en fait un excellent exercice pour développer la force et la masse musculaire dans le haut du corps."
+          }
+        }
+      }
+    },
+    "WeightedPullUp" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The Weighted Pull-Up is an advanced version of the classic pull-up exercise, where additional weight is used to increase intensity and further target the muscles of the back and arms. This exercise primarily engages the latissimus dorsi, biceps, as well as shoulder and core stabilizers.\n\nStarting position – Attach a weight to your belt or between your legs using a weighted vest or dip belt. Grab the pull-up bar with either a pronated (palms facing forward) or supinated (palms facing you) grip, with your hands shoulder-width apart.\n\nBack engagement – Engage your back muscles and core to pull your body upwards until your chin passes the bar. Focus on activating the lats to initiate the movement, rather than pulling solely with your arms.\n\nControlled movement – Keep the movement fluid and controlled to avoid swinging your body. Maintain a straight posture, with elbows close to your body.\n\nTop position – Pause briefly at the top, squeezing your back and bicep muscles.\n\nControlled descent – Slowly and in a controlled manner, lower yourself until your arms are fully extended and your shoulders are relaxed. Avoid simply dropping down; the descent should be as controlled as the ascent.\n\nBreathing – Exhale as you pull your body upwards and inhale as you lower yourself.\n\nAdding weight makes this exercise ideal for building upper body strength, increasing back and arm muscle mass, and improving core stability."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Le Weighted Pull-Up (Traction lestée) est une variante avancée de l’exercice de traction classique, qui consiste à ajouter un poids supplémentaire pour augmenter l'intensité et cibler davantage les muscles du dos et des bras. Cet exercice sollicite principalement les dorsaux, les biceps, ainsi que les muscles stabilisateurs des épaules et du tronc.\n\nPosition de départ – Attachez un poids à votre ceinture ou entre vos jambes à l’aide d’un gilet lesté ou d’une ceinture de traction. Saisissez la barre avec une prise en pronation (paumes vers l’avant) ou en supination (paumes vers vous), avec les mains écartées de la largeur des épaules.\n\nContraction du dos – En engageant vos muscles du dos et du tronc, tirez votre corps vers le haut jusqu’à ce que votre menton dépasse la barre. Concentrez-vous sur l'activation des dorsaux pour initier le mouvement, plutôt que de tirer uniquement avec les bras.\n\nMouvement contrôlé – Gardez le mouvement fluide et contrôlé pour éviter de balancer le corps. Veillez à maintenir une posture droite, avec les coudes proches du corps.\n\nPosition en haut – Marquez une courte pause en haut du mouvement, en contractant les muscles du dos et des biceps.\n\nDescente maîtrisée – Redescendez lentement et sous contrôle jusqu’à ce que vos bras soient complètement tendus et vos épaules relâchées. Évitez de simplement laisser tomber le corps ; la descente doit être aussi contrôlée que la montée.\n\nRespiration – Expirez en tirant votre corps vers le haut et inspirez en redescendant.\n\nL'ajout de poids rend cet exercice idéal pour augmenter la force maximale du haut du corps, améliorer la masse musculaire des dorsaux et des bras, tout en travaillant la stabilité du tronc."
           }
         }
       }
