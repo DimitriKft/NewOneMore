@@ -231,10 +231,34 @@ let stringMoovs = [
         subtitle: NSLocalizedString("SeatedRow", comment: ""),
         imageName: "Seated-Row",
         category: .musculation),
-    StrongMove(nom: "Lat Pulldown", subtitle: ".", imageName: "Lat-Pulldown", category: .musculation),
-    StrongMove(nom: "Cable Crunch", subtitle: ".", imageName: "Cable-Crunch", category: .musculation),
-    StrongMove(nom: "Dumbbell Bench Press", subtitle: "...", imageName: "Dumbbell-Bench-Press", category: .musculation),
-    StrongMove(nom: "T-Bar Row", subtitle: ".", imageName: "T-Bar-Row", category: .musculation),
-    StrongMove(nom: "Strict Press", subtitle: "...", imageName: "strict-press", category: .musculation),
+    StrongMove(
+        nom: "Lat Pulldown",
+        subtitle: NSLocalizedString("LatPulldown", comment: ""),
+        imageName: "Lat-Pulldown",
+        category: .musculation),
+    StrongMove(
+        nom: "Cable Crunch",
+        subtitle: NSLocalizedString("CableCrunch", comment: ""),
+        imageName: "Cable-Crunch",
+        category: .musculation),
+    StrongMove(
+        nom: "Dumbbell Bench Press",
+        subtitle: NSLocalizedString("DumbellBenchPress", comment: ""),
+        imageName: "Dumbbell-Bench-Press",
+        category: .musculation),
+    StrongMove(
+        nom: "Dumbbell Row",
+        subtitle: NSLocalizedString("DumbellRow", comment: ""),
+        imageName: "Dumbbell-Row",
+        category: .musculation),
+    StrongMove(
+        nom: "T-Bar Row",
+        subtitle: NSLocalizedString("TRow", comment: ""),
+        imageName: "T-Row",
+        category: .musculation),
+    StrongMove(
+        nom: "Strict Press",
+        subtitle: NSLocalizedString("StrictPress", comment: ""),
+        imageName: "Strict-Press", category: .musculation),
     
 ]

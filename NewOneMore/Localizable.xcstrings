@@ -336,6 +336,23 @@
         }
       }
     },
+    "CableCrunch" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The Cable Crunch is an exercise primarily targeting the abdominal muscles, especially the rectus abdominis, also known as the \"six-pack.\" This exercise is performed using a cable machine, allowing for adjustable resistance and a more intense contraction of the abs.\n\nStarting position – Kneel in front of a cable machine with a rope or bar attachment set high. Grasp the rope with both hands and place it behind your head, keeping your elbows close to your ears. Keep your back straight and your knees slightly apart.\n\nEngage the core – Begin by contracting your abs, making sure not to pull too much with your arms. The movement should come from the abdominal muscles, not from the arms or shoulders.\n\nCrunch movement – Curl your torso down, bringing your ribcage towards your pelvis. Focus on squeezing your abs at the bottom of the movement for maximum contraction. Keep your hips stable throughout the exercise.\n\nControlled return – Slowly raise your torso back up to the starting position, keeping tension on your abs. Avoid fully releasing the tension between each rep.\n\nBreathing – Exhale as you crunch down, contracting your abs, and inhale as you slowly return to the starting position.\n\nAdditional tips – Keep the movement slow and controlled to maximize abdominal tension. Avoid pulling with your arms or shoulders to prevent neck strain.\n\nThe Cable Crunch is a powerful exercise for strengthening the abdominal muscles while allowing for a full range of motion and total control over the resistance.\n\n"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Le Cable Crunch est un exercice ciblant principalement les muscles abdominaux, notamment le grand droit de l’abdomen, également connu sous le nom de \"tablette de chocolat\". Cet exercice est effectué à l’aide d’une machine à câble, ce qui permet de moduler la résistance et d’obtenir une contraction plus intense des abdominaux.\n\nPosition de départ – Agenouillez-vous face à une machine à câble avec une corde ou une barre fixée en hauteur. Saisissez la corde avec les deux mains et placez-la derrière votre tête, en maintenant les coudes proches des oreilles. Gardez le dos droit et les genoux légèrement écartés.\n\nEngagement du tronc – Commencez par contracter vos abdominaux, en veillant à ne pas trop tirer avec vos bras. Le mouvement doit provenir des muscles abdominaux et non des bras ou des épaules.\n\nFlexion du tronc – Enroulez votre torse vers le bas, en ramenant la cage thoracique vers le bassin. Concentrez-vous sur la contraction maximale des abdominaux en fin de mouvement. Gardez les hanches stables tout au long de l'exercice.\n\nRetour contrôlé – Remontez lentement votre torse à la position de départ tout en gardant la tension sur vos abdominaux. Évitez de relâcher complètement la tension entre chaque répétition.\n\nRespiration – Expirez en descendant et contractant les abdominaux, inspirez en remontant de manière contrôlée.\n\nConseils supplémentaires – Gardez le mouvement lent et contrôlé pour maximiser la tension sur les abdominaux. Ne tirez pas avec les bras ou les épaules pour éviter toute tension excessive dans la nuque.\n\nLe Cable Crunch est un exercice puissant pour renforcer les abdominaux tout en permettant une grande amplitude de mouvement et un contrôle total de la charge."
+          }
+        }
+      }
+    },
     "CableTricepsPushdown" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -522,6 +539,56 @@
         }
       }
     },
+    "DumbbellBenchPress" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The Dumbbell Bench Press is a classic weightlifting exercise that primarily targets the pectoral muscles, as well as the triceps and shoulders. Using dumbbells instead of a barbell allows for a greater range of motion and engages more stabilizing muscles.\n\nStarting position – Lie flat on a bench with a dumbbell in each hand. Your feet should be planted firmly on the floor. Hold the dumbbells at chest level with your palms facing forward.\n\nEngage the muscles – Pinch your shoulder blades together and keep your shoulders back to prevent strain on the shoulders. Your elbows should be at a 45-degree angle relative to your body.\n\nPress the dumbbells – Push the dumbbells upwards by contracting your pectoral muscles, keeping your elbows slightly bent at the top of the movement to avoid locking the joints.\n\nControlled return – Lower the dumbbells back down slowly to the starting position, maintaining tension in your chest throughout the movement. Control is key to avoiding jerky movements.\n\nBreathing – Inhale as you lower the dumbbells, and exhale as you press them upwards.\n\nAdditional tips – Maintain proper posture on the bench and avoid arching your back. The controlled descent is just as important as the press for maximizing the effectiveness of the exercise.\n\nThe Dumbbell Bench Press is an excellent exercise for building strength and mass in the chest while also engaging the stabilizing muscles of the shoulders and arms."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Le Dumbbell Bench Press est un exercice classique de musculation qui cible principalement les muscles pectoraux, ainsi que les triceps et les épaules. Utiliser des haltères au lieu d’une barre permet une plus grande amplitude de mouvement et sollicite davantage les muscles stabilisateurs.\n\nPosition de départ – Allongez-vous sur un banc plat avec un haltère dans chaque main. Vos pieds doivent être fermement posés au sol. Les haltères doivent être tenus au niveau de la poitrine, les paumes tournées vers l'avant.\n\nEngagement des muscles – Serrez vos omoplates et gardez vos épaules en arrière pour éviter toute tension dans les épaules. Vos coudes doivent être à un angle de 45 degrés par rapport à votre corps.\n\nPoussée des haltères – Poussez les haltères vers le haut en contractant vos pectoraux, tout en gardant vos coudes légèrement pliés au sommet du mouvement pour ne pas verrouiller les articulations.\n\nRetour contrôlé – Redescendez lentement les haltères à la position de départ, en maintenant une tension continue sur les pectoraux. Gardez le contrôle pendant tout le mouvement pour éviter des mouvements brusques.\n\nRespiration – Inspirez en descendant les haltères, et expirez en poussant les haltères vers le haut.\n\nConseils supplémentaires – Assurez-vous de maintenir une bonne posture sur le banc et d'éviter d'arquer le dos. La descente contrôlée est tout aussi importante que la phase de poussée pour maximiser l'efficacité de l'exercice.\n\nLe Dumbbell Bench Press est un excellent exercice pour développer la force et la masse musculaire des pectoraux tout en sollicitant les muscles stabilisateurs des épaules et des bras."
+          }
+        }
+      }
+    },
+    "DumbbellRow" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The One-Arm Dumbbell Row is an effective strength training exercise that targets the back muscles, especially the latissimus dorsi, as well as the biceps and shoulders. It also helps strengthen scapular stability. This exercise is performed with a single dumbbell, with the body supported by a bench for stability.\n\nStarting position – Place one knee and hand on a bench for stabilization. The other foot should be firmly planted on the floor, slightly back. Hold the dumbbell in the free hand, with the arm extended towards the floor and the palm facing inward. Keep your back straight and slightly tilted forward.\n\nRow the dumbbell – Pull the dumbbell towards your side by bending the elbow and contracting the back muscles. Keep your elbow close to your body throughout the movement, avoiding lifting it too high to protect the shoulder.\n\nControlled return – Slowly lower the dumbbell, controlling the movement and maintaining tension in the back muscles. The arm should return to the starting position, extended towards the floor.\n\nBreathing – Exhale as you pull the dumbbell towards your side and inhale as you lower it towards the floor.\n\nAdditional tips – Ensure you keep your back straight and avoid any twisting motion of the torso. This exercise can also be performed standing, with a hand supported for a more dynamic core engagement.\n\nThe One-Arm Dumbbell Row is excellent for developing back width and thickness while working on muscular balance between both sides of the body."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Le Dumbbell Row à un bras est un exercice de musculation efficace pour cibler les muscles du dos, en particulier le grand dorsal, ainsi que les biceps et les épaules. Il permet également de renforcer la stabilité de la ceinture scapulaire. Cet exercice est réalisé avec un seul haltère, en s'appuyant sur un banc pour une meilleure stabilité.\n\nPosition de départ – Placez un genou et une main du même côté sur un banc pour vous stabiliser. Votre autre pied doit être fermement ancré au sol, un peu plus en arrière. Le bras libre doit tenir l'haltère, le bras tendu vers le sol, paume tournée vers l'intérieur. Gardez le dos droit et légèrement incliné vers l'avant.\n\nTirage de l'haltère – Tirez l'haltère vers votre flanc en pliant le coude et en contractant les muscles du dos. Gardez votre coude proche de votre corps tout au long du mouvement et évitez de le lever trop haut pour protéger l'épaule.\n\nRetour contrôlé – Abaissez lentement l'haltère en contrôlant le mouvement, en gardant toujours la tension sur les muscles du dos. Le bras doit revenir à la position de départ, tendu vers le sol.\n\nRespiration – Expirez lorsque vous tirez l'haltère vers votre flanc et inspirez lorsque vous abaissez l'haltère vers le sol.\n\nConseils supplémentaires – Assurez-vous de garder votre dos droit et d'éviter tout mouvement de rotation du torse. Cet exercice peut également être fait debout, avec un support pour la main, pour un engagement plus dynamique du tronc.\n\nLe Dumbbell Row à un bras est idéal pour développer la largeur et la densité du dos, tout en travaillant l’équilibre musculaire des deux côtés du corps."
+          }
+        }
+      }
+    },
+    "DumbellBenchPress" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The Dumbbell Bench Press is a classic weightlifting exercise that primarily targets the pectoral muscles, as well as the triceps and shoulders. Using dumbbells instead of a barbell allows for a greater range of motion and engages more stabilizing muscles.\n\nStarting position – Lie flat on a bench with a dumbbell in each hand. Your feet should be planted firmly on the floor. Hold the dumbbells at chest level with your palms facing forward.\n\nEngage the muscles – Pinch your shoulder blades together and keep your shoulders back to prevent strain on the shoulders. Your elbows should be at a 45-degree angle relative to your body.\n\nPress the dumbbells – Push the dumbbells upwards by contracting your pectoral muscles, keeping your elbows slightly bent at the top of the movement to avoid locking the joints.\n\nControlled return – Lower the dumbbells back down slowly to the starting position, maintaining tension in your chest throughout the movement. Control is key to avoiding jerky movements.\n\nBreathing – Inhale as you lower the dumbbells, and exhale as you press them upwards.\n\nAdditional tips – Maintain proper posture on the bench and avoid arching your back. The controlled descent is just as important as the press for maximizing the effectiveness of the exercise.\n\nThe Dumbbell Bench Press is an excellent exercise for building strength and mass in the chest while also engaging the stabilizing muscles of the shoulders and arms."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Le Dumbbell Bench Press est un exercice classique de musculation qui cible principalement les muscles pectoraux, ainsi que les triceps et les épaules. Utiliser des haltères au lieu d’une barre permet une plus grande amplitude de mouvement et sollicite davantage les muscles stabilisateurs.\n\nPosition de départ – Allongez-vous sur un banc plat avec un haltère dans chaque main. Vos pieds doivent être fermement posés au sol. Les haltères doivent être tenus au niveau de la poitrine, les paumes tournées vers l'avant.\n\nEngagement des muscles – Serrez vos omoplates et gardez vos épaules en arrière pour éviter toute tension dans les épaules. Vos coudes doivent être à un angle de 45 degrés par rapport à votre corps.\n\nPoussée des haltères – Poussez les haltères vers le haut en contractant vos pectoraux, tout en gardant vos coudes légèrement pliés au sommet du mouvement pour ne pas verrouiller les articulations.\n\nRetour contrôlé – Redescendez lentement les haltères à la position de départ, en maintenant une tension continue sur les pectoraux. Gardez le contrôle pendant tout le mouvement pour éviter des mouvements brusques.\n\nRespiration – Inspirez en descendant les haltères, et expirez en poussant les haltères vers le haut.\n\nConseils supplémentaires – Assurez-vous de maintenir une bonne posture sur le banc et d'éviter d'arquer le dos. La descente contrôlée est tout aussi importante que la phase de poussée pour maximiser l'efficacité de l'exercice.\n\nLe Dumbbell Bench Press est un excellent exercice pour développer la force et la masse musculaire des pectoraux tout en sollicitant les muscles stabilisateurs des épaules et des bras."
+          }
+        }
+      }
+    },
     "DumbellCurl" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -552,6 +619,22 @@
           "stringUnit" : {
             "state" : "needs_review",
             "value" : "Le Dumbbell Fly, ou écarté avec haltères, est un exercice qui cible principalement les pectoraux, tout en engageant les épaules et les muscles stabilisateurs. C'est un excellent exercice pour étirer et renforcer les muscles de la poitrine, tout en améliorant la mobilité des épaules.\n\nPosition de départ – Allongez-vous sur un banc plat, les pieds bien ancrés au sol. Tenez une haltère dans chaque main avec une prise neutre (paumes face à face) et tendez les bras au-dessus de votre poitrine, légèrement fléchis.\n\nDescente contrôlée – En inspirant, abaissez lentement les bras de chaque côté, en maintenant une légère flexion des coudes. Continuez de descendre jusqu’à ce que vous sentiez un bon étirement dans vos pectoraux, mais sans aller au-delà de vos capacités de confort et de mobilité.\n\nMouvement de retour – Expirez en ramenant les haltères vers le centre, au-dessus de votre poitrine. Contractez vos pectoraux tout au long du mouvement, en évitant de tendre complètement les bras à la fin pour protéger les articulations des épaules.\n\nContrôle de l’amplitude – L’important dans cet exercice est de garder un mouvement contrôlé et d’éviter les à-coups ou une descente trop rapide, car cela pourrait stresser les épaules.\n\nRespiration – Inspirez en abaissant les haltères, expirez en les ramenant vers le centre.\n\nVariation possible – L’exercice peut être réalisé sur un banc incliné ou décliné pour cibler différentes portions des pectoraux.\n\nLe Dumbbell Fly est un exercice efficace pour développer la force et l’amplitude des pectoraux tout en améliorant la stabilité des épaules."
+          }
+        }
+      }
+    },
+    "DumbellRow" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The One-Arm Dumbbell Row is an effective strength training exercise that targets the back muscles, especially the latissimus dorsi, as well as the biceps and shoulders. It also helps strengthen scapular stability. This exercise is performed with a single dumbbell, with the body supported by a bench for stability.\n\nStarting position – Place one knee and hand on a bench for stabilization. The other foot should be firmly planted on the floor, slightly back. Hold the dumbbell in the free hand, with the arm extended towards the floor and the palm facing inward. Keep your back straight and slightly tilted forward.\n\nRow the dumbbell – Pull the dumbbell towards your side by bending the elbow and contracting the back muscles. Keep your elbow close to your body throughout the movement, avoiding lifting it too high to protect the shoulder.\n\nControlled return – Slowly lower the dumbbell, controlling the movement and maintaining tension in the back muscles. The arm should return to the starting position, extended towards the floor.\n\nBreathing – Exhale as you pull the dumbbell towards your side and inhale as you lower it towards the floor.\n\nAdditional tips – Ensure you keep your back straight and avoid any twisting motion of the torso. This exercise can also be performed standing, with a hand supported for a more dynamic core engagement.\n\nThe One-Arm Dumbbell Row is excellent for developing back width and thickness while working on muscular balance between both sides of the body."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Le Dumbbell Row est un exercice de musculation qui cible principalement les muscles du dos, en particulier le grand dorsal, mais il sollicite également les biceps et les épaules. Cet exercice peut être réalisé avec un haltère dans chaque main ou un seul haltère en s’appuyant sur un banc.\n\nPosition de départ – Placez-vous avec un haltère dans chaque main, les pieds écartés à la largeur des hanches. Penchez-vous légèrement en avant en gardant le dos droit et les genoux légèrement fléchis. Vos bras doivent être tendus vers le sol, les paumes tournées vers l’intérieur.\n\nTirage des haltères – Tirez les haltères vers votre torse en contractant vos muscles du dos. Gardez vos coudes près du corps et concentrez-vous sur la contraction du grand dorsal. Vos coudes doivent passer derrière votre dos pendant le mouvement.\n\nRetour contrôlé – Abaissez lentement les haltères en contrôlant le mouvement, en gardant toujours la tension sur les muscles du dos.\n\nRespiration – Inspirez lorsque vous abaissez les haltères et expirez lorsque vous tirez les haltères vers votre torse.\n\nConseils supplémentaires – Gardez toujours le dos droit et évitez d’arrondir les épaules. Pour plus de stabilité, vous pouvez effectuer cet exercice en position unilatérale, avec un genou et une main appuyés sur un banc.\n\nLe Dumbbell Row est un excellent exercice pour développer la largeur et l’épaisseur du dos tout en améliorant la posture et la stabilité des épaules."
           }
         }
       }
@@ -953,6 +1036,23 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Le Lateral Raise est un exercice de musculation ciblant principalement les muscles deltoïdes, en particulier la partie latérale (médiane) des épaules. Il est idéal pour améliorer la largeur des épaules et donner une apparence plus musclée au haut du corps.\n\nPosition de départ – Tenez-vous debout, les pieds à la largeur des hanches et les genoux légèrement fléchis. Saisissez un haltère dans chaque main, les bras le long du corps, avec les paumes tournées vers l'intérieur (prises neutres). Gardez la poitrine relevée et les épaules en arrière.\n\nLevé des bras – Levez lentement les bras sur les côtés jusqu’à ce qu’ils soient parallèles au sol. Assurez-vous de maintenir une légère flexion des coudes tout au long du mouvement. Ne laissez pas les haltères monter au-dessus de la hauteur des épaules.\n\nContraction – Une fois que les bras sont à la hauteur des épaules, contractez les deltoïdes et maintenez la position pendant une seconde.\n\nDescente contrôlée – Abaissez lentement les bras jusqu'à la position de départ. Évitez de laisser les poids tomber brusquement, en contrôlant le mouvement pour maximiser l'efficacité.\n\nRespiration – Inspirez pendant la levée des poids et expirez en les abaissant.\n\nLe Lateral Raise est un exercice essentiel pour la définition et la force des épaules, en particulier pour développer des épaules larges et bien équilibrées."
+          }
+        }
+      }
+    },
+    "LatPulldown" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The Lat Pulldown is a strength exercise that primarily targets the back muscles, specifically the latissimus dorsi. It also works the biceps, forearms, and shoulder muscles. This exercise is ideal for increasing back width and improving posture.\n\nStarting position – Sit down at the lat pulldown machine with your thighs locked under the pads to prevent your body from rising. Grasp the bar with an overhand grip (palms facing forward), with your hands placed slightly wider than shoulder-width apart.\n\nEngage your back – Keep your torso slightly leaned back, your back straight, and your chest up. Engage your back muscles by pulling your shoulders slightly backward before initiating the movement.\n\nPulling motion – Pull the bar down until it touches the top of your chest. Keep your elbows pointed down and avoid moving your shoulders forward during the motion. Squeeze your shoulder blades together at the bottom to maximize the contraction in your lats.\n\nControlled return – Slowly raise the bar back up, controlling the upward phase and allowing your arms to fully extend without releasing tension in your back muscles. Avoid leaning forward.\n\nBreathing – Exhale during the pulling phase and inhale as you release the bar back up.\n\nPossible variations – You can vary your grip (overhand, underhand, neutral) or use V-handles or a close grip to target different parts of your back muscles.\n\nThe Lat Pulldown is a key exercise for building a wide and strong back, especially if you’re aiming to improve performance in movements like pull-ups.\n\n"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Le Lat Pulldown est un exercice de musculation qui cible principalement les muscles du dos, en particulier le grand dorsal. Il sollicite également les biceps, les avant-bras et les muscles des épaules. Cet exercice est parfait pour améliorer la largeur du dos et renforcer la posture.\n\nPosition de départ – Asseyez-vous sur la machine à tirage vertical, les cuisses bloquées sous les coussinets pour éviter que le corps ne se soulève. Saisissez la barre avec une prise en pronation (paumes vers l’avant), les mains placées un peu plus larges que la largeur des épaules.\n\nActivation du dos – Gardez le torse légèrement incliné vers l’arrière, le dos droit et la poitrine sortie. Engagez les muscles du dos en tirant légèrement les épaules vers l’arrière avant de commencer le mouvement.\n\nMouvement de tirage – Tirez la barre vers le bas jusqu’à ce qu’elle atteigne le haut de votre poitrine. Pendant ce mouvement, gardez les coudes pointés vers le sol et évitez de bouger les épaules vers l’avant. Serrez les omoplates ensemble en fin de mouvement pour maximiser la contraction des dorsaux.\n\nRetour contrôlé – Remontez lentement la barre en contrôlant la phase de retour, en laissant vos bras s’étendre complètement sans relâcher la tension dans les muscles du dos. Évitez de vous pencher en avant.\n\nRespiration – Expirez pendant la phase de tirage et inspirez en relâchant la barre vers le haut.\n\nVariations possibles – Vous pouvez varier la prise (pronation, supination, neutre) ou utiliser des poignées en V ou une prise serrée pour cibler différentes parties des muscles du dos.\n\nLe Lat Pulldown est un exercice clé pour développer un dos large et puissant, surtout si vous cherchez à améliorer vos performances sur des mouvements comme les tractions.\n\n"
           }
         }
       }
@@ -1639,6 +1739,23 @@
         }
       }
     },
+    "StrictPress" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The Strict Press, also known as the Overhead Press, is a fundamental strength exercise that targets the shoulders, triceps, and upper back. What sets this movement apart is the lack of assistance from the legs or lower body.\n\nStarting position – Stand with your feet shoulder-width apart, the barbell resting on your collarbone with hands slightly wider than shoulder-width. Your elbows should be slightly in front of the bar, and your core should be braced.\n\nPressing phase – Push the bar directly overhead, keeping your core tight and avoiding any use of the legs. Ensure you don't overarch your back and use the shoulders and triceps to press the bar up.\n\nControlled return – Slowly lower the bar back to the starting position, maintaining control and a solid posture throughout.\n\nBreathing – Inhale before the press and exhale as you complete the upward motion.\n\nAdditional tips – Keep your feet firmly planted and avoid using momentum or leg drive to assist the lift. This movement requires good shoulder and scapular mobility.\n\nThe Strict Press is a powerful exercise for building pure shoulder strength without the assistance of leg drive or momentum."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Le Strict Press, également appelé Overhead Press, est un exercice fondamental de musculation qui permet de développer la force des épaules, des triceps, et du haut du dos. Cet exercice se distingue par l'absence d'assistance des jambes ou du bas du corps.\n\nPosition de départ – Placez-vous debout, les pieds écartés à la largeur des hanches, avec la barre en position rack sur les clavicules et les mains placées un peu plus larges que les épaules. Vos coudes doivent être légèrement en avant de la barre, et votre tronc engagé.\n\nPhase de poussée – Poussez la barre directement au-dessus de votre tête en maintenant le tronc gainé et en évitant d’utiliser vos jambes. Évitez de cambrer le dos ; utilisez la force des épaules et des triceps pour élever la barre.\n\nRetour contrôlé – Redescendez lentement la barre jusqu'à la position initiale, en gardant toujours le contrôle du mouvement et une bonne posture.\n\nRespiration – Inspirez avant de pousser et expirez à la fin de la phase de poussée.\n\nConseils supplémentaires – Gardez vos pieds fermement ancrés au sol et évitez d'utiliser le rebond des jambes ou du dos pour aider la montée. Cet exercice exige une bonne mobilité des épaules et de la ceinture scapulaire.\n\nLe Strict Press est un excellent mouvement pour développer la force pure des épaules sans l'assistance des jambes ou de l'élan."
+          }
+        }
+      }
+    },
     "SumoDeadlift" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -1768,6 +1885,23 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Toutes les catégories"
+          }
+        }
+      }
+    },
+    "TRow" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The T-Bar Row is a strength exercise that primarily targets the muscles of the back, specifically the latissimus dorsi, trapezius, and rhomboids, while also engaging the arms and shoulders for stability.\n\nStarting position – Stand with your feet shoulder-width apart. Bend forward at the hips while keeping your back straight with a slight arch. Grab the T-bar row handle (V-handle) with your arms extended.\n\nPulling phase – Pull the handle toward your lower abdomen by driving your elbows back. Squeeze your shoulder blades together at the top of the movement to maximize back muscle engagement.\n\nControlled return – Slowly lower the bar back down until your arms are fully extended, keeping slight tension in your back to control the descent.\n\nBreathing – Exhale as you pull the bar toward you and inhale as you return to the starting position.\n\nAdditional tips – Keep your torso slightly inclined and your back straight to avoid excessive pressure on the spine. Do not let your shoulders slump at the end of the movement.\n\nThe T-Bar Row is an excellent exercise for developing both the thickness and width of your back while also improving posture and stability."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Le T-Bar Row est un exercice de musculation qui permet de cibler principalement les muscles du dos, en particulier le grand dorsal, le trapèze et les rhomboïdes, tout en sollicitant les muscles des bras et des épaules pour stabiliser le mouvement.\n\nPosition de départ – Placez-vous debout, les pieds écartés à la largeur des épaules. Inclinez-vous en avant à partir des hanches, tout en gardant le dos droit et légèrement cambré. Saisissez la poignée en V de la barre en position basse, les bras tendus.\n\nPhase de tirage – Ramenez la poignée vers votre abdomen en tirant les coudes vers l'arrière. Serrez les omoplates ensemble au sommet du mouvement pour maximiser l'activation des muscles du dos.\n\nRetour contrôlé – Redescendez lentement la barre jusqu'à ce que vos bras soient complètement tendus, en maintenant une légère tension dans le dos pour contrôler la descente.\n\nRespiration – Expirez en tirant la barre vers vous et inspirez en revenant à la position de départ.\n\nConseils supplémentaires – Gardez le buste légèrement incliné et le dos bien droit pour éviter toute pression excessive sur la colonne vertébrale. Ne laissez pas vos épaules s'affaisser à la fin du mouvement.\n\nLe T-Bar Row est un excellent exercice pour renforcer l'épaisseur et la largeur du dos tout en travaillant la posture et la stabilité."
           }
         }
       }
