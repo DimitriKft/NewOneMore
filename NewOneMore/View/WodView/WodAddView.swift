@@ -40,9 +40,11 @@ struct WodAddView: View {
                     Spacer()
                 }
                 HStack(alignment: .top, spacing: 65) {
-                    WodBtnCategorieView(selectedCategory: $selectedCategory, category: nil)
+                    
                     WodBtnCategorieView(selectedCategory: $selectedCategory, category: .girl)
                     WodBtnCategorieView(selectedCategory: $selectedCategory, category: .hero)
+                    WodBtnCategorieView(selectedCategory: $selectedCategory, category: .open)
+                    
                 }
                 .padding(.horizontal)
                 
@@ -98,6 +100,8 @@ struct WodAddView: View {
             return Color.purple
         case .hero:
             return Color.green
+        case .open:
+            return Color.brown
         }
     }
 

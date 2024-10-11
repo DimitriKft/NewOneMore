@@ -10,13 +10,14 @@
 import SwiftUI
 
 struct WodBtnCategorieView: View {
-    @Binding var selectedCategory: WodCategories? // Permet de passer une catégorie optionnelle
-    var category: WodCategories? // Catégorie optionnelle, `nil` signifie "Toutes"
+    @Binding var selectedCategory: WodCategories?
+    var category: WodCategories?
 
     var colorCategory: Color {
         switch category {
         case .girl: return .purple
         case .hero: return .green
+        case .open: return .brown
         default: return .black
         }
     }
@@ -25,6 +26,7 @@ struct WodBtnCategorieView: View {
         switch category {
         case .girl: return "figure.cross.training"
         case .hero: return "medal.fill"
+        case .open: return "trophy.fill"
         default: return "square.grid.2x2"
         }
     }

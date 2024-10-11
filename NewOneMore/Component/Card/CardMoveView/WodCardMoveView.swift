@@ -21,6 +21,8 @@ struct WodCardMoveView: View {
             return .purple
         case .hero:
             return .green
+        case .open:
+            return .brown
         }
     }
 
@@ -28,6 +30,7 @@ struct WodCardMoveView: View {
         switch item.category {
         case .girl: return "figure.cross.training"
         case .hero: return "medal.fill"
+        case .open: return "trophy.fill"
         }
     }
     

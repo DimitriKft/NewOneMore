@@ -154,4 +154,10 @@ let wodMoves = [
         imageName: "Glen",
         category: .hero
     ),
+    
+    // Open
+    WodMove(nom: "11.1 ",
+            subtitle: "150 Wall Balls",
+            imageName: "11.1",
+            category: .open),
 ]

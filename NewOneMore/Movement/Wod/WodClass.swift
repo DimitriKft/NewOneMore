@@ -12,6 +12,7 @@ import SwiftUI
 enum WodCategories: String, Codable, CaseIterable {
     case girl = "Girl"
     case hero = "Hero"
+    case open = "Open"
 }
 
 @Model
@@ -36,13 +37,10 @@ class Wod: ObservableObject {
     
     // Méthode pour ajouter un temps avec une date (sans toucher aux catégories)
     func addTime(_ time: Double, date: Date) {
-        self.times.append(time)  // Ajoute le temps à la liste des temps
-        self.dates.append(date)  // Ajoute la date à la liste des dates
-        // Ne rien faire avec la catégorie ici, elle est fixe pour chaque WOD
+        self.times.append(time)  
+        self.dates.append(date)
     }
 
-    
-    // Méthode pour récupérer les catégories en tant qu'énumérations
     func getCategories() -> [WodCategories] {
         return self.categories.compactMap { WodCategories(rawValue: $0) }
     }
@@ -57,6 +55,8 @@ class Wod: ObservableObject {
             return .purple
         case .hero:
             return .green
+        case .open:
+            return .brown
         }
     }
 }
