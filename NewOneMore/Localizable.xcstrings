@@ -270,6 +270,23 @@
         }
       }
     },
+    "Angie" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Angie is a \"for time\" WOD that tests your muscular and mental endurance, particularly for the upper body and core. This CrossFit benchmark is composed of four bodyweight movements done in a chipper format, where you must complete all the reps of one movement before moving to the next. It’s a tough test of muscular stamina.\n\nWOD Format:\n100 pull-ups\n100 push-ups\n100 sit-ups\n100 air squats\n\nMovement Standards:\nPull-Ups: Chin must go over the bar each rep, using an overhand grip. Kipping or butterfly pull-ups are allowed to save time.\nPush-Ups: Chest touches the floor at the bottom, arms fully extend at the top.\nSit-Ups: Shoulders touch the ground on the way down, and your hands should touch or pass your feet on the way up.\nAir Squats: Hips must break parallel at the bottom, and you must fully stand up at the top.\n\nTips for the WOD Angie:\nPull-Ups: Break the 100 reps into sets from the start, even if you feel strong. Sets of 10-15 are a good strategy to avoid burnout.\nPush-Ups: Be cautious with arm fatigue and break up the sets earlier than you think. Keep rests short.\nSit-Ups: Maintain a consistent pace throughout the 100 reps without tiring yourself out too much.\nAir Squats: Aim to complete the 100 reps unbroken if possible. If you need to rest, keep breaks short."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Angie est un WOD de type \"for time\" qui met à l'épreuve votre endurance musculaire et mentale, en particulier pour le haut du corps et le core. Ce benchmark CrossFit est constitué de quatre mouvements de gymnastique réalisés dans un format chipper, où vous devez terminer l'ensemble des répétitions d'un mouvement avant de passer au suivant. Il s'agit d'un test brutal d'endurance musculaire.\n\nFormat du WOD :\n100 pull-ups\n100 push-ups\n100 sit-ups\n100 air squats\n\nObjectif :\nFor Time : Complétez les 400 répétitions aussi rapidement que possible.\n\nStandards des mouvements :\nPull-Ups : Menton au-dessus de la barre à chaque répétition, en prise pronation. Les kipping ou butterfly pull-ups sont autorisés pour gagner du temps.\nPush-Ups : Le torse doit toucher le sol à chaque répétition, et les bras doivent être complètement tendus en haut du mouvement.\nSit-Ups : Les épaules doivent toucher le sol à chaque descente et les mains doivent toucher vos pieds ou passer au-delà en remontant.\nAir Squats : Les hanches doivent passer en dessous de la ligne des genoux en bas, et vous devez vous redresser complètement en haut.\n\nConseils pour le WOD Angie :\nPull-Ups : Divisez les 100 répétitions en plusieurs séries dès le début, même si vous êtes à l'aise. Des séries de 10-15 répétitions sont un bon point de départ pour ne pas vous épuiser.\nPush-Ups : Faites attention à la fatigue des bras. Divisez les séries plus tôt si nécessaire, avec des pauses courtes.\nSit-Ups : Trouvez un rythme constant que vous pouvez maintenir tout au long des 100 répétitions sans trop vous épuiser.\nAir Squats : Essayez de faire ces 100 répétitions en continu. Si vous avez besoin de pauses, faites-les courtes pour finir rapidement."
+          }
+        }
+      }
+    },
     "annie" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -316,6 +333,23 @@
           "stringUnit" : {
             "state" : "needs_review",
             "value" : "Le Back Squat est l'un des exercices de base en musculation et en haltérophilie. Il consiste à porter une barre sur le haut des trapèzes et à effectuer un squat complet. Cet exercice est primordial pour développer la force des jambes, des hanches et du bas du dos.\n\nPosition de départ – Placez la barre sur le haut des trapèzes, en gardant les pieds écartés à la largeur des épaules. Les mains sont placées de part et d'autre de la barre, avec les coudes légèrement pointés vers l'arrière pour stabiliser la position. Engagez le tronc et gardez la poitrine haute.\n\nDescente en squat – Fléchissez les hanches et les genoux pour abaisser votre corps en position de squat complet, en veillant à ce que les hanches descendent sous le niveau des genoux. Gardez le dos droit et les talons fermement ancrés au sol.\n\nPhase ascendante – Poussez sur les talons pour vous redresser, en engageant principalement les quadriceps et les muscles des fessiers. Veillez à garder la barre stable sur les trapèzes pendant toute la remontée.\n\nRetour à la position de départ – Revenez à la position debout avec la barre toujours en place, en vous assurant de bien contrôler le mouvement à chaque étape.\n\nLe Back Squat est un mouvement fondamental pour améliorer la force et la puissance du bas du corps. Il sollicite également les muscles stabilisateurs du tronc, du bas du dos et des hanches.\n\n"
+          }
+        }
+      }
+    },
+    "Barbara" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Barbara is a \"benchmark girl\" WOD designed to test muscular endurance and cardiovascular capacity using bodyweight movements. This WOD is highly demanding with a high volume of repetitions, combining pull-ups, push-ups, sit-ups, and air squats. The goal is to complete five rounds as quickly as possible, with rest periods between each round.\n\nWOD Format:\n5 rounds for time:\n20 Pull-Ups\n30 Push-Ups\n40 Sit-Ups\n50 Air Squats\n3 minutes rest between rounds\n\nGoal:\nFor Time: Total time to complete 5 rounds, including rest periods.\n\nMovement Standards:\nPull-Ups: Perform strict, kipping, or butterfly pull-ups, ensuring that your chin goes over the bar for each rep.\nPush-Ups: Hands slightly wider than shoulder-width, lower your body until your chest touches the ground, then push back up to full extension.\nSit-Ups: Touch the ground with your shoulders at the bottom and sit up to touch your feet at the top.\nAir Squats: Squat fully down, with hips below the knees, then stand back up to full extension with hips and knees locked out.\n\nTips for the Barbara WOD:\nPace yourself: With high rep volume, try to maintain a consistent pace rather than starting too fast.\nTake strategic breaks: Take short breaks to avoid full exhaustion, especially on push-ups and pull-ups.\nUse the rest wisely: Utilize the 3-minute rest between rounds to recover well, but keep your muscles warm and ready for the next round.\nFocus on form: With so many reps, it's easy to lose form. Ensure each rep is performed with good technique to avoid injury.\nBarbara will challenge your bodyweight endurance and push you to maintain a steady pace through the five rounds."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Barbara est un WOD de type \"benchmark girl\" conçu pour tester l'endurance musculaire et la capacité cardiovasculaire sur des mouvements au poids du corps. C'est un WOD très exigeant avec des répétitions élevées, combinant des tractions, des pompes, des sit-ups et des squats. L'objectif est de compléter cinq tours le plus rapidement possible, en prenant des périodes de repos entre chaque tour.\n\nFormat du WOD :\n5 rounds for time :\n20 Pull-Ups\n30 Push-Ups\n40 Sit-Ups\n50 Air Squats\n3 minutes de repos entre chaque tour\n\nObjectif :\nFor Time : Le temps total pour compléter 5 tours, y compris les périodes de repos.\n\nStandards des mouvements :\nPull-Ups : Effectuez des tractions strictes, kipping ou butterfly, en veillant à ce que le menton dépasse la barre à chaque répétition.\nPush-Ups : Placez vos mains légèrement plus larges que vos épaules, descendez en pliant les coudes jusqu'à ce que votre poitrine touche le sol, puis repoussez jusqu'à la position de départ.\nSit-Ups : Touchez le sol avec vos épaules en bas du mouvement et revenez en position assise pour toucher vos pieds.\nAir Squats : Descendez en squat complet, hanches sous les genoux, puis revenez à la position debout, hanches et genoux complètement verrouillés.\n\nConseils pour le WOD Barbara :\nMaintenez un rythme constant : Avec un volume élevé de répétitions, essayez de maintenir un rythme constant plutôt que de partir trop rapidement.\nGérez les pauses stratégiques : Prenez de petites pauses pour éviter de vous épuiser complètement, surtout sur les pompes et les tractions.\nUtilisez les périodes de repos : Profitez des 3 minutes de repos entre les tours pour bien récupérer, mais veillez à ce que vos muscles ne se refroidissent pas complètement avant de repartir.\nConcentration sur la forme : Avec un grand volume de répétitions, il est facile de compromettre la technique. Assurez-vous que chaque répétition est effectuée avec une bonne forme pour éviter les blessures.\nBarbara mettra à l'épreuve votre endurance au poids du corps et vous poussera à maintenir un rythme soutenu tout au long des cinq tours."
           }
         }
       }
@@ -641,6 +675,22 @@
         }
       }
     },
+    "Diane" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Diane is a classic benchmark WOD in CrossFit that combines Deadlifts with Handstand Push-Ups. This workout emphasizes both lower body strength with the Deadlifts and upper body strength and stability with the Handstand Push-Ups.\n\nWOD Format:\nDeadlifts: Lifting a barbell from the ground using the power of your legs and back.\nHandstand Push-Ups: Push-ups performed in a handstand position against a wall, engaging the shoulders, arms, and core.\n\nRep Scheme:\nThe number of repetitions for each exercise follows a descending pyramid:\n\n21 Deadlifts\n21 Handstand Push-Ups\n15 Deadlifts\n15 Handstand Push-Ups\n9 Deadlifts\n9 Handstand Push-Ups\n\nGoal:\nFor Time: Complete all reps as quickly as possible while maintaining proper movement standards.\n\nTips for Diane:\nWeight Management: Diane uses relatively heavy weights for the Deadlifts. Make sure to maintain good form to avoid injury, especially when fatigued.\nHandstand Push-Up Management: If Handstand Push-Ups are challenging, consider breaking them into smaller sets with short rest periods.\nFast Transitions: As with many For Time workouts, reducing downtime between the Deadlifts and Handstand Push-Ups can make a significant difference.\nMaintain Form: Don’t sacrifice form for speed, particularly on the Deadlifts. Improper form can lead to injury, especially with heavier loads.\n\nRecommended Weights:\nMen: 225 lb (102 kg)\nWomen: 155 lb (70 kg)"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Diane est un WOD de référence qui combine des Deadlifts lourds avec des Handstand Push-Ups (pompes en équilibre sur les mains). Ce WOD met l'accent à la fois sur la force du bas du corps avec les Deadlifts et sur la force des épaules et la stabilité avec les Handstand Push-Ups.\n\nFormat du WOD :\nDeadlifts : Soulèvement d'une barre depuis le sol en utilisant la force des jambes et du dos.\nHandstand Push-Ups : Pompes réalisées contre un mur, en équilibre sur les mains, sollicitant les épaules, les bras et le tronc.\n\nRépartition des répétitions :\nLe nombre de répétitions pour chaque exercice suit une pyramide descendante :\n\n21 Deadlifts\n21 Handstand Push-Ups\n15 Deadlifts\n15 Handstand Push-Ups\n9 Deadlifts\n9 Handstand Push-Ups\n\nObjectif :\nFor Time : Complétez les séries de répétitions dans le plus court délai possible, en respectant les standards de chaque mouvement.\n\nConseils pour le WOD Diane :\nRépartition du poids : Diane utilise des poids assez lourds pour les Deadlifts. Assurez-vous de maintenir une bonne technique pour éviter les blessures, surtout avec des poids fatigants.\nGestion des Handstand Push-Ups : Si les Handstand Push-Ups sont difficiles, envisagez de diviser les séries en plusieurs petites séries avec des pauses courtes.\nVitesse des transitions : Comme dans la plupart des WODs For Time, réduire les temps morts entre les Deadlifts et les Handstand Push-Ups peut faire une énorme différence.\nMaintenir la forme : Ne sacrifiez pas la forme pour la vitesse, surtout sur les Deadlifts. Une technique incorrecte peut entraîner des blessures, surtout avec des charges lourdes.\n\nPoids recommandé :\nHommes : 225 lb (102 kg)\nFemmes : 155 lb (70 kg)"
+          }
+        }
+      }
+    },
     "Dips" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -775,6 +825,23 @@
         }
       }
     },
+    "Elizabeth" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Elizabeth is a classic CrossFit \"benchmark girl\" WOD that focuses on a combination of strength and skill. It pairs cleans with ring dips, making it a test of both power and gymnastic strength. This couplet challenges your ability to lift weight efficiently while maintaining upper body stamina during the ring dips.\n\nWOD Format:\nFor Time:\n21-15-9 reps of:\nCleans (135 lbs / 61 kg)\nRing Dips\n\nGoal:\nFor Time: Complete the three rounds (21 reps, 15 reps, 9 reps) as fast as possible.\n\nMovement Standards:\nCleans: You can perform either squat cleans or power cleans depending on your preference. The barbell must be lifted from the ground to the shoulders in one continuous movement, with the hips fully extended at the top.\nRing Dips: Start with arms fully extended, lower your body until your shoulders go below the elbows, then press back up to full extension.\n\nTips for the Elizabeth WOD:\nManage the cleans: If the weight is challenging, break the cleans into manageable sets rather than trying to complete them unbroken.\nKeep a rhythm on ring dips: If ring dips are difficult, try breaking them into smaller sets early, avoiding complete muscle failure.\nUse your hips: In cleans, make sure to use a powerful hip extension to minimize fatigue in the upper body.\nMaintain control on the rings: If needed, use kipping to assist your ring dips, but focus on controlling your descent to avoid burning out too quickly.\nElizabeth is all about balancing strength and gymnastics while pushing the intensity. The combination of weightlifting and bodyweight movements will test your endurance, strength, and strategy."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Elizabeth est un WOD classique des \"benchmark girls\" de CrossFit, qui se concentre sur une combinaison de force et de technique. Il associe des cleans à des dips sur anneaux, ce qui en fait un test à la fois de puissance et de force gymnique. Ce couplet met au défi votre capacité à soulever des charges tout en maintenant l'endurance du haut du corps pendant les dips.\n\nFormat du WOD :\nFor Time :\n21-15-9 répétitions de :\nCleans (61 kg / 135 lbs)\nDips sur anneaux\n\nObjectif :\nFor Time : Compléter les trois séries (21 reps, 15 reps, 9 reps) le plus rapidement possible.\nStandards des mouvements :\nCleans : Vous pouvez effectuer des squat cleans ou des power cleans. La barre doit être soulevée du sol aux épaules en un seul mouvement fluide, avec une extension complète des hanches en haut du mouvement.\nDips sur anneaux : Commencez avec les bras complètement tendus, descendez jusqu'à ce que vos épaules passent sous vos coudes, puis remontez jusqu'à une extension complète des bras.\n\nConseils pour le WOD Elizabeth :\nGérez les cleans : Si le poids est difficile, fractionnez les cleans en séries gérables plutôt que d'essayer de tout faire d'un coup.\nMaintenez un rythme sur les dips : Si les dips sur anneaux sont éprouvants, fractionnez dès le début pour éviter l'épuisement complet.\nUtilisez vos hanches : Dans les cleans, utilisez une extension puissante des hanches pour minimiser la fatigue du haut du corps.\nGardez le contrôle sur les anneaux : Si nécessaire, utilisez le kipping pour assister vos dips, mais contrôlez bien la descente pour éviter de vous brûler trop rapidement.\nElizabeth est un WOD qui demande un équilibre entre force et technique tout en poussant l'intensité. L'association de mouvements d'haltérophilie et de poids du corps mettra à l'épreuve votre endurance, votre force, et votre stratégie."
+          }
+        }
+      }
+    },
     "Endurance" : {
       "localizations" : {
         "en" : {
@@ -890,6 +957,23 @@
         }
       }
     },
+    "Fran" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fran is one of the most iconic CrossFit benchmark WODs. It's short but incredibly intense, combining two movements: Thrusters and Pull-Ups. The workout is performed For Time, meaning as fast as possible, maximizing intensity.\n\nWOD Format:\nThrusters: Lifting a barbell from a front squat position and pushing it overhead in one smooth movement.\nPull-Ups: Strict or kipping pull-ups, depending on your skill level.\nRep Scheme:\nThe number of repetitions for each exercise follows a descending pyramid:\n\n21 Thrusters\n21 Pull-Ups\n15 Thrusters\n15 Pull-Ups\n9 Thrusters\n9 Pull-Ups\n\nFor Time: The goal is to complete all the reps as quickly as possible.\nTips for Fran:\n\nPacing: Fran is a very short, intense workout. Try to maintain a steady pace from the start, but avoid burning out after the first 21 Thrusters.\nBreak up the sets: If you're not able to complete all the reps unbroken, break them into manageable sets, especially for the Pull-Ups.\nThruster Technique: Use the power from your legs during the squat phase to help push the bar overhead. This will save your shoulders and conserve energy.\nQuick Transitions: Make sure your transitions between Thrusters and Pull-Ups are quick. Mentally prepare yourself to keep moving with minimal rest.\nRecommended Weights:\nMen: 95 lb (43 kg)\nWomen: 65 lb (29 kg)"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fran est un WOD de référence dans le CrossFit, court mais extrêmement intense. Il combine deux mouvements : des Thrusters et des Pull-Ups. Ce WOD est conçu pour être exécuté For Time, c’est-à-dire le plus rapidement possible, en maximisant l'intensité.\n\nFormat du WOD :\nThrusters : Soulevez une barre depuis une position de squat avant pour la pousser au-dessus de la tête dans un seul mouvement fluide.\nPull-Ups : Tractions strictes ou dynamiques, en fonction de votre niveau.\nRépartition des répétitions :\nLe nombre de répétitions pour chaque exercice est organisé en pyramide descendante :\n\n21 Thrusters\n21 Pull-Ups\n15 Thrusters\n15 Pull-Ups\n9 Thrusters\n9 Pull-Ups\n\nFor Time : Le but est de compléter les séries de répétitions le plus rapidement possible.\n\nConseils pour le WOD Fran :\nGestion du rythme : Fran est un WOD très court et intense. Essayez de maintenir un rythme soutenu dès le début, tout en évitant de vous épuiser complètement après les premiers 21 Thrusters.\nRépartir les séries : Si vous n’êtes pas capable de faire toutes les répétitions d’affilée, divisez-les en séries gérables, surtout pour les Pull-Ups.\nTechnique des Thrusters : Utilisez la puissance de vos jambes dans la phase de squat pour aider à pousser la barre au-dessus de la tête. Cela soulagera vos épaules et économisera de l'énergie.\nCoordination et transition : La transition entre les Thrusters et les Pull-Ups doit être rapide. Préparez-vous mentalement à enchaîner les mouvements sans temps mort.\n\nPoids recommandé :\nHommes : 95 lb (43 kg)\nFemmes : 65 lb (29 kg)"
+          }
+        }
+      }
+    },
     "FrontRaise" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -920,6 +1004,23 @@
           "stringUnit" : {
             "state" : "needs_review",
             "value" : "Le Front Squat est un exercice de squat classique où la barre repose à l'avant des épaules, renforçant ainsi la partie antérieure du corps, en particulier les quadriceps et le tronc.\n\nPosition de départ – Placez la barre sur le devant de vos épaules, en croisant les bras ou avec les coudes bien hauts pour maintenir la barre en place. Gardez les pieds écartés à la largeur des épaules, le torse droit et la tête en position neutre.\n\nDescente contrôlée – Abaissez-vous lentement en gardant le poids sur les talons et les coudes élevés. Fléchissez les hanches et les genoux, en gardant le dos droit, jusqu'à ce que vos cuisses soient parallèles au sol ou plus bas.\n\nRemontée puissante – Poussez avec vos talons tout en redressant les hanches et les genoux. Maintenez une posture stable et contrôlée tout en engageant le tronc pour garder la barre en équilibre.\n\nCet exercice est excellent pour renforcer les jambes et améliorer la stabilité du tronc, tout en développant la mobilité des chevilles, des hanches et des épaules."
+          }
+        }
+      }
+    },
+    "Grace" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Grace is a short but intense WOD consisting of one movement: the Clean & Jerk. It tests strength, power, and muscular endurance over 30 repetitions. It's a classic \"girl\" WOD known for its simplicity and brutal nature.\n\nWOD Format:\n30 Clean & Jerks for time\n\nMovement Standards:\nClean: Lift the barbell from the ground to the shoulders using leg and back power.\nJerk: Push the bar overhead by explosively extending your legs and locking out your arms.\n\nTips for the WOD Grace:\nRep Strategy: Break the 30 reps into manageable sets. Many athletes use sets of 3-5 with short rest periods.\nTechnique: Focus on clean, efficient transitions between the clean and the jerk to conserve energy.\nBreathing: Control your breathing with small breaks if necessary to avoid being overwhelmed by cardio.\nPacing: Maintain a steady pace and avoid going too fast at the start. The workout is short, but fatigue can set in quickly.\n\nRecommended Weights:\nMen: 135 lb (61 kg)\nWomen: 95 lb (43 kg)"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Grace est un WOD simple et brutal qui met à l’épreuve la force et la puissance. Ce WOD consiste uniquement en un seul mouvement complexe : l’épaulé-jeté (Clean & Jerk), qui combine force, explosivité et endurance musculaire.\n\nFormat du WOD :\n30 répétitions de Clean & Jerk (épaulé-jeté)\n\nObjectif :\nFor Time : Complétez 30 répétitions le plus rapidement possible.\n\nStandards du mouvement :\nClean : Soulevez la barre du sol jusqu'aux épaules en utilisant la puissance des jambes et du dos.\nJerk : Poussez la barre au-dessus de la tête en vous aidant d'une extension explosive des jambes, puis verrouillez les bras pour stabiliser la barre.\n\nConseils pour le WOD Grace :\nStratégie de série : Bien que le WOD soit court, il est important de bien gérer les séries. Beaucoup d’athlètes font des séries de 3 à 5 répétitions avec de courtes pauses.\nTechnique : Utilisez une technique propre et efficace, particulièrement dans la phase de transition entre le clean et le jerk, pour économiser de l’énergie.\nRespiration : Gérez votre souffle en prenant de petites pauses si nécessaire, mais ne laissez pas le cardio vous submerger.\nRythme constant : Essayez de maintenir un rythme constant et évitez de partir trop vite. Le WOD est court, mais l'épuisement peut arriver rapidement.\n\nPoids recommandé :\nHommes : 61 kg (135 lb)\nFemmes : 43 kg (95 lb)"
           }
         }
       }
@@ -1076,6 +1177,23 @@
         }
       }
     },
+    "Helen" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Helen is a benchmark CrossFit WOD that combines running, kettlebell swings, and pull-ups, testing both cardiovascular endurance, explosive power, and pulling strength. It's a classic girl WOD and is often used to gauge overall fitness improvements.\n\nWOD Format:\n400m run: A short sprint that spikes the heart rate right from the start.\nKettlebell Swings (21 reps): Swing a kettlebell from between the legs to overhead (American style), using the power of your hips and core.\nPull-Ups (12 reps): Pull your chin above the bar in each rep.\n\nRep Scheme:\nPerform the following for 3 rounds:\n\n400-meter run\n21 kettlebell swings (53 lb for men, 35 lb for women)\n12 pull-ups\n\nGoal:\nFor Time: Complete the 3 rounds as fast as possible while maintaining proper form throughout the movements.\n\nTips for the WOD Helen:\nRunning Pace: Run at a quick but sustainable pace to save energy for the kettlebell swings and pull-ups. Find a consistent rhythm.\nEfficient Kettlebell Swings: Use your hips to drive the kettlebell upward rather than relying on arm strength. Try to complete them unbroken if possible.\nPull-Ups: Scale pull-ups based on your ability (kipping, strict, or with assistance). Avoid overexerting to maintain form and speed.\nQuick Transitions: Minimize downtime between movements. Every second counts.\n\nRecommended Weights:\nKettlebell: 53 lb (24 kg) for men, 35 lb (16 kg) for women."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Helen est un WOD qui combine course, kettlebell swings, et pull-ups, mettant à l'épreuve à la fois l'endurance cardiovasculaire, la puissance explosive et la force de traction. Ce WOD fait partie des benchmarks féminins et est souvent utilisé pour tester l'amélioration de la condition physique générale.\n\nFormat du WOD :\n400 m de course : Une course à pied rapide qui augmente le rythme cardiaque dès le début.\nKettlebell Swings (21 répétitions) : Soulevez un kettlebell de bas en haut jusqu’au-dessus de la tête (American style), utilisant la puissance des hanches et du tronc.\nPull-Ups (12 répétitions) : Exercice de traction où le menton doit passer au-dessus de la barre.\n\nRépartition des répétitions :\nRépétez les trois mouvements suivants pour 3 tours :\n\n400 mètres de course\n21 kettlebell swings (24 kg pour les hommes, 16 kg pour les femmes)\n12 pull-ups\n\nObjectif :\nFor Time : Complétez les 3 tours le plus rapidement possible tout en maintenant une bonne forme sur chaque mouvement.\n\nConseils pour le WOD Helen :\nGestion de la course : La course doit être rapide mais contrôlée pour garder de l’énergie pour les kettlebell swings et les pull-ups. Trouvez un rythme régulier.\nKettlebell Swings efficaces : Utilisez la puissance des hanches pour balancer le kettlebell plutôt que de solliciter uniquement les bras. Réalisez de grandes séries si possible.\nPull-Ups : Adaptez les pull-ups selon votre niveau (kipping, strict, ou avec assistance). Ne dépassez pas vos capacités pour éviter la fatigue trop rapide.\nTransitions rapides : Réduisez les temps de transition entre les mouvements. Chaque seconde compte.\n\nPoids recommandé :\nKettlebell : 24 kg pour les hommes, 16 kg pour les femmes."
+          }
+        }
+      }
+    },
     "Heures" : {
       "localizations" : {
         "en" : {
@@ -1193,6 +1311,40 @@
         }
       }
     },
+    "Isabel" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Isabel is a classic CrossFit WOD that tests both explosive strength and weightlifting technique. It involves a fixed number of snatches with a barbell, a demanding movement that combines strength, speed, and mobility. This WOD emphasizes maintaining solid technique under fatigue while repeatedly lifting a heavy load.\n\nWOD Format:\nFor Time:\n30 reps of Snatch (135 lbs / 61 kg)\n\nGoal:\nFor Time: Complete the 30 snatches as quickly as possible.\n\nMovement Standards:\nSnatch: The barbell starts from the ground and must be lifted overhead in one smooth motion. You can perform either a power snatch (with the bar caught above parallel in a partial squat) or a squat snatch (caught in a full squat). The arms must be fully locked out at the top, with full hip and knee extension.\n\nTips for Isabel:\nBreak the reps smartly: If you can't do 30 snatches unbroken, start with sets of 5-10 reps, taking short breaks to conserve your endurance.\nFocus on technique: Keep the bar close to your body, and use a powerful hip extension to generate speed for the lift.\nOpt for power snatch if needed: If you're not comfortable with squat snatches or if you're aiming for speed, use power snatches to save energy and avoid muscular fatigue.\nMaintain a solid grip: Snatches can tax your forearms heavily. Use a hook grip if possible, as it provides better grip strength and helps you maintain control of the bar.\nIsabel is a fast but technical workout, where you need to strike a balance between speed and control. It challenges your weightlifting skills, strength, and ability to stay focused under fatigue."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Isabel est un WOD classique de CrossFit qui teste à la fois la force explosive et la technique en haltérophilie. Il consiste en un nombre fixe d'arrachés (snatch) avec une barre, un mouvement exigeant qui combine la force, la vitesse et la mobilité. Ce WOD met l'accent sur la capacité à maintenir une technique solide sous fatigue tout en soulevant une charge lourde à plusieurs reprises.\n\nFormat du WOD :\nFor Time :\n30 répétitions de Snatch (61 kg / 135 lbs)\n\nObjectif :\nFor Time : Terminer les 30 répétitions d'arraché le plus rapidement possible.\n\nStandards du mouvement :\nSnatch : La barre part du sol et doit être soulevée au-dessus de la tête en un seul mouvement fluide. Vous pouvez effectuer un power snatch (arraché avec réception au-dessus de la parallèle des hanches) ou un squat snatch (arraché avec réception en squat complet). Les bras doivent être complètement verrouillés au sommet du mouvement, avec une extension complète des hanches et des genoux.\n\nConseils pour le WOD Isabel :\nFractionnez intelligemment : Si vous ne pouvez pas faire les 30 snatches non-stop, commencez par des séries de 5 à 10 répétitions avec des pauses courtes pour éviter de brûler votre endurance.\nGardez une bonne technique : Concentrez-vous sur la technique du snatch, en gardant la barre proche de votre corps et en utilisant une extension puissante des hanches.\nUtilisez le power snatch si nécessaire : Si vous n'êtes pas à l'aise avec le squat snatch ou si vous cherchez à aller plus vite, utilisez le power snatch pour économiser de l'énergie et éviter la fatigue musculaire.\nRestez stable sur le grip : Le snatch sollicite fortement les avant-bras. Si possible, utilisez une prise en crochet (hook grip) pour maintenir un grip plus solide.\nIsabel est un WOD rapide mais technique, où il est important de trouver un équilibre entre vitesse et contrôle."
+          }
+        }
+      }
+    },
+    "Jackie" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jackie is a classic \"chipper\" WOD, designed to test both your cardiovascular endurance and your ability to maintain a fast pace across three different movements. It combines rowing, light barbell thrusters, and pull-ups, making it a full-body test of stamina and strength.\n\nWOD Format:\n1,000-meter row\n50 thrusters with an empty barbell (45 lb / 20 kg)\n30 pull-ups\n\nMovement Standards:\nRowing: Complete the 1,000-meter row as efficiently as possible without exhausting yourself for the next two movements.\nThrusters: Perform 50 repetitions with an empty barbell, combining a front squat and overhead press.\nPull-Ups: Finish the WOD with 30 pull-ups, using an overhand grip and ensuring your chin goes over the bar on each rep.\n\nTips for the WOD Jackie:\nRowing: Don’t go too fast at the start. Find a steady pace you can maintain without burning out, as the row is only the beginning.\nThrusters: If possible, aim to complete all 50 thrusters without putting the bar down. Otherwise, break it into two sets of 25, but keep rest times short.\nPull-Ups: Keep a consistent rhythm, even if it means breaking them into smaller sets. If you’re proficient with kipping or butterfly pull-ups, use them to save time."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jackie est un WOD de type \"chipper\", conçu pour tester à la fois votre endurance cardio et votre capacité à maintenir un rythme élevé sur trois mouvements différents. Il combine rameur, thrusters avec une barre légère et des tractions, ce qui en fait un test complet pour tout le corps.\n\nFormat du WOD :\n1 000 m de rameur\n50 thrusters avec une barre vide (20 kg / 45 lb)\n30 pull-ups\n\nObjectif :\nFor Time : Complétez les trois mouvements aussi rapidement que possible.\n\nStandards des mouvements :\nRameur : L'objectif est de parcourir 1 000 mètres le plus vite possible tout en restant techniquement efficace pour économiser de l'énergie pour les deux mouvements suivants.\nThrusters : Utilisez une barre vide pour effectuer 50 répétitions d'un mouvement combinant un front squat et un overhead press.\nPull-Ups : Terminez par 30 tractions en utilisant une prise pronation, en passant le menton au-dessus de la barre à chaque répétition.\n\nConseils pour le WOD Jackie :\nRameur : Ne partez pas trop vite. Trouvez un rythme que vous pouvez maintenir sans vous épuiser, car le rameur n’est que la première partie du WOD.\nThrusters : Si possible, essayez de ne pas poser la barre et de faire les 50 répétitions d’un seul coup. Sinon, divisez en deux séries de 25, mais attention aux pauses qui doivent être courtes.\nPull-Ups : Gardez un rythme constant, même si vous devez diviser en plusieurs séries. Si vous êtes à l’aise avec les pull-ups kipping ou butterfly, utilisez-les pour gagner du temps."
+          }
+        }
+      }
+    },
     "Jerk" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -1226,6 +1378,32 @@
           }
         }
       }
+    },
+    "Karen" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Karen is a deceptively simple but grueling CrossFit WOD, consisting solely of wall balls. This benchmark emphasizes muscular endurance in the legs, shoulders, and core. While it might seem straightforward, the high volume of repetitions and the sustained effort required make it particularly challenging.\n\nWOD Format:\n150 wall balls (20 lb / 9 kg for men / 14 lb / 6 kg for women)\nGoal:\nFor Time: Complete the 150 wall balls as fast as possible.\nMovement Standards:\nWall Balls: Hold the medicine ball at your chest, squat until your hips are below your knees, and push the ball up to hit a 10-foot (3m) target (men) or a 9-foot (2.7m) target (women) as you stand up.\nTips for Karen:\nBreak up the sets: Even if you feel strong initially, divide the reps into smaller sets (e.g., 30-30-20-20-10) to avoid burning out too quickly.\nControl your breathing: Establish a steady breathing rhythm to avoid getting winded, especially after the first 50 reps.\nUse your legs: While your shoulders are engaged in throwing the ball, focus on driving through your legs during the squat to conserve energy.\nEfficient catching: Catch the ball in the bottom of the squat position to minimize extra movement and improve your overall time."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Karen est un WOD de CrossFit simple mais extrêmement éprouvant, composé uniquement de wall balls. Ce benchmark met l'accent sur l'endurance musculaire des jambes, des épaules et du core. Bien que ce WOD semble relativement facile au premier abord, le volume élevé de répétitions et l'effort constant requis pour maintenir un rythme élevé le rendent redoutable.\n\nFormat du WOD :\n150 wall balls (9 kg pour les hommes / 6 kg pour les femmes)\n\nObjectif :\nFor Time : Complétez les 150 wall balls aussi rapidement que possible.\n\nStandards des mouvements :\nWall Balls : Tenez le medicine ball devant votre poitrine, effectuez un squat complet (les hanches passant sous les genoux), et poussez le ballon vers une cible située à 3 mètres (hommes) ou 2,7 mètres (femmes) en vous redressant.\n\nConseils pour le WOD Karen :\nDivisez les séries : Même si vous vous sentez en forme au début, divisez les répétitions dès le départ en séries plus petites (par exemple 30-30-20-20-10) pour ne pas vous épuiser trop rapidement.\nRythmez votre respiration : Trouvez un rythme respiratoire constant pour éviter de vous essouffler, surtout après les premières 50 répétitions.\nUtilisez vos jambes : Bien que les épaules soient sollicitées pour lancer la balle, concentrez-vous sur la poussée de vos jambes lors du squat pour économiser de l'énergie.\nSoyez efficace sur la réception : Recevez la balle en position basse du squat pour minimiser les mouvements supplémentaires et améliorer votre temps global."
+          }
+        }
+      }
+    },
+    "Key" : {
+      "extractionState" : "manual"
+    },
+    "Key 1" : {
+      "extractionState" : "manual"
+    },
+    "Key 2" : {
+      "extractionState" : "manual"
     },
     "KippingBarMuscleUp" : {
       "extractionState" : "manual",
@@ -1540,6 +1718,23 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Musculation"
+          }
+        }
+      }
+    },
+    "Nancy" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nancy is a benchmark CrossFit WOD that combines overhead squats and running, designed to test both your endurance and your ability to maintain strength and stability under fatigue. The combination of weightlifting and cardio in this WOD makes it a challenging test for overall fitness, mobility, and stamina.\n\nWOD Format:\n5 rounds for time:\n400-meter run\n15 Overhead Squats (95 lbs / 43 kg)\n\nGoal:\nFor Time: Complete 5 rounds of running and overhead squats as quickly as possible.\nMovement Standards:\n400-meter run: A standard run distance to elevate your heart rate and challenge your cardiovascular endurance.\nOverhead Squat:\nThe barbell starts overhead, with the arms fully extended and locked out.\nThe athlete must squat below parallel (hips below the knee line) while keeping the bar stable overhead.\nFull extension at the top of each squat is required before the next repetition.\n\nTips for Nancy:\nPace your runs: While the run is crucial for keeping your heart rate high, don't burn out on the runs. Maintain a steady, manageable pace so you can transition smoothly to the overhead squats.\nFocus on mobility: The overhead squat demands strong shoulder and hip mobility. Make sure to warm up and maintain a solid overhead position with your core engaged.\nBreak the squats if needed: If you're not comfortable with 15 unbroken overhead squats, consider breaking them into smaller sets like 8-7 or 10-5 to maintain form.\nGrip positioning: A wider grip can help stabilize the bar in the overhead position, especially if your mobility is limited. Ensure your wrists are secure, and your shoulders are engaged.\nNancy is a workout that requires a mix of cardiovascular endurance, strength, and flexibility. It challenges your ability to maintain composure and technique under fatigue."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nancy est un WOD de référence dans le CrossFit qui combine des overhead squats et de la course à pied, conçu pour tester à la fois votre endurance et votre capacité à maintenir force et stabilité sous fatigue. La combinaison de l'haltérophilie et du cardio dans ce WOD en fait un test complet pour la condition physique, la mobilité et l'endurance.\n\nFormat du WOD :\n5 tours à réaliser le plus rapidement possible :\n400 mètres de course\n15 Overhead Squats (43 kg / 95 lbs)\n\nObjectif :\nFor Time : Compléter les 5 tours de course et d'overhead squats aussi rapidement que possible.\n\nStandards de mouvements :\n400 mètres de course : Une distance de course standard pour augmenter le rythme cardiaque et mettre à l'épreuve votre endurance cardiovasculaire.\nOverhead Squat :\nLa barre commence au-dessus de la tête, avec les bras complètement étendus et verrouillés.\nL'athlète doit s'accroupir en dessous du parallèle (hanches sous la ligne des genoux) tout en maintenant la barre stable au-dessus de la tête.\nUne extension complète en haut de chaque squat est requise avant la répétition suivante.\n\nConseils pour Nancy :\nGérez votre rythme sur la course : La course est essentielle pour garder un rythme cardiaque élevé, mais ne vous épuisez pas sur cette partie. Gardez une allure stable pour une transition fluide vers les overhead squats.\nConcentrez-vous sur la mobilité : L'overhead squat exige une bonne mobilité des épaules et des hanches. Assurez-vous de bien vous échauffer et de maintenir une position solide au-dessus de la tête avec le tronc engagé.\nFractionnez les squats si nécessaire : Si vous n'êtes pas à l'aise avec 15 overhead squats d'un coup, pensez à les fractionner en petites séries comme 8-7 ou 10-5 pour maintenir une bonne forme.\nPositionnement de la prise : Une prise plus large peut aider à stabiliser la barre dans la position overhead, surtout si vous avez une mobilité limitée. Assurez-vous que vos poignets sont bien positionnés et vos épaules engagées.\nNancy est un entraînement qui exige un mélange d'endurance cardiovasculaire, de force et de flexibilité, tout en testant votre capacité à garder votre calme et votre technique sous fatigue."
           }
         }
       }
