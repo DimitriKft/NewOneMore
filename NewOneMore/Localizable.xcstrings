@@ -337,6 +337,23 @@
         }
       }
     },
+    "Badger" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The Hero WOD Badger honors U.S. Navy SEAL Chief Petty Officer Mark Carter, who was killed in action in Iraq in 2007. This WOD is designed to challenge strength, muscular endurance, and mental toughness through repetitive, complex movements.\n\n3 rounds for time:\n30 Squat Cleans (95 lb/42.5 kg)\n30 Pull-Ups\n800 meter run\n\nThe goal is to complete the three rounds as quickly as possible while maintaining proper form. The squat cleans target the entire body, especially the legs and core, while the pull-ups strengthen the upper body and back muscles. The 800-meter run between rounds pushes cardiovascular endurance and tests your ability to actively recover."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Le WOD Hero Badger rend hommage au Chief Petty Officer Mark Carter, membre de l'US Navy SEAL, tombé au combat en Irak en 2007. Ce WOD est conçu pour éprouver la force, l'endurance musculaire et la résistance mentale à travers des mouvements complexes et répétitifs.\n\n3 rounds for time :\n30 Squat Cleans (42.5 kg/95 lb)\n30 Pull-Ups\n800 mètres de course\n\nL'objectif est de compléter les trois tours le plus rapidement possible tout en maintenant une exécution propre des mouvements. Les squat cleans sollicitent tout le corps, en particulier les jambes et le tronc, tandis que les pull-ups renforcent le haut du corps et les muscles du dos. La course de 800 mètres entre chaque tour pousse votre endurance cardiovasculaire et teste votre capacité à récupérer activement."
+          }
+        }
+      }
+    },
     "Barbara" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -400,6 +417,23 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bienvenue dans One More"
+          }
+        }
+      }
+    },
+    "Blake" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The Hero WOD Blake honors Marine Corporal Blake Russell, who was killed in Afghanistan in 2010. This WOD focuses on endurance, coordination, and both upper and lower body strength through a variety of functional movements.\n\n4 rounds for time:\n100 ft Walking Lunges with a 20 lb weight (9 kg)\n30 Box Jumps (24\" / 60 cm)\n20 Wall Balls (20 lb / 9 kg)\n10 Handstand Push-Ups\n\nThe goal is to complete the four rounds as quickly as possible. The weighted walking lunges challenge leg strength and balance, the box jumps develop explosiveness, the wall balls target coordination between the legs and arms, and the handstand push-ups test shoulder and core strength."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Le WOD Hero Blake rend hommage au Marine Corporal Blake Russell, tué en Afghanistan en 2010. Ce WOD met l'accent sur l'endurance, la coordination, et la force du haut et du bas du corps à travers une variété de mouvements fonctionnels.\n\n4 rounds for time :\n100 ft (30 m) Walking Lunges avec un poids (20 lb / 9 kg)\n30 Box Jumps (24\" / 60 cm)\n20 Wall Balls (20 lb / 9 kg)\n10 Handstand Push-Ups\n\nL'objectif est de compléter les quatre tours le plus rapidement possible. Les walking lunges avec poids sollicitent les jambes et l’équilibre, les box jumps développent l'explosivité, les wall balls ciblent la coordination entre les jambes et les bras, et les handstand push-ups mettent à l’épreuve la force des épaules et du tronc."
           }
         }
       }
@@ -725,6 +759,23 @@
         }
       }
     },
+    "DT" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "DT is a Hero WOD in CrossFit, created in honor of Sergeant Timothy P. Davis, a U.S. Army soldier who died in Afghanistan on February 20, 2009, after an improvised explosive device (IED) attack. This WOD was introduced to commemorate his service and sacrifice.\n\nWOD Format:\n5 rounds for time :\n12 Deadlifts (155 lbs / 70 kg)\n9 Hang Power Cleans (155 lbs / 70 kg)\n6 Push Jerks (155 lbs / 70 kg)\n\nObjective:\nFor Time : Complete the 5 rounds of the three movements as fast as possible.\n\nMovement Standards:\nDeadlift :\n\nStart with the barbell on the ground. Lift it to full hip and knee extension.\nShoulders must pass behind the bar in a fully upright position before lowering it back down.\nHang Power Clean :\n\nStart with the bar at the hips, then explosively pull the bar to the shoulders, using the power from the hips and legs.\nElbows must pass in front of the bar with a standing position.\nPush Jerk :\n\nWith the bar on the shoulders, use a quick dip in the knees and hips to drive the bar overhead, locking arms out.\nComplete the movement with full extension of the hips and knees, holding the bar overhead securely."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "DT est un WOD Hero en CrossFit, créé en l'honneur de l'agent Timothy P. Davis, un sergent de l'armée américaine mort au combat en Afghanistan le 20 février 2009, suite à l'explosion d'un engin explosif improvisé. Ce WOD a été introduit pour commémorer son service et son sacrifice.\n\nFormat du WOD :\n5 tours à réaliser le plus rapidement possible :\n12 Deadlifts (70 kg / 155 lbs)\n9 Hang Power Cleans (70 kg / 155 lbs)\n6 Push Jerks (70 kg / 155 lbs)\n\nObjectif :\nFor Time : Compléter les 5 tours des trois mouvements aussi rapidement que possible.\n\nStandards de mouvements :\nDeadlift (Soulevé de terre) :\n\nLe mouvement commence avec la barre au sol. Vous devez la soulever jusqu'à une extension complète des hanches et des genoux.\nLes épaules doivent passer derrière la barre en position debout complète avant de reposer la barre au sol.\nHang Power Clean :\n\nLe mouvement débute avec la barre maintenue au niveau des hanches, puis vous devez soulever la barre en utilisant principalement la puissance des hanches et des jambes pour l'amener à hauteur des épaules.\nLes coudes doivent passer devant la barre avec une réception en position debout.\nPush Jerk :\n\nLa barre repose sur les épaules. Vous utilisez une flexion rapide des genoux et des hanches pour propulser la barre au-dessus de la tête.\nTerminez l'extension complète des hanches et des genoux avec la barre solidement maintenue au-dessus de la tête."
+          }
+        }
+      }
+    },
     "DumbbellBenchPress" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -1004,6 +1055,23 @@
           "stringUnit" : {
             "state" : "needs_review",
             "value" : "Le Front Squat est un exercice de squat classique où la barre repose à l'avant des épaules, renforçant ainsi la partie antérieure du corps, en particulier les quadriceps et le tronc.\n\nPosition de départ – Placez la barre sur le devant de vos épaules, en croisant les bras ou avec les coudes bien hauts pour maintenir la barre en place. Gardez les pieds écartés à la largeur des épaules, le torse droit et la tête en position neutre.\n\nDescente contrôlée – Abaissez-vous lentement en gardant le poids sur les talons et les coudes élevés. Fléchissez les hanches et les genoux, en gardant le dos droit, jusqu'à ce que vos cuisses soient parallèles au sol ou plus bas.\n\nRemontée puissante – Poussez avec vos talons tout en redressant les hanches et les genoux. Maintenez une posture stable et contrôlée tout en engageant le tronc pour garder la barre en équilibre.\n\nCet exercice est excellent pour renforcer les jambes et améliorer la stabilité du tronc, tout en développant la mobilité des chevilles, des hanches et des épaules."
+          }
+        }
+      }
+    },
+    "Glen" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The Hero WOD Glen honors Lieutenant Glen Doherty, a former Navy SEAL who lost his life in the 2012 attack on the U.S. consulate in Benghazi. This WOD is designed to test endurance, strength, and resilience through a combination of varied movements and heavy loads.\n\nFor time:\n30 Clean and Jerks (135 lb / 60 kg)\n1 Mile Run (1.6 km)\n10 Rope Climbs (15 ft / 4.5 m)\n1 Mile Run (1.6 km)\n100 Burpees\n\nThe goal is to complete the workout as quickly as possible. The clean and jerk targets full-body strength and power, while the rope climbs require excellent coordination and upper body strength. The two 1-mile runs test cardiovascular endurance, and the 100 burpees at the end push both physical and mental resilience to the limit."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Le WOD Hero Glen rend hommage au Lieutenant Glen Doherty, un ancien Navy SEAL qui a perdu la vie lors de l'attaque du consulat américain à Benghazi en 2012. Ce WOD est conçu pour tester l'endurance, la force et la résilience à travers des mouvements variés et des charges lourdes.\n\nFor time:\n30 Clean and Jerks (60 kg / 135 lb)\n1 Mile Run (1,6 km)\n10 Rope Climbs (15 ft / 4,5 m)\n1 Mile Run (1,6 km)\n100 Burpees\n\nL'objectif est de compléter cet entraînement le plus rapidement possible. Le clean and jerk sollicite la puissance et la force musculaire sur tout le corps, tandis que la corde à grimper demande une excellente coordination et une force importante du haut du corps. Les deux courses à pied testent l'endurance cardiovasculaire, et les 100 burpees à la fin mettent à l'épreuve la résilience mentale et physique."
           }
         }
       }
@@ -1362,6 +1430,40 @@
         }
       }
     },
+    "Jerry" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The Hero WOD Jerry honors U.S. Army Sergeant Major Jerry Dwayne Patton, who tragically passed away during a parachute training exercise. This WOD is designed to test cardiovascular endurance and sustained effort over a prolonged period through a demanding combination of running and rowing.\n\nFor time:\n1 mile run (1.6 km)\n2000 meter row\n1 mile run (1.6 km)\n\nThe goal is to complete these three tasks as quickly as possible while maintaining proper technique. The runs will challenge your muscular endurance and ability to manage effort over moderate distances, while the 2000-meter row will test your cardiovascular stamina and ability to maintain a steady pace."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Le WOD Hero Jerry rend hommage au Sergeant-Major de l'armée américaine Jerry Dwayne Patton, tragiquement décédé lors d'un entraînement de saut en parachute. Ce WOD est conçu pour tester l'endurance cardiovasculaire et la capacité à maintenir un effort soutenu sur une longue durée, grâce à une combinaison rigoureuse de course et d'aviron.\n\nFor time :\n1,6 km de course (1 mile)\n2000 mètres d'aviron\n1,6 km de course (1 mile)\n\nL'objectif est de réaliser ces trois épreuves dans un temps minimal tout en maintenant une technique optimale. Les courses à pied solliciteront votre endurance musculaire et votre capacité à gérer l'effort sur une distance modérée, tandis que l'aviron de 2000 mètres mettra à l'épreuve votre résistance cardiovasculaire et votre maîtrise du rythme."
+          }
+        }
+      }
+    },
+    "Josh" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The Hero WOD Josh honors Navy SEAL Joshua Hager, who was killed in Iraq in 2007. This WOD emphasizes upper body strength and endurance, with a heavy focus on overhead squats and pull-ups, requiring a combination of strength, flexibility, and stability.\n\nFor time:\n21 Overhead Squats (95 lb / 42.5 kg)\n42 Pull-Ups\n15 Overhead Squats (95 lb / 42.5 kg)\n30 Pull-Ups\n9 Overhead Squats (95 lb / 42.5 kg)\n18 Pull-Ups\n\nThe goal is to complete the workout as quickly as possible. The overhead squats demand strong core and shoulder stability as well as leg strength, while the pull-ups test upper body power, particularly in the arms and back."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Le WOD Hero Josh rend hommage au Navy SEAL Joshua Hager, tué en Irak en 2007. Ce WOD met l'accent sur la force et l'endurance du haut du corps, exigeant une combinaison de force, de souplesse et de stabilité.\n\nFor time :\n21 Overhead Squats (42,5 kg / 95 lb)\n42 Pull-Ups\n15 Overhead Squats (42,5 kg / 95 lb)\n30 Pull-Ups\n9 Overhead Squats (42,5 kg / 95 lb)\n18 Pull-Ups\n\nL'objectif est de terminer cet entraînement le plus rapidement possible. Les overhead squats sollicitent la stabilité du tronc et des épaules, ainsi que la force des jambes, tandis que les pull-ups testent la puissance du haut du corps, en particulier des bras et du dos."
+          }
+        }
+      }
+    },
     "Jumping Jack" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -1375,6 +1477,23 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Le Jumping Jack est un exercice cardio simple mais efficace, souvent utilisé dans les échauffements, les circuits de fitness ou les séances de conditionnement physique. Il sollicite principalement les muscles des jambes et des bras tout en augmentant la fréquence cardiaque pour une amélioration de l'endurance cardiovasculaire.\n\nPosition de départ – Tenez-vous debout, les pieds joints et les bras le long du corps.\n\nMouvement de saut – Sautez en écartant les pieds de manière latérale tout en levant simultanément les bras au-dessus de votre tête. Vos mains devraient presque se toucher en haut du mouvement.\n\nRetour à la position initiale – Sautez à nouveau pour ramener vos pieds ensemble et redescendez vos bras le long de votre corps.\n\nRépétition – Enchaînez le mouvement de manière continue et rythmée. Veillez à bien coordonner les mouvements des bras et des jambes.\n\nRespiration – Inspirez en sautant les pieds vers l'extérieur et expirez en ramenant les pieds ensemble.\n\nLe Jumping Jack est souvent utilisé comme un exercice d'échauffement pour augmenter le flux sanguin et activer les muscles avant un entraînement plus intense. Il est également excellent pour améliorer la coordination et l'agilité."
+          }
+        }
+      }
+    },
+    "Kalsu" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The Hero WOD Kalsu honors Lieutenant Bob Kalsu, a former NFL football player turned soldier, who was killed in action in Vietnam in 1970. This WOD is known as one of the toughest in CrossFit, combining strength and endurance in a brutal format.\n\nFor time:\n100 Thrusters (135 lb / 61 kg)\nAt the start of every minute: 5 Burpees\n\nThe goal is to complete 100 thrusters as quickly as possible, with the added challenge that at the beginning of each minute, you must stop and perform 5 burpees before continuing with the thrusters until you reach 100 reps. This format dramatically increases the intensity by disrupting your rhythm and adding continuous exertion."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Le WOD Hero Kalsu rend hommage au Lieutenant Bob Kalsu, un ancien joueur de football professionnel de la NFL devenu soldat, qui a été tué au combat au Vietnam en 1970. Ce WOD est réputé pour être l'un des plus difficiles dans le monde du CrossFit, combinant force et endurance dans un format brutal.\n\nFor time :\n100 Thrusters (61 kg / 135 lb)\nÀ chaque minute : 5 Burpees\n\nL'objectif est de compléter 100 thrusters aussi rapidement que possible, mais avec une exigence supplémentaire : au début de chaque minute, vous devez vous arrêter et faire 5 burpees, puis reprendre les thrusters jusqu'à atteindre 100 répétitions. Ce format ajoute un défi majeur en perturbant le rythme et en augmentant considérablement l'intensité."
           }
         }
       }
@@ -1621,6 +1740,23 @@
         }
       }
     },
+    "Michael" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The Hero WOD Michael honors U.S. Navy Lieutenant Michael McGreevy, who was killed in action in Afghanistan in 2005. This WOD emphasizes cardiovascular endurance and core strength, with significant repetitions of running and back-strengthening movements.\n\n3 rounds for time:\n800 meter run\n50 Back Extensions\n50 Sit-Ups\n\nThe goal is to complete the three rounds as quickly as possible. The 800-meter runs challenge cardiovascular endurance, while the back extensions strengthen the lower back muscles, and the sit-ups target the abdominal muscles. This WOD is a great test of muscular endurance and balance between upper and lower body strength."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Le WOD Hero Michael rend hommage au Lieutenant Michael McGreevy de l'US Navy, mort en mission en Afghanistan en 2005. Ce WOD met l'accent sur l'endurance cardiovasculaire et la force du tronc, avec des répétitions importantes de course et de mouvements de renforcement du dos.\n\n3 rounds for time :\n800 mètres de course\n50 Back Extensions\n50 Sit-Ups\n\nL'objectif est de compléter les trois tours le plus rapidement possible. Les courses de 800 mètres testent l'endurance cardiovasculaire, tandis que les back extensions renforcent les muscles du bas du dos et que les sit-ups sollicitent les abdominaux. Ce WOD est un bon test d'endurance musculaire et d'équilibre entre la force du haut et du bas du corps."
+          }
+        }
+      }
+    },
     "MilitaryPress" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -1667,6 +1803,23 @@
           "stringUnit" : {
             "state" : "needs_review",
             "value" : "Le Mountain Climber est un exercice dynamique et complet qui sollicite à la fois la force, l'endurance et la coordination. Cet exercice engage principalement les muscles abdominaux, les jambes, les épaules et les bras, tout en améliorant la stabilité du tronc et en augmentant le rythme cardiaque.\n\nPosition de départ – Commencez en position de planche haute, avec les mains placées directement sous les épaules et les pieds joints. Le corps doit former une ligne droite de la tête aux talons. Engagez vos abdominaux pour garder le tronc stable.\n\nMouvement de montée de genoux – Ramenez rapidement un genou vers votre poitrine tout en maintenant l'autre jambe tendue. Alternez ensuite en ramenant l'autre genou vers la poitrine, de manière dynamique et continue, comme si vous couriez sur place tout en restant dans la position de planche.\n\nRespiration – Respirez de manière rythmée en synchronisant votre respiration avec les mouvements : inspirez profondément et expirez à chaque montée de genou.\n\nMaintien de la position – Gardez les hanches basses et le tronc bien gainé tout au long de l'exercice pour éviter de lever les fesses ou d'affaisser le dos. Les épaules doivent rester stables et les mains fermement ancrées au sol.\n\nRépétition – Effectuez plusieurs répétitions rapides, en maintenant un bon rythme tout en contrôlant votre respiration et votre posture.\n\nCet exercice de Mountain Climber est souvent utilisé dans les séances de CrossFit, de HIIT, ou en complément des entraînements pour renforcer la sangle abdominale tout en travaillant le cardio."
+          }
+        }
+      }
+    },
+    "Murph" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Murph is one of the most iconic Hero WODs in CrossFit. It was created in honor of Navy SEAL Lieutenant Michael P. Murphy, who was killed in Afghanistan on June 28, 2005, during Operation Red Wings. The WOD serves as a tribute to his bravery and sacrifice. It is often performed on Memorial Day in the U.S. to honor fallen soldiers.\n\nWOD Format:\n1 mile run (1.6 km)\n100 pull-ups\n200 push-ups\n300 air squats\n1 mile run (1.6 km)\nOptional: The WOD is traditionally performed wearing a 20 lb (9 kg) weighted vest for men and a 14 lb (6 kg) vest for women.\n\nObjective:\nFor Time: Complete all the repetitions as fast as possible.\nMovements can be partitioned, for example, doing 5 pull-ups, 10 push-ups, and 15 air squats repeatedly until the totals are met.\nMovement Standards:\nPull-Up:\n\nChin must pass above the bar for each rep, starting from a dead hang with fully extended arms.\nKipping or strict pull-ups are allowed.\nPush-Up:\n\nChest must touch the ground on each rep, and arms must lock out fully at the top.\nAir Squat:\n\nLower to a depth where hips are below the knees.\nStand back up to full extension of hips and knees."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Murph est l'un des WOD Hero les plus emblématiques du CrossFit. Il a été créé en l'honneur du lieutenant de la Navy SEAL, Michael P. Murphy, qui a été tué en Afghanistan le 28 juin 2005 lors de l'opération Red Wings. Le WOD est un hommage à son courage et à son sacrifice. Il est souvent réalisé lors du \"Memorial Day\" aux États-Unis pour honorer tous les soldats morts en service.\n\nFormat du WOD :\n1 mile run (1,6 km)\n100 pull-ups (tractions)\n200 push-ups (pompes)\n300 air squats (squats au poids de corps)\n1 mile run (1,6 km)\nOptionnel : Le WOD est traditionnellement réalisé avec un gilet lesté de 9 kg (20 lbs) pour les hommes et 6 kg (14 lbs) pour les femmes.\n\nObjectif :\nFor Time : Compléter toutes les répétitions aussi rapidement que possible.\nLes répétitions des mouvements peuvent être fractionnées, par exemple en séries de 5 tractions, 10 pompes et 15 squats, jusqu'à ce que le total soit atteint.\nStandards de mouvements :\nPull-Up (Traction) :\n\nLe menton doit passer au-dessus de la barre à chaque répétition, en partant d'une position suspendue avec les bras complètement tendus.\nKipping ou strict pull-ups sont autorisés.\nPush-Up (Pompes) :\n\nLe torse doit toucher le sol à chaque répétition et les bras doivent se verrouiller en extension complète au sommet.\nAir Squat :\n\nDescendre en squat jusqu'à ce que les hanches passent sous le niveau des genoux.\nRemonter jusqu'à l'extension complète des hanches et des genoux."
           }
         }
       }
@@ -2691,6 +2844,23 @@
           "stringUnit" : {
             "state" : "needs_review",
             "value" : "Le Weighted Pull-Up (Traction lestée) est une variante avancée de l’exercice de traction classique, qui consiste à ajouter un poids supplémentaire pour augmenter l'intensité et cibler davantage les muscles du dos et des bras. Cet exercice sollicite principalement les dorsaux, les biceps, ainsi que les muscles stabilisateurs des épaules et du tronc.\n\nPosition de départ – Attachez un poids à votre ceinture ou entre vos jambes à l’aide d’un gilet lesté ou d’une ceinture de traction. Saisissez la barre avec une prise en pronation (paumes vers l’avant) ou en supination (paumes vers vous), avec les mains écartées de la largeur des épaules.\n\nContraction du dos – En engageant vos muscles du dos et du tronc, tirez votre corps vers le haut jusqu’à ce que votre menton dépasse la barre. Concentrez-vous sur l'activation des dorsaux pour initier le mouvement, plutôt que de tirer uniquement avec les bras.\n\nMouvement contrôlé – Gardez le mouvement fluide et contrôlé pour éviter de balancer le corps. Veillez à maintenir une posture droite, avec les coudes proches du corps.\n\nPosition en haut – Marquez une courte pause en haut du mouvement, en contractant les muscles du dos et des biceps.\n\nDescente maîtrisée – Redescendez lentement et sous contrôle jusqu’à ce que vos bras soient complètement tendus et vos épaules relâchées. Évitez de simplement laisser tomber le corps ; la descente doit être aussi contrôlée que la montée.\n\nRespiration – Expirez en tirant votre corps vers le haut et inspirez en redescendant.\n\nL'ajout de poids rend cet exercice idéal pour augmenter la force maximale du haut du corps, améliorer la masse musculaire des dorsaux et des bras, tout en travaillant la stabilité du tronc."
+          }
+        }
+      }
+    },
+    "Wilmot" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The Hero WOD **Wilmot** is a tribute to U.S. Navy officer Andrew Wilmot, who was killed in Afghanistan. This WOD focuses on endurance, functional strength, and mental toughness. It includes high-intensity movements and multiple rounds for a full-body workout.\n\n- **6 rounds for time:**\n    - 50 Air Squats\n    - 25 Ring Dips\n    \n\nThe goal of this WOD is to complete the six rounds as quickly as possible while maintaining proper form. The air squats target the legs and lower body, while the ring dips strengthen the triceps, shoulders, and core muscles."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Le WOD Hero Wilmot est un hommage à l'officier de la marine américaine Andrew Wilmot, tombé en Afghanistan. Ce WOD met l'accent sur l'endurance, la force fonctionnelle et la résilience mentale. Il se compose de mouvements à haute intensité et de plusieurs rounds pour un entraînement complet.\n\n6 rounds for time :\n50 Air Squats\n25 Ring Dips\n\nL'objectif de ce WOD est de compléter les six tours le plus rapidement possible tout en maintenant une technique correcte. Les air squats sollicitent les jambes et le bas du corps, tandis que les ring dips renforcent les triceps, les épaules et les muscles du torse."
           }
         }
       }
