@@ -640,6 +640,23 @@
         }
       }
     },
+    "Clovis" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The Hero WOD Clovis honors Second Lieutenant Clovis T. Ray, an officer in the U.S. Army who was killed in Afghanistan in 2012. This WOD is a true test of endurance and strength, combining long-distance running with burpee pull-ups.\n\nFor time (as fast as possible):\n10 miles run (16 km)\n150 Burpee Pull-Ups (split as desired)\n\nThe goal is to complete the 10-mile run while incorporating 150 burpee pull-ups. You can choose how to split up the burpee pull-ups throughout the run, either doing them in smaller sets at strategic points or all at once before or after the run."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Le WOD Hero Clovis rend hommage au Second Lieutenant Clovis T. Ray, un officier de l'armée américaine tué en Afghanistan en 2012. Ce WOD est un véritable test d'endurance et de force, combinant une course longue distance et des burpee pull-ups.\n\nFor time (le plus rapidement possible) :\n10 miles de course (16 km)\n150 Burpee Pull-Ups (répartis comme tu le souhaites)\n\nL'objectif est de compléter les 10 miles de course tout en intégrant 150 burpee pull-ups. Tu peux choisir comment répartir les burpee pull-ups pendant la course, soit en les faisant en plusieurs séries à des moments stratégiques, soit en les terminant d’un coup avant ou après la course."
+          }
+        }
+      }
+    },
     "Compris" : {
       "localizations" : {
         "en" : {
@@ -668,6 +685,23 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "D'accord"
+          }
+        }
+      }
+    },
+    "Daniel" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The Hero WOD Daniel honors Sergeant First Class Daniel Crabtree, who was killed in Iraq in 2006. This WOD focuses on endurance and upper body strength through pulling movements and weightlifting.\n\nFor time:\n50 Pull-Ups\n400 meter run\n21 Thrusters (95 lb / 43 kg)\n800 meter run\n21 Thrusters (95 lb / 43 kg)\n400 meter run\n50 Pull-Ups\n\nThe goal is to complete the workout as quickly as possible. The pull-ups strengthen the upper body, particularly the arms and back, while the thrusters engage the entire body, combining a squat with an overhead press. The runs test cardiovascular endurance between strength-based exercises."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Le WOD Hero Daniel rend hommage au Sergeant First Class Daniel Crabtree, tué en Irak en 2006. Ce WOD met l'accent sur l'endurance et la force du haut du corps à travers des mouvements de tirage et d'haltérophilie.\n\nFor time :\n50 Pull-Ups\n400 mètres de course\n21 Thrusters (43 kg / 95 lb)\n800 mètres de course\n21 Thrusters (43 kg / 95 lb)\n400 mètres de course\n50 Pull-Ups\n\nL'objectif est de compléter cet entraînement le plus rapidement possible. Les pull-ups renforcent le haut du corps, en particulier les bras et le dos, tandis que les thrusters sollicitent l'ensemble du corps, combinant squat et overhead press. Les courses testent l'endurance cardiovasculaire entre les séries d'exercices de force."
           }
         }
       }
@@ -937,6 +971,23 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Entre ton temps"
+          }
+        }
+      }
+    },
+    "Erin" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The Hero WOD Erin honors Erin Doyle, a member of Canada’s Special Operations Regiment, who was killed in Afghanistan in 2008. This WOD focuses on functional strength and endurance, with demanding kettlebell and gymnastics movements.\n\n5 rounds for time:\n15 Dumbbell Split Cleans (40 lb / 20 kg for men, 25 lb / 12.5 kg for women)\n21 Pull-Ups\n\nThe goal is to complete the five rounds as quickly as possible. The dumbbell split cleans are a complex full-body exercise, engaging the legs, shoulders, and core. The pull-ups challenge upper body strength, particularly in the arms and back."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Le WOD Hero Erin rend hommage à Erin Doyle, un membre du Régiment d'opérations spéciales du Canada, tué en Afghanistan en 2008. Ce WOD met l'accent sur la force fonctionnelle et l'endurance, avec des mouvements exigeants de kettlebell et de gymnastique.\n\n5 rounds for time :\n15 Dumbbell Split Cleans (20 kg / 40 lb pour les hommes, 12,5 kg / 25 lb pour les femmes)\n21 Pull-Ups\n\nL'objectif est de terminer les cinq tours le plus rapidement possible. Les dumbbell split cleans sont un exercice complexe qui engage tout le corps, particulièrement les jambes, les épaules et le tronc. Les pull-ups sollicitent la force du haut du corps, principalement les bras et le dos."
           }
         }
       }
@@ -1245,6 +1296,23 @@
         }
       }
     },
+    "Hansen" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The Hero WOD Hansen honors Marine Staff Sergeant Daniel Hansen, who was killed in Afghanistan in 2009. This WOD is designed to test muscular strength and endurance, with a demanding combination of kettlebell swings, burpees, and sit-ups.\n\n5 rounds for time:\n30 Kettlebell Swings (70 lb / 32 kg for men, 53 lb / 24 kg for women)\n30 Burpees\n30 GHD Sit-Ups\n\nThe goal is to complete the five rounds as quickly as possible. The kettlebell swings target explosive power in the legs, hips, and shoulders, while the burpees and sit-ups work on full-body endurance and core strength."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Le WOD Hero Hansen rend hommage au Marine Staff Sergeant Daniel Hansen, tué en Afghanistan en 2009. Ce WOD est conçu pour tester la force musculaire et l'endurance, avec une combinaison exigeante de kettlebell swings, de burpees et de sit-ups.\n\n5 rounds for time :\n30 Kettlebell Swings (32 kg / 70 lb pour les hommes, 24 kg / 53 lb pour les femmes)\n30 Burpees\n30 GHD Sit-Ups\n\nL'objectif est de compléter les cinq tours le plus rapidement possible. Les kettlebell swings sollicitent la puissance explosive des jambes, des hanches et des épaules, tandis que les burpees et les sit-ups travaillent l'endurance et la force du corps entier, notamment le tronc."
+          }
+        }
+      }
+    },
     "Helen" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -1258,6 +1326,23 @@
           "stringUnit" : {
             "state" : "needs_review",
             "value" : "Helen est un WOD qui combine course, kettlebell swings, et pull-ups, mettant à l'épreuve à la fois l'endurance cardiovasculaire, la puissance explosive et la force de traction. Ce WOD fait partie des benchmarks féminins et est souvent utilisé pour tester l'amélioration de la condition physique générale.\n\nFormat du WOD :\n400 m de course : Une course à pied rapide qui augmente le rythme cardiaque dès le début.\nKettlebell Swings (21 répétitions) : Soulevez un kettlebell de bas en haut jusqu’au-dessus de la tête (American style), utilisant la puissance des hanches et du tronc.\nPull-Ups (12 répétitions) : Exercice de traction où le menton doit passer au-dessus de la barre.\n\nRépartition des répétitions :\nRépétez les trois mouvements suivants pour 3 tours :\n\n400 mètres de course\n21 kettlebell swings (24 kg pour les hommes, 16 kg pour les femmes)\n12 pull-ups\n\nObjectif :\nFor Time : Complétez les 3 tours le plus rapidement possible tout en maintenant une bonne forme sur chaque mouvement.\n\nConseils pour le WOD Helen :\nGestion de la course : La course doit être rapide mais contrôlée pour garder de l’énergie pour les kettlebell swings et les pull-ups. Trouvez un rythme régulier.\nKettlebell Swings efficaces : Utilisez la puissance des hanches pour balancer le kettlebell plutôt que de solliciter uniquement les bras. Réalisez de grandes séries si possible.\nPull-Ups : Adaptez les pull-ups selon votre niveau (kipping, strict, ou avec assistance). Ne dépassez pas vos capacités pour éviter la fatigue trop rapide.\nTransitions rapides : Réduisez les temps de transition entre les mouvements. Chaque seconde compte.\n\nPoids recommandé :\nKettlebell : 24 kg pour les hommes, 16 kg pour les femmes."
+          }
+        }
+      }
+    },
+    "Helton" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The Hero WOD Helton honors First Lieutenant Joseph Helton, who was killed in Iraq in 2009. This WOD tests both endurance and muscular strength, with a series of functional exercises completed over three rounds.\n\n3 rounds for time:\n800 meter run\n30 Dumbbell Squat Cleans (50 lb / 22.5 kg for men, 35 lb / 15 kg for women)\n30 Burpees\n\nThe goal is to complete the three rounds as quickly as possible. The 800-meter run challenges cardiovascular endurance, the dumbbell squat cleans strengthen full-body power, particularly the legs and core, while the burpees engage the entire body and require high levels of physical and mental stamina."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Le WOD Hero Helton rend hommage au First Lieutenant Joseph Helton, tué en Irak en 2009. Ce WOD est un test d'endurance et de force musculaire, avec une série d'exercices fonctionnels à réaliser sur trois tours.\n\n3 rounds for time :\n800 mètres de course\n30 Dumbbell Squat Cleans (50 lb / 22,5 kg pour les hommes, 35 lb / 15 kg pour les femmes)\n30 Burpees\n\nL'objectif est de terminer les trois tours le plus rapidement possible. La course de 800 mètres teste l'endurance cardiovasculaire, les dumbbell squat cleans renforcent la puissance du corps entier, en particulier les jambes et le tronc, tandis que les burpees sollicitent tout le corps et nécessitent une grande endurance physique et mentale."
           }
         }
       }
@@ -1524,6 +1609,12 @@
     "Key 2" : {
       "extractionState" : "manual"
     },
+    "Key 3" : {
+      "extractionState" : "manual"
+    },
+    "Key 4" : {
+      "extractionState" : "manual"
+    },
     "KippingBarMuscleUp" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -1720,6 +1811,23 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Le Lunge ou Fente est un exercice fondamental pour développer la force et la stabilité des jambes. Cet exercice polyarticulaire sollicite principalement les quadriceps, les ischio-jambiers et les fessiers, tout en améliorant l'équilibre et la coordination. Il peut être réalisé avec ou sans poids, en fonction du niveau de difficulté souhaité.\n\nPosition de départ – Tenez-vous debout, pieds écartés de la largeur des hanches. Vous pouvez placer vos mains sur vos hanches ou tenir des haltères pour augmenter la difficulté.\n\nPhase de descente – Faites un grand pas en avant avec une jambe. Abaissez votre corps en fléchissant les deux genoux jusqu'à ce que le genou arrière soit proche du sol, sans le toucher. Le genou avant doit être aligné avec la cheville, formant un angle de 90 degrés. Gardez votre torse droit et engagez les abdominaux pour maintenir l'équilibre.\n\nPhase de poussée – Repoussez sur votre talon avant pour revenir à la position de départ, en gardant le poids centré sur votre jambe avant. Alternez les jambes ou effectuez toutes les répétitions sur une jambe avant de changer de côté.\n\nRespiration – Inspirez en descendant et expirez en remontant.\n\nConseils supplémentaires – Pour plus de difficulté, vous pouvez tenir des haltères dans chaque main ou utiliser une barre sur vos épaules. Assurez-vous de garder le buste droit et de ne pas laisser le genou avant dépasser la pointe du pied.\n\nLes Lunges sont un excellent exercice pour renforcer les muscles des jambes et des fessiers, tout en améliorant la stabilité fonctionnelle et l'équilibre du corps. Ils sont souvent intégrés dans les programmes de renforcement musculaire ou de conditionnement physique."
+          }
+        }
+      }
+    },
+    "Manion" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The Hero WOD Manion honors First Lieutenant Travis Manion, who was killed in Iraq in 2007. This WOD is a demanding test of strength and muscular endurance, focusing on heavy squats and running.\n\n7 rounds for time:\n400 meter run\n29 Back Squats (135 lb / 61 kg for men, 95 lb / 43 kg for women)\n\nThe goal is to complete the seven rounds as quickly as possible. The back squats, performed at a moderate to heavy weight, strengthen the legs and core, while the 400-meter runs challenge cardiovascular endurance and provide active recovery."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Le WOD Hero Manion rend hommage au First Lieutenant Travis Manion, tué en Irak en 2007. Ce WOD est un test exigeant de force et d'endurance musculaire, avec un accent sur les squats lourds et la course à pied.\n\n7 rounds for time :\n400 mètres de course\n29 Back Squats (61 kg / 135 lb pour les hommes, 43 kg / 95 lb pour les femmes)\n\nL'objectif est de compléter les sept tours le plus rapidement possible. Les back squats, réalisés à une charge modérée à lourde, renforcent les jambes et le tronc, tandis que les courses de 400 mètres sollicitent l'endurance cardiovasculaire et permettent une récupération active."
           }
         }
       }
@@ -2262,6 +2370,23 @@
         }
       }
     },
+    "Randy" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The Hero WOD Randy honors Randy Simmons, an LAPD SWAT officer who was killed in the line of duty in 2008. This WOD tests strength and endurance through a single weightlifting movement, performed at high intensity.\n\nFor time:\n75 Power Snatches (75 lb / 35 kg for men, 55 lb / 25 kg for women)\n\nThe goal is to complete 75 power snatches as quickly as possible. This movement engages the entire body, especially the legs, shoulders, and back. It requires good technique, coordination, and explosive power."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Le WOD Hero Randy rend hommage à Randy Simmons, un officier du SWAT du LAPD tué en service en 2008. Ce WOD met à l'épreuve la force et l'endurance avec un seul mouvement d'haltérophilie, réalisé à haute intensité.\n\nFor time:\n75 Power Snatches (35 kg / 75 lb pour les hommes, 25 kg / 55 lb pour les femmes)\n\nL'objectif est de compléter les 75 power snatches aussi rapidement que possible. Ce mouvement sollicite tout le corps, en particulier les jambes, les épaules et le dos. Il requiert une bonne technique, de la coordination, et une puissance explosive."
+          }
+        }
+      }
+    },
     "Rechercher un mouvement" : {
       "localizations" : {
         "en" : {
@@ -2391,6 +2516,40 @@
           "stringUnit" : {
             "state" : "needs_review",
             "value" : "Le Rowing Bar, également appelé Bent-Over Row, est un exercice polyarticulaire de musculation qui cible principalement les muscles du dos (grand dorsal, trapèze) ainsi que les biceps et les muscles stabilisateurs du tronc. C'est un excellent mouvement pour développer la force du haut du corps, notamment la musculature postérieure.\n\nPosition de départ – Tenez-vous debout, pieds écartés à la largeur des épaules, une barre chargée devant vous. Penchez-vous en avant à partir des hanches, en gardant le dos droit et les genoux légèrement fléchis. La barre doit être tenue avec une prise pronation (paumes vers le bas) à la largeur des épaules, bras tendus vers le sol.\n\nTirage de la barre – En contractant les muscles du dos et des bras, tirez la barre vers votre abdomen en maintenant les coudes proches du corps. Le mouvement doit être contrôlé et initié par les muscles du dos, en évitant de compenser avec les bras.\n\nPosition finale – Lorsque la barre atteint le bas de votre abdomen (ou légèrement au-dessus), marquez une pause et contractez les omoplates ensemble pour maximiser l'activation des muscles du dos.\n\nRetour contrôlé – Abaissez lentement la barre en étendant les bras tout en maintenant la tension dans le dos et en conservant la position de votre tronc.\n\nRespiration – Expirez pendant le tirage de la barre et inspirez en abaissant la barre vers la position de départ.\n\nLe Rowing Bar est un exercice clé pour développer une masse musculaire dorsale solide, ainsi que pour améliorer la posture et la force fonctionnelle.\n\n"
+          }
+        }
+      }
+    },
+    "Roy" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The Hero WOD Roy honors Marine Corps Sergeant Major Roy Benavidez, a hero of the Vietnam War. This WOD combines strength and endurance through weightlifting movements and cardiovascular exercises.\n\n15 Deadlifts (225 lb / 102 kg for men, 155 lb / 70 kg for women)\n20 Box Jumps (24\" / 60 cm for both men and women)\n25 Pull-Ups\n\nThe goal is to complete the five rounds as quickly as possible. The deadlifts strengthen the posterior chain (lower back, legs, glutes), the box jumps engage explosive leg power, and the pull-ups work upper body strength, particularly the arms and back."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Le WOD Hero Roy rend hommage au Marine Corps Sergeant Major Roy Benavidez, un héros de la guerre du Vietnam. Ce WOD combine force et endurance à travers des mouvements d'haltérophilie et des exercices cardiovasculaires.\n\n5 rounds for time :\n15 Deadlifts (102 kg / 225 lb pour les hommes, 70 kg / 155 lb pour les femmes)\n20 Box Jumps (24\" / 60 cm pour les hommes et les femmes)\n25 Pull-Ups\n\nL'objectif est de terminer les cinq tours le plus rapidement possible. Les deadlifts renforcent la chaîne postérieure (bas du dos, jambes, fessiers), tandis que les box jumps sollicitent la puissance explosive des jambes et les pull-ups travaillent la force du haut du corps, particulièrement les bras et le dos."
+          }
+        }
+      }
+    },
+    "Ryan" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The Hero WOD Ryan honors Firefighter James Ryan of the Fire Department of New York (FDNY), who lost his life in the line of duty. This WOD focuses on strength and coordination, combining gymnastics movements with bodyweight exercises.\n\n5 rounds for time:\n7 Muscle-Ups\n\n21 Burpees, jumping over a 30-inch (76 cm) obstacle\n\nThe goal is to complete the five rounds as quickly as possible. The muscle-ups require excellent coordination and significant upper body strength, while the burpees with jumps over an obstacle engage the entire body, testing both endurance and explosive power."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Le WOD Hero Ryan rend hommage au Firefighter James Ryan, membre du Fire Department of New York (FDNY), qui a perdu la vie dans l'exercice de ses fonctions. Ce WOD met l'accent sur la force et la coordination, en combinant des mouvements de gymnastique et des exercices avec haltères.\n\n5 rounds for time :\n7 Muscle-Ups\n21 Burpees sautés par-dessus un obstacle de 30 pouces (76 cm)\n\nL'objectif est de terminer les cinq tours le plus rapidement possible. Les muscle-ups demandent une excellente coordination et une grande force du haut du corps, tandis que les burpees avec saut au-dessus d’un obstacle sollicitent tout le corps, testant à la fois l'endurance et la puissance explosive."
           }
         }
       }

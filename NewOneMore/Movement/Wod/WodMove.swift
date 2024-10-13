@@ -131,6 +131,61 @@ let wodMoves = [
         imageName: "Blake",
         category: .hero
     ),
+    WodMove(
+        nom: "Daniel",
+        subtitle: NSLocalizedString("Daniel", comment: ""),
+        imageName: "Daniel",
+        category: .hero
+    ),
+    WodMove(
+        nom: "Helton",
+        subtitle: NSLocalizedString("Helton", comment: ""),
+        imageName: "Helton",
+        category: .hero
+    ),
+    WodMove(
+        nom: "Randy",
+        subtitle: NSLocalizedString("Randy", comment: ""),
+        imageName: "Randy",
+        category: .hero
+    ),
+    WodMove(
+        nom: "Roy",
+        subtitle: NSLocalizedString("Roy", comment: ""),
+        imageName: "Roy",
+        category: .hero
+    ),
+    WodMove(
+        nom: "Erin",
+        subtitle: NSLocalizedString("Erin", comment: ""),
+        imageName: "Erin",
+        category: .hero
+    ),
+    WodMove(
+        nom: "Ryan",
+        subtitle: NSLocalizedString("Ryan", comment: ""),
+        imageName: "Ryan",
+        category: .hero
+    ),
+    WodMove(
+        nom: "Clovis",
+        subtitle: NSLocalizedString("Clovis", comment: ""),
+        imageName: "Clovis",
+        category: .hero
+    ),
+    WodMove(
+        nom: "Manion",
+        subtitle: NSLocalizedString("Manion", comment: ""),
+        imageName: "Manion",
+        category: .hero
+    ),
+    WodMove(
+        nom: "Hansen",
+        subtitle: NSLocalizedString("Hansen", comment: ""),
+        imageName: "Hansen",
+        category: .hero
+    ),
+    
     
     // Open
     WodMove(nom: "11.1 ",
