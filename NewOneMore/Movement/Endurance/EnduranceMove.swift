@@ -17,8 +17,16 @@ struct EnduranceMove: Hashable {
 
 var enduranceMoves: [EnduranceMove] = [
     // Outoor
-    EnduranceMove(nom: "Marathon", subtitle: "Course de 42.195 kilomètres, un défi d'endurance extrême.", imageName: "Marathon", category: .outdoor),
-    EnduranceMove(nom: "10K Run", subtitle: "Course de 10 kilomètres, idéale pour tester la vitesse et l'endurance.", imageName: "10K-Run", category: .outdoor),
+    EnduranceMove(
+        nom: "Marathon",
+        subtitle: NSLocalizedString("Marathon", comment: ""),
+        imageName: "Marathon",
+        category: .outdoor),
+    EnduranceMove(
+        nom: "10K Run",
+        subtitle: "",
+        imageName: "10K-Run",
+        category: .outdoor),
     EnduranceMove(nom: "5K Run", subtitle: "Course rapide de 5 kilomètres, souvent utilisée pour les courses locales.", imageName: "5K-Run", category: .outdoor),
     EnduranceMove(nom: "Half Marathon", subtitle: "Course de 21.1 kilomètres, un défi entre le 10K et le marathon complet.", imageName: "Half-Marathon", category: .outdoor),
     EnduranceMove(nom: "Sprint 400m", subtitle: "Course de 400 mètres, un test de vitesse sur une courte distance.", imageName: "Sprint-400m", category: .outdoor),

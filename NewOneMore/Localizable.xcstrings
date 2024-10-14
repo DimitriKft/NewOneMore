@@ -1832,6 +1832,23 @@
         }
       }
     },
+    "Marathon" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The marathon originates from a historical event that took place in ancient Greece in 490 BC. According to legend, a Greek soldier named Pheidippides ran from the city of Marathon to Athens, a distance of about 40 kilometers, to announce the Greeks’ victory over the Persians at the Battle of Marathon. Upon arriving in Athens, after delivering his message, he is said to have died from exhaustion. This legendary feat inspired the creation of the long-distance race known as the “marathon.”\n\nThe modern marathon made its debut at the first modern Olympic Games in 1896, in Athens, where the race distance was approximately 40 kilometers, following the approximate distance from Marathon to Athens. However, it was at the 1908 London Olympic Games that the current distance of 42.195 kilometers was established. This distance was set so that the race could start at Windsor Castle and finish in front of the royal box at the Olympic Stadium, and it has since become the official standard for marathons worldwide.\n\nThe marathon is an iconic endurance event, consisting of running a distance of 42.195 kilometers (26.2 miles). This long-distance race is a true test of physical and mental resilience, requiring meticulous preparation, effort management, and personal discipline.\n\nDistance: 42.195 km (26.2 miles)\n\nThe marathon primarily challenges cardiovascular endurance and the muscular strength of the legs. It is also a mental challenge, where race strategy, hydration management, and the ability to overcome fatigue play a crucial role. Marathon runners must face challenges such as the “wall” around the 30th kilometer, where physical and mental exhaustion become most difficult to manage."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Le Marathon tire son origine d'un événement historique survenu dans la Grèce antique en 490 avant J.-C. Selon la légende, un soldat grec nommé Phidippidès a couru de la ville de Marathon jusqu'à Athènes, une distance d'environ 40 kilomètres, pour annoncer la victoire des Grecs sur les Perses lors de la bataille de Marathon. À son arrivée à Athènes, après avoir délivré son message, il serait mort d'épuisement. Cet exploit légendaire a inspiré la création de l'épreuve de course longue distance connue sous le nom de \"marathon\".\n\nLe marathon moderne a fait ses débuts aux premiers Jeux olympiques modernes en 1896, à Athènes, où la distance de la course était d'environ 40 kilomètres, suivant la distance approximative de Marathon à Athènes. Cependant, ce n'est qu'aux Jeux olympiques de Londres en 1908 que la distance actuelle de 42,195 kilomètres a été fixée. Cette distance a été déterminée pour que la course commence au château de Windsor et se termine devant la loge royale au stade olympique, et elle est devenue la norme officielle pour les marathons dans le monde entier. \n\nLe Marathon est une épreuve d'endurance emblématique, consistant à courir une distance de 42,195 kilomètres (26,2 miles). Cette course de longue distance est un véritable test de la résilience physique et mentale des athlètes, demandant une préparation minutieuse, une gestion de l'effort et une discipline personnelle.\n\nDistance : 42,195 km (26,2 miles)\n\nLe marathon sollicite principalement l'endurance cardiovasculaire et la force musculaire des jambes. C'est également une épreuve mentale où la stratégie de course, la gestion de l'hydratation et la capacité à surmonter la fatigue jouent un rôle crucial. Les marathoniens doivent faire face à des défis tels que le \"mur\" aux alentours du 30ème kilomètre, où l'épuisement physique et mental devient le plus difficile à gérer."
+          }
+        }
+      }
+    },
     "Meilleur temps" : {
       "localizations" : {
         "en" : {
