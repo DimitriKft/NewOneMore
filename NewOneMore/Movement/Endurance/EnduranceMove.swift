@@ -24,7 +24,7 @@ var enduranceMoves: [EnduranceMove] = [
         category: .outdoor),
     EnduranceMove(
         nom: "10K Run",
-        subtitle: "",
+        subtitle: NSLocalizedString("10KRun", comment: ""),
         imageName: "10K-Run",
         category: .outdoor),
     EnduranceMove(nom: "5K Run", subtitle: "Course rapide de 5 kilomètres, souvent utilisée pour les courses locales.", imageName: "5K-Run", category: .outdoor),
