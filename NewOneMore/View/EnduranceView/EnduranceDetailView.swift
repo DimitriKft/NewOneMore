@@ -56,6 +56,7 @@ struct EnduranceDetailView: View {
                                 activeSheet = .description
                             }
                             .padding(.bottom, 20)
+                            .hidden()
                         }
                         .padding(.trailing, 20)
                         .padding(.top, 10)
