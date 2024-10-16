@@ -91,7 +91,7 @@ struct StrongDetailView: View {
                     .offset(y: 150)
                 }
                 Text("PR: \(String(format: "%.1f", strong.scores.max() ?? 0.0)) Kg")
-                    .font(.largeTitle)
+                    .font(Font.custom("edosz", size: 38 , relativeTo: .title))
                     .fontWeight(.black)
                     .foregroundStyle(strong.couleurCategorie)
                     .padding(.top, 40)

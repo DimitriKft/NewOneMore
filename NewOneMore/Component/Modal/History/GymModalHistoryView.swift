@@ -33,7 +33,7 @@ struct GymModalHistoryView: View {
                 .fontWeight(.semibold)
                 .foregroundColor(.secondary)
             Text("\(name)")
-                .font(.title)
+                .font(Font.custom("edosz", size: 38 , relativeTo: .title))
                 .foregroundColor(couleurCategorie)
                 .fontWeight(.black)
                 .fontWidth(.expanded)

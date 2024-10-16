@@ -14,6 +14,7 @@ struct GymListView: View {
     @State private var showingFilterSheet = false
     @State private var selectedCategory: GymCategories? = nil
     @State private var searchText: String = ""
+    @Environment(\.colorScheme) var colorScheme
     
     let columns = [
         GridItem(.flexible(), spacing: 16),
@@ -29,8 +30,18 @@ struct GymListView: View {
                             .padding(8)
                             .background(Color.gray.opacity(0.2))
                             .cornerRadius(8)
-                            .padding(.horizontal)
+
+                        // Bouton des filtres dans la searchbar
+                        Button(action: {
+                            showingFilterSheet = true
+                        }) {
+                            Image(systemName: "line.3.horizontal.decrease.circle.fill")
+                                .font(.largeTitle)
+                                .foregroundColor(colorScheme == .dark ? .white : .black)
+                                .padding(8)
+                        }
                     }
+                    .padding(.horizontal)
                     .padding(.top, 10)
                 }
                 
@@ -60,27 +71,7 @@ struct GymListView: View {
             }
             .navigationTitle("Gym")
             .navigationBarItems(trailing: HStack {
-                if !gyms.isEmpty {
-                    Button(action: {
-                        showingFilterSheet = true
-                    }) {
-                        ZStack {
-                            Rectangle()
-                                .fill(Color.black)
-                                .frame(width: 38, height: 38)
-                                .cornerRadius(8)
-                            Image(systemName: "line.horizontal.3.decrease.circle")
-                                .font(.title3)
-                                .foregroundColor(.white)
-                        }
-                        .overlay(
-                            RoundedRectangle(cornerRadius: 5)
-                                .stroke(Color.white, lineWidth: 0.6)
-                                .opacity(0.8)
-                        )
-                    }
-                }
-                
+             
                 
                 Button(action: {
                     showingAddItemView = true

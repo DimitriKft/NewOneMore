@@ -20,7 +20,7 @@ struct EnduranceDescriptionView: View {
                 ActionBtnView(iconSF: "chevron.down.circle.fill", color: couleurCategorie, colorPrimary: .black, action: { dismiss() })
             }
             Text(name)
-                .font(.title)
+                .font(Font.custom("edosz", size: 38 , relativeTo: .title))
                 .fontWeight(.bold)
                 .foregroundColor(couleurCategorie)
 

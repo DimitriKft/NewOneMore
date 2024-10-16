@@ -7,6 +7,10 @@
 		<string>en</string>
 		<string>fr</string>
 	</array>
+	<key>UIAppFonts</key>
+	<array>
+		<string>edosz.ttf</string>
+	</array>
 	<key>UIBackgroundModes</key>
 	<array>
 		<string>remote-notification</string>

@@ -38,7 +38,7 @@ struct StrongModalCalculatorView: View {
             }
             .padding(.top)
             Text("\(String(format: "%.1f", calculatePercentage())) Kg")
-                .font(.largeTitle)
+                .font(Font.custom("edosz", size: 38 , relativeTo: .title))
                 .fontWeight(.bold)
                 .foregroundColor(color)
                 .padding(.bottom, 20)

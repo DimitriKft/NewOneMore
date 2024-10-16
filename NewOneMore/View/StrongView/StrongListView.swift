@@ -13,6 +13,7 @@ struct StrongListView: View {
     @State private var showingFilterSheet = false
     @State private var selectedCategory: Categories? = nil
     @State private var searchText: String = ""
+    @Environment(\.colorScheme) var colorScheme
     
     let columns = [
         GridItem(.flexible(), spacing: 16),
@@ -28,18 +29,27 @@ struct StrongListView: View {
                             .padding(8)
                             .background(Color.gray.opacity(0.2))
                             .cornerRadius(8)
-                            .padding(.horizontal)
+
+                        // Bouton des filtres dans la searchbar
+                        Button(action: {
+                            showingFilterSheet = true
+                        }) {
+                            Image(systemName: "line.3.horizontal.decrease.circle.fill")
+                                .font(.largeTitle)
+                                .foregroundColor(colorScheme == .dark ? .white : .black)
+                                .padding(8)
+                        }
                     }
+                    .padding(.horizontal)
                     .padding(.top, 10)
                 }
                 
                 if strongs.isEmpty {
-                    
                     VStack(alignment: .leading) {
                         Text("Ajoute ton premier PR")
                             .font(.title)
                             .fontWeight(.bold)
-                       Text("Pour sélectionner ton premier mouvement de force, appuie sur le bouton + ci-dessus. Tu pourras consulter les mouvements disponibles pour tes PR et les ajouter ici.")
+                        Text("Pour sélectionner ton premier mouvement de force, appuie sur le bouton + ci-dessus. Tu pourras consulter les mouvements disponibles pour tes PR et les ajouter ici.")
                             .foregroundStyle(.secondary)
                     }
                     .padding()
@@ -57,48 +67,20 @@ struct StrongListView: View {
                     }
                 }
             }
-            .navigationTitle("Force")
+            .navigationTitle("Force ")
             .navigationBarItems(trailing: HStack {
-                if !strongs.isEmpty {
-                    Button(action: {
-                        showingFilterSheet = true
-                    }) {
-                        ZStack {
-                            Rectangle()
-                                .fill(Color.black)
-                                .frame(width: 38, height: 38)
-                                .cornerRadius(8)
-                            Image(systemName: "line.horizontal.3.decrease.circle")
-                                .font(.title3)
-                                .foregroundColor(.white)
-                        }
-                        .overlay(
-                            RoundedRectangle(cornerRadius: 5)
-                                .stroke(Color.white, lineWidth: 0.6)
-                                .opacity(0.8)
-                        )
-                    }
-                }
-                
-                
                 Button(action: {
                     showingAddItemView = true
                 }) {
                     ZStack {
-                        Rectangle()
-                            .fill(Color.black)
-                            .frame(width: 38, height: 38)
-                            .cornerRadius(8)
-                        Image(systemName: "plus")
-                            .font(.title3)
-                            .foregroundColor(.white)
+                        Text("+")
+                            .font(Font.custom("edosz", size: 70, relativeTo: .title))
+                            .foregroundStyle((colorScheme == .dark) ? .white :.black)
                     }
-                    .overlay(
-                        RoundedRectangle(cornerRadius: 5)
-                            .stroke(Color.white, lineWidth: 0.6)
-                            .opacity(0.8)
-                    )
+                   
                 }
+                .padding(.top)
+                .padding(.trailing, 5)
             })
             .sheet(isPresented: $showingAddItemView) {
                 StrongAddView(selectedStrongs: strongs.map { $0.nom })
@@ -109,6 +91,20 @@ struct StrongListView: View {
                     buttons: categoryFilterButtons()
                 )
             }
+        }   .onAppear {
+            // Personnalisation de la barre de navigation complète avec UIKit
+            let appearance = UINavigationBarAppearance()
+            appearance.configureWithTransparentBackground() // Fond transparent
+            appearance.largeTitleTextAttributes = [
+                .font: UIFont(name: "edosz", size: 34)!,
+//                .foregroundColor: UIColor.black
+            ]
+            appearance.titleTextAttributes = [
+                .font: UIFont(name: "edosz", size: 20)!,
+//                .foregroundColor: UIColor.black
+            ]
+            UINavigationBar.appearance().standardAppearance = appearance
+            UINavigationBar.appearance().scrollEdgeAppearance = appearance
         }
     }
     
@@ -130,12 +126,10 @@ struct StrongListView: View {
         }
     }
 
-
     func matchesSelectedCategory(strong: Strong, selectedCategory: Categories) -> Bool {
         return strong.categories.contains(selectedCategory.rawValue)
     }
 
-    
     private func categoryFilterButtons() -> [ActionSheet.Button] {
         var buttons: [ActionSheet.Button] = Categories.allCases.map { category in
             .default(Text(category.localizedName())) {
@@ -149,7 +143,6 @@ struct StrongListView: View {
         return buttons
     }
 
-    
     func formatDate(_ date: Date) -> String {
         let formatter = DateFormatter()
         formatter.dateStyle = .medium

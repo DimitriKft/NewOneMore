@@ -93,7 +93,7 @@ struct EnduranceDetailView: View {
                     .foregroundStyle(endurance.couleurCategorie.secondary)
                     .padding(.top, 35)
                 Text("\(formatTime(bestTime ?? endurance.times.min() ?? 0.0))")
-                    .font(.largeTitle)
+                    .font(Font.custom("edosz", size: 38 , relativeTo: .title))
                     .fontWeight(.black)
                     .foregroundStyle(endurance.couleurCategorie)
                 Text("Entre ton temps")

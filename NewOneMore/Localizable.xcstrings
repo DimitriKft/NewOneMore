@@ -172,6 +172,9 @@
         }
       }
     },
+    "+" : {
+
+    },
     "10KRun" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -1426,6 +1429,9 @@
           }
         }
       }
+    },
+    "Force " : {
+
     },
     "Formule de Brzycki" : {
       "localizations" : {
@@ -2809,6 +2815,9 @@
           }
         }
       }
+    },
+    "Rechercher un wod" : {
+
     },
     "Rechercher un WOD" : {
       "localizations" : {

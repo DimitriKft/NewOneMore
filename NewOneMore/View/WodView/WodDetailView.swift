@@ -92,7 +92,7 @@ struct WodDetailView: View {
                     .foregroundStyle(wod.couleurCategorie.secondary)
                     .padding(.top, 35)
                 Text("\(formatTime(bestTime ?? wod.times.min() ?? 0.0))")
-                    .font(.largeTitle)
+                    .font(Font.custom("edosz", size: 38 , relativeTo: .title))
                     .fontWeight(.black)
                     .foregroundStyle(wod.couleurCategorie)
 

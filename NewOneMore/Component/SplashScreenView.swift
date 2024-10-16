@@ -15,10 +15,12 @@ struct SplashScreenView: View {
     
     var body: some View {
         VStack {
-            Image(colorScheme == .dark ? "addMore" : "addMoreDark") // Change d'image selon le mode
-                .resizable()
-                .scaledToFit()
-                .frame(width: 100, height: 100) // Taille de départ de l'image
+//            Image(colorScheme == .dark ? "addMore" : "addMoreDark") // Change d'image selon le mode
+//                .resizable()
+//                .scaledToFit()
+//                .frame(width: 100, height: 100) // Taille de départ de l'image
+            Text("+")
+            .font(Font.custom("edosz", size: 150, relativeTo: .title))
                 .scaleEffect(scale)
                 .rotationEffect(.degrees(rotation))
                 .onAppear {
@@ -38,7 +40,7 @@ struct SplashScreenView: View {
             if showText {
                 VStack {
                     Text("One More")
-                        .font(.largeTitle)
+                        .font(Font.custom("edosz", size: 40, relativeTo: .title))
                         .fontWeight(.black)
                         .fontWidth(.expanded)
                         .foregroundColor(.primary)

@@ -95,7 +95,7 @@ struct GymDetailView: View {
                     .offset(y: 150)
                 }
                 Text("PR: \(String(format: "%.0f", gym.scores.max() ?? 0.0)) reps")
-                    .font(.largeTitle)
+                    .font(Font.custom("edosz", size: 38 , relativeTo: .title))
                     .fontWeight(.black)
                     .foregroundStyle(gym.couleurCategorie)
                     .padding(.top, 40)
