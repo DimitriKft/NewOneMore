@@ -50,6 +50,21 @@ struct EnduranceAddView: View {
                     .padding(.horizontal)
                 
                 ScrollView {
+                    if filteredItems().isEmpty {
+                        Spacer()
+                        VStack {
+                            Text("Tu as ajouté toutes les activités !")
+                                .font(Font.custom("edosz", size: 16 , relativeTo: .title))
+
+                            Text("Reviens dans quelque temps, nous mettons à jour nos activitées régulièrement. Et n'hésite pas à nous contacter si tu as des activitées manquantes.")
+                                .font(.system(size: 15))
+
+                            Text("www.one-more.com")
+                                .font(.system(size: 11))
+                                .padding(.top, 16)
+                        }
+                        .padding()
+                    }
                     LazyVGrid(columns: columns, spacing: 16) {
                         ForEach(filteredItems(), id: \.self) { item in
                             EnduranceCardMoveView(

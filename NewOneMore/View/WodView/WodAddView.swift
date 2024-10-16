@@ -55,6 +55,21 @@ struct WodAddView: View {
                     .padding(.horizontal)
                 
                 ScrollView {
+                    if filteredItems().isEmpty {
+                        Spacer()
+                        VStack {
+                            Text("Tu as ajouté tous les wods !")
+                                .font(Font.custom("edosz", size: 16 , relativeTo: .title))
+
+                            Text("Reviens dans quelque temps, nous mettons à jour nos wods régulièrement. Et n'hésite pas à nous contacter si tu as des wods manquants.")
+                                .font(.system(size: 15))
+
+                            Link("www.one-more.com", destination: URL(string: "https://studio-clic.fr")!)
+                                .font(.system(size: 11))
+                                .padding(.top, 16)
+                        }
+                        .padding()
+                    }
                     LazyVGrid(columns: columns, spacing: 16) {
                         ForEach(filteredItems(), id: \.self) { item in
                             WodCardMoveView(

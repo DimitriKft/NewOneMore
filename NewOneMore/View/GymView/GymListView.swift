@@ -72,25 +72,18 @@ struct GymListView: View {
             .navigationTitle("Gym")
             .navigationBarItems(trailing: HStack {
              
-                
                 Button(action: {
                     showingAddItemView = true
                 }) {
                     ZStack {
-                        Rectangle()
-                            .fill(Color.black)
-                            .frame(width: 38, height: 38)
-                            .cornerRadius(8)
-                        Image(systemName: "plus")
-                            .font(.title3)
-                            .foregroundColor(.white)
+                        Text("+")
+                            .font(Font.custom("edosz", size: 70, relativeTo: .title))
+                            .foregroundStyle((colorScheme == .dark) ? .white :.black)
                     }
-                    .overlay(
-                        RoundedRectangle(cornerRadius: 5)
-                            .stroke(Color.white, lineWidth: 0.6)
-                            .opacity(0.8)
-                    )
+                   
                 }
+                .padding(.top)
+                .padding(.trailing, 5)
             })
             .sheet(isPresented: $showingAddItemView) {
                 GymAddView(selectedGyms: gyms.map { $0.nom })

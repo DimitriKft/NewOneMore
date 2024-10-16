@@ -48,6 +48,21 @@ struct StrongAddView: View {
                     .cornerRadius(8)
                     .padding(.horizontal)
                 ScrollView {
+                    if filteredItems().isEmpty {
+                        Spacer()
+                        VStack {
+                            Text("Tu as ajouté tous les mouvements !")
+                                .font(Font.custom("edosz", size: 16 , relativeTo: .title))
+
+                            Text("Reviens dans quelque temps, nous mettons à jour nos mouvements régulièrement. Et n'hésite pas à nous contacter si tu as des mouvements manquants.")
+                                .font(.system(size: 15))
+
+                            Text("www.one-more.com")
+                                .font(.system(size: 11))
+                                .padding(.top, 16)
+                        }
+                        .padding()
+                    }
                     LazyVGrid(columns: columns, spacing: 16) {
                         ForEach(filteredItems(), id: \.self) { item in
                             StrongCardMoveView(
