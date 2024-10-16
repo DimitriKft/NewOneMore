@@ -14,6 +14,7 @@ struct StrongCardView: View {
     var scores: [Double]
     var dates: [Date]
     
+    
     var body: some View {
         VStack {
             ZStack {
@@ -36,7 +37,6 @@ struct StrongCardView: View {
                     Text(nom.count > 16 ? "\(nom.prefix(18)).." : nom)
                         .font(.caption)
                         .fontWeight(.black)
-                        .foregroundColor(.white)
                 }
                 .frame(width: 300, height: 100)
                 .background(
@@ -95,7 +95,6 @@ struct StrongCardView: View {
                 }
                 .font(.system(size: 8))
                 .fontWeight(.bold)
-                .foregroundStyle(.white)
                 .padding(.top, 120)
             }
         }

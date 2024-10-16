@@ -36,7 +36,6 @@ struct EnduranceCardView: View {
                     Text(nom.count > 16 ? "\(nom.prefix(18)).." : nom)
                         .font(.caption)
                         .fontWeight(.black)
-                        .foregroundColor(.white)
                 }
                 .frame(width: 300, height: 100)
                 .background(
@@ -96,7 +95,6 @@ struct EnduranceCardView: View {
                 }
                 .font(.system(size: 8))
                 .fontWeight(.bold)
-                .foregroundStyle(.white)
                 .padding(.top, 120)
             }
         }

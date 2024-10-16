@@ -35,8 +35,7 @@ struct StrongFieldAddScoreView: View {
                                 .padding(.leading, 10)
                                 .foregroundColor(.white)
                 if newScore.isEmpty {
-                    Text("Entre ton 1RM ici..")
-                        .foregroundColor(.white)
+                    Text("Entre ton score ici..")
                         .fontWeight(.bold)
                         .padding(.leading, 20)
                 }
@@ -57,7 +56,6 @@ struct StrongFieldAddScoreView: View {
                     }
                     .font(.headline)
                     .fontWeight(.bold)
-                    .foregroundColor(.black)
                 }
                 .padding(.trailing, 25)
             }

@@ -65,7 +65,6 @@ struct WodDetailView: View {
                         Text(wod.nom)
                             .font(.headline)
                             .fontWeight(.black)
-                            .foregroundColor(.white)
                     }
                     .frame(width: 300, height: 100)
                     .background(
@@ -109,8 +108,9 @@ struct WodDetailView: View {
                 }) {
                     Text(newTime.isEmpty ? "HH : MM : SS" : newTime)
                         .font(.title)
+                        .shadow(radius: 4)
                         .fontWeight(.bold)
-                        .foregroundColor(.white)
+        
                         .padding()
                         .background(wod.couleurCategorie)
                         .cornerRadius(10)

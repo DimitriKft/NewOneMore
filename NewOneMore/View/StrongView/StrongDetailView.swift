@@ -70,7 +70,6 @@ struct StrongDetailView: View {
                         Text(strong.nom)
                             .font(.headline)
                             .fontWeight(.black)
-                            .foregroundColor(.white)
                     }
                     .frame(width: 300, height: 100)
                     .background(
