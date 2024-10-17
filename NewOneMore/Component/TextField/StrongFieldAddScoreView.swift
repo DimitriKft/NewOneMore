@@ -16,29 +16,23 @@ struct StrongFieldAddScoreView: View {
         HStack(spacing: 20) {
             ZStack(alignment: .leading) {
                 RoundedRectangle(cornerRadius: 8)
+                    .stroke(strongColor, lineWidth: 2)
                     .frame(width: 200, height: 60)
-                    .foregroundStyle(strongColor)
-                    .opacity(0.5)
-                    .overlay(
+                    .background(
                         RoundedRectangle(cornerRadius: 8)
-                            .stroke(strongColor, lineWidth: 2)
+                            .fill(strongColor.opacity(0.2))
                     )
-                TextField("", text: Binding(
-                                    get: {
-                                        self.newScore
-                                    },
-                                    set: { newValue in
-                                        self.newScore = newValue.replacingOccurrences(of: ",", with: ".")
-                                    }
-                                ))
-                                .keyboardType(.decimalPad)
-                                .padding(.leading, 10)
-                                .foregroundColor(.white)
-                if newScore.isEmpty {
-                    Text("Entre ton score ici..")
-                        .fontWeight(.bold)
-                        .padding(.leading, 20)
-                }
+                
+                TextField("Entre ton score ici..", text: Binding(
+                    get: {
+                        self.newScore
+                    },
+                    set: { newValue in
+                        self.newScore = newValue.replacingOccurrences(of: ",", with: ".")
+                    }
+                ))
+                .keyboardType(.decimalPad)
+                .padding(.leading, 10)
             }
             .padding(.leading, 25)
 
@@ -72,8 +66,6 @@ struct StrongFieldAddScoreView: View {
         }
     )
 }
-
-
 
 extension UIApplication {
     func endEditing() {

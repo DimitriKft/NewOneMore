@@ -2488,6 +2488,7 @@
       }
     },
     "One More" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -2502,6 +2503,9 @@
           }
         }
       }
+    },
+    "One-More" : {
+
     },
     "OneArmPushUp" : {
       "extractionState" : "manual",
