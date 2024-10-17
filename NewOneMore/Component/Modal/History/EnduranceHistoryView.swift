@@ -25,7 +25,7 @@ struct EnduranceHistoryView: View {
         VStack {
             HStack {
                 Spacer()
-                ActionBtnView(iconSF: "chevron.down.circle.fill", color: couleurCategorie, colorPrimary: .black, action: { dismiss() })
+                ActionBtnView(icon: "chevron.down.circle.fill", color: couleurCategorie, colorPrimary: .black, action: { dismiss() })
             }
             Text("Historique de tes performances en")
                 .font(.title3)

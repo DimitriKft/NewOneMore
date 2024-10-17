@@ -29,27 +29,27 @@ struct BodyWeightDetailView: View {
                         .grayscale(1.0)
                         .clipped()
                     HStack {
-                        ActionBtnView(iconSF: "arrow.left", color: bodyWeight.couleurCategorie, colorPrimary: .black) {
+                        ActionBtnView(icon: "arrow.left", color: bodyWeight.couleurCategorie, colorPrimary: .black) {
                             dismiss()
                         }
                         .padding()
                         .padding(.bottom, 150)
                         Spacer()
                         VStack {
-                            ActionBtnView(iconSF: "trash", color: bodyWeight.couleurCategorie, colorPrimary: .black) {
+                            ActionBtnView(icon: "trash", color: bodyWeight.couleurCategorie, colorPrimary: .black) {
                                 activeSheet = .deleteConfirmation
                             }
                             .padding(.bottom, 20)
                             
-                            ActionBtnView(iconSF: "list.star", color: bodyWeight.couleurCategorie, colorPrimary: .black) {
+                            ActionBtnView(icon: "list.star", color: bodyWeight.couleurCategorie, colorPrimary: .black) {
                                 activeSheet = .history
                             }
                             .padding(.bottom, 20)
-                            ActionBtnView(iconSF: "info.circle", color: bodyWeight.couleurCategorie, colorPrimary: .black) {
+                            ActionBtnView(icon: "info.circle", color: bodyWeight.couleurCategorie, colorPrimary: .black) {
                                 activeSheet = .description
                             }
                             .padding(.bottom, 20)
-                            ActionBtnView(iconSF: "chart.bar", color: bodyWeight.couleurCategorie, colorPrimary: .black) {
+                            ActionBtnView(icon: "chart.bar", color: bodyWeight.couleurCategorie, colorPrimary: .black) {
                                 activeSheet = .calculator
                             }
                             .hidden()

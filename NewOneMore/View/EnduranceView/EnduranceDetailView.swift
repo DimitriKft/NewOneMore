@@ -36,23 +36,23 @@ struct EnduranceDetailView: View {
                         .grayscale(1.0)
                         .clipped()
                     HStack {
-                        ActionBtnView(iconSF: "arrow.left", color: endurance.couleurCategorie, colorPrimary: .black) {
+                        ActionBtnView(icon: "arrow.left", color: endurance.couleurCategorie, colorPrimary: .black) {
                             dismiss()
                         }
                         .padding()
                         .padding(.bottom, 150)
                         Spacer()
                         VStack {
-                            ActionBtnView(iconSF: "trash", color: endurance.couleurCategorie, colorPrimary: .black) {
+                            ActionBtnView(icon: "trash", color: endurance.couleurCategorie, colorPrimary: .black) {
                                 activeSheet = .deleteConfirmation
                             }
                             .padding(.bottom, 20)
                             
-                            ActionBtnView(iconSF: "list.star", color: endurance.couleurCategorie, colorPrimary: .black) {
+                            ActionBtnView(icon: "list.star", color: endurance.couleurCategorie, colorPrimary: .black) {
                                 activeSheet = .history
                             }
                             .padding(.bottom, 20)
-                            ActionBtnView(iconSF: "info.circle", color: endurance.couleurCategorie, colorPrimary: .black) {
+                            ActionBtnView(icon: "info.circle", color: endurance.couleurCategorie, colorPrimary: .black) {
                                 activeSheet = .description
                             }
                             .padding(.bottom, 20)

@@ -30,7 +30,7 @@ struct BodyWeightAddView: View {
         ZStack {
             VStack(spacing: 20) {
                 HStack{
-                    ActionBtnView(iconSF: "arrow.backward", color: .white, colorPrimary: .black) {
+                    ActionBtnView(icon: "chevron.down.circle.fill", color: .white, colorPrimary: .black) {
                         dismiss()
                     }
                     .padding(.top, 25)

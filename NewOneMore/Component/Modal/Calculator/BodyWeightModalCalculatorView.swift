@@ -19,7 +19,7 @@ struct BodyWeightModalCalculatorView: View {
             
             HStack {
                 Spacer()
-                ActionBtnView(iconSF: "chevron.down.circle.fill", color: couleurCategorie, colorPrimary: .black, action: { dismiss() })
+                ActionBtnView(icon: "close", color: couleurCategorie, colorPrimary: .black, action: { dismiss() })
             }
           
             Text("PR: \(pr) Rep")

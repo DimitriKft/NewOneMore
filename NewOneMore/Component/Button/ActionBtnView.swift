@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ActionBtnView: View {
-    var iconSF: String
+    var icon: String
     var color: Color
     var colorPrimary: Color
     var action: () -> Void // Closure pour l'action du bouton
@@ -22,9 +22,11 @@ struct ActionBtnView: View {
                     .fill(colorPrimary)
                     .frame(width: 50, height: 50)
                     .cornerRadius(8)
-                Image(systemName: iconSF)
-                    .font(.title2)
-                    .foregroundColor(color)
+                Image(icon)
+                    .resizable()
+                      .scaledToFit()
+                      .foregroundColor(color)
+                      .frame(width: 30, height: 30)
             }
         }
         .overlay(
@@ -35,7 +37,7 @@ struct ActionBtnView: View {
 }
 
 #Preview {
-    ActionBtnView(iconSF: "trash", color: .pink, colorPrimary: .white) {
+    ActionBtnView(icon: "trash", color: .pink, colorPrimary: .white) {
         print("Trash button tapped")
     }
 }

@@ -17,7 +17,7 @@ struct EnduranceDescriptionView: View {
         VStack(spacing: 20) {
             HStack {
                 Spacer()
-                ActionBtnView(iconSF: "chevron.down.circle.fill", color: couleurCategorie, colorPrimary: .black, action: { dismiss() })
+                ActionBtnView(icon: "chevron.down.circle.fill", color: couleurCategorie, colorPrimary: .black, action: { dismiss() })
             }
             Text(name)
                 .font(Font.custom("edosz", size: 38 , relativeTo: .title))

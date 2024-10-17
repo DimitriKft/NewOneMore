@@ -18,7 +18,7 @@ struct StrongModalCalculatorView: View {
         VStack {
             HStack {
                 Spacer()
-                ActionBtnView(iconSF: "chevron.down.circle.fill", color: couleurCategorie, colorPrimary: .black, action: { dismiss() })
+                ActionBtnView(icon: "chevron.down.circle.fill", color: couleurCategorie, colorPrimary: .black, action: { dismiss() })
             }
             .padding(.top, 20)
           
@@ -59,12 +59,10 @@ struct StrongModalCalculatorView: View {
                         Text("\(reps) RM")
                             .font(.title3)
                             .fontWeight(.bold)
-                            .foregroundColor(.white)
                             .frame(width: 70, alignment: .leading)
                         Spacer()
                         Text("\(String(format: "%d", Int(estimatedRM))) Kg (\(String(format: "%d", Int((estimatedRM / pr) * 100)))% de ton 1RM)")
                             .font(.body)
-                            .foregroundColor(.white)
                     }
                     .padding()
                     .background(color)

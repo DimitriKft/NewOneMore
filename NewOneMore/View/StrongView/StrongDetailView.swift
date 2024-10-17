@@ -35,27 +35,27 @@ struct StrongDetailView: View {
                         .grayscale(1.0)
                         .clipped()
                     HStack {
-                        ActionBtnView(iconSF: "arrow.left", color: strong.couleurCategorie, colorPrimary: .black) {
+                        ActionBtnView(icon: "arrow.left", color: strong.couleurCategorie, colorPrimary: .black) {
                             dismiss()
                         }
                         .padding()
                         .padding(.bottom, 150)
                         Spacer()
                         VStack {
-                            ActionBtnView(iconSF: "trash", color: strong.couleurCategorie, colorPrimary: .black) {
+                            ActionBtnView(icon: "trash", color: strong.couleurCategorie, colorPrimary: .black) {
                                 activeSheet = .deleteConfirmation
                             }
                             .padding(.bottom, 20)
                             
-                            ActionBtnView(iconSF: "list.star", color: strong.couleurCategorie, colorPrimary: .black) {
+                            ActionBtnView(icon: "list.star", color: strong.couleurCategorie, colorPrimary: .black) {
                                 activeSheet = .history
                             }
                             .padding(.bottom, 20)
-                            ActionBtnView(iconSF: "info.circle", color: strong.couleurCategorie, colorPrimary: .black) {
+                            ActionBtnView(icon: "info.circle", color: strong.couleurCategorie, colorPrimary: .black) {
                                 activeSheet = .description
                             }
                             .padding(.bottom, 20)
-                            ActionBtnView(iconSF: "chart.bar", color: strong.couleurCategorie, colorPrimary: .black) {
+                            ActionBtnView(icon: "Graph", color: strong.couleurCategorie, colorPrimary: .black) {
                                 activeSheet = .calculator
                             }
                             .padding(.bottom, 20)
