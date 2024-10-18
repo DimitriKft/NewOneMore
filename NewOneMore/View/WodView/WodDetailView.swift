@@ -114,7 +114,7 @@ struct WodDetailView: View {
                         .padding()
                         .background(wod.couleurCategorie)
                         .cornerRadius(10)
-                        .shadow(radius: 4)
+                        .shadow(radius: 10, x: 0, y: 10)
                 }
                 .padding(.top, 20)
                 .padding(.bottom, 20)

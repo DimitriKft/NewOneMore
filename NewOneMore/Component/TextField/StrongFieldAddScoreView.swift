@@ -54,7 +54,7 @@ struct StrongFieldAddScoreView: View {
                 }
                 .padding(.trailing, 25)
             }
-        }
+        }.shadow(radius: 10, x: 0, y: 10)
     }
 }
 

@@ -108,7 +108,7 @@ struct EnduranceDetailView: View {
                 }) {
                     Text(newTime.isEmpty ? "HH : MM : SS" : newTime)
                         .font(.title)
-                        .shadow(radius: 4)
+                        .shadow(radius: 10, x: 0, y: 10)
                         .fontWeight(.bold)
                        
                         .padding()
