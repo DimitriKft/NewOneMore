@@ -52,7 +52,7 @@ struct StrongChartScoreView: View {
                 AxisTick()
             }
         }
-        .frame(height: 210)
+        .frame(height: 200)
         .padding(50)
     }
     private func formatDate(_ date: Date) -> String {
