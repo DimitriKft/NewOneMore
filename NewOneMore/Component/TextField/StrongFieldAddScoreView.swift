@@ -45,7 +45,8 @@ struct StrongFieldAddScoreView: View {
                         .frame(width: 150, height: 60)
                         .foregroundStyle(strongColor)
                     HStack {
-                        Image(systemName: "plus")
+                        Text("+")
+                            .font(Font.custom("edosz", size: 34, relativeTo: .title))
                         Text("Ajouter")
                     }
                     .font(.headline)

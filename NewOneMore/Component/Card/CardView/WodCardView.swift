@@ -99,6 +99,7 @@ struct WodCardView: View {
                 .padding(.top, 120)
             }
         }
+        .shadow(radius: 10, x: 0, y: 10)
     }
 
     func formatTime(_ time: Double) -> String {

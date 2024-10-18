@@ -97,6 +97,7 @@ struct GymCardView: View {
                 .padding(.top, 120)
             }
         }
+        .shadow(radius: 10, x: 0, y: 10)
     }
 
     private func daysSinceLastEntry() -> String {

@@ -34,10 +34,11 @@ struct StrongListView: View {
                         Button(action: {
                             showingFilterSheet = true
                         }) {
-                            Image(systemName: "line.3.horizontal.decrease.circle.fill")
-                                .font(.largeTitle)
-                                .foregroundColor(colorScheme == .dark ? .white : .black)
-                                .padding(8)
+                            Image("filter")
+                                .resizable()
+                                  .scaledToFit()
+                                  .foregroundColor(colorScheme == .dark ? .white : .black)
+                                  .frame(width: 40, height: 40)
                         }
                     }
                     .padding(.horizontal)
