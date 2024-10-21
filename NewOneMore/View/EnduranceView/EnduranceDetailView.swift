@@ -84,6 +84,7 @@ struct EnduranceDetailView: View {
                             .stroke(endurance.couleurCategorie, lineWidth: 1)
                     )
                     .offset(y: 150)
+                    .shadow(radius: 10, x: 0, y: 10)
                 }
                 
                 Text("Meilleur temps")
@@ -241,8 +242,9 @@ struct EnduranceDetailView: View {
     var deleteMovementAlert: some View {
         VStack {
             Text("Supprimer \(endurance.nom) ?")
-                .font(.title)
+                .font(Font.custom("edosz", size: 24, relativeTo: .title))
             Text("Cette action est irréversible 😱")
+                .foregroundStyle(.secondary)
                 .padding(.bottom, 20)
             HStack {
                 Button("Annuler") {
@@ -259,6 +261,7 @@ struct EnduranceDetailView: View {
                 .background(Color.red.opacity(0.8))
                 .cornerRadius(8)
             }
+            .shadow(radius: 10, x: 0, y: 10)
         }
         .frame(width: UIScreen.main.bounds.width * 0.7, height: 200)
     }

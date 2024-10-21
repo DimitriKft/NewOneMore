@@ -16,6 +16,8 @@ struct EnduranceListView: View {
     @State private var searchText: String = ""
     @Environment(\.colorScheme) var colorScheme
     
+    @State private var isAnimating = false // Variable pour gérer l'animation
+
     let columns = [
         GridItem(.flexible(), spacing: 16),
         GridItem(.flexible(), spacing: 16)
@@ -50,7 +52,7 @@ struct EnduranceListView: View {
                 if endurances.isEmpty {
                     VStack(alignment: .leading) {
                         Text("Ajoute ta première activité d'endurance")
-                            .font(.title)
+                            .font(Font.custom("edosz", size: 24, relativeTo: .title))
                             .fontWeight(.bold)
                         Text("Pour ajouter une activité d'endurance, appuie sur le bouton **+** ci-dessus, tu pourras sélectionner les activités disponibles.")
                             .foregroundStyle(.secondary)
@@ -72,17 +74,22 @@ struct EnduranceListView: View {
             }
             .navigationTitle("Endurance")
             .navigationBarItems(trailing: HStack {
-                
-                
+                // Animation si la liste est vide
                 Button(action: {
                     showingAddItemView = true
+                    isAnimating = false // Désactiver l'animation après utilisation
                 }) {
-                    ZStack {
-                        Text("+")
-                            .font(Font.custom("edosz", size: 70, relativeTo: .title))
-                            .foregroundStyle((colorScheme == .dark) ? .white :.black)
+                    Text("+")
+                        .font(Font.custom("edosz", size: 70, relativeTo: .title))
+                        .foregroundStyle((colorScheme == .dark) ? .white : .black)
+                        .scaleEffect(isAnimating ? 1.2 : 1.0) // Augmente légèrement la taille pendant l'animation
+                        .animation(isAnimating ? .easeInOut(duration: 0.6).repeatForever(autoreverses: true) : .default, value: isAnimating) // Animation de rebond si `isAnimating` est activé
+                }
+                .onAppear {
+                    // Activer l'animation lorsque la liste est vide
+                    if endurances.isEmpty {
+                        isAnimating = true
                     }
-                   
                 }
                 .padding(.top)
                 .padding(.trailing, 5)

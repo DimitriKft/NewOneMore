@@ -83,6 +83,7 @@ struct WodDetailView: View {
                             .stroke(wod.couleurCategorie, lineWidth: 1)
                     )
                     .offset(y: 150)
+                    .shadow(radius: 10, x: 0, y: 10)
                 }
                 
                 Text("Meilleur temps")
@@ -236,9 +237,10 @@ struct WodDetailView: View {
     var deleteMovementAlert: some View {
         VStack {
             Text("Supprimer \(wod.nom) ?")
-                .font(.title)
+                .font(Font.custom("edosz", size: 24, relativeTo: .title))
             Text("Cette action est irréversible 😱")
                 .padding(.bottom, 20)
+                .foregroundStyle(.secondary)
             HStack {
                 Button("Annuler") {
                     activeSheet = nil
@@ -254,6 +256,7 @@ struct WodDetailView: View {
                 .background(Color.red.opacity(0.8))
                 .cornerRadius(8)
             }
+            .shadow(radius: 10, x: 0, y: 10)
         }
         .frame(width: UIScreen.main.bounds.width * 0.7, height: 200)
     }

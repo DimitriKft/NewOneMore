@@ -15,6 +15,7 @@ struct GymListView: View {
     @State private var selectedCategory: GymCategories? = nil
     @State private var searchText: String = ""
     @Environment(\.colorScheme) var colorScheme
+    @State private var isAnimating = false // Variable pour gérer l'animation
     
     let columns = [
         GridItem(.flexible(), spacing: 16),
@@ -51,7 +52,7 @@ struct GymListView: View {
                     
                     VStack(alignment: .leading) {
                         Text("Ajoute ton premier PR")
-                            .font(.title)
+                            .font(Font.custom("edosz", size: 24, relativeTo: .title))
                             .fontWeight(.bold)
                         Text("Pour sélectionner ton premier mouvement de gymnastique ou calisthénie, appuie sur le bouton + ci-dessus. Tu pourras consulter les mouvements disponibles pour tes PR et les ajouter ici.")
                             .foregroundStyle(.secondary)
@@ -74,15 +75,22 @@ struct GymListView: View {
             .navigationTitle("Gym")
             .navigationBarItems(trailing: HStack {
              
+                // Animation si la liste est vide
                 Button(action: {
                     showingAddItemView = true
+                    isAnimating = false // Désactiver l'animation après utilisation
                 }) {
-                    ZStack {
-                        Text("+")
-                            .font(Font.custom("edosz", size: 70, relativeTo: .title))
-                            .foregroundStyle((colorScheme == .dark) ? .white :.black)
+                    Text("+")
+                        .font(Font.custom("edosz", size: 70, relativeTo: .title))
+                        .foregroundStyle((colorScheme == .dark) ? .white : .black)
+                        .scaleEffect(isAnimating ? 1.2 : 1.0) // Augmente légèrement la taille pendant l'animation
+                        .animation(isAnimating ? .easeInOut(duration: 0.6).repeatForever(autoreverses: true) : .default, value: isAnimating) // Animation de rebond si `isAnimating` est activé
+                }
+                .onAppear {
+                    // Activer l'animation lorsque la liste est vide
+                    if gyms.isEmpty {
+                        isAnimating = true
                     }
-                   
                 }
                 .padding(.top)
                 .padding(.trailing, 5)

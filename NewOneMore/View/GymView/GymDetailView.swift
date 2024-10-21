@@ -92,6 +92,7 @@ struct GymDetailView: View {
                             .stroke(gym.couleurCategorie, lineWidth: 1)
                     )
                     .offset(y: 150)
+                    .shadow(radius: 10, x: 0, y: 10)
                 }
                 Text("PR: \(String(format: "%.0f", gym.scores.max() ?? 0.0)) reps")
                     .font(Font.custom("edosz", size: 38 , relativeTo: .title))
@@ -133,9 +134,10 @@ struct GymDetailView: View {
     var deleteMovementAlert: some View {
         VStack {
             Text("Supprimer \(gym.nom) ?")
-                .font(.title)
+                .font(Font.custom("edosz", size: 24, relativeTo: .title))
             Text("Cette action est irréversible 😱")
                 .padding(.bottom, 20)
+                .foregroundStyle(.secondary)
             HStack {
                 Button("Annuler") {
                     activeSheet = nil
@@ -151,6 +153,7 @@ struct GymDetailView: View {
                 .background(Color.red.opacity(0.8))
                 .cornerRadius(8)
             }
+            .shadow(radius: 10, x: 0, y: 10)
         }
         .frame(width: UIScreen.main.bounds.width * 0.7, height: 200)
     }

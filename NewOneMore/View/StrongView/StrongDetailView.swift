@@ -88,6 +88,7 @@ struct StrongDetailView: View {
                             .stroke(strong.couleurCategorie, lineWidth: 1)
                     )
                     .offset(y: 150)
+                    .shadow(radius: 10, x: 0, y: 10)
                 }
                 Text("PR: \(String(format: "%.1f", strong.scores.max() ?? 0.0)) Kg")
                     .font(Font.custom("edosz", size: 38 , relativeTo: .title))
@@ -129,9 +130,10 @@ struct StrongDetailView: View {
     var deleteMovementAlert: some View {
         VStack {
             Text("Supprimer \(strong.nom) ?")
-                .font(.title)
+                .font(Font.custom("edosz", size: 24, relativeTo: .title))
             Text("Cette action est irréversible 😱")
                 .padding(.bottom, 20)
+                .foregroundStyle(.secondary)
             HStack {
                 Button("Annuler") {
                     activeSheet = nil
@@ -147,6 +149,7 @@ struct StrongDetailView: View {
                 .background(Color.red.opacity(0.8))
                 .cornerRadius(8)
             }
+            .shadow(radius: 10, x: 0, y: 10)
         }
         .frame(width: UIScreen.main.bounds.width * 0.7, height: 200)
     }

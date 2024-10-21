@@ -41,7 +41,6 @@ struct GymModalHistoryView: View {
             
             ScrollView {
                 VStack {
-                    // Combine scores and dates, then sort by date descending
                     let sortedData = zip(scores.indices, zip(scores, dates)).sorted { $0.1.1 > $1.1.1 }
 
                     ForEach(sortedData, id: \.1.1) { index, data in
@@ -49,7 +48,7 @@ struct GymModalHistoryView: View {
                         
                         HStack {
                             if score == scores.max() {
-                                Text("\(String(format: "%.2f", score)) reps")
+                                Text("\(String(format: "%.0f", score)) reps")
                                     .foregroundColor(.green)
                                     .fontWeight(.bold)
 
@@ -114,13 +113,11 @@ struct GymModalHistoryView: View {
     }
     
     private func deleteScore(at index: Int) {
-        // Suppression du score et de la date dans les données persistantes
         gym.scores.remove(at: index)
         gym.dates.remove(at: index)
 
         do {
             try modelContext.save()
-            // Mettre à jour la vue après la suppression
             scores = gym.scores
             dates = gym.dates
         } catch {
