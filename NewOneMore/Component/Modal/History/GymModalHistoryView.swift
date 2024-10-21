@@ -56,7 +56,7 @@ struct GymModalHistoryView: View {
                                     .foregroundColor(.yellow)
                                     .padding(.leading, 5)
                             } else {
-                                Text("\(String(format: "%.2f", score)) reps")
+                                Text("\(String(format: "%.0f", score)) reps")
                                     .foregroundColor(.primary)
                                     .fontWeight(.regular)
                             }
@@ -64,9 +64,7 @@ struct GymModalHistoryView: View {
                             Spacer()
 
                             Text(formatDate(date))
-                                .foregroundColor(.secondary)
-
-                            // Delete button
+                                .foregroundStyle(.secondary)
                             Button(action: {
                                 scoreToDeleteIndex = index
                                 showDeleteAlert = true
