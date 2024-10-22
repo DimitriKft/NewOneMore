@@ -2217,6 +2217,9 @@
         }
       }
     },
+    "Leave a review" : {
+
+    },
     "LegCurl" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -2606,7 +2609,11 @@
         }
       }
     },
+    "Pour garantir la sécurité et la persistance de vos mouvements et scores, One More utilise iCloud pour sauvegarder automatiquement vos données. \n\nCa vous permet de retrouver vos performances à tout moment, même si vous changez d'appareil ou réinstallez l'application. Vos données sont synchronisées sur tous vos appareils via votre compte iCloud.\n\nSi vous souhaitez en savoir plus sur la manière dont vos données sont traitées et sauvegardées, veuillez consulter nos conditions d'utilisation sur www.01-more.com." : {
+
+    },
     "Pour sauvegarder vos mouvements et scores de manière sécurisée, One More utilise iCloud." : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
