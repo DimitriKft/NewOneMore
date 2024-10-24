@@ -19,10 +19,7 @@ struct AddMoreBtnView: View {
             action()
         }) {
             ZStack {
-//                Rectangle()
-//                    .fill(colorPrimary)
-//                    .frame(width: 50, height: 50)
-//                    .cornerRadius(8)
+
                 Image(image)
                     .resizable()
                     .frame(width: 40, height: 40)

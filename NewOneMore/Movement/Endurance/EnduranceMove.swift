@@ -68,22 +68,23 @@ var enduranceMoves: [EnduranceMove] = [
 
     // Velo
     EnduranceMove(
-        nom: "Contre-la-montre 5 km",
+      
+        nom:  NSLocalizedString("Contre-la-montre 5 km", comment: ""),
         subtitle: "",
         imageName: "Contre-la-montre-5km",
         category: .outdoor),
     EnduranceMove(
-        nom: "Contre-la-montre 10 km",
+        nom:  NSLocalizedString("Contre-la-montre 10 km", comment: ""),
         subtitle: "",
         imageName: "Contre-la-montre-10km",
         category: .outdoor),
     EnduranceMove(
-        nom: "Contre-la-montre 20 km",
+        nom:  NSLocalizedString("Contre-la-montre 20 km", comment: ""),
         subtitle: "",
         imageName: "Contre-la-montre-20km",
         category: .outdoor),
     EnduranceMove(
-        nom: "Contre-la-montre 50 km",
+        nom:  NSLocalizedString("Contre-la-montre 50 km", comment: ""),
         subtitle: "",
         imageName: "Contre-la-montre-50",
         category: .outdoor),
@@ -98,47 +99,47 @@ var enduranceMoves: [EnduranceMove] = [
         imageName: "100-Metres-Crawl",
         category: .indoor),
     EnduranceMove(
-        nom: "200m Papillon",
+        nom:  NSLocalizedString("200m Papillon", comment: ""),
         subtitle: "",
         imageName: "200-metres-Papillon",
         category: .indoor),
     EnduranceMove(
-        nom: "1500m nage libre",
+        nom:  NSLocalizedString("1500m nage libre", comment: ""),
         subtitle: "",
         imageName: "1500m-nage-libre",
         category: .indoor),
     EnduranceMove(
-        nom: "50m Dos",
+        nom:  NSLocalizedString("50m Dos", comment: ""),
         subtitle: "",
         imageName: "50-metres-Dos",
         category: .indoor),
     EnduranceMove(
-        nom: "100m Dos",
+        nom:  NSLocalizedString("100m Dos", comment: ""),
         subtitle: "",
         imageName: "100-metres-Dos",
         category: .indoor),
     EnduranceMove(
-        nom: "200m Dos",
+        nom:  NSLocalizedString("200m Dos", comment: ""),
         subtitle: "",
         imageName: "200-metres-Dos",
         category: .indoor),
     EnduranceMove(
-        nom: "100m Brasse",
+        nom:  NSLocalizedString("100m Brasse", comment: ""),
         subtitle: "",
         imageName: "100-metres-Brasse",
         category: .indoor),
     EnduranceMove(
-        nom: "200m Brasse",
+        nom:  NSLocalizedString("200m Brasse", comment: ""),
         subtitle: "",
         imageName: "200-metres-Brasse",
         category: .indoor),
     EnduranceMove(
-        nom: "400m Nage Libre",
+        nom:  NSLocalizedString("400m nage libre", comment: ""),
         subtitle: "",
         imageName: "400-metres-Nage-Libre",
         category: .indoor),
     EnduranceMove(
-        nom: "800m Nage Libre",
+        nom:  NSLocalizedString("800m nage libre", comment: ""),
         subtitle: "",
         imageName: "800-metres-Nage-Libre",
         category: .indoor),
@@ -159,22 +160,22 @@ var enduranceMoves: [EnduranceMove] = [
         imageName: "assault-bike-1000m",
         category: .indoor),
     EnduranceMove(
-        nom: "Rameur 500m",
+        nom: "Row 500m",
         subtitle: "",
         imageName: "rameur-500m",
         category: .indoor),
     EnduranceMove(
-        nom: "Rameur 1000m",
+        nom: "Row 1000m",
         subtitle: "",
         imageName: "rameur-1000m",
         category: .indoor),
     EnduranceMove(
-        nom: "Rameur 2000m",
+        nom: "Row 2000m",
         subtitle: "",
         imageName: "rameur-2000m",
         category: .indoor),
     EnduranceMove(
-        nom: "Rameur 5000m",
+        nom: "Row 5000m",
         subtitle: "",
         imageName: "rameur-5000m",
         category: .indoor),

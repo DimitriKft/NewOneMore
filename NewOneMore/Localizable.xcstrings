@@ -2,6 +2,7 @@
   "sourceLanguage" : "en",
   "strings" : {
     "" : {
+      "extractionState" : "manual",
       "localizations" : {
         "fr" : {
           "stringUnit" : {
@@ -97,6 +98,7 @@
       }
     },
     "%@ Rep" : {
+      "extractionState" : "manual",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -155,6 +157,7 @@
       }
     },
     "%lld %% de ton 1RM :" : {
+      "extractionState" : "manual",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -187,6 +190,7 @@
       }
     },
     "%lld Rep" : {
+      "extractionState" : "manual",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -624,6 +628,159 @@
         }
       }
     },
+    "50m Dos" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "50m Backstroke"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "50m Dos"
+          }
+        }
+      }
+    },
+    "100m Brasse" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "100m Breaststroke"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "100m Brasse"
+          }
+        }
+      }
+    },
+    "100m Dos" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "100m Backstroke"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "100m Dos"
+          }
+        }
+      }
+    },
+    "200m Brasse" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "200m Breaststroke"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "200m Brasse"
+          }
+        }
+      }
+    },
+    "200m Dos" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "200m Backstroke"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "200m Dos"
+          }
+        }
+      }
+    },
+    "200m Papillon" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "200m Butterfly"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "200m Papillon"
+          }
+        }
+      }
+    },
+    "400m nage libre" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "400m Freestyle"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "400m nage libre"
+          }
+        }
+      }
+    },
+    "800m nage libre" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "800m Freestyle"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "800m nage libre"
+          }
+        }
+      }
+    },
+    "1500m nage libre" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1500m Freestyle"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "1500m nage libre"
+          }
+        }
+      }
+    },
     "AirSquat" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -858,6 +1015,7 @@
       }
     },
     "Bienvenue dans One More" : {
+      "extractionState" : "manual",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -1140,6 +1298,7 @@
       }
     },
     "Compris" : {
+      "extractionState" : "manual",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -1151,6 +1310,74 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Compris"
+          }
+        }
+      }
+    },
+    "Contre-la-montre 5 km" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "5 km Time Trial"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Contre-la-montre 5 km"
+          }
+        }
+      }
+    },
+    "Contre-la-montre 10 km" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "10 km Time Trial"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Contre-la-montre 10 km"
+          }
+        }
+      }
+    },
+    "Contre-la-montre 20 km" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "20 km Time Trial"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Contre-la-montre 20 km"
+          }
+        }
+      }
+    },
+    "Contre-la-montre 50 km" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "50 km Time Trial"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Contre-la-montre 50 km"
           }
         }
       }
@@ -1433,6 +1660,7 @@
       }
     },
     "Entre ton 1RM ici.." : {
+      "extractionState" : "manual",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -2230,6 +2458,7 @@
       }
     },
     "Le record du monde en pompes d'affiée de Carlton Williams est de 2682 répétitions ! On modifiera la limite quand tu lui arriveras à la cheville 😅" : {
+      "extractionState" : "manual",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -2695,6 +2924,7 @@
       }
     },
     "Pour garantir la sécurité et la persistance de vos mouvements et scores, One More utilise iCloud pour sauvegarder automatiquement vos données. \n\nCela vous permet de retrouver vos performances à tout moment, même si vous changez d'appareil ou réinstallez l'application. Vos données sont synchronisées sur tous vos appareils via votre compte iCloud et sont sous votre contrôle.\n\nSi vous souhaitez en savoir plus sur la manière dont vos données sont traitées et sauvegardées, veuillez consulter notre politique de confidentialité sur www.01-more.com/conditions. Vous pouvez également gérer vos données iCloud via les paramètres de votre appareil." : {
+      "extractionState" : "manual",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -2754,6 +2984,7 @@
       }
     },
     "Pour sélectionner ton premier mouvement, appuie sur le bouton **+** ci-dessus, tu pourras consulter les mouvements disponibles pour tes **PR** et les ajouter ici." : {
+      "extractionState" : "manual",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -2836,6 +3067,7 @@
       }
     },
     "PR: %lld Rep" : {
+      "extractionState" : "manual",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -2846,12 +3078,13 @@
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "PR: %lld Rep"
+            "value" : "PR: %lld Reps"
           }
         }
       }
     },
     "PR: %lld Répétitions" : {
+      "extractionState" : "manual",
       "localizations" : {
         "en" : {
           "stringUnit" : {

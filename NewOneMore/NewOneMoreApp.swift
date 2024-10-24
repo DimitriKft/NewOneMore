@@ -9,6 +9,7 @@ import SwiftUI
 import SwiftData
 import StoreKit
 
+
 @main
 struct OneMoreApp: App {
     @State private var showSplash = true
