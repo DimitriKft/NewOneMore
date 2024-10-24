@@ -14,16 +14,16 @@ struct OnboardingView: View {
 
     var body: some View {
         ZStack {
-            // Transparence sur la LandingScreenView
             LandingScreenView()
                 .blur(radius: 12)
+                .allowsHitTesting(false)
             VStack {
                 TabView(selection: $currentPage) {
                    
-                    WelcomeOnBoardingView()
+                    WelcomeOnBoardingView(isOnboardingComplete: $isOnboardingComplete)
                         .tag(0)
 
-                    CloudKitOnbordingView()
+                    CloudKitOnbordingView(isOnboardingComplete: $isOnboardingComplete)
                         .tag(1)
                 }
                 .tabViewStyle(PageTabViewStyle())
@@ -41,39 +41,39 @@ struct OnboardingView: View {
                 .padding()
             }
         }
-        .overlay(
-                    Button(action: {
-                        isOnboardingComplete = true
-                    }, label: {
-                        ZStack {
-                            RoundedRectangle(cornerRadius: 12)
-                                .frame(width: 150, height: 50)
-                                .foregroundColor(.white)
-                                .overlay(
-                                    RoundedRectangle(cornerRadius: 12)
-                                        .stroke(.black, lineWidth: 1)
-                                        .opacity(0.8)
-                                )
-                                .padding()
-
-                            Text("Commencer")
-                                .fontWeight(.bold)
-                                .foregroundStyle(.black)
-                        }
-                        .scaleEffect(animateButton ? 1.1 : 1.0)
-                        .opacity(animateButton ? 1.0 : 0.8)
-                        .padding(.bottom, 60)
-                    })
-                    .onAppear {
-                        withAnimation(
-                            Animation.easeInOut(duration: 1.0)
-                                .repeatForever(autoreverses: true)) {
-                                    animateButton = true
-                                }
-                    },
-                    alignment: .centerFirstTextBaseline
-                )
-                .animation(.easeInOut, value: currentPage)
+//        .overlay(
+//                    Button(action: {
+//                        isOnboardingComplete = true
+//                    }, label: {
+//                        ZStack {
+//                            RoundedRectangle(cornerRadius: 12)
+//                                .frame(width: 150, height: 50)
+//                                .foregroundColor(.white)
+//                                .overlay(
+//                                    RoundedRectangle(cornerRadius: 12)
+//                                        .stroke(.black, lineWidth: 1)
+//                                        .opacity(0.8)
+//                                )
+//                                .padding()
+//
+//                            Text("Commencer")
+//                                .fontWeight(.bold)
+//                                .foregroundStyle(.black)
+//                        }
+//                        .scaleEffect(animateButton ? 1.1 : 1.0)
+//                        .opacity(animateButton ? 1.0 : 0.8)
+//                        .padding(.bottom, 60)
+//                    })
+//                    .onAppear {
+//                        withAnimation(
+//                            Animation.easeInOut(duration: 1.0)
+//                                .repeatForever(autoreverses: true)) {
+//                                    animateButton = true
+//                                }
+//                    },
+//                    alignment: .bottomTrailing
+//                )
+//                .animation(.easeInOut, value: currentPage)
     }
 }
 

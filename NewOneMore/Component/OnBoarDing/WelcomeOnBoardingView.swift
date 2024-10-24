@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct WelcomeOnBoardingView: View {
+    @Binding var isOnboardingComplete: Bool
     var body: some View {
         VStack {
             Text(" Let's crush it !")
@@ -21,20 +22,45 @@ Tu as entre les mains l'outil parfait pour garder une **trace de tes records et 
 """)
             .padding()
             .font(.footnote)
-            Text("+")
-                .font(Font.custom("edosz", size: 100, relativeTo: .title))
-          
-      
+            
+//            Button(action: {
+//                isOnboardingComplete = true
+//            }, label: {
+//                ZStack{
+//                    RoundedRectangle(cornerRadius: 12)
+//                        .frame(width: 150, height: 50)
+//                        .foregroundColor(.black)
+//                        
+//                        .overlay(
+//                            RoundedRectangle(cornerRadius: 12)
+//                                .stroke(.black, lineWidth: 1)
+//                                .opacity(0.8)
+//                        )
+//                        .padding()
+//                    HStack {
+//                        Text("+")
+//                            .font(Font.custom("edosz", size: 30, relativeTo: .title))
+//                      
+//                        Text("Commencer")
+//                        
+//                            .fontWeight(.bold)
+//                         
+//                    }
+//                    .foregroundStyle(.white)
+//                }
+//               
+//                .padding(.bottom,60)
+//            })
         }
         .foregroundStyle(.black)
         .frame(width: 300, height: 600)
 //        .background(Color.white)
         .cornerRadius(20)
-        .shadow(radius: 10)
+   
         .padding()
     }
 }
 
 #Preview {
-    WelcomeOnBoardingView()
+    WelcomeOnBoardingView(isOnboardingComplete: .constant(false))
 }

@@ -12,10 +12,24 @@
       }
     },
     " Dans chaque catégorie, tu peux facilement ajouter le mouvement de ton choix en appuyant sur le **\"+\"** en haut à droite. Une fois le mouvement sélectionné, il te suffit d'entrer ton nouveau score. Seuls les mouvements que tu as déjà effectués s'afficheront, pour te permettre une meilleure lecture de ta progression et un suivi clair de tes performances au fil du temps.\n\n Tout est optimisé pour que tu puisses te concentrer sur tes objectifs et voir tes améliorations d'un coup d'œil !" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "In each category, you can easily add the movement of your choice by tapping the ”+” at the top right. Once the movement is selected, simply enter your new score. Only the movements you’ve already performed will be displayed, allowing you to better track your progress and have a clear overview of your performance over time.\n\nEverything is optimized so that you can focus on your goals and see your improvements at a glance!"
+          }
+        }
+      }
     },
     " Let's crush it !" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : " Let's crush it !"
+          }
+        }
+      }
     },
     "%@" : {
       "localizations" : {
@@ -66,7 +80,7 @@
       }
     },
     "%@ Kg (%lf%% de ton 1RM)" : {
-      "extractionState" : "stale",
+      "extractionState" : "manual",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -860,7 +874,14 @@
       }
     },
     "Bienvenue sur One-More" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Welcome to One-More"
+          }
+        }
+      }
     },
     "Blake" : {
       "extractionState" : "manual",
@@ -1031,7 +1052,14 @@
       }
     },
     "Choisis, Enregistre, Dépasse-Toi !" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Choose, Record, Push Yourself!"
+          }
+        }
+      }
     },
     "ClappingPushUp" : {
       "extractionState" : "manual",
@@ -1102,7 +1130,14 @@
       }
     },
     "Commencer" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Get Started"
+          }
+        }
+      }
     },
     "Compris" : {
       "localizations" : {
@@ -1915,7 +1950,14 @@
       }
     },
     "Icloud" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Icloud"
+          }
+        }
+      }
     },
     "InclineBenchPress" : {
       "extractionState" : "manual",
@@ -2236,7 +2278,14 @@
       }
     },
     "Leave a review" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Leave a review"
+          }
+        }
+      }
     },
     "LegCurl" : {
       "extractionState" : "manual",
@@ -2509,7 +2558,7 @@
       }
     },
     "One More" : {
-      "extractionState" : "stale",
+      "extractionState" : "manual",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -2523,10 +2572,18 @@
             "value" : "One More"
           }
         }
-      }
+      },
+      "shouldTranslate" : false
     },
     "One-More" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "One-More"
+          }
+        }
+      }
     },
     "OneArmPushUp" : {
       "extractionState" : "manual",
@@ -2628,13 +2685,27 @@
       }
     },
     "Pour garantir la persistanses de tes données, One More utilise **iCloud** pour sauvegarder automatiquement tes performances. Tu peux les retrouver à tout moment, sur tous tes appareils, même si tu changes de téléphone ou réinstalles l'app. **Tout est synchronisé et sous ton contrôle via ton compte iCloud**." : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "To ensure the persistence of your data, One More uses iCloud to automatically back up your performances. You can access them anytime, on all your devices, even if you switch phones or reinstall the app. Everything is synced and under your control through your iCloud account."
+          }
+        }
+      }
     },
     "Pour garantir la sécurité et la persistance de vos mouvements et scores, One More utilise iCloud pour sauvegarder automatiquement vos données. \n\nCela vous permet de retrouver vos performances à tout moment, même si vous changez d'appareil ou réinstallez l'application. Vos données sont synchronisées sur tous vos appareils via votre compte iCloud et sont sous votre contrôle.\n\nSi vous souhaitez en savoir plus sur la manière dont vos données sont traitées et sauvegardées, veuillez consulter notre politique de confidentialité sur www.01-more.com/conditions. Vous pouvez également gérer vos données iCloud via les paramètres de votre appareil." : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "To ensure the security and persistence of your movements and scores, One More uses iCloud to automatically back up your data.\n\nThis allows you to access your performance at any time, even if you switch devices or reinstall the app. Your data is synced across all your devices via your iCloud account and remains under your control.\n\nIf you would like to learn more about how your data is processed and stored, please consult our privacy policy at www.01-more.com/conditions. You can also manage your iCloud data via your device settings."
+          }
+        }
+      }
     },
     "Pour sauvegarder vos mouvements et scores de manière sécurisée, One More utilise iCloud." : {
-      "extractionState" : "stale",
+      "extractionState" : "manual",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -3581,7 +3652,14 @@
       }
     },
     "Tu as entre les mains l'outil parfait pour garder une **trace de tes records et t'améliorer chaque jour**. Ton parcours vers de nouveaux **PR** commence ici, chaque session compte, alors donne tout à chaque séance !\n\n Tout est optimisé pour que tu puisses te **concentrer sur tes objectifs** et voir tes améliorations d'un coup d'œil !" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "You have the perfect tool in your hands to track your records and improve every day. Your journey towards new PRs starts here, every session counts, so give it your all in every workout!\n\nEverything is optimized so you can focus on your goals and see your improvements at a glance!"
+          }
+        }
+      }
     },
     "Valider le temps" : {
       "localizations" : {
