@@ -11,6 +11,12 @@
         }
       }
     },
+    " Dans chaque catégorie, tu peux facilement ajouter le mouvement de ton choix en appuyant sur le **\"+\"** en haut à droite. Une fois le mouvement sélectionné, il te suffit d'entrer ton nouveau score. Seuls les mouvements que tu as déjà effectués s'afficheront, pour te permettre une meilleure lecture de ta progression et un suivi clair de tes performances au fil du temps.\n\n Tout est optimisé pour que tu puisses te concentrer sur tes objectifs et voir tes améliorations d'un coup d'œil !" : {
+
+    },
+    " Let's crush it !" : {
+
+    },
     "%@" : {
       "localizations" : {
         "en" : {
@@ -853,6 +859,9 @@
         }
       }
     },
+    "Bienvenue sur One-More" : {
+
+    },
     "Blake" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -1021,6 +1030,9 @@
         }
       }
     },
+    "Choisis, Enregistre, Dépasse-Toi !" : {
+
+    },
     "ClappingPushUp" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -1088,6 +1100,9 @@
           }
         }
       }
+    },
+    "Commencer" : {
+
     },
     "Compris" : {
       "localizations" : {
@@ -1899,6 +1914,9 @@
         }
       }
     },
+    "Icloud" : {
+
+    },
     "InclineBenchPress" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -2609,7 +2627,10 @@
         }
       }
     },
-    "Pour garantir la sécurité et la persistance de vos mouvements et scores, One More utilise iCloud pour sauvegarder automatiquement vos données. \n\nCa vous permet de retrouver vos performances à tout moment, même si vous changez d'appareil ou réinstallez l'application. Vos données sont synchronisées sur tous vos appareils via votre compte iCloud.\n\nSi vous souhaitez en savoir plus sur la manière dont vos données sont traitées et sauvegardées, veuillez consulter nos conditions d'utilisation sur www.01-more.com." : {
+    "Pour garantir la persistanses de tes données, One More utilise **iCloud** pour sauvegarder automatiquement tes performances. Tu peux les retrouver à tout moment, sur tous tes appareils, même si tu changes de téléphone ou réinstalles l'app. **Tout est synchronisé et sous ton contrôle via ton compte iCloud**." : {
+
+    },
+    "Pour garantir la sécurité et la persistance de vos mouvements et scores, One More utilise iCloud pour sauvegarder automatiquement vos données. \n\nCela vous permet de retrouver vos performances à tout moment, même si vous changez d'appareil ou réinstallez l'application. Vos données sont synchronisées sur tous vos appareils via votre compte iCloud et sont sous votre contrôle.\n\nSi vous souhaitez en savoir plus sur la manière dont vos données sont traitées et sauvegardées, veuillez consulter notre politique de confidentialité sur www.01-more.com/conditions. Vous pouvez également gérer vos données iCloud via les paramètres de votre appareil." : {
 
     },
     "Pour sauvegarder vos mouvements et scores de manière sécurisée, One More utilise iCloud." : {
@@ -3558,6 +3579,9 @@
           }
         }
       }
+    },
+    "Tu as entre les mains l'outil parfait pour garder une **trace de tes records et t'améliorer chaque jour**. Ton parcours vers de nouveaux **PR** commence ici, chaque session compte, alors donne tout à chaque séance !\n\n Tout est optimisé pour que tu puisses te **concentrer sur tes objectifs** et voir tes améliorations d'un coup d'œil !" : {
+
     },
     "Valider le temps" : {
       "localizations" : {
