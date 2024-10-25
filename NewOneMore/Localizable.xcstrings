@@ -12,20 +12,15 @@
         }
       }
     },
-    " Dans chaque catégorie, tu peux facilement ajouter le mouvement de ton choix en appuyant sur le **\"+\"** en haut à droite. Une fois le mouvement sélectionné, il te suffit d'entrer ton nouveau score. Seuls les mouvements que tu as déjà effectués s'afficheront, pour te permettre une meilleure lecture de ta progression et un suivi clair de tes performances au fil du temps.\n\n Tout est optimisé pour que tu puisses te concentrer sur tes objectifs et voir tes améliorations d'un coup d'œil !" : {
-      "extractionState" : "stale",
+    " Let's crush it !" : {
       "localizations" : {
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "In each category, you can easily add the movement of your choice by tapping the ”+” at the top right. Once the movement is selected, simply enter your new score. Only the movements you’ve already performed will be displayed, allowing you to better track your progress and have a clear overview of your performance over time.\n\nEverything is optimized so that you can focus on your goals and see your improvements at a glance!"
+            "value" : " Let's crush it !"
           }
-        }
-      }
-    },
-    " Let's crush it !" : {
-      "localizations" : {
-        "en" : {
+        },
+        "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : " Let's crush it !"
@@ -75,7 +70,7 @@
         },
         "fr" : {
           "stringUnit" : {
-            "state" : "needs_review",
+            "state" : "translated",
             "value" : "%1$@ Kg (%2$@%% de ton 1RM)"
           }
         }
@@ -92,7 +87,7 @@
         },
         "fr" : {
           "stringUnit" : {
-            "state" : "needs_review",
+            "state" : "translated",
             "value" : "%@ Kg (%lf%% de ton 1RM)"
           }
         }
@@ -134,6 +129,12 @@
     "%@ Reps" : {
       "localizations" : {
         "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ Reps"
+          }
+        },
+        "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@ Reps"
@@ -640,7 +641,7 @@
         },
         "fr" : {
           "stringUnit" : {
-            "state" : "needs_review",
+            "state" : "translated",
             "value" : "50m Dos"
           }
         }
@@ -657,7 +658,7 @@
         },
         "fr" : {
           "stringUnit" : {
-            "state" : "needs_review",
+            "state" : "translated",
             "value" : "100m Brasse"
           }
         }
@@ -708,7 +709,7 @@
         },
         "fr" : {
           "stringUnit" : {
-            "state" : "needs_review",
+            "state" : "translated",
             "value" : "200m Dos"
           }
         }
@@ -725,7 +726,7 @@
         },
         "fr" : {
           "stringUnit" : {
-            "state" : "needs_review",
+            "state" : "translated",
             "value" : "200m Papillon"
           }
         }
@@ -742,7 +743,7 @@
         },
         "fr" : {
           "stringUnit" : {
-            "state" : "needs_review",
+            "state" : "translated",
             "value" : "400m nage libre"
           }
         }
@@ -759,7 +760,7 @@
         },
         "fr" : {
           "stringUnit" : {
-            "state" : "needs_review",
+            "state" : "translated",
             "value" : "800m nage libre"
           }
         }
@@ -776,7 +777,7 @@
         },
         "fr" : {
           "stringUnit" : {
-            "state" : "needs_review",
+            "state" : "translated",
             "value" : "1500m nage libre"
           }
         }
@@ -1039,6 +1040,12 @@
             "state" : "translated",
             "value" : "Welcome to One-More"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Welcome to One-More"
+          }
         }
       }
     },
@@ -1210,17 +1217,6 @@
         }
       }
     },
-    "Choisis, Enregistre, Dépasse-Toi !" : {
-      "extractionState" : "stale",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Choose, Record, Push Yourself!"
-          }
-        }
-      }
-    },
     "ClappingPushUp" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -1296,6 +1292,12 @@
             "state" : "translated",
             "value" : "Get Started"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Get Started"
+          }
         }
       }
     },
@@ -1327,7 +1329,7 @@
         },
         "fr" : {
           "stringUnit" : {
-            "state" : "needs_review",
+            "state" : "translated",
             "value" : "Contre-la-montre 5 km"
           }
         }
@@ -1344,7 +1346,7 @@
         },
         "fr" : {
           "stringUnit" : {
-            "state" : "needs_review",
+            "state" : "translated",
             "value" : "Contre-la-montre 10 km"
           }
         }
@@ -1378,7 +1380,7 @@
         },
         "fr" : {
           "stringUnit" : {
-            "state" : "needs_review",
+            "state" : "translated",
             "value" : "Contre-la-montre 50 km"
           }
         }
@@ -1420,6 +1422,12 @@
     "de ton PR :" : {
       "localizations" : {
         "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "of your PR:"
+          }
+        },
+        "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "of your PR:"
@@ -1685,6 +1693,12 @@
             "state" : "translated",
             "value" : "Enter your score here…"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Enter your score here…"
+          }
         }
       }
     },
@@ -1731,7 +1745,7 @@
         },
         "fr" : {
           "stringUnit" : {
-            "state" : "needs_review",
+            "state" : "translated",
             "value" : "Es-tu sûr que ce score est possible ? 😅"
           }
         }
@@ -1795,7 +1809,7 @@
         },
         "fr" : {
           "stringUnit" : {
-            "state" : "needs_review",
+            "state" : "translated",
             "value" : "Force "
           }
         }
@@ -2144,6 +2158,12 @@
             "state" : "translated",
             "value" : "History of your PRs in"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "History of your PRs in"
+          }
         }
       }
     },
@@ -2182,6 +2202,12 @@
     "Icloud" : {
       "localizations" : {
         "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Icloud"
+          }
+        },
+        "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Icloud"
@@ -2515,6 +2541,12 @@
             "state" : "translated",
             "value" : "Leave a review"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Leave a review"
+          }
         }
       }
     },
@@ -2803,12 +2835,17 @@
             "value" : "One More"
           }
         }
-      },
-      "shouldTranslate" : false
+      }
     },
     "One-More" : {
       "localizations" : {
         "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "One-More"
+          }
+        },
+        "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "One-More"
@@ -2915,12 +2952,18 @@
         }
       }
     },
-    "Pour garantir la persistanses de tes données, One More utilise **iCloud** pour sauvegarder automatiquement tes performances. Tu peux les retrouver à tout moment, sur tous tes appareils, même si tu changes de téléphone ou réinstalles l'app. **Tout est synchronisé et sous ton contrôle via ton compte iCloud**." : {
+    "Pour garantir la persistanses de tes données, One More utilise **iCloud** pour sauvegarder automatiquement tes performances. Tu peux les retrouver à tout moment, sur tous tes appareils, même si tu changes de téléphone ou réinstalles l'app. **Tout est synchronisé et sous ton contrôle via ton compte iCloud**. Rendez vous sur www.01-more.com pour en savoir plus" : {
       "localizations" : {
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "To ensure the persistence of your data, One More uses iCloud to automatically back up your performances. You can access them anytime, on all your devices, even if you switch phones or reinstall the app. Everything is synced and under your control through your iCloud account."
+            "value" : "To ensure the persistence of your data, One More uses iCloud to automatically back up your performances. You can access them anytime, on all your devices, even if you switch phones or reinstall the app. Everything is synced and under your control via your iCloud account. Visit www.01-more.com to learn more."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "To ensure the persistence of your data, One More uses iCloud to automatically back up your performances. You can access them anytime, on all your devices, even if you switch phones or reinstall the app. Everything is synced and under your control via your iCloud account. Visit www.01-more.com to learn more."
           }
         }
       }
@@ -2929,6 +2972,12 @@
       "extractionState" : "manual",
       "localizations" : {
         "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "To ensure the security and persistence of your movements and scores, One More uses iCloud to automatically back up your data.\n\nThis allows you to access your performance at any time, even if you switch devices or reinstall the app. Your data is synced across all your devices via your iCloud account and remains under your control.\n\nIf you would like to learn more about how your data is processed and stored, please consult our privacy policy at www.01-more.com/conditions. You can also manage your iCloud data via your device settings."
+          }
+        },
+        "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "To ensure the security and persistence of your movements and scores, One More uses iCloud to automatically back up your data.\n\nThis allows you to access your performance at any time, even if you switch devices or reinstall the app. Your data is synced across all your devices via your iCloud account and remains under your control.\n\nIf you would like to learn more about how your data is processed and stored, please consult our privacy policy at www.01-more.com/conditions. You can also manage your iCloud data via your device settings."
@@ -2979,7 +3028,7 @@
         },
         "fr" : {
           "stringUnit" : {
-            "state" : "needs_review",
+            "state" : "translated",
             "value" : "Pour sélectionner ton premier mouvement de gymnastique ou calisthénie, appuie sur le bouton + ci-dessus. Tu pourras consulter les mouvements disponibles pour tes PR et les ajouter ici."
           }
         }
@@ -3261,6 +3310,12 @@
             "state" : "translated",
             "value" : "Search for a WOD"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Search for a WOD"
+          }
         }
       }
     },
@@ -3306,7 +3361,7 @@
         },
         "fr" : {
           "stringUnit" : {
-            "state" : "needs_review",
+            "state" : "translated",
             "value" : "Reviens dans quelque temps, nous mettons à jour nos activitées régulièrement. Et n'hésite pas à nous contacter si tu as des activitées manquantes."
           }
         }
@@ -3322,7 +3377,7 @@
         },
         "fr" : {
           "stringUnit" : {
-            "state" : "needs_review",
+            "state" : "translated",
             "value" : "Reviens dans quelque temps, nous mettons à jour nos mouvements régulièrement. Et n'hésite pas à nous contacter si tu as des mouvements manquants."
           }
         }
@@ -3331,6 +3386,12 @@
     "Reviens dans quelque temps, nous mettons à jour nos wods régulièrement. Et n'hésite pas à nous contacter si tu as des wods manquants." : {
       "localizations" : {
         "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Come back later, we regularly update our WODs. And feel free to contact us if any WODs are missing."
+          }
+        },
+        "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Come back later, we regularly update our WODs. And feel free to contact us if any WODs are missing."
@@ -3814,6 +3875,12 @@
             "state" : "translated",
             "value" : "All"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "All"
+          }
         }
       }
     },
@@ -3857,6 +3924,12 @@
             "state" : "translated",
             "value" : "You have added all the movements!"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "You have added all the movements!"
+          }
         }
       }
     },
@@ -3870,7 +3943,7 @@
         },
         "fr" : {
           "stringUnit" : {
-            "state" : "needs_review",
+            "state" : "translated",
             "value" : "Tu as ajouté tous les wods !"
           }
         }
@@ -3883,12 +3956,24 @@
             "state" : "translated",
             "value" : "You have added all the activities!"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "You have added all the activities!"
+          }
         }
       }
     },
     "Tu as entre les mains l'outil parfait pour garder une **trace de tes records et t'améliorer chaque jour**. Ton parcours vers de nouveaux **PR** commence ici, chaque session compte, alors donne tout à chaque séance !\n\n Tout est optimisé pour que tu puisses te **concentrer sur tes objectifs** et voir tes améliorations d'un coup d'œil !" : {
       "localizations" : {
         "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "You have the perfect tool in your hands to track your records and improve every day. Your journey towards new PRs starts here, every session counts, so give it your all in every workout!\n\nEverything is optimized so you can focus on your goals and see your improvements at a glance!"
+          }
+        },
+        "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "You have the perfect tool in your hands to track your records and improve every day. Your journey towards new PRs starts here, every session counts, so give it your all in every workout!\n\nEverything is optimized so you can focus on your goals and see your improvements at a glance!"
@@ -4017,13 +4102,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "www.one-more.com"
+            "value" : "www.01-more.com"
           }
         },
         "fr" : {
           "stringUnit" : {
-            "state" : "translated",
-            "value" : "www.one-more.com"
+            "state" : "needs_review",
+            "value" : "www.01-more.com"
           }
         }
       }

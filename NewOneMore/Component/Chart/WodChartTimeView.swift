@@ -52,8 +52,8 @@ struct WodChartTimeView: View {
                 AxisTick()
             }
         }
-        .frame(height: 200)
-        .padding(50)
+        .frame(height: 170)
+        .padding(.horizontal, 30)
     }
     private func formatTime(_ time: Double) -> String {
         let hours = Int(time) / 3600

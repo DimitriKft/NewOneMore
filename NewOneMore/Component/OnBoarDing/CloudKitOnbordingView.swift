@@ -20,7 +20,7 @@ struct CloudKitOnbordingView: View {
             .foregroundStyle(.black)
 
             Text("""
-                        Pour garantir la persistanses de tes données, One More utilise **iCloud** pour sauvegarder automatiquement tes performances. Tu peux les retrouver à tout moment, sur tous tes appareils, même si tu changes de téléphone ou réinstalles l'app. **Tout est synchronisé et sous ton contrôle via ton compte iCloud**.
+                        Pour garantir la persistanses de tes données, One More utilise **iCloud** pour sauvegarder automatiquement tes performances. Tu peux les retrouver à tout moment, sur tous tes appareils, même si tu changes de téléphone ou réinstalles l'app. **Tout est synchronisé et sous ton contrôle via ton compte iCloud**. Rendez vous sur www.01-more.com pour en savoir plus
                         """)
             .font(.footnote)
             .padding()
