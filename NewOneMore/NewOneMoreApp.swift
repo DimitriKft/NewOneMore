@@ -22,7 +22,6 @@ struct OneMoreApp: App {
             if showSplash {
                 SplashScreenView()
                     .onAppear {
-                        // Basculer vers l'écran d'onboarding après l'animation de splash
                         DispatchQueue.main.asyncAfter(deadline: .now() + 4) {
                             withAnimation {
                                 showSplash = false
@@ -33,13 +32,11 @@ struct OneMoreApp: App {
                     .statusBar(hidden: true)
             } else {
                 if !hasCompletedOnboarding {
-                    // Afficher l'onboarding seulement si il n'a pas été complété
                     OnboardingView(isOnboardingComplete: $hasCompletedOnboarding)
                         .statusBar(hidden: true)
                 } else {
-                    // Afficher l'écran principal si l'onboarding est terminé
                     LandingScreenView()
-                        .statusBar(hidden: false)
+                        .statusBar(hidden: true)
                 }
             }
         }

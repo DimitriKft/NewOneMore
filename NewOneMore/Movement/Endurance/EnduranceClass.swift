@@ -33,16 +33,14 @@ class Endurance: ObservableObject {
         self.dates = dates
         self.categories = categories.map { $0.rawValue }
     }
-    
-    // Méthode pour ajouter un temps avec une date (sans toucher aux catégories)
+
     func addTime(_ time: Double, date: Date) {
-        self.times.append(time)  // Ajoute le temps à la liste des temps
-        self.dates.append(date)  // Ajoute la date à la liste des dates
-        // Ne rien faire avec la catégorie ici, elle est fixe pour chaque WOD
+        self.times.append(time)
+        self.dates.append(date)
     }
 
     
-    // Méthode pour récupérer les catégories en tant qu'énumérations
+   
     func getCategories() -> [EnduranceCategories] {
         return self.categories.compactMap { EnduranceCategories(rawValue: $0) }
     }

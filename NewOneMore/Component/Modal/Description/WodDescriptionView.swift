@@ -31,14 +31,6 @@ struct WodDescriptionView: View {
             }
 
             Spacer()
-
-//            PrimaryBtnView(
-//                label: "Retour",
-//                action: { dismiss() },
-//                color: .secondary,
-//                colorSecondary: .white,
-//                icon: "arrow.uturn.left"
-//            )
         }
         .padding()
     }

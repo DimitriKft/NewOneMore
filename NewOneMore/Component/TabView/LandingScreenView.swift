@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct LandingScreenView: View {
-    @Environment(\.colorScheme) var colorScheme // Détecte le mode clair ou sombre
+    @Environment(\.colorScheme) var colorScheme
     
     var body: some View {
         TabView {
@@ -29,9 +29,8 @@ struct LandingScreenView: View {
                     Label("Endurance", systemImage: "figure.run")
                 }
         }
-        .accentColor(colorScheme == .dark ? .white : .black) // Couleur des icônes et labels en fonction du mode
-        //        .background(colorScheme == .dark ? Color.black : Color.white) // Ajuste le fond
-        .tint(colorScheme == .dark ? .white : .black) // Couleur d'accentuation (tint)
+        .accentColor(colorScheme == .dark ? .white : .black) 
+        .tint(colorScheme == .dark ? .white : .black)
     }
 }
 

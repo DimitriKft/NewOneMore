@@ -9,8 +9,8 @@ import SwiftUI
 
 
 struct StrongBtnCategorieView: View {
-    @Binding var selectedCategory: Categories? // Permet de passer une catégorie optionnelle
-    var category: Categories? // Catégorie optionnelle, `nil` signifie "Toutes"
+    @Binding var selectedCategory: Categories?
+    var category: Categories? 
     
     var colorCategory: Color {
         switch category {

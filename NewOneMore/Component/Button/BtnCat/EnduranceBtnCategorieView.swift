@@ -9,8 +9,8 @@
 import SwiftUI
 
 struct EnduranceBtnCategorieView: View {
-    @Binding var selectedCategory: EnduranceCategories? // Permet de passer une catégorie optionnelle
-    var category: EnduranceCategories? // Catégorie optionnelle, `nil` signifie "Toutes"
+    @Binding var selectedCategory: EnduranceCategories?
+    var category: EnduranceCategories?
 
     var colorCategory: Color {
         switch category {

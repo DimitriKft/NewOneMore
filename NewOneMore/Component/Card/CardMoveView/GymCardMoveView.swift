@@ -11,8 +11,7 @@ struct GymCardMoveView: View {
     let item: GymMove
     let isSelected: Bool
     let onSelect: () -> Void
-    
-    // Fonction pour déterminer la couleur en fonction de la catégorie
+
     var categoryColor: Color {
         switch item.category {
         case .calisthenics:
@@ -57,7 +56,7 @@ struct GymCardMoveView: View {
                         Image(systemName: iconCategory)
                             .foregroundStyle(categoryColor)
                             .font(.system(size: 14))
-                        Text(item.category.rawValue) // Utilisation du nom de la catégorie
+                        Text(item.category.rawValue) 
                             .font(.system(size: 12, weight: .bold))
                             .foregroundColor(.gray)
                     }

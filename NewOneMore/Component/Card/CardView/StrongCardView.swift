@@ -106,7 +106,7 @@ struct StrongCardView: View {
         if let lastDate = dates.last {
             let calendar = Calendar.current
             let today = calendar.startOfDay(for: Date())
-            let lastPRDate = calendar.startOfDay(for: lastDate) // Normaliser la date à minuit
+            let lastPRDate = calendar.startOfDay(for: lastDate) 
             let components = calendar.dateComponents([.day], from: lastPRDate, to: today)
             
             if let days = components.day {

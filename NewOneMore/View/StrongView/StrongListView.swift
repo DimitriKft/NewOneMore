@@ -14,8 +14,7 @@ struct StrongListView: View {
     @State private var selectedCategory: Categories? = nil
     @State private var searchText: String = ""
     @Environment(\.colorScheme) var colorScheme
-    @State private var isAnimating = false // Variable pour gérer l'animation
-    
+    @State private var isAnimating = false
     let columns = [
         GridItem(.flexible(), spacing: 16),
         GridItem(.flexible(), spacing: 16)
@@ -30,8 +29,6 @@ struct StrongListView: View {
                             .padding(8)
                             .background(Color.gray.opacity(0.2))
                             .cornerRadius(8)
-
-                        // Bouton des filtres dans la searchbar
                         Button(action: {
                             showingFilterSheet = true
                         }) {
@@ -71,19 +68,17 @@ struct StrongListView: View {
             }
             .navigationTitle("Force ")
             .navigationBarItems(trailing: HStack {
-                // Animation si la liste est vide
                 Button(action: {
                     showingAddItemView = true
-                    isAnimating = false // Désactiver l'animation après utilisation
+                    isAnimating = false
                 }) {
                     Text("+")
                         .font(Font.custom("edosz", size: 70, relativeTo: .title))
                         .foregroundStyle((colorScheme == .dark) ? .white : .black)
-                        .scaleEffect(isAnimating ? 1.2 : 1.0) // Augmente légèrement la taille pendant l'animation
-                        .animation(isAnimating ? .easeInOut(duration: 0.6).repeatForever(autoreverses: true) : .default, value: isAnimating) // Animation de rebond si `isAnimating` est activé
+                        .scaleEffect(isAnimating ? 1.2 : 1.0)
+                        .animation(isAnimating ? .easeInOut(duration: 0.6).repeatForever(autoreverses: true) : .default, value: isAnimating)
                 }
                 .onAppear {
-                    // Activer l'animation lorsque la liste est vide
                     if strongs.isEmpty {
                         isAnimating = true
                     }
@@ -101,16 +96,13 @@ struct StrongListView: View {
                 )
             }
         }   .onAppear {
-            // Personnalisation de la barre de navigation complète avec UIKit
             let appearance = UINavigationBarAppearance()
-            appearance.configureWithTransparentBackground() // Fond transparent
+            appearance.configureWithTransparentBackground()
             appearance.largeTitleTextAttributes = [
                 .font: UIFont(name: "edosz", size: 34)!,
-//                .foregroundColor: UIColor.black
             ]
             appearance.titleTextAttributes = [
                 .font: UIFont(name: "edosz", size: 20)!,
-//                .foregroundColor: UIColor.black
             ]
             UINavigationBar.appearance().standardAppearance = appearance
             UINavigationBar.appearance().scrollEdgeAppearance = appearance

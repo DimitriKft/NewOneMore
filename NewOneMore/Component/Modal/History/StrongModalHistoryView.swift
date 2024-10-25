@@ -40,7 +40,6 @@ struct StrongModalHistoryView: View {
             
             ScrollView {
                 VStack {
-                    // Combine scores and dates, then sort by date descending
                     let sortedData = zip(scores.indices, zip(scores, dates)).sorted { $0.1.1 > $1.1.1 }
 
                     ForEach(sortedData, id: \.1.1) { index, data in
@@ -114,13 +113,11 @@ struct StrongModalHistoryView: View {
     }
     
     private func deleteScore(at index: Int) {
-        // Suppression du score et de la date dans les données persistantes
         strong.scores.remove(at: index)
         strong.dates.remove(at: index)
 
         do {
             try modelContext.save()
-            // Mettre à jour la vue après la suppression
             scores = strong.scores
             dates = strong.dates
         } catch {

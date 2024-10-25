@@ -27,10 +27,6 @@ struct AddMoreBtnView: View {
                     .foregroundColor(color)
             }
         }
-//        .overlay(
-//            RoundedRectangle(cornerRadius: 8)
-//                .stroke(color, lineWidth: 1)
-//        )
     }
 }
 

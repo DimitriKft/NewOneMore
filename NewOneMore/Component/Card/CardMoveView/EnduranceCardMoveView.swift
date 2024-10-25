@@ -13,8 +13,7 @@ struct EnduranceCardMoveView: View {
     let item: EnduranceMove
     let isSelected: Bool
     let onSelect: () -> Void
-    
-    // Fonction pour déterminer la couleur en fonction de la catégorie WOD
+
     var categoryColor: Color {
         switch item.category {
         case .outdoor:

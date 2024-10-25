@@ -41,39 +41,6 @@ struct OnboardingView: View {
                 .padding()
             }
         }
-//        .overlay(
-//                    Button(action: {
-//                        isOnboardingComplete = true
-//                    }, label: {
-//                        ZStack {
-//                            RoundedRectangle(cornerRadius: 12)
-//                                .frame(width: 150, height: 50)
-//                                .foregroundColor(.white)
-//                                .overlay(
-//                                    RoundedRectangle(cornerRadius: 12)
-//                                        .stroke(.black, lineWidth: 1)
-//                                        .opacity(0.8)
-//                                )
-//                                .padding()
-//
-//                            Text("Commencer")
-//                                .fontWeight(.bold)
-//                                .foregroundStyle(.black)
-//                        }
-//                        .scaleEffect(animateButton ? 1.1 : 1.0)
-//                        .opacity(animateButton ? 1.0 : 0.8)
-//                        .padding(.bottom, 60)
-//                    })
-//                    .onAppear {
-//                        withAnimation(
-//                            Animation.easeInOut(duration: 1.0)
-//                                .repeatForever(autoreverses: true)) {
-//                                    animateButton = true
-//                                }
-//                    },
-//                    alignment: .bottomTrailing
-//                )
-//                .animation(.easeInOut, value: currentPage)
     }
 }
 

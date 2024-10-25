@@ -44,15 +44,13 @@ class Gym: ObservableObject {
         self.categories = categories.map { $0.rawValue }
     }
     
-    // Méthode pour ajouter un score avec une date et une catégorie
+    
     func addScore(_ score: Double, date: Date) {
-        self.scores.append(score)  // Ajoute le score à la liste des scores
-        self.dates.append(date)    // Ajoute la date à la liste des dates
-        // Ne rien faire avec la catégorie ici, elle est fixe pour le mouvement
+        self.scores.append(score)
+        self.dates.append(date)
     }
 
     
-    // Méthode pour récupérer les catégories en tant qu'énumérations
     func getCategories() -> [GymCategories] {
         return self.categories.compactMap { GymCategories(rawValue: $0) }
     }

@@ -11,7 +11,7 @@ enum Categories: String, Codable, CaseIterable {
     case halterophilie = "Haltérophilie"
     case musculation = "Musculation"
     
-    // Méthode pour obtenir une chaîne localisée
+   
     func localizedName() -> String {
           switch self {
           case .halterophilie:
@@ -43,15 +43,14 @@ class Strong: ObservableObject {
         self.categories = categories.map { $0.rawValue }
     }
     
-    // Méthode pour ajouter un score avec une date et une catégorie
+   
     func addScore(_ score: Double, date: Date) {
-        self.scores.append(score)  // Ajoute le score à la liste des scores
-        self.dates.append(date)    // Ajoute la date à la liste des dates
-        // Ne rien faire avec la catégorie ici, elle est fixe pour le mouvement
+        self.scores.append(score)
+        self.dates.append(date)
     }
 
     
-    // Méthode pour récupérer les catégories en tant qu'énumérations
+   
     func getCategories() -> [Categories] {
         return self.categories.compactMap { Categories(rawValue: $0) }
     }

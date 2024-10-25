@@ -5,12 +5,6 @@
 //  Created by dimitri on 08/10/2024.
 //
 
-//
-//  GymDetailView.swift
-//  NewOneMore
-//
-//  Created by dimitri on 08/10/2024.
-//
 import SwiftUI
 import Charts
 
@@ -33,7 +27,6 @@ struct GymDetailView: View {
     var body: some View {
         ZStack(alignment: .topLeading) {
             VStack {
-                // Image et informations de base
                 ZStack {
                     Image(gym.image)
                         .resizable()
@@ -107,8 +100,6 @@ struct GymDetailView: View {
         }
         .navigationBarBackButtonHidden(true)
         .ignoresSafeArea(edges: .top)
-
-        // Gestion centralisée des modales via l'énumération ActiveSheet
         .sheet(item: $activeSheet) { item in
             switch item {
             case .history:
@@ -176,7 +167,7 @@ struct GymDetailView: View {
             return
         }
 
-        print("Score entré : \(score)") // Vérifiez si le score est correct
+        print("Score entré : \(score)")
 
         if score > 2000 {
             print("Le score est supérieur à 100, afficher l'alerte.")

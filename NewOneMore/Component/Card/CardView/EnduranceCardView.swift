@@ -11,7 +11,7 @@ struct EnduranceCardView: View {
     var colorCategory: Color
     var image: String
     var nom: String
-    var times: [Double] // En secondes
+    var times: [Double]
     var dates: [Date]
     
     var body: some View {

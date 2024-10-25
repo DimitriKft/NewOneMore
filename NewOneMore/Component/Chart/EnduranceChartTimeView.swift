@@ -26,7 +26,6 @@ struct EnduranceChartTimeView: View {
                 .foregroundStyle(couleurCategorie)
                 .symbol(.circle)
                 .annotation(position: .top, alignment: .center) {
-                    // Affiche le temps au-dessus de chaque point
                     Text(formatTime(time))
                         .font(.caption)
                         .fontWeight(.bold)
@@ -40,7 +39,7 @@ struct EnduranceChartTimeView: View {
             }
         }
         .chartXScale(domain: 0...4)
-        .chartYScale(domain: 0...((times.max() ?? 0) + 600)) // Ajustement de l'échelle pour inclure des temps plus longs
+        .chartYScale(domain: 0...((times.max() ?? 0) + 600))
         .chartYAxis {
             AxisMarks(position: .leading) {
                 AxisGridLine()
@@ -54,16 +53,15 @@ struct EnduranceChartTimeView: View {
             }
         }
         .frame(height: 170)
-        .padding(.horizontal, 30) // Ajout de marge sur les côtés
+        .padding(.horizontal, 30)
     }
     
-    // Fonction pour formater les temps en HH:mm ou mm:ss selon la durée
+  
     private func formatTime(_ time: Double) -> String {
         let hours = Int(time) / 3600
         let minutes = (Int(time) % 3600) / 60
         let seconds = Int(time) % 60
 
-        // Si le temps est supérieur à une heure, afficher heures et minutes, sinon minutes et secondes
         if hours > 0 {
             return String(format: "%02dh%02dm", hours, minutes)
         } else {
@@ -71,7 +69,7 @@ struct EnduranceChartTimeView: View {
         }
     }
 
-    // Fonction pour formater les dates
+   
     private func formatDate(_ date: Date) -> String {
         let formatter = DateFormatter()
         formatter.dateStyle = .short

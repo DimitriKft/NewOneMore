@@ -16,7 +16,7 @@ struct EnduranceListView: View {
     @State private var searchText: String = ""
     @Environment(\.colorScheme) var colorScheme
     
-    @State private var isAnimating = false // Variable pour gérer l'animation
+    @State private var isAnimating = false
 
     let columns = [
         GridItem(.flexible(), spacing: 16),
@@ -32,8 +32,6 @@ struct EnduranceListView: View {
                             .padding(8)
                             .background(Color.gray.opacity(0.2))
                             .cornerRadius(8)
-
-                        // Bouton des filtres dans la searchbar
                         Button(action: {
                             showingFilterSheet = true
                         }) {
@@ -74,19 +72,17 @@ struct EnduranceListView: View {
             }
             .navigationTitle("Endurance")
             .navigationBarItems(trailing: HStack {
-                // Animation si la liste est vide
                 Button(action: {
                     showingAddItemView = true
-                    isAnimating = false // Désactiver l'animation après utilisation
+                    isAnimating = false
                 }) {
                     Text("+")
                         .font(Font.custom("edosz", size: 70, relativeTo: .title))
                         .foregroundStyle((colorScheme == .dark) ? .white : .black)
-                        .scaleEffect(isAnimating ? 1.2 : 1.0) // Augmente légèrement la taille pendant l'animation
-                        .animation(isAnimating ? .easeInOut(duration: 0.6).repeatForever(autoreverses: true) : .default, value: isAnimating) // Animation de rebond si `isAnimating` est activé
+                        .scaleEffect(isAnimating ? 1.2 : 1.0)
+                        .animation(isAnimating ? .easeInOut(duration: 0.6).repeatForever(autoreverses: true) : .default, value: isAnimating)
                 }
                 .onAppear {
-                    // Activer l'animation lorsque la liste est vide
                     if endurances.isEmpty {
                         isAnimating = true
                     }

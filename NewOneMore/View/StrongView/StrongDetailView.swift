@@ -26,7 +26,6 @@ struct StrongDetailView: View {
     var body: some View {
         ZStack(alignment: .topLeading) {
             VStack {
-                // Image et informations de base
                 ZStack {
                     Image(strong.image)
                         .resizable()
@@ -172,7 +171,7 @@ struct StrongDetailView: View {
             return
         }
 
-        print("Score entré : \(score)") // Vérifiez si le score est correct
+        print("Score entré : \(score)")
 
         if score > 501 {
             print("Le score est supérieur à 501, afficher l'alerte.")

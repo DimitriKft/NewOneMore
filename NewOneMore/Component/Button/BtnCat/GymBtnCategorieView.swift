@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct GymBtnCategorieView: View {
-    @Binding var selectedCategory: GymCategories? // Permet de passer une catégorie optionnelle
-    var category: GymCategories? // Catégorie optionnelle, `nil` signifie "Toutes"
+    @Binding var selectedCategory: GymCategories?
+    var category: GymCategories?
     
     var colorCategory: Color {
         switch category {
@@ -39,7 +39,7 @@ struct GymBtnCategorieView: View {
                         .foregroundStyle(.white)
                         .font(.largeTitle)
                 }
-                Text(category?.localizedName() ?? NSLocalizedString("Tous", comment: "")) // Si `category` est `nil`, affiche "Tous"
+                Text(category?.localizedName() ?? NSLocalizedString("Tous", comment: "")) 
                     .font(.system(size: 10))
                     .bold()
             }

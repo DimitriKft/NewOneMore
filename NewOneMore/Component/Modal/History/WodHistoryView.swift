@@ -40,7 +40,6 @@ struct WodHistoryView: View {
             
             ScrollView {
                 VStack {
-                    // Combine times and dates, then sort by date descending
                     let sortedData = zip(times.indices, zip(times, dates)).sorted { $0.1.1 > $1.1.1 }
 
                     ForEach(sortedData, id: \.1.1) { index, data in
@@ -65,8 +64,6 @@ struct WodHistoryView: View {
 
                             Text(formatDate(date))
                                 .foregroundColor(.secondary)
-
-                            // Delete button
                             Button(action: {
                                 timeToDeleteIndex = index
                                 showDeleteAlert = true
@@ -113,13 +110,11 @@ struct WodHistoryView: View {
     }
     
     private func deleteTime(at index: Int) {
-        // Suppression du temps et de la date dans les données persistantes
         wod.times.remove(at: index)
         wod.dates.remove(at: index)
 
         do {
             try modelContext.save()
-            // Mettre à jour la vue après la suppression
             times = wod.times
             dates = wod.dates
         } catch {

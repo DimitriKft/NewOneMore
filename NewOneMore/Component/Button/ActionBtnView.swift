@@ -11,11 +11,11 @@ struct ActionBtnView: View {
     var icon: String
     var color: Color
     var colorPrimary: Color
-    var action: () -> Void // Closure pour l'action du bouton
+    var action: () -> Void 
 
     var body: some View {
         Button(action: {
-            action() // Exécute l'action fournie
+            action()
         }) {
             ZStack {
                 Rectangle()

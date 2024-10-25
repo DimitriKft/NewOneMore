@@ -12,19 +12,17 @@ struct WodPickerAddTimeView: View {
     var wodColor: Color
     var addNewTime: () -> Void
 
-    // Etat pour les heures, minutes et secondes
     @State private var selectedHours: Int = 0
     @State private var selectedMinutes: Int = 12
     @State private var selectedSeconds: Int = 24
 
-    // Plages de valeurs pour le picker
+   
     let hoursRange = Array(0...99)
     let minutesRange = Array(0...59)
     let secondsRange = Array(0...59)
 
     var body: some View {
         VStack {
-            // Pickers pour heures, minutes et secondes
             HStack {
                 Picker(selection: $selectedHours, label: Text("Heures")) {
                     ForEach(hoursRange, id: \.self) { hour in
@@ -63,23 +61,20 @@ struct WodPickerAddTimeView: View {
                 .clipped()
             }
             .padding()
-
-            // Bouton pour valider le temps sélectionné
             Button(action: {
-                // Formater le temps sélectionné en texte
                 newTime = formatTime(hours: selectedHours, minutes: selectedMinutes, seconds: selectedSeconds)
-                addNewTime() // Appel de la fonction d'ajout de temps
+                addNewTime()
             }) {
                 Text("Valider le temps")
                     .fontWeight(.bold)
                     .foregroundColor(.white)
-                    .padding(.vertical, 12) // Padding vertical ajusté
-                    .padding(.horizontal, 30) // Padding horizontal pour un bouton plus large
+                    .padding(.vertical, 12)
+                    .padding(.horizontal, 30)
                     .background(wodColor)
                     .cornerRadius(10)
             }
             .padding(.top, 20)
-            .padding(.bottom, 20) // Ajout de padding en bas pour améliorer l'espacement
+            .padding(.bottom, 20)
         }
         .background(
             BlurView()
@@ -90,17 +85,16 @@ struct WodPickerAddTimeView: View {
         .padding()
     }
 
-    // Fonction pour formater le temps
+   
     func formatTime(hours: Int, minutes: Int, seconds: Int) -> String {
         return String(format: "%02d:%02d:%02d", hours, minutes, seconds)
     }
 
-    // Fonction pour formater le temps pour l'affichage par défaut
     func formatDisplayTime() -> String {
         if newTime.isEmpty {
-            return "HH : MM : SS" // Texte par défaut si aucun temps n'est sélectionné
+            return "HH : MM : SS"
         } else {
-            return newTime // Afficher le temps sélectionné si disponible
+            return newTime 
         }
     }
 }

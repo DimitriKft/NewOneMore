@@ -122,11 +122,8 @@ struct WodAddView: View {
 
     func filteredItems() -> [WodMove] {
         return availableItems.filter { item in
-            // Vérification de la catégorie
             (selectedCategory == nil || item.category == selectedCategory) &&
-            // Vérification que l'élément n'est pas déjà sélectionné
             !selectedWODs.contains(item.nom) &&
-            // Vérification du texte de recherche
             (searchText.isEmpty || item.nom.localizedCaseInsensitiveContains(searchText))
         }
     }

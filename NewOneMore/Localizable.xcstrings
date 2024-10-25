@@ -13,6 +13,7 @@
       }
     },
     " Dans chaque catégorie, tu peux facilement ajouter le mouvement de ton choix en appuyant sur le **\"+\"** en haut à droite. Une fois le mouvement sélectionné, il te suffit d'entrer ton nouveau score. Seuls les mouvements que tu as déjà effectués s'afficheront, pour te permettre une meilleure lecture de ta progression et un suivi clair de tes performances au fil du temps.\n\n Tout est optimisé pour que tu puisses te concentrer sur tes objectifs et voir tes améliorations d'un coup d'œil !" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -1210,6 +1211,7 @@
       }
     },
     "Choisis, Enregistre, Dépasse-Toi !" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {

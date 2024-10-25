@@ -11,7 +11,7 @@ struct StrongCardMoveView: View {
     let isSelected: Bool
     let onSelect: () -> Void
     
-    // Fonction pour déterminer la couleur en fonction de la catégorie
+   
     var categoryColor: Color {
         switch item.category {
         case .halterophilie:

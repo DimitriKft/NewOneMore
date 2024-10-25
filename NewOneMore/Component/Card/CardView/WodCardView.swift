@@ -11,7 +11,7 @@ struct WodCardView: View {
     var colorCategory: Color
     var image: String
     var nom: String
-    var times: [Double] // En secondes
+    var times: [Double]
     var dates: [Date]
     
     var body: some View {
@@ -119,7 +119,7 @@ struct WodCardView: View {
         if let lastDate = dates.last {
             let calendar = Calendar.current
             let today = calendar.startOfDay(for: Date())
-            let lastPRDate = calendar.startOfDay(for: lastDate) // Normaliser la date à minuit
+            let lastPRDate = calendar.startOfDay(for: lastDate) 
             let components = calendar.dateComponents([.day], from: lastPRDate, to: today)
             
             if let days = components.day {
