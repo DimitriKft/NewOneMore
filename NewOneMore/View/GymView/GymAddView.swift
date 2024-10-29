@@ -88,7 +88,7 @@ struct GymAddView: View {
                 VStack {
                     Spacer()
                     PrimaryBtnView(
-                        label: " Ajouter \(selectedItem.nom)",
+                        label: String(format: NSLocalizedString("Ajouter %@", comment: "Bouton pour ajouter une activité sélectionnée"), selectedItem.nom),
                         action: ajouterItem,
                         color: colorScheme == .dark ? .white : .gray,
                         colorSecondary: colorScheme == .dark ? .black : .white,

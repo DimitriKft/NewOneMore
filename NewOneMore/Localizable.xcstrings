@@ -881,6 +881,23 @@
         }
       }
     },
+    "Ajouter %@" : {
+      "comment" : "Bouton pour ajouter une activité sélectionnée",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Add %@"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ajouter %@"
+          }
+        }
+      }
+    },
     "Angie" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -1697,7 +1714,7 @@
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Enter your score here…"
+            "value" : "Entre ton score ici.."
           }
         }
       }
@@ -3879,7 +3896,7 @@
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "All"
+            "value" : "Tous"
           }
         }
       }

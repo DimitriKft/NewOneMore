@@ -89,12 +89,12 @@ struct EnduranceAddView: View {
                 VStack {
                     Spacer()
                     PrimaryBtnView(
-                              label: " Ajouter \(selectedItem.nom)",
-                              action: ajouterItem,
-                              color: colorScheme == .dark ? .white : .gray,
-                              colorSecondary: colorScheme == .dark ? .black : .white,
-                              icon: "plus.circle.fill"
-                          )
+                        label: String(format: NSLocalizedString("Ajouter %@", comment: "Bouton pour ajouter une activité sélectionnée"), selectedItem.nom),
+                        action: ajouterItem,
+                        color: colorScheme == .dark ? .white : .gray,
+                        colorSecondary: colorScheme == .dark ? .black : .white,
+                        icon: "plus.circle.fill"
+                    )
                 }
                 .padding(.bottom, 20)
             }

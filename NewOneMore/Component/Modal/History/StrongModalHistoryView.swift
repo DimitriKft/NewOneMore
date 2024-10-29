@@ -88,13 +88,7 @@ struct StrongModalHistoryView: View {
             }
             .padding(.top, 30)
 
-            PrimaryBtnView(
-                label: "Retour",
-                action: { dismiss() },
-                color: .secondary,
-                colorSecondary: .white,
-                icon: "arrow.uturn.left"
-            )
+         
         }
         .padding(20)
         .alert(isPresented: $showDeleteAlert) {

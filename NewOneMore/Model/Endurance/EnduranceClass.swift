@@ -40,7 +40,6 @@ class Endurance: ObservableObject {
     }
 
     
-   
     func getCategories() -> [EnduranceCategories] {
         return self.categories.compactMap { EnduranceCategories(rawValue: $0) }
     }
