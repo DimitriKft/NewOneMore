@@ -64,7 +64,7 @@ struct WodAddView: View {
                             Text("Reviens dans quelque temps, nous mettons à jour nos wods régulièrement. Et n'hésite pas à nous contacter si tu as des wods manquants.")
                                 .font(.system(size: 15))
 
-                            Link("www.one-more.com", destination: URL(string: "https://studio-clic.fr")!)
+                            Link("www.01-more.com", destination: URL(string: "https://www.01-more.com/")!)
                                 .font(.system(size: 11))
                                 .padding(.top, 16)
                         }

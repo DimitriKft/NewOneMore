@@ -4119,13 +4119,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "www.01-more.com"
+            "value" : "https://www.01-more.com/en/one-more-en/"
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "needs_review",
-            "value" : "www.01-more.com"
+            "value" : "https://www.01-more.com/"
           }
         }
       }
