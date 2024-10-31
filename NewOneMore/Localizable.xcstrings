@@ -61,6 +61,7 @@
       }
     },
     "%@ Kg (%@%% de ton 1RM)" : {
+      "extractionState" : "manual",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -70,8 +71,8 @@
         },
         "fr" : {
           "stringUnit" : {
-            "state" : "translated",
-            "value" : "%1$@ Kg (%2$@%% de ton 1RM)"
+            "state" : "needs_review",
+            "value" : "%@ Kg (%@%% de ton 1RM)"
           }
         }
       }
@@ -1441,13 +1442,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "of your PR:"
+            "value" : "of your PR :"
           }
         },
         "fr" : {
           "stringUnit" : {
-            "state" : "translated",
-            "value" : "of your PR:"
+            "state" : "needs_review",
+            "value" : "de ton PR :"
           }
         }
       }
@@ -1764,6 +1765,23 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Es-tu sûr que ce score est possible ? 😅"
+          }
+        }
+      }
+    },
+    "estimated_rm_text" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ Kg (%@%% of your 1RM)"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ Kg (%@%% de ton 1RM)"
           }
         }
       }
@@ -2417,6 +2435,9 @@
           }
         }
       }
+    },
+    "Key" : {
+      "extractionState" : "manual"
     },
     "KippingBarMuscleUp" : {
       "extractionState" : "manual",
@@ -3331,7 +3352,7 @@
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Search for a WOD"
+            "value" : "Rechercher un wod"
           }
         }
       }

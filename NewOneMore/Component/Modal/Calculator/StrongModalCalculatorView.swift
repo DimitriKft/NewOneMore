@@ -61,8 +61,10 @@ struct StrongModalCalculatorView: View {
                             .fontWeight(.bold)
                             .frame(width: 70, alignment: .leading)
                         Spacer()
-                        Text("\(String(format: "%d", Int(estimatedRM))) Kg (\(String(format: "%d", Int((estimatedRM / pr) * 100)))% de ton 1RM)")
+                        Text(String(format: NSLocalizedString("estimated_rm_text", comment: ""), String(format: "%d", Int(estimatedRM)), String(format: "%d", Int((estimatedRM / pr) * 100))))
                             .font(.body)
+
+
                     }
                     .padding()
                     .background(color)
