@@ -44,7 +44,7 @@ var gymMoves: [GymMove] = [
     GymMove(
         nom: "Pull-Up-Butterfly",
         subtitle: NSLocalizedString("PullUpButterfly", comment: ""),
-        imageName: "Pull-Up-butterfly",
+        imageName: "Pull-Up-Butterfly",
         category: .calisthenics),
     GymMove(
         nom: "Chin-Up",

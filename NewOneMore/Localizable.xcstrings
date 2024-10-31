@@ -1061,7 +1061,7 @@
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Welcome to One-More"
+            "value" : "Bienvenue sur One-More"
           }
         }
       }
@@ -1313,7 +1313,7 @@
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Get Started"
+            "value" : "Commencer"
           }
         }
       }
@@ -2980,7 +2980,7 @@
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "To ensure the persistence of your data, One More uses iCloud to automatically back up your performances. You can access them anytime, on all your devices, even if you switch phones or reinstall the app. Everything is synced and under your control via your iCloud account. Visit www.01-more.com to learn more."
+            "value" : "Pour garantir la persistanses de tes données, One More utilise **iCloud** pour sauvegarder automatiquement tes performances. Tu peux les retrouver à tout moment, sur tous tes appareils, même si tu changes de téléphone ou réinstalles l'app. **Tout est synchronisé et sous ton contrôle via ton compte iCloud**. Rendez vous sur www.01-more.com pour en savoir plus"
           }
         }
       }
@@ -3993,7 +3993,7 @@
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "You have the perfect tool in your hands to track your records and improve every day. Your journey towards new PRs starts here, every session counts, so give it your all in every workout!\n\nEverything is optimized so you can focus on your goals and see your improvements at a glance!"
+            "value" : "Tu as entre les mains l'outil parfait pour garder une **trace de tes records et t'améliorer chaque jour**. Ton parcours vers de nouveaux **PR** commence ici, chaque session compte, alors donne tout à chaque séance !\n\n Tout est optimisé pour que tu puisses te **concentrer sur tes objectifs** et voir tes améliorations d'un coup d'œil !"
           }
         }
       }
@@ -4113,6 +4113,9 @@
           }
         }
       }
+    },
+    "www.01-more.com" : {
+
     },
     "www.one-more.com" : {
       "localizations" : {
