@@ -96,8 +96,8 @@ struct WodAddView: View {
                     PrimaryBtnView(
                         label: String(format: NSLocalizedString("Ajouter %@", comment: "Bouton pour ajouter une activité sélectionnée"), selectedItem.nom),
                         action: ajouterItem,
-                        color: colorScheme == .dark ? .white : .gray,
-                        colorSecondary: colorScheme == .dark ? .black : .white,
+                        color: colorScheme == .dark ? colorForCategory(selectedItem.category) : colorForCategory(selectedItem.category),
+                        colorSecondary: colorScheme == .dark ? .black : .black,
                         icon: "plus.circle.fill"
                     )
                 }
@@ -137,7 +137,7 @@ struct WodAddView: View {
             image: selectedItem.imageName,
             descriptionName: "",
             times: [],
-            dates: [Date()],
+            dates: [],
             categories: [selectedItem.category]
         )
         

@@ -115,7 +115,7 @@ struct StrongCardView: View {
                 return "\(days) J"
             }
         }
-        return "N/A"
+        return ".."
     }
 
 }

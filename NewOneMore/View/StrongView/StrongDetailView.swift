@@ -190,6 +190,7 @@ struct StrongDetailView: View {
             newScore = ""
         }
     }
+
 }
 
 

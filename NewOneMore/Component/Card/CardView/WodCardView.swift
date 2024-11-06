@@ -128,7 +128,7 @@ struct WodCardView: View {
                 return "\(days) J"
             }
         }
-        return "N/A"
+        return ".."
     }
 }
 

@@ -126,7 +126,7 @@ struct EnduranceCardView: View {
                 return "\(days) J"
             }
         }
-        return "N/A"
+        return ".."
     }
 }
 

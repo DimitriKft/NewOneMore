@@ -26,9 +26,11 @@ struct PrimaryBtnView: View {
                 HStack(alignment: .firstTextBaseline, spacing: 20){
                     Image(systemName: icon)
                         .foregroundColor(colorSecondary)
-                    Text("\(label)")
-                        .font(.headline)
+                    Text(label.count > 40 ? "\(label.prefix(40)).." : label)
+                        .font(.system(size: 14))
+                        .fontWeight(.bold)
                         .foregroundColor(colorSecondary)
+                  
                     
                 }
             }
@@ -38,7 +40,7 @@ struct PrimaryBtnView: View {
 }
 
 #Preview {
-    PrimaryBtnView(label: "eeeeeeeeeeeee", action: {
+    PrimaryBtnView(label: "Ajouter Kiping muscle up", action: {
         print("Test btn primary")
     }, color: .yellow, colorSecondary: .black, icon: "ant.fill")
 }

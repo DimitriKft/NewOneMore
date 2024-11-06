@@ -113,7 +113,7 @@ struct GymCardView: View {
                 return "\(days) J"
             }
         }
-        return "N/A"
+        return ".."
     }
 }
 
