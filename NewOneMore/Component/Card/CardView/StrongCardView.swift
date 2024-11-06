@@ -22,7 +22,9 @@ struct StrongCardView: View {
                     .fill(colorCategory)
                     .stroke(colorCategory, lineWidth: 1.5)
                     .frame(width: 165, height: 170)
-                
+                    .shadow(color: .black.opacity(0.1), radius: 10, x: 0, y: 0)
+                      .shadow(color: .black.opacity(0.1), radius: 10, x: 0, y: 5)
+                      .shadow(color: .black.opacity(0.05), radius: 10, x: 5, y: 0)
                 VStack {
                     Image(image)
                         .resizable()
@@ -35,7 +37,7 @@ struct StrongCardView: View {
                 
                 VStack {
                     Text(nom.count > 16 ? "\(nom.prefix(18)).." : nom)
-                        .font(.caption)
+                        .font(.system(size: 12))
                         .fontWeight(.black)
                 }
                 .frame(width: 300, height: 100)
@@ -62,7 +64,7 @@ struct StrongCardView: View {
                             .frame(width: 75, height: 28)
                             .cornerRadius(5)
                             .foregroundStyle(.ultraThickMaterial)
-                            .opacity(0.4)
+                            .opacity(0.7)
                             .overlay(
                                 RoundedRectangle(cornerRadius: 5)
                                     .stroke(colorCategory, lineWidth: 0.6)
@@ -80,7 +82,7 @@ struct StrongCardView: View {
                             .frame(width: 75, height: 28)
                             .cornerRadius(5)
                             .foregroundStyle(.ultraThickMaterial)
-                            .opacity(0.4)
+                            .opacity(0.7)
                             .overlay(
                                 RoundedRectangle(cornerRadius: 5)
                                     .stroke(colorCategory, lineWidth: 0.6)
@@ -98,7 +100,7 @@ struct StrongCardView: View {
                 .padding(.top, 120)
             }
         }
-        .shadow(radius: 10, x: 0, y: 10)
+       
     }
 
    
@@ -120,7 +122,7 @@ struct StrongCardView: View {
 
 
 #Preview {
-    StrongCardView(colorCategory: .blue, image: "Clean", nom: "Squat", scores: [2.3, 80.5, 90.1], dates: [Date(), Date().addingTimeInterval(-86400), Date().addingTimeInterval(-172800)])
+    StrongCardView(colorCategory: .yellow, image: "Clean", nom: "Squat", scores: [2.3, 80.5, 90.1], dates: [Date(), Date().addingTimeInterval(-86400), Date().addingTimeInterval(-172800)])
 }
 
 
